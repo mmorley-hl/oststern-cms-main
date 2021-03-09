@@ -7,18 +7,20 @@
 			<title>eleventy blog sample</title>
 			<meta name='viewport' content='width=device-width, initial-scale=1'>
 			<link rel='stylesheet' type='text/css' media='screen' href='/assets/main.css'>
+			<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
 			<script src='/assets/main.js'></script>
 
 		</head>
 		<body>
-			<header>
-				{% include "nav.njk" %}
-			</header>
-			<main class="main_content">
-				{{ content | safe }}
-			</main>
-			{% include "footer.njk" %}
+			<div class="theme-wrapper theme-dark color-scheme-default">
+				<header>
+					{% include "nav.njk" %}
+				</header>
+				<main class="main_content">
+					{{ content | safe }}
+				</main>
+				{% include "footer.njk" %}
+			</div>
 			<script src='/assets/vendor.js'></script>
-
 		</body>
 	</html>
