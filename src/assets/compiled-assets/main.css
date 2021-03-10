@@ -3412,6 +3412,10 @@ a:hover {
   transform: rotate(180deg);
   left: -24px;
 }
+.link__arrow--right {
+  color: red;
+}
+
 .tooltip {
   position: relative;
 }
