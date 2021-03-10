@@ -2,12 +2,12 @@
   <div class="container container-xl">
     <nav class="core_navigation__nav">
       <div class="row">
-        <div class="column large-4">
+        <div class="column large-2">
             <div class="core_navigation__brand">
               <a href="{{ '/' | url }}">{{ metadata.title }}</a>
             </div>
         </div>
-        <div class="column large-8">
+        <div class="column large-4">
             <div class="core_navigation__links">
               {% set navPages = collections.all | eleventyNavigation %}
               <div class="core_navigation__links_container">
@@ -27,7 +27,14 @@
             </div>
           </div>
         </div>
+        <div class="column large-6">
+          <div class="core_navigation__sprungmarken">
+            <a href="#test1">Sprungmarke 1</a>
+            <a href="#test2">Sprungmarke 2</a>
+          </div>
+        </div>
       </div>
+
     </nav>
   </div>
 </div>
