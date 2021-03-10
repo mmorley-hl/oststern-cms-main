@@ -178,3 +178,9 @@ $fontStack: normal 400 112.5%/1.7 $familyOpenSans;
 
 $basicGrid__width: $maxWidth;
 $basicGrid__gutter: $gutter;
+$basicGrid__sizes: (
+	'small': 0,
+	'medium': $bpXS,
+	'large': $bpM,
+	'huge': $bpL
+);
