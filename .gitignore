@@ -21,7 +21,10 @@ npm-debug.log
 node_modules
 
 # Compiled-assets
-src/assets/compiled-assets/*.*
+src/assets/compiled-assets/main.css
+src/assets/compiled-assets/main.js
+src/assets/compiled-assets/vendor.css
+src/assets/compiled-assets/vendor.js
 
 # Dist folder
 dist
