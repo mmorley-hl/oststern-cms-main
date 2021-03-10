@@ -20,6 +20,10 @@ Temporary Items
 npm-debug.log
 node_modules
 
+# Compiled-assets
+src/assets/compiled-assets/*.*
+
 # Dist folder
 dist
 _site
+
