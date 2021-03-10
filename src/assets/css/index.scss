@@ -41,6 +41,7 @@
 
 .test {
 	&__content {
+		height: 100%;
 		@include customize(theme) {
 			background: getValue(backgroundDark);
 			color: getValue(textDark);
@@ -52,6 +53,7 @@
 
 .test2 {
 	&__content {
+		height: 100%;
 		@include customize(theme) {
 			background: getValue(backgroundLight);
 			color: getValue(textDark);
