@@ -30,3 +30,4 @@ src/assets/compiled-assets/vendor.js
 dist
 _site
 
+src/assets/compiled-assets/main.css
