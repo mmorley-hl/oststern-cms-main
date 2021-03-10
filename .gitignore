@@ -29,5 +29,6 @@ src/assets/compiled-assets/vendor.js
 # Dist folder
 dist
 _site
+src
 
 src/assets/compiled-assets/main.css
