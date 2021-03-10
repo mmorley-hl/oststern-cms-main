@@ -9,8 +9,9 @@
 	height: $headerHeight;
 	z-index: 444;
 
-	a{
+	a {
 		text-decoration: underline;
+		
 		@include customize(theme) {
 			color: getValue(textDark);
 		}

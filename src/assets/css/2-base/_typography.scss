@@ -13,9 +13,10 @@ h6,
 .h6 {
 	margin: 0 0 $gutter/2;
 	text-rendering: optimizeLegibility;
+	
 	&.eyebrow {
-			margin-bottom: -$gutter/2;
-max-width: 100%;
+		margin-bottom: -$gutter/2;
+		max-width: 100%;
 	}
 }
 

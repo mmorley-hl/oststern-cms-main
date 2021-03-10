@@ -14,9 +14,9 @@
               {%- for entry in navPages %}
                 <div class="core_navigation__links_item"  data-text="{{ entry.title }}">
                   {% if entry.url == page.url %}
-                    <div class="button button-outline-dark" {% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</div>
+                    <div class="" {% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</div>
                   {% else %}
-                    <a class="button button-outline-dark" href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
+                    <a class="" href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
                   {% endif %}
                 </div>
               {%- endfor %}

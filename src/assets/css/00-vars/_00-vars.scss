@@ -98,22 +98,19 @@ $colors: (
 //  /_______  /|__/_____ \\___  >____  >
 //          \/          \/    \/     \/
 
-$gutter: 1.8rem;
+$gutter: 1rem;
 $maxWidth: 1400px;
-
-// Shadows ----------------------------------------------------- //
-$shadowBig: 0 6px 12px rgba(0, 0, 0, 0.15);
-$shadowSmall: 0 2px 4px rgba(0, 0, 0, 0.15);
-
-// Sizes ------------------------------------------------------- //
-$gutter: 1.8rem;
-$maxWidth: 1350px;
 $headerHeight: 4em;
 $sectionPadding: $gutter * 4;
 $radiusSmall: 4px;
 $radiusBig: 6px;
 $iconSize: 90px;
 $gridMinWidth: 820px;
+
+// Shadows ----------------------------------------------------- //
+$shadowBig: 0 6px 12px rgba(0, 0, 0, 0.15);
+$shadowSmall: 0 2px 4px rgba(0, 0, 0, 0.15);
+
 
 // Breakpoints ------------------------------------------------------------------------------------ //
 //
