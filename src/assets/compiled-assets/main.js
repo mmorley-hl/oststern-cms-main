@@ -21,6 +21,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/assets/js/_carousel.js":
+/*!************************************!*\
+  !*** ./src/assets/js/_carousel.js ***!
+  \************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var flickity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flickity */ \"./node_modules/flickity/js/index.js\");\n/* harmony import */ var flickity__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(flickity__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst carousel = document.querySelectorAll('.carousel')\n\ncarousel.forEach((elem) => {\n\n\tlet arrows = false\n\n\tif (elem.classList.contains('carousel--arrows')) {\n\t\tarrows = true\n\t}\n\n\twindow.addEventListener('DOMContentLoaded', () => {\n\n\t\tconst flkty = new (flickity__WEBPACK_IMPORTED_MODULE_0___default())(elem, {\n\t\t\tprevNextButtons: arrows,\n\t\t\timagesLoaded: true,\n\t\t\tgroupCells: true,\n\t\t\tcellAlign: 'left',\n\t\t\twrapAround: true,\n\t\t\tcontain: true,\n\t\t})\n\n\t\tsetTimeout(() => {\n            flkty.resize()\n        }, 500)\n\n\t})\n\n})\n\n//# sourceURL=webpack://SITE/./src/assets/js/_carousel.js?");
+
+/***/ }),
+
 /***/ "./src/assets/js/_color_switch.js":
 /*!****************************************!*\
   !*** ./src/assets/js/_color_switch.js ***!
@@ -41,17 +52,6 @@ eval("const cursor = document.querySelector('.cursor')\nif (cursor) {\n\n\tcurso
 
 /***/ }),
 
-/***/ "./src/assets/js/_flickity.js":
-/*!************************************!*\
-  !*** ./src/assets/js/_flickity.js ***!
-  \************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var flickity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flickity */ \"./node_modules/flickity/js/index.js\");\n/* harmony import */ var flickity__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(flickity__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst carousel = document.querySelectorAll('.carousel')\n\ncarousel.forEach((elem) => {\n\n\tlet arrows = false\n\n\tif (elem.classList.contains('carousel--arrows')) {\n\t\tarrows = true\n\t}\n\n\twindow.addEventListener('DOMContentLoaded', () => {\n\n\t\tconst flkty = new (flickity__WEBPACK_IMPORTED_MODULE_0___default())(elem, {\n\t\t\tprevNextButtons: arrows,\n\t\t\timagesLoaded: true,\n\t\t\tgroupCells: true,\n\t\t\tcellAlign: 'left',\n\t\t\twrapAround: true,\n\t\t\tcontain: true,\n\t\t})\n\n\t\tsetTimeout(() => {\n            flkty.resize()\n        }, 500)\n\n\t})\n\n})\n\n//# sourceURL=webpack://SITE/./src/assets/js/_flickity.js?");
-
-/***/ }),
-
 /***/ "./src/assets/js/_header.js":
 /*!**********************************!*\
   !*** ./src/assets/js/_header.js ***!
@@ -59,6 +59,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var flic
 /***/ (function() {
 
 eval("// import Headroom from \"headroom.js\";\n// grab an element\n// var scroll_direction = document.querySelector(\".has-scroll-init\");\n// var htmlelm = document.querySelector(\"html\");\n// // console.log(\"scroll_direction\", scroll_direction.dataset.direction)\n// console.log(\"htmlelm\", htmlelm)\n\n\n// window.onscroll = () => {\n// \tconsole.log(\"scroll_direction\")\n// }\n\n\n\n\n// // construct an instance of Headroom, passing the element\n// var headroom = new Headroom(myElement);\n// // initialise\n// headroom.init();\n\n//# sourceURL=webpack://SITE/./src/assets/js/_header.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/_headroom.js":
+/*!************************************!*\
+  !*** ./src/assets/js/_headroom.js ***!
+  \************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var headroom_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! headroom.js */ \"./node_modules/headroom.js/dist/headroom.js\");\n/* harmony import */ var headroom_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(headroom_js__WEBPACK_IMPORTED_MODULE_0__);\n// if you're using a bundler, first import:\n\n// grab an element\nvar myElement = document.querySelector(\"header\");\n// construct an instance of Headroom, passing the element\nvar headroom  = new (headroom_js__WEBPACK_IMPORTED_MODULE_0___default())(myElement);\n// initialise\nheadroom.init();\n\n\n//# sourceURL=webpack://SITE/./src/assets/js/_headroom.js?");
 
 /***/ }),
 
@@ -82,24 +93,13 @@ eval("document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {\n    ancho
 
 /***/ }),
 
-/***/ "./src/assets/js/_test.js":
-/*!********************************!*\
-  !*** ./src/assets/js/_test.js ***!
-  \********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap */ \"./node_modules/gsap/index.js\");\n/* harmony import */ var gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gsap/ScrollTrigger */ \"./node_modules/gsap/ScrollTrigger.js\");\n/* harmony import */ var locomotive_scroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! locomotive-scroll */ \"./node_modules/locomotive-scroll/dist/locomotive-scroll.esm.js\");\n\n\n\n\ngsap__WEBPACK_IMPORTED_MODULE_1__.gsap.registerPlugin(gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger)\nconsole.log('locomotive imnages started')\ndocument.documentElement.classList.add('is-loaded');\ndocument.documentElement.classList.remove('is-loading');\n// const scroll = new LocomotiveScroll({\n// \tel: document.querySelector('[data-scroll-container]'),\n// \tsmooth: true\n// });\n// const locoScroll = new LocomotiveScroll({\n// \tel: document.querySelector('.locomotive-images'),\n// \tsmooth: true\n// })\n\nconst init = (elem) => {\n\tconsole.clear()\n\tconsole.log('locomotive images init started')\n\n\tconst locoScroll = new locomotive_scroll__WEBPACK_IMPORTED_MODULE_0__.default({\n\t\tel: elem,\n\t\tsmooth: true,\n\t\tsmoothMobile: true,\n\t\tgetSpeed: true,\n\t\tgetDirection: true,\n\n\t})\n\n\tlet dynamicBackgrounds = [];\n\tlet dynamicColorElements = [];\n\n\t// each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)\n\tlocoScroll.on(\"scroll\", (instance) => {\n\t\tdocument.documentElement.setAttribute('data-direction', instance.direction)\n\t\tdocument.documentElement.setAttribute('data-speed', instance.speed)\n\t\tgsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger.update\n\n\t\t// if (instance.direction == \"up\") {\n\t\t// \tconsole.log(\"data-direction\", instance.direction)\n\t\t// }\n\n\t\t// if (instance.direction == \"down\") {\n\t\t// \tconsole.log(\"data-direction\", instance.direction)\n\t\t// }\n\n\t});\n\n\tlocoScroll.on('call', (value, way, obj) => {\n\t\tif (value === 'dynamicBackground') {\n\t\t\tif (way === 'enter') {\n\t\t\t\tdynamicBackgrounds.push({\n\t\t\t\t\tid: obj.id,\n\t\t\t\t\tel: obj.el\n\t\t\t\t});\n\t\t\t} else {\n\t\t\t\tfor (var i = 0; i < dynamicBackgrounds.length; i++) {\n\t\t\t\t\tif (obj.id === dynamicBackgrounds[i].id) {\n\t\t\t\t\t\tdynamicBackgrounds.splice(i, 1);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t} else if (value === 'dynamicColor') {\n\t\t\tif (way === 'enter') {\n\t\t\t\tdynamicColorElements.push({\n\t\t\t\t\tid: obj.id,\n\t\t\t\t\tel: obj.el\n\t\t\t\t});\n\t\t\t} else {\n\t\t\t\tfor (var i = 0; i < dynamicColorElements.length; i++) {\n\t\t\t\t\tif (obj.id === dynamicColorElements[i].id) {\n\t\t\t\t\t\tdynamicColorElements.splice(i, 1);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t});\n\n\t// tell ScrollTrigger to use these proxy methods for the \".smooth-scroll\" element since Locomotive Scroll is hijacking things\n\tgsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger.scrollerProxy(elem, {\n\t\tscrollTop(value) {\n\t\t\treturn arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;\n\t\t}, // we don't have to define a scrollLeft because we're only scrolling vertically.\n\t\tgetBoundingClientRect() {\n\t\t\treturn { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };\n\t\t},\n\t\t// LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).\n\t\t// pinType: document.querySelector(\".scrollContainer\").style.transform ? \"transform\" : \"fixed\"\n\t\t// pinType: elem.style.transform ? \"transform\" : \"fixed\"\n\t});\n\n\t//////////////////////////////////////////////////////////\n\t//////////////////////////////////////////////////////////\n\tgsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger.create({\n\t\ttrigger: '.image-mask',\n\t\tscroller: elem,\n\t\tstart: 'top+=30% 50%',\n\t\tend: 'bottom-=40% 50%',\n\t\tanimation: gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.to('.image-mask', { backgroundSize: '120%' }),\n\t\tscrub: 2,\n\t\t// markers: true\n\t})\n\n\n\tvar siteHeader = document.querySelector('.headroom');\n\tconsole.log('locomotive images init started', siteHeader)\n\tvar header_progress = 0;\n\tvar header_direction = 1;\n\n\tgsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger.create({\n\t\ttrigger: \".main_content\",\n\t\tscroller: elem,\n\t\tstart: \"top top\",\n\t\tonUpdate: self => {\n\t\t\tconsole.log(\"progress:\", self.progress.toFixed(3), \"direction:\", self.direction, \"velocity\", self.getVelocity());\n\t\t\theader_progress = self.progress.toFixed(2);\n\t\t\theader_direction = self.direction;\n\n\t\t\tif (header_direction === 1) {\n\t\t\t\tsiteHeader.classList.remove(\"headroom--pinned\");\n\t\t\t\tsiteHeader.classList.add(\"headroom--unpinned\");\n\t\t\t} else {\n\t\t\t\tsiteHeader.classList.remove(\"headroom--unpinned\");\n\t\t\t\tsiteHeader.classList.add(\"headroom--pinned\");\n\t\t\t}\n\t\t\t// siteHeader.className = newClassName;\n\t\t}\n\t});\n\t//////////////////////////////////////////////////////////\n\t//////////////////////////////////////////////////////////\n\n\t// const tl = gsap.from(\".project--heading--span\", {\n\t// \ty: \"-100%\",\n\t// \tstagger: {\n\t// \t\tamount: 0.5,\n\t// \t\tfrom: \"center\"\n\t// \t}\n\t// });\n\n\t// const image_animation = gsap.to(\".project--image-img\", {\n\t// \tscale: 1.3\n\t// });\n\n\t// ScrollTrigger.create({\n\t// \ttrigger: \".project-content\",\n\t// \tscroller: elem,\n\t// \t// scrub: true,\n\t// \tpin: true,\n\t// \tend: \"+=100%\",\n\t// \tanimation: tl\n\t// });\n\n\t// ScrollTrigger.create({\n\t// \ttrigger: \".project--image\",\n\t// \tscroller: elem,\n\t// \t// scrub: true,\n\t// \tstart: \"top\",\n\t// \tend: \"+=100%\",\n\t// \tanimation: image_animation\n\t// });\n\n\t// const test = gsap.to(\".project\", {\n\t// \ty: 100,\n\t// \tstagger: {\n\t// \t\tamount: 0.3\n\t// \t}\n\t// });\n\n\t// ScrollTrigger.create({\n\t// \ttrigger: \".project\",\n\t// \tscroller: elem,\n\t// \t// scrub: 0.16,\n\t// \tanimation: tl\n\t// });\n\n\n\t//////////////////////////////////////////////////////////\n\t//////////////////////////////////////////////////////////\n\n\n\t// each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll.\n\tgsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger.addEventListener(\"refresh\", () => locoScroll.update());\n\n\t// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.\n\tgsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger.refresh();\n}\n\ndocument.querySelectorAll('.js-locomotive-images').forEach(init)\n\n\n//# sourceURL=webpack://SITE/./src/assets/js/_test.js?");
-
-/***/ }),
-
 /***/ "./src/assets/js/_toTopButton.js":
 /*!***************************************!*\
   !*** ./src/assets/js/_toTopButton.js ***!
   \***************************************/
 /***/ (function() {
 
-eval("const elems = document.querySelectorAll('.to_top_button')\n\nelems.forEach((elem) => {\n\telem.onclick = function(e) {\n\t\te.preventDefault()\n\n\t\twindow.scrollTo({\n\t\t\ttop: 0,\n\t\t\tbehavior: 'smooth'\n\t\t})\n\t}\n})\nconst buttonElems = document.querySelectorAll('.button_test')\n\nwindow.onscroll = (e) => {\n\t// console.log(window.pageYOffset)\n\tif (window.pageYOffset > \"650\") {\n\t\tconsole.log('button scroll 650 plus')\n\t\tbuttonElems.forEach((elem) => {\n\t\t\tconsole.log(\"button\", elem )\n\t\t\telem.classList.remove(\"button_test--hide\");\n\t\t})\n\t} else {\n\t\tconsole.log('button scroll 650 minus')\n\t\tbuttonElems.forEach((elem) => {\n\t\t\tconsole.log(\"button\", elem )\n\t\t\telem.classList.add(\"button_test--hide\");\n\t\t})\n\t}\n}\n\n//# sourceURL=webpack://SITE/./src/assets/js/_toTopButton.js?");
+eval("const elems = document.querySelectorAll('.to_top_button')\n\nelems.forEach((elem) => {\n\telem.onclick = function(e) {\n\t\te.preventDefault()\n\n\t\twindow.scrollTo({\n\t\t\ttop: 0,\n\t\t\tbehavior: 'smooth'\n\t\t})\n\t}\n})\nconst buttonElems = document.querySelectorAll('.button_test')\n\nwindow.onscroll = (e) => {\n\t// console.log(window.pageYOffset)\n\tif (window.pageYOffset > \"650\") {\n\t\t// console.log('button scroll 650 plus')\n\t\tbuttonElems.forEach((elem) => {\n\t\t\t// console.log(\"button\", elem )\n\t\t\telem.classList.remove(\"button_test--hide\");\n\t\t})\n\t} else {\n\t\tconsole.log('button scroll 650 minus')\n\t\tbuttonElems.forEach((elem) => {\n\t\t\t// console.log(\"button\", elem )\n\t\t\telem.classList.add(\"button_test--hide\");\n\t\t})\n\t}\n}\n\n//# sourceURL=webpack://SITE/./src/assets/js/_toTopButton.js?");
 
 /***/ }),
 
@@ -120,7 +120,7 @@ eval("const WOW = __webpack_require__(/*! wow.js */ \"./node_modules/wow.js/dist
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/index.scss */ \"./src/assets/css/index.scss\");\n/* harmony import */ var _cursor_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_cursor.js */ \"./src/assets/js/_cursor.js\");\n/* harmony import */ var _cursor_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_cursor_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _test_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_test.js */ \"./src/assets/js/_test.js\");\n/* harmony import */ var _header_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./_header.js */ \"./src/assets/js/_header.js\");\n/* harmony import */ var _header_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_header_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _mapbox_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./_mapbox.js */ \"./src/assets/js/_mapbox.js\");\n/* harmony import */ var _mapbox_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_mapbox_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _color_switch_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./_color_switch.js */ \"./src/assets/js/_color_switch.js\");\n/* harmony import */ var _color_switch_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_color_switch_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _wow_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./_wow.js */ \"./src/assets/js/_wow.js\");\n/* harmony import */ var _wow_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_wow_js__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _scrollAnker_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./_scrollAnker.js */ \"./src/assets/js/_scrollAnker.js\");\n/* harmony import */ var _scrollAnker_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_scrollAnker_js__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _flickity_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./_flickity.js */ \"./src/assets/js/_flickity.js\");\n/* harmony import */ var _toTopButton_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./_toTopButton.js */ \"./src/assets/js/_toTopButton.js\");\n/* harmony import */ var _toTopButton_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_toTopButton_js__WEBPACK_IMPORTED_MODULE_9__);\n\n\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://SITE/./src/assets/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/index.scss */ \"./src/assets/css/index.scss\");\n/* harmony import */ var _cursor_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_cursor.js */ \"./src/assets/js/_cursor.js\");\n/* harmony import */ var _cursor_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_cursor_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _header_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_header.js */ \"./src/assets/js/_header.js\");\n/* harmony import */ var _header_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_header_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _mapbox_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./_mapbox.js */ \"./src/assets/js/_mapbox.js\");\n/* harmony import */ var _mapbox_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_mapbox_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _color_switch_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./_color_switch.js */ \"./src/assets/js/_color_switch.js\");\n/* harmony import */ var _color_switch_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_color_switch_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _wow_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./_wow.js */ \"./src/assets/js/_wow.js\");\n/* harmony import */ var _wow_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_wow_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _scrollAnker_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./_scrollAnker.js */ \"./src/assets/js/_scrollAnker.js\");\n/* harmony import */ var _scrollAnker_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_scrollAnker_js__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _carousel_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./_carousel.js */ \"./src/assets/js/_carousel.js\");\n/* harmony import */ var _toTopButton_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./_toTopButton.js */ \"./src/assets/js/_toTopButton.js\");\n/* harmony import */ var _toTopButton_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_toTopButton_js__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _headroom_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./_headroom.js */ \"./src/assets/js/_headroom.js\");\n\n\n// import './_test.js';\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://SITE/./src/assets/js/index.js?");
 
 /***/ })
 
@@ -178,18 +178,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	!function() {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

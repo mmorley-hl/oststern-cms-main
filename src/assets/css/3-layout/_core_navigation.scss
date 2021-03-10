@@ -1,5 +1,13 @@
-.core_navigation {
+.header {
 	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 444;
+}
+
+.core_navigation {
+	
 	@include customize(theme) {
 		background-color: getValue(backgroundLight);
 		color: getValue(textDark);
@@ -8,7 +16,6 @@
 	opacity: 0.8;
 	width: 100%;
 	height: $headerHeight;
-	z-index: 444;
 
 	@media (max-width: $bpM) {
 		height: $headerHeightMobile;
