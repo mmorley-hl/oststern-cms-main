@@ -4,14 +4,19 @@
 		background-color: getValue(backgroundLight);
 		color: getValue(textDark);
 	}
+	background-color: red;
 	opacity: 0.8;
 	width: 100%;
 	height: $headerHeight;
 	z-index: 444;
 
+	@media (max-width: $bpM) {
+		height: $headerHeightMobile;
+	}
+
 	a {
 		text-decoration: underline;
-		
+
 		@include customize(theme) {
 			color: getValue(textDark);
 		}
