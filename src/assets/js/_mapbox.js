@@ -97,7 +97,6 @@ var map = new mapboxgl.Map({
 	style: 'mapbox://styles/mmorleyhl/cklwedd4f59wp17l9wfr2jwx5', // style ID
 	center: [8.71157213340723, 50.11154494192954], // starting position [lng, lat]
 	zoom: 16,
-	dragPan: false,
 	 // starting zoom
 });
 
