@@ -102,18 +102,13 @@ var map = new mapboxgl.Map({
 
 //disable zoom on map
 map.scrollZoom.disable();
-// map.dragging.disable();
-// map.touchZoom.disable();
-map.doubleClickZoom.disable();
-// map.scrollWheelZoom.disable();
-// map.keyboard.disable();
-
-// Disable tap handler, if present.
-if (map.tap) map.tap.disable();
-console.log("maptab",map.tap)
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+	map.dragPan.disable();
+}
 
 //added basich control on map
 map.addControl(new mapboxgl.NavigationControl());
+
 
 var geojson = {
 	type: 'FeatureCollection',
