@@ -28,6 +28,7 @@
   }
 
   .filter-group {
+    display: flex;
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-weight: 600;
     position: relative;
@@ -35,7 +36,7 @@
     right: 10px;
     z-index: 1;
     border-radius: 3px;
-    width: 120px;
+    width: 100%;
     color: #fff;
     }
      
