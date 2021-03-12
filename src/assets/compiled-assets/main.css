@@ -5020,8 +5020,7 @@ p::selection {
 .filter-group {
   font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 600;
-  position: absolute;
-  top: 300px;
+  position: relative;
   right: 10px;
   z-index: 1;
   border-radius: 3px;
