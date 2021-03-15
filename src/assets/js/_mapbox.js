@@ -854,7 +854,7 @@ var places = {
 			'type': 'Point',
 			'coordinates': [8.71157213340723, 50.11154494192954]
 			}
-			},
+		},
 	  
 	]
  };
@@ -864,7 +864,6 @@ var places = {
 	
 var filterGroup = document.getElementById('filter-group');
 mapboxgl.accessToken = 'pk.eyJ1IjoibW1vcmxleWhsIiwiYSI6ImNrbHV5c25kZjBuZm0yd28zYncwdGlnOWcifQ.0ii1h91pTh7MM9NLoIXuEA';
-
 
 var mq = window.matchMedia( "(min-width: 820px)" );
 
@@ -891,8 +890,26 @@ if (mq.matches){
 
 //disable zoom on map
 map.scrollZoom.disable();
+
+//disable Mobile desktop behavoir
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 	map.dragPan.disable();
+	// map.scrollZoom.enable();
+	const isTouchEvent = e => e.originalEvent && "touches" in e.originalEvent;
+	const isTwoFingerTouch = e => e.originalEvent.touches.length >= 2;
+  
+	map.on("dragstart", event => {
+	  if (isTouchEvent(event) && !isTwoFingerTouch(event)) {
+		 map.dragPan.disable();
+	  }
+	});
+  
+	// Drag events not emited after dragPan disabled, so I use touch event here
+	map.on("touchstart", event => {
+		if (isTouchEvent(event) && isTwoFingerTouch(event)) {
+		 map.dragPan.enable();
+	  }
+	});
 }
 
 //added basich control on map
