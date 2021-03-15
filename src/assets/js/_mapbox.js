@@ -874,16 +874,20 @@ if (mq.matches){
 		container: 'map', // container ID
 		style: 'mapbox://styles/mmorleyhl/cklwedd4f59wp17l9wfr2jwx5', // style ID
 		center: [8.71157213340723, 50.11154494192954], // starting position [lng, lat]
+		// starting zoom
 		zoom: 16,
-		 // starting zoom
+		attributionControl: true,
+		logoEnabled: false
 	});
 } else {
     var map = new mapboxgl.Map({
 		container: 'map', // container ID
 		style: 'mapbox://styles/mmorleyhl/cklwedd4f59wp17l9wfr2jwx5', // style ID
 		center: [8.71157213340723, 50.11154494192954], // starting position [lng, lat]
+		// starting zoom
 		zoom: 3,
-		 // starting zoom
+		attributionControl: true,
+		logoEnabled: false
 	});
 };
 
@@ -911,9 +915,12 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 	  }
 	});
 }
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl({
+    // Hide rotation control.
+    showCompass: false
+}), 'bottom-left');
 
-//added basich control on map
-map.addControl(new mapboxgl.NavigationControl(), 'bottom-left');
 
 map.on('load', function () {
 	// Add a GeoJSON source containing place coordinates and information.

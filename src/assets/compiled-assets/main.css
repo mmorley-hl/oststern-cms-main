@@ -5065,6 +5065,14 @@ p::selection {
   margin-right: 5px;
 }
 
+.mapbox-logo {
+  display: none;
+}
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
 .button_test {
   z-index: 500;
   position: fixed;
