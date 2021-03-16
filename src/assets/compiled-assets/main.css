@@ -4991,7 +4991,7 @@ p::selection {
 }
 
 .maps {
-  height: 800px;
+  height: 600px;
 }
 @media (max-width: 1024px) {
   .maps {
@@ -5042,10 +5042,6 @@ p::selection {
   width: 33%;
   margin-bottom: 0;
   text-align: center;
-}
-
-.filter-group label:last-child {
-  border: none;
 }
 
 .filter-group input[type=checkbox] {

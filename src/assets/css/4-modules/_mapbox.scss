@@ -1,7 +1,7 @@
 
 //intial map
 .maps {
-    height: 800px;
+    height: 600px;
     @media (max-width: $bpM) {
       height: 480px;
     }
@@ -48,24 +48,14 @@
   color: #fff;
   justify-content: center;
 }
-  
-.filter-group input[type='checkbox']:first-child + label {
-  // border-radius: 3px 3px 0 0;
-}
      
 .filter-group input[type='checkbox'] + label {
-  // border-radius: 3px 3px 0 0;
   display: flex;
   align-items: center;
   border: 2px white solid;
   width: 33%;
   margin-bottom: 0;
   text-align: center;
-}
-     
-.filter-group label:last-child {
-  // border-radius: 0 0 3px 3px;
-  border: none;
 }
   
 .filter-group input[type='checkbox'] {
