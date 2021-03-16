@@ -885,7 +885,7 @@ if (mq.matches){
 		style: 'mapbox://styles/mmorleyhl/cklwedd4f59wp17l9wfr2jwx5', // style ID
 		center: [8.71157213340723, 50.11154494192954], // starting position [lng, lat]
 		// starting zoom
-		zoom: 3,
+		zoom: 15,
 		attributionControl: true,
 		logoEnabled: false
 	});

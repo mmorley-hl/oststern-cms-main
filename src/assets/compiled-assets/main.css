@@ -136,7 +136,6 @@ https://flickity.metafizzy.co
   opacity: 1;
 }
 
-@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -4993,6 +4992,11 @@ p::selection {
 .maps {
   height: 800px;
 }
+@media (max-width: 1024px) {
+  .maps {
+    height: 480px;
+  }
+}
 
 .mapboxgl-ctrl-zoom-in {
   background-image: url(data:image/svg+xml;charset=utf8,<svg%20viewBox%3D%270%200%2020%2020%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27>%0A%20%20<path%20style%3D%27fill%3A%23ff0000%3B%27%20d%3D%27M%2010%206%20C%209.446%206%209%206.4459904%209%207%20L%209%209%20L%207%209%20C%206.446%209%206%209.446%206%2010%20C%206%2010.554%206.446%2011%207%2011%20L%209%2011%20L%209%2013%20C%209%2013.55401%209.446%2014%2010%2014%20C%2010.554%2014%2011%2013.55401%2011%2013%20L%2011%2011%20L%2013%2011%20C%2013.554%2011%2014%2010.554%2014%2010%20C%2014%209.446%2013.554%209%2013%209%20L%2011%209%20L%2011%207%20C%2011%206.4459904%2010.554%206%2010%206%20z%27%20%2F>%0A<%2Fsvg>%0A) !important;
@@ -5019,28 +5023,27 @@ p::selection {
 
 .filter-group {
   display: flex;
-  font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font: 10px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 600;
   position: relative;
-  right: 10px;
   z-index: 1;
-  border-radius: 3px;
   width: 100%;
   color: #fff;
-}
-
-.filter-group input[type=checkbox]:first-child + label {
-  border-radius: 3px 3px 0 0;
+  justify-content: center;
 }
 
 .filter-group input[type=checkbox] + label {
-  border-radius: 3px 3px 0 0;
-  width: 127px;
+  display: flex;
+  align-items: center;
+  border: 2px white solid;
+  width: 33%;
+  margin-bottom: 0;
   text-align: center;
 }
 
 .filter-group label:last-child {
-  border-radius: 0 0 3px 3px;
   border: none;
 }
 
@@ -5051,6 +5054,8 @@ p::selection {
 .filter-group input[type=checkbox] + label {
   background-color: #101C36;
   display: block;
+  display: flex;
+  justify-content: center;
   cursor: pointer;
   padding: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
@@ -5062,19 +5067,43 @@ p::selection {
   text-transform: capitalize;
 }
 
-.filter-group input[type=checkbox] + label:hover,
 .filter-group input[type=checkbox]:checked + label {
   background-color: #101C36;
   opacity: 1;
 }
 
-.filter-group input[type=checkbox] + label:hover {
-  opacity: 0.3;
+@media (min-width: 1024px) {
+  .filter-group input[type=checkbox] + label:hover {
+    opacity: 0.3;
+  }
+
+  .filter-group input[type=checkbox]:checked + label:hover {
+    opacity: 0.6;
+  }
+}
+.filter-group input[type=checkbox] + label:before {
+  content: "";
+  margin-right: 5px;
 }
 
-.filter-group input[type=checkbox]:checked + label:before {
-  content: "✔";
-  margin-right: 5px;
+#poi-Restaurants + label:before {
+  background-image: url("/assets/images/icons/map/Restaurants.svg");
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: " ";
+  margin-right: 10px;
+}
+
+#poi-Bar-Cafes + label:before {
+  background-image: url("/assets/images/icons/map/Fitness.svg");
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: " ";
+  margin-right: 10px;
 }
 
 .mapbox-logo {
