@@ -40,16 +40,21 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  font: 10px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font: 14px 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: 600;
   position: relative;
   z-index: 1;
   width: 100%;
   color: #fff;
   justify-content: center;
+  @media (max-width: $bpM) {
+    font-weight: 600;
+    font: 11px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  }
 }
      
 .filter-group input[type='checkbox'] + label {
+  min-height: 45px;
   display: flex;
   align-items: center;
   border: 2px white solid;
