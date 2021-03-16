@@ -7,7 +7,7 @@ var places = {
 		  "type":"Feature",
 		  "properties":{
 			 "description":"<strong>Frankfurter Küche</strong><p><a href=\"http://www.restaurant-frankfurter-kueche.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 86, 60314 Frankfurt am Main</p>",
-			 "icon":"restaurant-15"
+			 "icon":"Restaurants"
 		  },
 		  "geometry":{
 			 "type":"Point",
@@ -21,7 +21,7 @@ var places = {
 		"type":"Feature",
 		"properties":{
 		   "description":"<strong>'Das Leben ist Schön</strong><p><a href=\"http://www.daslebenistschoen.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 198, 60314 Frankfurt am Main</p>",
-		   "icon":"restaurant-15"
+		   "icon":"Restaurants"
 		},
 		"geometry":{
 		   "type":"Point",
@@ -35,7 +35,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>'Soul Food Factory East</strong><p><a href=\"http://www.soul-food-factory.com/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 124, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -49,7 +49,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Saravini</strong><p><a href=\"http://www.saravini-frankfurt.de/mittagskarte/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 119, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -63,7 +63,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>'The Tasty Toast</strong><p>Osthafenplatz 4, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -77,7 +77,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Stones</strong><p><a href=\"https://www.stonesfood.com/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 125, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -91,7 +91,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Tawaraya</strong><p>Hanauer Landstraße 131, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -105,7 +105,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Cocothai</strong><p><a href=\"https://www.cocothaifrankfurtammain.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 151, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -119,7 +119,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Urfa</strong><p><a href=\"https://www.urfa-grill-pizzeria.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 133, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -133,7 +133,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Aroydee</strong><p><a href=\"https://www.aroydee.de/Frankfurt\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 72, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -147,7 +147,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Goldman</strong><p><a href=\"http://www.goldman-restaurant.com/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 127, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -161,7 +161,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Oosten</strong><p><a href=\"https://oosten-frankfurt.com/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Mayfarthstraße 4, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -175,7 +175,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Gref-Völsings</strong><p><a href=\"https://www.gref-voelsings.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 132, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -189,7 +189,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Best-Worscht In Town</strong><p><a href=\"https://www.bestworschtintown.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 270, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -203,7 +203,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Bei Frau Nanna</strong><p><a href=\"https://order.beifraunanna.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Ernst-Achilles-Platz 3, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -217,7 +217,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>LEUCHTENDROTER</strong><p><a href=\"http://leuchtendroter.com/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Lindleystraße 17, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -231,7 +231,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Kahuna Poké Bros.</strong><p><a href=\"https://kahunapokebros.com/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 160A, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -245,7 +245,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Ben's Burger</strong><p><a href=\"https://bens-burger.business.site/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 134, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -259,7 +259,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Jesse James</strong><p><a href=\"http://www.jessejames.eu/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 83, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -273,7 +273,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>COMAI East - modern viet kitchen</strong><p><a href=\"https://www.comai.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 130, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -287,7 +287,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Pizzeria Mille Lire</strong><p><a href=\"http://www.pizzeria-mille-lire.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Sonnemannstraße 71, 60314 Frankfurt am Main</p>",
-			   "icon":"restaurant-15"
+			   "icon":"Restaurants"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -301,7 +301,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Coffee Fellows</strong><p><a href=\"http://www.coffee-fellows-ostend.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 115, 60314 Frankfurt am Main</p>",
-			   "icon":"cafe-15"
+			   "icon":"Bar-Cafes"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -315,7 +315,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Wiener Feinbäckerei</strong><p><a href=\"https://heberer.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 108, 60314 Frankfurt am Main</p>",
-			   "icon":"cafe-15"
+			   "icon":"Bar-Cafes"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -329,7 +329,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Aniis</strong><p><a href=\"http://www.aniis.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 82, 60314 Frankfurt am Main</p>",
-			   "icon":"cafe-15"
+			   "icon":"Bar-Cafes"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -343,7 +343,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Stock Avenue 81</strong><p><a href=\"http://www.melia.com/de/lodgings/deutschland/frankfurt/innside-frankfurt-ostend/restaurants.html\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 81, 60314 Frankfurt am Main</p>",
-			   "icon":"cafe-15"
+			   "icon":"Bar-Cafes"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -357,7 +357,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Bäckerei und Konditorei Huck</strong><p><a href=\"https://www.baeckerei-huck.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Sonnemannstraße 81, 60314 Frankfurt am Main</p>",
-			   "icon":"cafe-15"
+			   "icon":"Bar-Cafes"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -371,7 +371,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Frankfurt Pub</strong><p><a href=\"http://www.frankfurt-pub.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 99, 60314 Frankfurt am Main</p>",
-			   "icon":"cafe-15"
+			   "icon":"Bar-Cafes"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -385,7 +385,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Eiscafé Café a Roma</strong><p>Sonnemannstraße 51, 60314 Frankfurt am Main</p>",
-			   "icon":"cafe-15"
+			   "icon":"Bar-Cafes"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -399,7 +399,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Marmion Bar</strong><p><a href=\"https://www.marmion-bar.de\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Lindleystraße 17, 60314 Frankfurt am Main</p>",
-			   "icon":"cafe-15"
+			   "icon":"Bar-Cafes"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -413,7 +413,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Alnatura Super Natur Markt</strong><p>Hanauer Landstraße 110, 60314 Frankfurt am Main</p>",
-			   "icon":"shop-15"
+			   "icon":"Retail"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -427,7 +427,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Edeka</strong><p>Ferdinand-Happ-Straße 59, 60314 Frankfurt am Main</p>",
-			   "icon":"shop-15"
+			   "icon":"Retail"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -441,7 +441,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Lidl</strong><p>Hanauer Landstraße 219, 60314 Frankfurt am Main</p>",
-			   "icon":"shop-15"
+			   "icon":"Retail"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -455,7 +455,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Rewe</strong><p>Louis-Appia-Passage 7 7, 60314 Frankfurt am Main</p>",
-			   "icon":"shop-15"
+			   "icon":"Retail"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -469,7 +469,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Aldi Süd</strong><p>Hanauer Landstraße 285, 60314 Frankfurt am Main</p>",
-			   "icon":"shop-15"
+			   "icon":"Retail"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -483,7 +483,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Me.Ta</strong><p>Hanauer Landstraße 208 -216, 60314 Frankfurt am Main</p>",
-			   "icon":"shop-15"
+			   "icon":"Retail"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -497,7 +497,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>dm</strong><p>Louis-Appia-Passage 6, 60314 Frankfurt am Main</p>",
-			   "icon":"shop-15"
+			   "icon":"Retail"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -511,7 +511,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Fitness First</strong><p>Hanauer Landstraße 148, 60314 Frankfurt am Main</p>",
-			   "icon":"pitch-15"
+			   "icon":"Fitness"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -525,7 +525,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Fitseveneleven east blck</strong><p>Hanauer Landstraße 120, 60314 Frankfurt am Main</p>",
-			   "icon":"pitch-15"
+			   "icon":"Fitness"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -539,7 +539,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Fitseveneleven east pink</strong><p>Hanauer Landstraße 147, 60314 Frankfurt am Main</p>",
-			   "icon":"pitch-15"
+			   "icon":"Fitness"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -553,7 +553,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Kieser Training</strong><p>Hanauer Landstraße 291A, 60314 Frankfurt am Main</p>",
-			   "icon":"pitch-15"
+			   "icon":"Fitness"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -567,7 +567,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Fritz-Rémond-Theater</strong><p>Bernhard-Grzimek-Allee 1, 60316 Frankfurt am Main</p>",
-			   "icon":"theatre-15"
+			   "icon":"Kultur"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -581,7 +581,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Romanfabrik</strong><p>Hanauer Landstraße 186, 60314 Frankfurt am Main</p>",
-			   "icon":"theatre-15"
+			   "icon":"Kultur"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -595,7 +595,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Kunstverein Familie Montez</strong><p>Honsellstraße 7, 60314 Frankfurt am Main</p>",
-			   "icon":"theatre-15"
+			   "icon":"Kultur"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -609,7 +609,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Union Halle</strong><p>Hanauer Landstraße 188, 60314 Frankfurt am Main</p>",
-			   "icon":"theatre-15"
+			   "icon":"Kultur"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -623,7 +623,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>25hours</strong><p>Hanauer Landstraße 127, 60314 Frankfurt am Main</p>",
-			   "icon":"lodging-15",
+			   "icon":"Hotels",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -637,7 +637,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>INNSIDE</strong><p>Hanauer Landstraße 81, 60314 Frankfurt am Main</p>",
-			   "icon":"lodging-15",
+			   "icon":"Hotels",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -651,7 +651,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>B&B Hotel Frankfurt City-Ost</strong><p>Hanauer Landstraße 117, 60314 Frankfurt am Main</p>",
-			   "icon":"lodging-15",
+			   "icon":"Hotels",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -665,7 +665,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>MotelOne</strong><p>Hanauer Landstraße 142, 60314 Frankfurt am Main</p>",
-			   "icon":"lodging-15",
+			   "icon":"Hotels",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -679,7 +679,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Moxy</strong><p>Hanauer Landstraße 162, 60314 Frankfurt am Main</p>",
-			   "icon":"lodging-15",
+			   "icon":"Hotels",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -693,7 +693,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Hampton by Hilton Frankfurt City Centre East</strong><p>Grusonstraße 4, 60314 Frankfurt am Main</p>",
-			   "icon":"lodging-15",
+			   "icon":"Hotels",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -707,7 +707,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>LINDLEY LINDENBERG</strong><p>Lindleystraße 17, 60314 Frankfurt am Main</p>",
-			   "icon":"lodging-15",
+			   "icon":"Hotels",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -721,7 +721,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Die Knoppschachtel</strong><p>Ferdinand-Happ-Straße 57, 60314 Frankfurt am Main</p>",
-			   "icon":"rocket-15",
+			   "icon":"Kita",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -735,7 +735,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>EZB Kita</strong><p>Ferdinand-Happ-Straße 57, 60314 Frankfurt am Main</p>",
-			   "icon":"rocket-15",
+			   "icon":"Kita",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -749,7 +749,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Kindergarten d. Evangelisch-Luth.</strong><p>Röderbergweg 66, 60314 Frankfurt am Main</p>",
-			   "icon":"rocket-15",
+			   "icon":"Kita",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -763,7 +763,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>FRÖBEL-Kindergarten</strong><p>Honsellstraße 18, 60314 Frankfurt am Main</p>",
-			   "icon":"rocket-15",
+			   "icon":"Kita",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -777,7 +777,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Frankfurter Sparkasse</strong><p>Grusonstraße 3-5, 60314 Frankfurt am Main</p>",
-			   "icon":"bank-15",
+			   "icon":"Banken",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -791,7 +791,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Europäische Zentralbank (EZB)</strong><p>Sonnemannstraße 20, 60314 Frankfurt am Main</p>",
-			   "icon":"bank-15",
+			   "icon":"Banken",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -805,7 +805,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Schwedler See</strong><p>Schwedlerstraße, 60314 Frankfurt am Main</p>",
-			   "icon":"beach-15",
+			   "icon":"Freizeit",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -819,7 +819,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Hafenpark</strong><p>Mayfarthstraße, 60314 Frankfurt am Main</p>",
-			   "icon":"skateboard-15",
+			   "icon":"Freizeit",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -833,7 +833,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Tankstelle Esso</strong><p>Hanauer Landstraße 178, 60314 Frankfurt am Main</p>",
-			   "icon":"fuel-15",
+			   "icon":"Tankstelle",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -921,7 +921,6 @@ map.addControl(new mapboxgl.NavigationControl({
     showCompass: false
 }), 'bottom-left');
 
-
 map.on('load', function () {
 	// Add a GeoJSON source containing place coordinates and information.
 	map.addSource('places', {
@@ -935,6 +934,8 @@ map.on('load', function () {
 		var layerID = 'poi-' + symbol;
 		console.log('layerID', layerID)
 	
+		
+
 	// Add a layer for this symbol type if it hasn't been added already.
 		if (!map.getLayer(layerID)) {
 			map.addLayer({
@@ -954,6 +955,14 @@ map.on('load', function () {
 				},
 				'filter': ['==', 'icon', symbol]
 			});
+
+			// Change icon size on zoom
+			// map.on('zoom', () => {
+			//     const scalePercent = 1 + (map.getZoom() - 8)  * 0.4;
+			//     const svgElement = symbol.getElement().children[0];
+			//     svgElement.style.transform = `scale(${scalePercent})`;
+			//     svgElement.style.transformOrigin = 'bottom';
+			// });
 			
 			// Add checkbox and label elements for the layer.
 			var input = document.createElement('input');
