@@ -136,6 +136,7 @@ https://flickity.metafizzy.co
   opacity: 1;
 }
 
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5058,7 +5059,6 @@ p::selection {
   justify-content: center;
   cursor: pointer;
   padding: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .filter-group input[type=checkbox] + label {
@@ -5096,8 +5096,78 @@ p::selection {
   margin-right: 10px;
 }
 
-#poi-Bar-Cafes + label:before {
+#poi-Bar-Café + label:before {
+  background-image: url("/assets/images/icons/map/Bar-Café.svg");
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: " ";
+  margin-right: 10px;
+}
+
+#poi-Retail + label:before {
+  background-image: url("/assets/images/icons/map/Retail.svg");
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: " ";
+  margin-right: 10px;
+}
+
+#poi-Fitness + label:before {
   background-image: url("/assets/images/icons/map/Fitness.svg");
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: " ";
+  margin-right: 10px;
+}
+
+#poi-Hotels + label:before {
+  background-image: url("/assets/images/icons/map/Hotels.svg");
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: " ";
+  margin-right: 10px;
+}
+
+#poi-Banken + label:before {
+  background-image: url("/assets/images/icons/map/Banken.svg");
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: " ";
+  margin-right: 10px;
+}
+
+#poi-Kultur-Freizeit + label:before {
+  background-image: url("/assets/images/icons/map/Kultur-Freizeit.svg");
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: " ";
+  margin-right: 10px;
+}
+
+#poi-Kita + label:before {
+  background-image: url("/assets/images/icons/map/Kita.svg");
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: " ";
+  margin-right: 10px;
+}
+
+#poi-Tankstelle + label:before {
+  background-image: url("/assets/images/icons/map/Tankstelle.svg");
   background-size: 17px 17px;
   height: 17px;
   width: 17px;

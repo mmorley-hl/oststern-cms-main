@@ -301,7 +301,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Coffee Fellows</strong><p><a href=\"http://www.coffee-fellows-ostend.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 115, 60314 Frankfurt am Main</p>",
-			   "icon":"Bar-Cafes"
+			   "icon":"Bar-Café"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -315,7 +315,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Wiener Feinbäckerei</strong><p><a href=\"https://heberer.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 108, 60314 Frankfurt am Main</p>",
-			   "icon":"Bar-Cafes"
+			   "icon":"Bar-Café"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -329,7 +329,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Aniis</strong><p><a href=\"http://www.aniis.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 82, 60314 Frankfurt am Main</p>",
-			   "icon":"Bar-Cafes"
+			   "icon":"Bar-Café"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -343,7 +343,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Stock Avenue 81</strong><p><a href=\"http://www.melia.com/de/lodgings/deutschland/frankfurt/innside-frankfurt-ostend/restaurants.html\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 81, 60314 Frankfurt am Main</p>",
-			   "icon":"Bar-Cafes"
+			   "icon":"Bar-Café"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -357,7 +357,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Bäckerei und Konditorei Huck</strong><p><a href=\"https://www.baeckerei-huck.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Sonnemannstraße 81, 60314 Frankfurt am Main</p>",
-			   "icon":"Bar-Cafes"
+			   "icon":"Bar-Café"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -371,7 +371,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Frankfurt Pub</strong><p><a href=\"http://www.frankfurt-pub.de/\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Hanauer Landstraße 99, 60314 Frankfurt am Main</p>",
-			   "icon":"Bar-Cafes"
+			   "icon":"Bar-Café"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -385,7 +385,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Eiscafé Café a Roma</strong><p>Sonnemannstraße 51, 60314 Frankfurt am Main</p>",
-			   "icon":"Bar-Cafes"
+			   "icon":"Bar-Café"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -399,7 +399,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Marmion Bar</strong><p><a href=\"https://www.marmion-bar.de\" target=\"_blank\" title=\"Opens in a new window\">Link</a></p><p>Lindleystraße 17, 60314 Frankfurt am Main</p>",
-			   "icon":"Bar-Cafes"
+			   "icon":"Bar-Café"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -567,7 +567,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Fritz-Rémond-Theater</strong><p>Bernhard-Grzimek-Allee 1, 60316 Frankfurt am Main</p>",
-			   "icon":"Kultur"
+			   "icon":"Kultur-Freizeit"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -581,7 +581,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Romanfabrik</strong><p>Hanauer Landstraße 186, 60314 Frankfurt am Main</p>",
-			   "icon":"Kultur"
+			   "icon":"Kultur-Freizeit"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -595,7 +595,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Kunstverein Familie Montez</strong><p>Honsellstraße 7, 60314 Frankfurt am Main</p>",
-			   "icon":"Kultur"
+			   "icon":"Kultur-Freizeit"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -609,7 +609,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Union Halle</strong><p>Hanauer Landstraße 188, 60314 Frankfurt am Main</p>",
-			   "icon":"Kultur"
+			   "icon":"Kultur-Freizeit"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -805,7 +805,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Schwedler See</strong><p>Schwedlerstraße, 60314 Frankfurt am Main</p>",
-			   "icon":"Freizeit",
+			   "icon":"Kultur-Freizeit",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -819,7 +819,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Hafenpark</strong><p>Mayfarthstraße, 60314 Frankfurt am Main</p>",
-			   "icon":"Freizeit",
+			   "icon":"Kultur-Freizeit",
 			},
 			"geometry":{
 			   "type":"Point",
