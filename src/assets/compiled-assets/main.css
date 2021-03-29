@@ -4337,10 +4337,6 @@ a:hover {
   font-weight: 700;
 }
 
-.main_content {
-  padding-top: 4em;
-}
-
 .theme-light .carousel {
   background-color: #00d6d6;
 }
@@ -4375,6 +4371,219 @@ a:hover {
 }
 .theme-dark .carousel-cell:before {
   background-color: #fff;
+}
+
+.line {
+  width: 100%;
+  max-width: 800px;
+  height: 8px;
+  margin: 0 0 10px 0;
+  position: relative;
+  display: inline-block;
+  background-color: white;
+}
+
+/* Not great browser support :(
+html {
+  scroll-behavior: smooth;
+} 
+*/
+.panel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.panel.align-top {
+  align-items: flex-start;
+}
+
+.panel h1 {
+  font-size: 1.8em;
+  color: white;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+.panel.description {
+  padding-bottom: 60px;
+}
+
+.panel p, .panel li {
+  color: black;
+  font-weight: 400;
+  text-align: left;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0.3em 0 1em 0;
+}
+
+.panel p strong, .panel li strong {
+  color: white;
+  font-weight: 400;
+}
+
+.panel p code, .panel li code {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+
+.panel li {
+  margin: 0;
+}
+
+.gray {
+  background-color: #777;
+}
+
+.blue {
+  background-color: black;
+}
+
+.orange {
+  height: 200vh;
+  background-color: black;
+}
+
+.red {
+  height: 200vh;
+  background-color: white;
+}
+
+.purple {
+  background-color: #8d3dae;
+}
+
+.green {
+  background-color: #28a92b;
+}
+
+/* SCROLL DOWN */
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: black;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  overflow: visible;
+}
+
+.scroll-down .arrow {
+  position: relative;
+  top: -4px;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KPHBhdGggZmlsbD0iYmxhY2siIGQ9Ik00ODMuMiwxOTIuMmMtMjAuNS0yMC41LTUzLjUtMjAuOC03My43LTAuNkwyNTcsMzQ0LjFMMTA0LjUsMTkxLjZjLTIwLjItMjAuMi01My4yLTE5LjktNzMuNywwLjYKCWMtMjAuNSwyMC41LTIwLjgsNTMuNS0wLjYsNzMuN2wxOTAsMTkwYzEwLjEsMTAuMSwyMy40LDE1LjEsMzYuOCwxNWMxMy4zLDAuMSwyNi43LTQuOSwzNi44LTE1bDE5MC0xOTAKCUM1MDMuOSwyNDUuNyw1MDMuNywyMTIuNyw0ODMuMiwxOTIuMnoiLz4KPC9zdmc+);
+  background-size: contain;
+}
+
+.circle_one {
+  position: absolute;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+}
+
+.circle_blue_001 {
+  border-radius: 100%;
+  position: absolute;
+  top: 250px;
+  left: auto;
+  right: auto;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+}
+
+.circle_red_001,
+.circle_red_002,
+.circle_red_003,
+.circle_red_004,
+.circle_red_005 {
+  border-radius: 100%;
+  position: absolute;
+  top: 250px;
+  left: auto;
+  right: auto;
+  width: 300px;
+  height: 300px;
+  background-color: black;
+}
+
+.circle_orange_001,
+.circle_orange_002,
+.circle_orange_003,
+.circle_orange_004,
+.circle_orange_005,
+.circle_orange_006,
+.circle_orange_007,
+.circle_orange_008,
+.circle_orange_009 {
+  border-radius: 100%;
+  position: absolute;
+  top: 250px;
+  left: auto;
+  right: auto;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+}
+
+.circle_orange_102,
+.circle_orange_202,
+.circle_orange_302,
+.circle_orange_402,
+.circle_orange_006,
+.circle_orange_007,
+.circle_orange_008,
+.circle_orange_009 {
+  border-radius: 100%;
+  position: absolute;
+  top: 300px;
+  left: auto;
+  right: auto;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+
+.circle_orange_002,
+.circle_orange_102,
+.circle_orange_202,
+.circle_orange_302,
+.circle_orange_402 {
+  transform: translate(600px, 200px);
+}
+
+.circle_orange_003,
+.circle_orange_103 {
+  transform: translate(-600px, 200px);
+}
+
+.circle_orange_004 {
+  transform: translate(600px, -200px);
+}
+
+.circle_orange_005 {
+  transform: translate(-600px, -200px);
 }
 
 .first-letter {
