@@ -2,7 +2,12 @@
   <div class="row">
     <div class="column medium-12 large-2">
       <div class="footer_121__logo">
-        <img src="./assets/images/logo/Oststern_121.svg" alt="">
+             {% if title == "OstStern 121" %}
+          <img src="./assets/images/logo/Oststern_121.svg" alt="">
+        {% endif %}
+        {% if title == "OstStern 123" %}
+          <img src="./assets/images/logo/Oststern_123.svg" alt="">
+        {% endif %}
       </div>
     </div>
     <div class="column medium-12 large-6">
@@ -29,7 +34,12 @@
     <div class="column medium-12 large-4 footer_121__colum_last">
       <div class="footer_121__link_image">
         <div class="footer_121__link_logo">
-          <img src="./assets/images/logo/Ostern_Logo_123.svg" alt="">
+        {% if title == "OstStern 121" %}
+          <img src="./assets/images/logo/Oststern_123.svg" alt="">
+        {% endif %}
+        {% if title == "OstStern 123" %}
+          <img src="./assets/images/logo/Oststern_121.svg" alt="">
+        {% endif %}
         </div>
         <div class="footer_121__text_link">
           <a href="">Mehr erfahren <img src="./assets/images/icons/icons8-up_right.svg" alt=""></a>
