@@ -37,7 +37,6 @@ gsap.utils.toArray(".panel").forEach((panel, i) => {
     start: "top top", 
     pin: true, 
     pinSpacing: false ,
-  },{
     rotation: 360,
   });
 });

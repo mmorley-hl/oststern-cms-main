@@ -12,4 +12,4 @@ import './_carousel.js';
 import './_toTopButton.js';
 import './_headroom.js';
 // import './_scrollTrigger.js';
-import './_dots.js';
+// import './_dots.js';
