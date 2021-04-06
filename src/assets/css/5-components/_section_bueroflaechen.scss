@@ -1,0 +1,38 @@
+.section_bueroflaechen {
+    height: 500px;
+    width: 100%;
+    
+    .column {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    &__box {
+        padding: 40px;
+        height: 100%;
+        background-color: $primary;
+        color: white;
+    }
+
+    &__box_wrapper {
+        display: flex;
+        
+
+    }
+
+    &__box_left {
+        width: 50%;
+        height: 100%;
+        padding-right: 20px;
+    }
+
+    &__box_left_item {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: $secondary 2px solid;
+    }
+
+    &__box_right {
+        width: 50%;
+        height: 100%;
+    }
+}
