@@ -5649,6 +5649,9 @@ p::selection {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+.section_bueroflaechen__intro {
+  color: #3C83A0;
+}
 .section_bueroflaechen__box {
   padding: 40px;
   height: 100%;
