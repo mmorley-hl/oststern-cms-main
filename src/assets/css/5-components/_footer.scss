@@ -51,6 +51,10 @@
         width: 100%;
         padding-top: 40px;
         padding-left: 40px;
+        @media (max-width: $bpL) {
+            padding-top: 40px;
+            padding-left: 20px;
+        }
      
         &::before {
             content : "";
@@ -73,7 +77,7 @@
         padding-right: 0!important;
         @media (max-width: $bpL) {
             padding-left: 0!important;
-          }
+        }
     }
 
     &__link_logo {
@@ -88,6 +92,9 @@
         margin-top: 94px;
         margin-left: 51px;
         border-bottom: 3px solid white;
+        @media (max-width: $bpL) {
+            margin-left: 31px;
+        }
 
         a {
             display: flex;

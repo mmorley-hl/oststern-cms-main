@@ -5501,6 +5501,12 @@ p::selection {
   padding-top: 40px;
   padding-left: 40px;
 }
+@media (max-width: 1280px) {
+  .footer_121__link_image {
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+}
 .footer_121__link_image::before {
   content: "";
   display: block;
@@ -5535,6 +5541,11 @@ p::selection {
   margin-top: 94px;
   margin-left: 51px;
   border-bottom: 3px solid white;
+}
+@media (max-width: 1280px) {
+  .footer_121__text_link {
+    margin-left: 31px;
+  }
 }
 .footer_121__text_link a {
   display: flex;
