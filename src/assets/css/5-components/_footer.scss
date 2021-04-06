@@ -16,6 +16,7 @@
         justify-content: space-between;
         align-items: flex-end;
         padding-bottom: 59px;
+        padding-right: 40px;
 
         a {
             color: white;
@@ -70,6 +71,9 @@
 
     &__colum_last {
         padding-right: 0!important;
+        @media (max-width: $bpL) {
+            padding-left: 0!important;
+          }
     }
 
     &__link_logo {

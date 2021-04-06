@@ -5468,6 +5468,7 @@ p::selection {
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 59px;
+  padding-right: 40px;
 }
 .footer_121__link_columns a {
   color: white;
@@ -5517,6 +5518,11 @@ p::selection {
 }
 .footer_121__colum_last {
   padding-right: 0 !important;
+}
+@media (max-width: 1280px) {
+  .footer_121__colum_last {
+    padding-left: 0 !important;
+  }
 }
 .footer_121__link_logo {
   flex-shrink: 0;
