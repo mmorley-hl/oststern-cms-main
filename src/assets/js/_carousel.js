@@ -6,7 +6,7 @@ const carousel = document.querySelectorAll('.carousel')
 carousel.forEach((elem) => {
 
 	var flkty = new Flickity( '.carousel', {
-	fullscreen: true,
+	// fullscreen: true,
 	});
 
 })
