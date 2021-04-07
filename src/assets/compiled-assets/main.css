@@ -4338,42 +4338,6 @@ a:hover {
   font-weight: 700;
 }
 
-.theme-light .carousel {
-  background-color: #101C36;
-}
-.theme-dark .carousel {
-  background-color: #3C83A0;
-}
-
-.carousel-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-}
-.theme-light .carousel-cell {
-  background-color: #f7f7f8;
-}
-.theme-dark .carousel-cell {
-  background-color: #000;
-}
-
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-}
-.theme-light .carousel-cell:before {
-  background-color: #000;
-}
-.theme-dark .carousel-cell:before {
-  background-color: #fff;
-}
-
 .line {
   width: 100%;
   max-width: 800px;
@@ -5704,6 +5668,151 @@ p::selection {
 .section_ausstattung {
   min-height: 720px;
   width: 100%;
+  margin-left: 30px;
+}
+.section_ausstattung .column {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.section_keyfacts {
+  min-height: 720px;
+  width: 100%;
+}
+.section_keyfacts .column {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.section_keyfacts__content_wrapper {
+  color: white;
+  height: 100%;
+}
+.section_keyfacts__content_top {
+  padding: 64px 40px;
+  background-color: #101C36;
+  height: 50%;
+}
+.section_keyfacts__content_top .h5 {
+  color: #E6B74D;
+}
+.section_keyfacts__content_bottom {
+  color: black;
+  padding: 64px 40px;
+  background-color: #E0EFF0;
+  height: 50%;
+}
+.section_keyfacts__image_wrapper {
+  height: 800px;
+  width: 100%;
+  background-image: url("./images/keyfacts_image.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.section_slider_001 {
+  width: 100%;
+  /* cell number */
+  /* Flickity fullscreen v1.0.1
+  ------------------------- */
+  /* prevent page scrolling when flickity is fullscreen */
+  /* ---- flickity-fullscreen-button ---- */
+  /* right-to-left */
+}
+.section_slider_001__image_1 {
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/Slider_001_slide_1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section_slider_001__image_2 {
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/Slider_001_slide_2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section_slider_001__image_3 {
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/Slider_001_slide_3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section_slider_001__image_4 {
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/Slider_001_slide_4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section_slider_001 .carousel {
+  background: #FAFAFA;
+}
+.section_slider_001 .carousel-cell {
+  width: 66%;
+  height: 668px;
+  margin-right: 10px;
+  transform: scale(0.7);
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+.section_slider_001 .carousel-cell.is-selected {
+  transform: scale(1);
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+.section_slider_001 .carousel.is-fullscreen .carousel-cell {
+  height: 100%;
+}
+.section_slider_001 .flickity-enabled.is-fullscreen {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding-bottom: 35px;
+  z-index: 444;
+}
+.section_slider_001 .flickity-enabled.is-fullscreen .flickity-page-dots {
+  bottom: 10px;
+}
+.section_slider_001 .flickity-enabled.is-fullscreen .flickity-page-dots .dot {
+  background: white;
+}
+.section_slider_001 html.is-flickity-fullscreen {
+  overflow: hidden;
+}
+.section_slider_001 .flickity-fullscreen-button {
+  display: block;
+  right: 10px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+.section_slider_001 .flickity-rtl .flickity-fullscreen-button {
+  right: auto;
+  left: 10px;
+}
+.section_slider_001 .flickity-fullscreen-button-exit {
+  display: none;
+}
+.section_slider_001 .flickity-enabled.is-fullscreen .flickity-fullscreen-button-exit {
+  display: block;
+}
+.section_slider_001 .flickity-enabled.is-fullscreen .flickity-fullscreen-button-view {
+  display: none;
+}
+.section_slider_001 .flickity-fullscreen-button .flickity-button-icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 4px;
+  top: 4px;
 }
 
 .section {
