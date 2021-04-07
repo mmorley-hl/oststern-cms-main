@@ -1,7 +1,8 @@
 .section_slider_001 {
     // height: 720px;
     width: 100%;
-    // background-color: salmon;
+    background-color: salmon;
+    margin-left: 30px;
 
     &__image_1 {
         height: 100%;
@@ -41,7 +42,7 @@
     }
   
     .carousel {
-        background: #FAFAFA;
+        background: #fff;
       }
       
       .carousel-cell {
@@ -56,9 +57,6 @@
       }
       .carousel-cell.is-selected {
         transform: scale(1);
-        // background: #8C8;
-        // border-radius: 5px;
-        // counter-increment: carousel-cell;
         transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
       }
       
@@ -85,7 +83,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: hsla(0, 0%, 0%, 0.9);
+    background: hsla(0, 0%, 0%, 1);
     padding-bottom: 35px;
     z-index: 444;
   }
