@@ -6039,6 +6039,7 @@ p::selection {
 }
 
 .section_besonderheiten {
+  padding-top: 70px;
   min-height: 720px;
   width: 100%;
   background-color: #E0EFF0;
