@@ -5774,6 +5774,40 @@ p::selection {
   z-index: -1;
 }
 
+.section_facts_121 {
+  min-height: 720px;
+  width: 100%;
+}
+.section_facts_121 .column {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.section_facts_121__content_wrapper {
+  color: white;
+  height: 100%;
+}
+.section_facts_121__content_top {
+  padding: 64px 40px;
+  background-color: #101C36;
+  height: 50%;
+}
+.section_facts_121__content_top .h5 {
+  color: #E6B74D;
+}
+.section_facts_121__content_bottom {
+  color: black;
+  padding: 64px 40px;
+  background-color: #E0EFF0;
+  height: 50%;
+}
+.section_facts_121__image_wrapper {
+  height: 800px;
+  width: 100%;
+  background-image: url("./images/facts_oststern_121.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 .section_slider_001 {
   width: 100%;
   /* cell number */
