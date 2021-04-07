@@ -5822,6 +5822,31 @@ p::selection {
   background-size: cover;
 }
 
+.section_erreichbarkeit {
+  min-height: 720px;
+  width: 100%;
+}
+.section_erreichbarkeit .column {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.section_erreichbarkeit__image {
+  position: relative;
+}
+.section_erreichbarkeit__image img {
+  width: 100%;
+}
+.section_erreichbarkeit__image::after {
+  position: absolute;
+  content: "";
+  top: 45px;
+  left: 38px;
+  background-color: #E0EFF0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
 .section_slider_001 {
   width: 100%;
   /* cell number */
