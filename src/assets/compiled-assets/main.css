@@ -5774,6 +5774,20 @@ p::selection {
   z-index: -1;
 }
 
+.section_facts_erreichbarkeit {
+  min-height: 320px;
+  width: 100%;
+}
+.section_facts_erreichbarkeit .column {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.section_facts_erreichbarkeit img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section_facts_121 {
   min-height: 720px;
   width: 100%;
