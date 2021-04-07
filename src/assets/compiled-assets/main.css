@@ -5701,6 +5701,11 @@ p::selection {
   margin: 0;
 }
 
+.section_ausstattung {
+  min-height: 720px;
+  width: 100%;
+}
+
 .section {
   padding: 7.2rem 0 calc(7.2rem - 0.9rem);
   outline: none;
