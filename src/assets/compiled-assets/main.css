@@ -5847,6 +5847,31 @@ p::selection {
   z-index: -1;
 }
 
+.section_urbanitaet {
+  min-height: 720px;
+  width: 100%;
+}
+.section_urbanitaet .column {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.section_urbanitaet__image {
+  position: relative;
+}
+.section_urbanitaet__image img {
+  width: 100%;
+}
+.section_urbanitaet__image::after {
+  position: absolute;
+  content: "";
+  top: 45px;
+  left: 38px;
+  background-color: #E0EFF0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
 .section_slider_001 {
   width: 100%;
   /* cell number */
@@ -5962,6 +5987,56 @@ p::selection {
   list-style: none;
   text-align: center;
   line-height: 1;
+}
+
+.section_fassade {
+  min-height: 720px;
+  width: 100%;
+}
+.section_fassade .column {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.section_fassade__image {
+  position: relative;
+}
+.section_fassade__image img {
+  width: 100%;
+}
+.section_fassade__image::after {
+  position: absolute;
+  content: "";
+  top: 45px;
+  left: 38px;
+  background-color: #E0EFF0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.section_architektur {
+  min-height: 720px;
+  width: 100%;
+}
+.section_architektur .column {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.section_architektur__image {
+  position: relative;
+}
+.section_architektur__image img {
+  width: 100%;
+}
+.section_architektur__image::after {
+  position: absolute;
+  content: "";
+  top: 45px;
+  left: 38px;
+  background-color: #E0EFF0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 .section {
