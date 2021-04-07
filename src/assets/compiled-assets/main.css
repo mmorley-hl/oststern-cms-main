@@ -5642,7 +5642,7 @@ p::selection {
 }
 
 .section_bueroflaechen {
-  height: 500px;
+  min-height: 720px;
   width: 100%;
 }
 .section_bueroflaechen .column {
@@ -5651,15 +5651,16 @@ p::selection {
 }
 .section_bueroflaechen__intro {
   color: #3C83A0;
+  padding-bottom: 40px;
 }
 .section_bueroflaechen__box {
-  padding: 40px;
-  height: 100%;
+  padding: 40px 40px 80px 40px;
   background-color: #101C36;
   color: white;
 }
 .section_bueroflaechen__box_wrapper {
   display: flex;
+  height: 100%;
 }
 .section_bueroflaechen__box_left {
   width: 50%;
@@ -5670,10 +5671,34 @@ p::selection {
   display: flex;
   justify-content: space-between;
   border-bottom: #3C83A0 2px solid;
+  font-size: 32px;
+  padding-bottom: 4px;
 }
 .section_bueroflaechen__box_right {
+  padding-left: 40px;
   width: 50%;
+  height: 420px;
+}
+.section_bueroflaechen__box_right_wrapper {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section_bueroflaechen__box_right_top_item {
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+.section_bueroflaechen__box_right_top_item p {
+  margin: 0;
+}
+.section_bueroflaechen__box_right_bottom_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section_bueroflaechen__box_right_bottom_item p {
+  margin: 0;
 }
 
 .section {

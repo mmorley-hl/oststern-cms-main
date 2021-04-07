@@ -1,6 +1,7 @@
 .section_bueroflaechen {
-    height: 500px;
+    min-height: 720px;
     width: 100%;
+   
     
     .column {
         padding-left: 0!important;
@@ -9,19 +10,19 @@
 
     &__intro {
         color: $secondary;
+        padding-bottom: 40px;
     }
-    
+
     &__box {
-        padding: 40px;
-        height: 100%;
+        padding: 40px 40px 80px 40px;
+        
         background-color: $primary;
         color: white;
     }
 
     &__box_wrapper {
         display: flex;
-        
-
+        height: 100%;
     }
 
     &__box_left {
@@ -34,10 +35,37 @@
         display: flex;
         justify-content: space-between;
         border-bottom: $secondary 2px solid;
+        font-size: 32px;
+        padding-bottom: 4px;
     }
 
     &__box_right {
+        padding-left: 40px;
         width: 50%;
+        height: 420px;
+    }
+
+    &__box_right_wrapper {
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__box_right_top_item {
+        padding-bottom: 20px;
+        font-size: 24px;
+        p {
+            margin: 0;
+        }
+    }
+
+    &__box_right_bottom_item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p {
+            margin: 0;
+        }
     }
 }
