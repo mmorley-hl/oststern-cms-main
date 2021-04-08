@@ -1,21 +1,29 @@
-.button {
+.button_icon {
+  display: flex;
+  flex-direction: row;
   height: 60px;
-  min-width: 10em;
-  display: inline-block;
+  // min-width: 1em;
+  width: 340px;
+  // display: block;
   margin: 0 0 $gutter/2;
   padding: 1em 2em;
-  line-height: 1.8em;
-  text-align: center;
-  // white-space: nowrap;
+  line-height: 1em;
+  // text-align: center;
+  white-space: nowrap;
   cursor: pointer;
   user-select: none;
-  transition: background $duration $timing;
+  // transition: background $duration $timing;
   border: 0;
   border-radius: 0;
   background-color: $secondary-light;
   border-radius: 2em;
-  color: white;
+  color: $primary;
   // vertical-align: middle;
+
+  &__text {
+    align-self: center;
+    padding-left: 20px;
+  }
 
   //   cursor: pointer;
   //   display: inline-block;

@@ -3846,12 +3846,12 @@ a:hover {
 }
 
 .button {
-  height: 3em;
+  height: 60px;
   min-width: 10em;
   display: inline-block;
   margin: 0 0 0.9rem;
   padding: 1em 2em;
-  line-height: 1em;
+  line-height: 1.8em;
   text-align: center;
   cursor: pointer;
   -webkit-user-select: none;
@@ -4169,6 +4169,337 @@ a:hover {
   background: #005565;
 }
 .button--body-font-color:active {
+  background: black;
+}
+
+.button_icon {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: 340px;
+  margin: 0 0 0.9rem;
+  padding: 1em 2em;
+  line-height: 1em;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 0;
+  border-radius: 0;
+  background-color: #63A5BF;
+  border-radius: 2em;
+  color: #101C36;
+}
+.button_icon__text {
+  align-self: center;
+  padding-left: 20px;
+}
+.button_icon:active {
+  transition: none;
+}
+.button_icon--primary {
+  background: #101C36;
+  color: #fff;
+}
+.button_icon--primary:hover {
+  background: #1c305d;
+}
+.button_icon--primary:active {
+  background: #04080f;
+}
+.button_icon--primary-dark {
+  background: #0d162a;
+  color: #fff;
+}
+.button_icon--primary-dark:hover {
+  background: #182a52;
+}
+.button_icon--primary-dark:active {
+  background: #010103;
+}
+.button_icon--primary-light {
+  background: #1f3769;
+  color: #fff;
+}
+.button_icon--primary-light:hover {
+  background: #2b4b90;
+}
+.button_icon--primary-light:active {
+  background: #132242;
+}
+.button_icon--secondary {
+  background: #3C83A0;
+  color: #fff;
+}
+.button_icon--secondary:hover {
+  background: #519ebe;
+}
+.button_icon--secondary:active {
+  background: #2e657b;
+}
+.button_icon--secondary-dark {
+  background: #387a95;
+  color: #fff;
+}
+.button_icon--secondary-dark:hover {
+  background: #4698ba;
+}
+.button_icon--secondary-dark:active {
+  background: #2a5c70;
+}
+.button_icon--secondary-light {
+  background: #63A5BF;
+}
+.button_icon--secondary-light:hover {
+  background: #87bace;
+}
+.button_icon--secondary-light:active {
+  background: #468da9;
+}
+.button_icon--tertiary {
+  background: #dfec24;
+}
+.button_icon--tertiary:hover {
+  background: #e6f053;
+}
+.button_icon--tertiary:active {
+  background: #bfcb12;
+}
+.button_icon--tertiary-dark {
+  background: #676e0a;
+  color: #fff;
+}
+.button_icon--tertiary-dark:hover {
+  background: #939c0e;
+}
+.button_icon--tertiary-dark:active {
+  background: #3b3f05;
+}
+.button_icon--tertiary-light {
+  background: #f4f8b1;
+}
+.button_icon--tertiary-light:hover {
+  background: #fafce0;
+}
+.button_icon--tertiary-light:active {
+  background: #edf482;
+}
+.button_icon--quaternary {
+  background: #ee1a41;
+}
+.button_icon--quaternary:hover {
+  background: #f24968;
+}
+.button_icon--quaternary:active {
+  background: #c60f30;
+}
+.button_icon--quaternary-dark {
+  background: #670819;
+  color: #fff;
+}
+.button_icon--quaternary-dark:hover {
+  background: #970b25;
+}
+.button_icon--quaternary-dark:active {
+  background: #38040e;
+}
+.button_icon--quaternary-light {
+  background: #f9a8b7;
+}
+.button_icon--quaternary-light:hover {
+  background: #fcd8df;
+}
+.button_icon--quaternary-light:active {
+  background: #f57990;
+}
+.button_icon--dark-color {
+  background: #454d5d;
+  color: #fff;
+}
+.button_icon--dark-color:hover {
+  background: #5b657a;
+}
+.button_icon--dark-color:active {
+  background: #2f3540;
+}
+.button_icon--light-color {
+  background: #fff;
+}
+.button_icon--light-color:hover {
+  background: white;
+}
+.button_icon--light-color:active {
+  background: #e6e6e6;
+}
+.button_icon--gray-color {
+  background: #EAEBEF;
+}
+.button_icon--gray-color:hover {
+  background: white;
+}
+.button_icon--gray-color:active {
+  background: #cdcfd9;
+}
+.button_icon--gray-color-dark {
+  background: #a2a6b8;
+}
+.button_icon--gray-color-dark:hover {
+  background: #bfc2ce;
+}
+.button_icon--gray-color-dark:active {
+  background: #858ba2;
+}
+.button_icon--gray-color-light {
+  background: #E0EFF0;
+}
+.button_icon--gray-color-light:hover {
+  background: white;
+}
+.button_icon--gray-color-light:active {
+  background: #bedddf;
+}
+.button_icon--border-color {
+  background: #E6B74D;
+}
+.button_icon--border-color:hover {
+  background: #ecc97a;
+}
+.button_icon--border-color:active {
+  background: #e0a520;
+}
+.button_icon--border-color-dark {
+  background: #e0a520;
+}
+.button_icon--border-color-dark:hover {
+  background: #e6b74d;
+}
+.button_icon--border-color-dark:active {
+  background: #b48419;
+}
+.button_icon--bg-color {
+  background: #fff;
+}
+.button_icon--bg-color:hover {
+  background: white;
+}
+.button_icon--bg-color:active {
+  background: #e6e6e6;
+}
+.button_icon--bg-color-dark {
+  background: #f7f7f7;
+}
+.button_icon--bg-color-dark:hover {
+  background: white;
+}
+.button_icon--bg-color-dark:active {
+  background: #dedede;
+}
+.button_icon--bg-color-light {
+  background: #fff;
+}
+.button_icon--bg-color-light:hover {
+  background: white;
+}
+.button_icon--bg-color-light:active {
+  background: #e6e6e6;
+}
+.button_icon--success-color {
+  background: #32b643;
+  color: #fff;
+}
+.button_icon--success-color:hover {
+  background: #4dce5e;
+}
+.button_icon--success-color:active {
+  background: #278e34;
+}
+.button_icon--warning-color {
+  background: #ffb700;
+  color: #fff;
+}
+.button_icon--warning-color:hover {
+  background: #ffc533;
+}
+.button_icon--warning-color:active {
+  background: #cc9200;
+}
+.button_icon--error-color {
+  background: #e85600;
+  color: #fff;
+}
+.button_icon--error-color:hover {
+  background: #ff701c;
+}
+.button_icon--error-color:active {
+  background: #b54300;
+}
+.button_icon--link-color {
+  background: #101C36;
+  color: #fff;
+}
+.button_icon--link-color:hover {
+  background: #1c305d;
+}
+.button_icon--link-color:active {
+  background: #04080f;
+}
+.button_icon--link-color-dark {
+  background: #04080f;
+  color: #fff;
+}
+.button_icon--link-color-dark:hover {
+  background: #101c36;
+}
+.button_icon--link-color-dark:active {
+  background: black;
+}
+.button_icon--link-color-light {
+  background: #1c305d;
+  color: #fff;
+}
+.button_icon--link-color-light:hover {
+  background: #274585;
+}
+.button_icon--link-color-light:active {
+  background: #101c36;
+}
+.button_icon--code-color {
+  background: #d73e48;
+}
+.button_icon--code-color:hover {
+  background: #e06870;
+}
+.button_icon--code-color:active {
+  background: #bb2730;
+}
+.button_icon--highlight-color {
+  background: #ffe9b3;
+}
+.button_icon--highlight-color:hover {
+  background: #fff8e6;
+}
+.button_icon--highlight-color:active {
+  background: #ffda80;
+}
+.button_icon--body-bg {
+  background: #fff;
+}
+.button_icon--body-bg:hover {
+  background: white;
+}
+.button_icon--body-bg:active {
+  background: #e6e6e6;
+}
+.button_icon--body-font-color {
+  background: #002a32;
+  color: #fff;
+}
+.button_icon--body-font-color:hover {
+  background: #005565;
+}
+.button_icon--body-font-color:active {
   background: black;
 }
 
