@@ -4503,6 +4503,332 @@ a:hover {
   background: black;
 }
 
+.button_ghost {
+  display: flex;
+  flex-direction: row;
+  height: 45px;
+  width: 114px;
+  margin: 0 0 0 0.9rem;
+  padding: 12px 0;
+  line-height: 1em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 2px solid #3C83A0;
+  background-color: white;
+  border-radius: 2em;
+  color: #3C83A0;
+  vertical-align: middle;
+}
+.button_ghost:active {
+  transition: none;
+}
+.button_ghost--primary {
+  background: #101C36;
+  color: #fff;
+}
+.button_ghost--primary:hover {
+  background: #1c305d;
+}
+.button_ghost--primary:active {
+  background: #04080f;
+}
+.button_ghost--primary-dark {
+  background: #0d162a;
+  color: #fff;
+}
+.button_ghost--primary-dark:hover {
+  background: #182a52;
+}
+.button_ghost--primary-dark:active {
+  background: #010103;
+}
+.button_ghost--primary-light {
+  background: #1f3769;
+  color: #fff;
+}
+.button_ghost--primary-light:hover {
+  background: #2b4b90;
+}
+.button_ghost--primary-light:active {
+  background: #132242;
+}
+.button_ghost--secondary {
+  background: #3C83A0;
+  color: #fff;
+}
+.button_ghost--secondary:hover {
+  background: #519ebe;
+}
+.button_ghost--secondary:active {
+  background: #2e657b;
+}
+.button_ghost--secondary-dark {
+  background: #387a95;
+  color: #fff;
+}
+.button_ghost--secondary-dark:hover {
+  background: #4698ba;
+}
+.button_ghost--secondary-dark:active {
+  background: #2a5c70;
+}
+.button_ghost--secondary-light {
+  background: #63A5BF;
+}
+.button_ghost--secondary-light:hover {
+  background: #87bace;
+}
+.button_ghost--secondary-light:active {
+  background: #468da9;
+}
+.button_ghost--tertiary {
+  background: #dfec24;
+}
+.button_ghost--tertiary:hover {
+  background: #e6f053;
+}
+.button_ghost--tertiary:active {
+  background: #bfcb12;
+}
+.button_ghost--tertiary-dark {
+  background: #676e0a;
+  color: #fff;
+}
+.button_ghost--tertiary-dark:hover {
+  background: #939c0e;
+}
+.button_ghost--tertiary-dark:active {
+  background: #3b3f05;
+}
+.button_ghost--tertiary-light {
+  background: #f4f8b1;
+}
+.button_ghost--tertiary-light:hover {
+  background: #fafce0;
+}
+.button_ghost--tertiary-light:active {
+  background: #edf482;
+}
+.button_ghost--quaternary {
+  background: #ee1a41;
+}
+.button_ghost--quaternary:hover {
+  background: #f24968;
+}
+.button_ghost--quaternary:active {
+  background: #c60f30;
+}
+.button_ghost--quaternary-dark {
+  background: #670819;
+  color: #fff;
+}
+.button_ghost--quaternary-dark:hover {
+  background: #970b25;
+}
+.button_ghost--quaternary-dark:active {
+  background: #38040e;
+}
+.button_ghost--quaternary-light {
+  background: #f9a8b7;
+}
+.button_ghost--quaternary-light:hover {
+  background: #fcd8df;
+}
+.button_ghost--quaternary-light:active {
+  background: #f57990;
+}
+.button_ghost--dark-color {
+  background: #454d5d;
+  color: #fff;
+}
+.button_ghost--dark-color:hover {
+  background: #5b657a;
+}
+.button_ghost--dark-color:active {
+  background: #2f3540;
+}
+.button_ghost--light-color {
+  background: #fff;
+}
+.button_ghost--light-color:hover {
+  background: white;
+}
+.button_ghost--light-color:active {
+  background: #e6e6e6;
+}
+.button_ghost--gray-color {
+  background: #EAEBEF;
+}
+.button_ghost--gray-color:hover {
+  background: white;
+}
+.button_ghost--gray-color:active {
+  background: #cdcfd9;
+}
+.button_ghost--gray-color-dark {
+  background: #a2a6b8;
+}
+.button_ghost--gray-color-dark:hover {
+  background: #bfc2ce;
+}
+.button_ghost--gray-color-dark:active {
+  background: #858ba2;
+}
+.button_ghost--gray-color-light {
+  background: #E0EFF0;
+}
+.button_ghost--gray-color-light:hover {
+  background: white;
+}
+.button_ghost--gray-color-light:active {
+  background: #bedddf;
+}
+.button_ghost--border-color {
+  background: #E6B74D;
+}
+.button_ghost--border-color:hover {
+  background: #ecc97a;
+}
+.button_ghost--border-color:active {
+  background: #e0a520;
+}
+.button_ghost--border-color-dark {
+  background: #e0a520;
+}
+.button_ghost--border-color-dark:hover {
+  background: #e6b74d;
+}
+.button_ghost--border-color-dark:active {
+  background: #b48419;
+}
+.button_ghost--bg-color {
+  background: #fff;
+}
+.button_ghost--bg-color:hover {
+  background: white;
+}
+.button_ghost--bg-color:active {
+  background: #e6e6e6;
+}
+.button_ghost--bg-color-dark {
+  background: #f7f7f7;
+}
+.button_ghost--bg-color-dark:hover {
+  background: white;
+}
+.button_ghost--bg-color-dark:active {
+  background: #dedede;
+}
+.button_ghost--bg-color-light {
+  background: #fff;
+}
+.button_ghost--bg-color-light:hover {
+  background: white;
+}
+.button_ghost--bg-color-light:active {
+  background: #e6e6e6;
+}
+.button_ghost--success-color {
+  background: #32b643;
+  color: #fff;
+}
+.button_ghost--success-color:hover {
+  background: #4dce5e;
+}
+.button_ghost--success-color:active {
+  background: #278e34;
+}
+.button_ghost--warning-color {
+  background: #ffb700;
+  color: #fff;
+}
+.button_ghost--warning-color:hover {
+  background: #ffc533;
+}
+.button_ghost--warning-color:active {
+  background: #cc9200;
+}
+.button_ghost--error-color {
+  background: #e85600;
+  color: #fff;
+}
+.button_ghost--error-color:hover {
+  background: #ff701c;
+}
+.button_ghost--error-color:active {
+  background: #b54300;
+}
+.button_ghost--link-color {
+  background: #101C36;
+  color: #fff;
+}
+.button_ghost--link-color:hover {
+  background: #1c305d;
+}
+.button_ghost--link-color:active {
+  background: #04080f;
+}
+.button_ghost--link-color-dark {
+  background: #04080f;
+  color: #fff;
+}
+.button_ghost--link-color-dark:hover {
+  background: #101c36;
+}
+.button_ghost--link-color-dark:active {
+  background: black;
+}
+.button_ghost--link-color-light {
+  background: #1c305d;
+  color: #fff;
+}
+.button_ghost--link-color-light:hover {
+  background: #274585;
+}
+.button_ghost--link-color-light:active {
+  background: #101c36;
+}
+.button_ghost--code-color {
+  background: #d73e48;
+}
+.button_ghost--code-color:hover {
+  background: #e06870;
+}
+.button_ghost--code-color:active {
+  background: #bb2730;
+}
+.button_ghost--highlight-color {
+  background: #ffe9b3;
+}
+.button_ghost--highlight-color:hover {
+  background: #fff8e6;
+}
+.button_ghost--highlight-color:active {
+  background: #ffda80;
+}
+.button_ghost--body-bg {
+  background: #fff;
+}
+.button_ghost--body-bg:hover {
+  background: white;
+}
+.button_ghost--body-bg:active {
+  background: #e6e6e6;
+}
+.button_ghost--body-font-color {
+  background: #002a32;
+  color: #fff;
+}
+.button_ghost--body-font-color:hover {
+  background: #005565;
+}
+.button_ghost--body-font-color:active {
+  background: black;
+}
+
 .hidden {
   display: none;
 }
@@ -5157,18 +5483,12 @@ html:not(.has-scroll-smooth) .teaser_img_mask_sticky .c-fixed {
 }
 
 .core_navigation {
-  background-color: red;
-  opacity: 0.8;
+  background-color: white;
+  color: black;
+  opacity: 1;
   width: 100%;
   height: 4em;
-}
-.theme-light .core_navigation {
-  background-color: #101C36;
-  color: #000;
-}
-.theme-dark .core_navigation {
-  background-color: #3C83A0;
-  color: #fff;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 1024px) {
   .core_navigation {
@@ -5178,23 +5498,34 @@ html:not(.has-scroll-smooth) .teaser_img_mask_sticky .c-fixed {
 .core_navigation a {
   text-decoration: underline;
 }
-.theme-light .core_navigation a {
-  color: #000;
-}
-.theme-dark .core_navigation a {
-  color: #fff;
-}
 .core_navigation__brand {
   display: flex;
   flex-direction: row;
   height: 4em;
   align-items: center;
 }
+.core_navigation__brand img {
+  margin: 0;
+}
 .core_navigation__links_container {
   height: 4em;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.core_navigation__sprungmarken {
+  height: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.core_navigation__sprungmarken a {
+  text-decoration: none;
+  padding-left: 30px;
+}
+.core_navigation__sprungmarken a:hover {
+  text-decoration: underline;
 }
 
 /* The switch - the box around the slider */
