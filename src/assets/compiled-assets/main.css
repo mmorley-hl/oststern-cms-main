@@ -5487,7 +5487,7 @@ html:not(.has-scroll-smooth) .teaser_img_mask_sticky .c-fixed {
   color: black;
   opacity: 1;
   width: 100%;
-  height: 4em;
+  height: 80px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 1024px) {
@@ -5501,20 +5501,20 @@ html:not(.has-scroll-smooth) .teaser_img_mask_sticky .c-fixed {
 .core_navigation__brand {
   display: flex;
   flex-direction: row;
-  height: 4em;
+  height: 80px;
   align-items: center;
 }
 .core_navigation__brand img {
   margin: 0;
 }
 .core_navigation__links_container {
-  height: 4em;
+  height: 80px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 .core_navigation__sprungmarken {
-  height: 4em;
+  height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -6768,7 +6768,7 @@ p::selection {
   padding-bottom: calc(3.6rem - 0.9rem);
 }
 .section--hero {
-  padding-top: calc(3.6rem + 4em);
+  padding-top: calc(3.6rem + 80px);
   padding-bottom: calc(3.6rem - 0.9rem);
 }
 .section--zero {
