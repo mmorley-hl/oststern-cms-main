@@ -5490,6 +5490,10 @@ html:not(.has-scroll-smooth) .teaser_img_mask_sticky .c-fixed {
   height: 80px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
 }
+.core_navigation .column {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 @media (max-width: 1024px) {
   .core_navigation {
     height: 15em;
