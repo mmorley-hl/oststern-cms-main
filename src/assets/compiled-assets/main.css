@@ -5936,6 +5936,7 @@ p::selection {
 
 .section_slider_001 {
   width: 100%;
+  margin-top: 80px;
   /* cell number */
   /* Flickity fullscreen v1.0.1
   ------------------------- */
@@ -6049,6 +6050,21 @@ p::selection {
   list-style: none;
   text-align: center;
   line-height: 1;
+}
+.section_slider_001 .flickity-page-dots .dot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 8px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #000;
+  opacity: 1;
+  cursor: pointer;
+}
+.section_slider_001 .flickity-page-dots .dot.is-selected {
+  opacity: 1;
+  background: #000;
 }
 
 .section_fassade {
