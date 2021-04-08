@@ -3574,12 +3574,15 @@ h6.eyebrow,
 
 h1,
 .h1 {
-  font-size: 4rem;
+  font: normal 400 100%/1.4 "Matter medium", Helvetica, Arial, sans-serif;
+  font-size: 3.75rem;
+  line-height: 3.75rem;
 }
 
 h2,
 .h2 {
-  font-size: 1.5rem;
+  font: normal 400 100%/1.4 "Matter medium", Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
 }
 
 h3,
@@ -3589,16 +3592,20 @@ h3,
 
 h4,
 .h4 {
-  font-size: 1.12rem;
+  font: normal 400 100%/1.4 "Matter semibold", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
 }
 
 h5,
 .h5 {
-  font-size: 0.83rem;
+  font: normal 400 100%/1.4 "Matter semibold", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
 }
 
 h6,
 .h6 {
+  font: normal 400 100%/1.4 "Matter medium", Helvetica, Arial, sans-serif;
   font-size: 0.75rem;
 }
 
@@ -3610,6 +3617,7 @@ label,
 blockquote {
   margin: 0 0 0.9rem;
   font-style: normal;
+  font-size: 1.125rem;
 }
 
 a {
@@ -6661,9 +6669,23 @@ p::selection {
 }
 .section_besonderheiten__middle_top_content_item_last {
   padding-right: 60px;
+  padding-top: 4px;
+  font: normal 400 100%/1.4 "Matter medium", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  margin: 0;
+}
+.section_besonderheiten__middle_top_content_item_middle {
+  width: 70px;
+  display: flex;
+}
+.section_besonderheiten__middle_top_content_item_middle svg {
+  align-self: center;
 }
 .section_besonderheiten__middle_top_content_item_first {
-  width: 60px;
+  width: 120px;
+  font: normal 400 100%/1.4 "Matter medium", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  margin: 0;
 }
 .section_besonderheiten__middle_bottom_content {
   padding: 15px 40px 20px 40px;
@@ -6721,17 +6743,27 @@ p::selection {
 }
 .section_erholung__middle_top_content_item {
   flex-shrink: 1;
-  font-size: 24px;
   display: flex;
 }
 .section_erholung__middle_top_content_item_last {
+  padding-top: 4px;
   padding-right: 20px;
+  font: normal 400 100%/1.4 "Matter medium", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  margin: 0;
 }
 .section_erholung__middle_top_content_item_middle {
   width: 70px;
+  display: flex;
+}
+.section_erholung__middle_top_content_item_middle svg {
+  align-self: center;
 }
 .section_erholung__middle_top_content_item_first {
   width: 120px;
+  font: normal 400 100%/1.4 "Matter medium", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  margin: 0;
 }
 .section_erholung__middle_bottom_content {
   padding: 15px 60px 20px 40px;

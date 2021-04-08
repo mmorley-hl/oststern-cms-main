@@ -22,12 +22,15 @@ h6,
 
 h1,
 .h1 {
-	font-size: 4rem;
+	font: $fontStackMatterMedium;
+	font-size: 3.75rem;
+	line-height: 3.75rem;
 }
 
 h2,
 .h2 {
-	font-size: 1.5rem;
+	font: $fontStackMatterMedium;
+	font-size: 2.5rem;
 }
 
 h3,
@@ -37,17 +40,21 @@ h3,
 
 h4,
 .h4 {
-	font-size: 1.12rem;
+	font: $fontStackMatterSemiBold;
+	font-size: 1.5rem;
 
 }
 
 h5,
 .h5 {
-	font-size: .83rem;
+	font: $fontStackMatterSemiBold;
+	font-size: .875rem;
+	letter-spacing: .1em;
 }
 
 h6,
 .h6 {
+	font: $fontStackMatterMedium;
 	font-size: .75rem;
 }
 
@@ -61,6 +68,7 @@ label,
 blockquote {
 	margin: 0 0 $gutter/2;
 	font-style: normal;
+	font-size: 1.125rem;
 }
 a {
 	text-decoration: none;

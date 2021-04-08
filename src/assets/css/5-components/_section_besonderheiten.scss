@@ -53,10 +53,26 @@
 
     &__middle_top_content_item_last {
         padding-right: 60px;
+        padding-top: 4px;
+        font: $fontStackMatterMedium;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    &__middle_top_content_item_middle {
+        width: 70px;
+        display: flex;
+        svg {
+            align-self: center;
+        }
     }
 
     &__middle_top_content_item_first {
-        width: 60px;
+        width: 120px;
+        font: $fontStackMatterMedium;
+        font-size: 32px;
+        margin: 0;
+          
     }
 
 

@@ -49,22 +49,32 @@
 
     &__middle_top_content_item {
         flex-shrink: 1;
-        font-size: 24px;
         display: flex;
         // justify-content: space-between;
     }
 
     &__middle_top_content_item_last {
+        padding-top: 4px;
         padding-right: 20px;
+        font: $fontStackMatterMedium;
+        font-size: 24px;
+        margin: 0;
         // background-color: red;
     }
 
     &__middle_top_content_item_middle {
         width: 70px;
+        display: flex;
+        svg {
+            align-self: center;
+        }
     }
 
     &__middle_top_content_item_first {
         width: 120px;
+        font: $fontStackMatterMedium;
+        font-size: 32px;
+        margin: 0;
     }
 
     &__middle_bottom_content {
