@@ -6148,6 +6148,7 @@ p::selection {
 
 .section_bueroflaechen {
   width: 100%;
+  margin-bottom: 60px;
 }
 .section_bueroflaechen .column {
   padding-left: 0 !important;
