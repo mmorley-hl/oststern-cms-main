@@ -5737,11 +5737,6 @@ p::selection {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-@media (max-width: 1280px) {
-  .section_kontakt {
-    background-color: green;
-  }
-}
 .section_kontakt__intro {
   padding: 80px 40px;
   background-color: #EAEBEF;
