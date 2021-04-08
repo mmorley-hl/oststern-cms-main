@@ -5943,7 +5943,7 @@ p::selection {
 }
 
 .headroom--unpinned {
-  transform: translateY(-100%);
+  transform: translateY(-140%);
 }
 
 .footer_121 {
@@ -5969,6 +5969,7 @@ p::selection {
   align-items: flex-end;
   padding-bottom: 59px;
   padding-right: 40px;
+  padding-left: 40px;
 }
 .footer_121__link_columns a {
   color: white;
