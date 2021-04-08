@@ -3266,7 +3266,7 @@ html.has-scroll-dragging {
   color: #fff;
 }
 .background-secondary-light {
-  background-color: #408cab;
+  background-color: #63A5BF;
   color: #454d5d;
 }
 .background-tertiary {
@@ -3395,8 +3395,8 @@ html.has-scroll-dragging {
   fill: #387a95;
 }
 .color-secondary-light {
-  color: #408cab;
-  fill: #408cab;
+  color: #63A5BF;
+  fill: #63A5BF;
 }
 .color-tertiary {
   color: #dfec24;
@@ -3847,10 +3847,10 @@ a:hover {
 
 .button {
   height: 3em;
-  width: 10em;
+  min-width: 10em;
   display: inline-block;
   margin: 0 0 0.9rem;
-  padding: 0.5em 1em;
+  padding: 1em 2em;
   line-height: 1em;
   text-align: center;
   cursor: pointer;
@@ -3861,6 +3861,9 @@ a:hover {
   transition: background 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
   border: 0;
   border-radius: 0;
+  background-color: #63A5BF;
+  border-radius: 2em;
+  color: white;
 }
 .button:active {
   transition: none;
@@ -3916,14 +3919,13 @@ a:hover {
   background: #2a5c70;
 }
 .button--secondary-light {
-  background: #408cab;
-  color: #fff;
+  background: #63A5BF;
 }
 .button--secondary-light:hover {
-  background: #5ca5c2;
+  background: #87bace;
 }
 .button--secondary-light:active {
-  background: #326e86;
+  background: #468da9;
 }
 .button--tertiary {
   background: #dfec24;
@@ -4168,173 +4170,6 @@ a:hover {
 }
 .button--body-font-color:active {
   background: black;
-}
-
-/*-------------------
-       Animated
---------------------*/
-.animated-button {
-  position: relative;
-  z-index: 1;
-}
-.animated-button:hover .animated-button__content--stageone,
-.animated-button :focus .animated-button__content--stageone {
-  left: auto;
-  right: 200%;
-}
-.animated-button:hover .animated-button__content--stagetwo,
-.animated-button :focus .animated-button__content--stagetwo {
-  left: auto;
-  right: 0%;
-}
-.animated-button__content {
-  will-change: transform, opacity;
-  transition: right 0.3s ease 0s;
-}
-.animated-button__content--stageone {
-  background-color: red;
-  position: relative;
-  left: auto;
-  top: 50%;
-  right: 0%;
-}
-.animated-button__content--stagetwo {
-  background-color: blue;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: auto;
-  right: -100%;
-}
-
-.animated-button-vertical {
-  position: relative;
-  z-index: 1;
-}
-.animated-button-vertical:hover .animated-button-vertical__content--stageone,
-.animated-button-vertical :focus .animated-button-vertical__content--stageone {
-  left: auto;
-  right: 200%;
-}
-.animated-button-vertical:hover .animated-button-vertical__content--stagetwo,
-.animated-button-vertical :focus .animated-button-vertical__content--stagetwo {
-  left: auto;
-  right: 0%;
-}
-.animated-button-vertical__content {
-  will-change: transform, opacity;
-}
-.animated-button-vertical__content--stageone {
-  background-color: yellow;
-  position: relative;
-  transition: right 0.3s ease 0s;
-  left: auto;
-  right: 0%;
-}
-.animated-button-vertical__content--stagetwo {
-  background-color: salmon;
-  position: absolute;
-  width: 100%;
-  transition: right 0.3s ease 0s;
-  top: 50%;
-  left: auto;
-  right: -100%;
-  margin-top: -0.5em;
-}
-
-/* Horizontal */
-.animated.button .visible.animated__content,
-.animated.button .hidden.animated__content {
-  transition: right 0.3s ease 0s;
-}
-
-.animated.button .visible.animated__content {
-  left: auto;
-  right: 0%;
-}
-
-.animated.button .hidden.animated__content {
-  top: 50%;
-  left: auto;
-  right: -100%;
-  margin-top: -0.5em;
-}
-
-.animated.button:focus .visible.animated__content,
-.animated.button:hover .visible.animated__content {
-  left: auto;
-  right: 200%;
-}
-
-.animated.button:focus .hidden.animated__content,
-.animated.button:hover .hidden.animated__content {
-  left: auto;
-  right: 0%;
-}
-
-/* Vertical */
-.vertical.animated.button .visible.animated__content,
-.vertical.animated.button .hidden.animated__content {
-  transition: top 0.3s ease, transform 0.3s ease;
-}
-
-.vertical.animated.button .visible.animated__content {
-  transform: translateY(0%);
-  right: auto;
-}
-
-.vertical.animated.button .hidden.animated__content {
-  top: -50%;
-  left: 0%;
-  right: auto;
-}
-
-.vertical.animated.button:focus .visible.animated__content,
-.vertical.animated.button:hover .visible.animated__content {
-  transform: translateY(200%);
-  right: auto;
-}
-
-.vertical.animated.button:focus .hidden.animated__content,
-.vertical.animated.button:hover .hidden.animated__content {
-  top: 50%;
-  right: auto;
-}
-
-/* Fade */
-.fade.animated.button .visible.animated__content,
-.fade.animated.button .hidden.animated__content {
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.fade.animated.button .visible.animated__content {
-  left: auto;
-  right: auto;
-  opacity: 1;
-  transform: scale(1);
-}
-
-.fade.animated.button .hidden.animated__content {
-  opacity: 0;
-  left: 0%;
-  right: auto;
-  transform: scale(1.5);
-}
-
-.fade.animated.button:focus .visible.animated__content,
-.fade.animated.button:hover .visible.animated__content {
-  left: auto;
-  right: auto;
-  opacity: 0;
-  transform: scale(0.75);
-}
-
-.fade.animated.button:focus .hidden.animated__content,
-.fade.animated.button:hover .hidden.animated__content {
-  left: 0%;
-  right: auto;
-  opacity: 1;
-  transform: scale(1);
 }
 
 .hidden {
