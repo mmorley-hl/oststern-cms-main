@@ -5898,7 +5898,7 @@ p::selection {
   width: 100%;
   z-index: -1;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1024px) {
   .section_erreichbarkeit__image::after {
     display: none;
   }
@@ -5928,7 +5928,7 @@ p::selection {
   width: 100%;
   z-index: -1;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1024px) {
   .section_urbanitaet__image::after {
     display: none;
   }
