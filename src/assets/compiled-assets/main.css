@@ -5605,7 +5605,6 @@ p::selection {
 }
 
 .section_bueroflaechen {
-  min-height: 720px;
   width: 100%;
 }
 .section_bueroflaechen .column {
@@ -5623,12 +5622,21 @@ p::selection {
 }
 .section_bueroflaechen__box_wrapper {
   display: flex;
-  height: 100%;
+}
+@media (max-width: 1024px) {
+  .section_bueroflaechen__box_wrapper {
+    flex-direction: column;
+  }
 }
 .section_bueroflaechen__box_left {
   width: 50%;
   height: 100%;
   padding-right: 20px;
+}
+@media (max-width: 1024px) {
+  .section_bueroflaechen__box_left {
+    width: 100%;
+  }
 }
 .section_bueroflaechen__box_left_item {
   display: flex;
@@ -5640,7 +5648,14 @@ p::selection {
 .section_bueroflaechen__box_right {
   padding-left: 40px;
   width: 50%;
-  height: 420px;
+  min-height: 420px;
+}
+@media (max-width: 1024px) {
+  .section_bueroflaechen__box_right {
+    padding-top: 40px;
+    padding-left: 0;
+    width: 100%;
+  }
 }
 .section_bueroflaechen__box_right_wrapper {
   height: 100%;
@@ -5673,7 +5688,9 @@ p::selection {
   padding-right: 0 !important;
 }
 .section_ausstattung img {
-  padding-left: 140px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section_keyfacts {
@@ -5845,6 +5862,11 @@ p::selection {
   width: 100%;
   z-index: -1;
 }
+@media (max-width: 1280px) {
+  .section_erreichbarkeit__image::after {
+    display: none;
+  }
+}
 
 .section_urbanitaet {
   min-height: 720px;
@@ -5869,6 +5891,11 @@ p::selection {
   height: 100%;
   width: 100%;
   z-index: -1;
+}
+@media (max-width: 1280px) {
+  .section_urbanitaet__image::after {
+    display: none;
+  }
 }
 
 .section_slider_001 {
@@ -6012,6 +6039,11 @@ p::selection {
   width: 100%;
   z-index: -1;
 }
+@media (max-width: 1024px) {
+  .section_fassade__image::after {
+    display: none;
+  }
+}
 
 .section_architektur {
   min-height: 720px;
@@ -6036,6 +6068,11 @@ p::selection {
   height: 100%;
   width: 100%;
   z-index: -1;
+}
+@media (max-width: 1024px) {
+  .section_architektur__image::after {
+    display: none;
+  }
 }
 
 .section_besonderheiten {
@@ -6128,6 +6165,11 @@ p::selection {
 .section_erholung__middle_top_content {
   padding: 40px 40px 20px 40px;
 }
+@media (max-width: 1280px) {
+  .section_erholung__middle_top_content {
+    padding: 20;
+  }
+}
 .section_erholung__middle_top_content_item {
   flex-shrink: 1;
   font-size: 24px;
@@ -6144,6 +6186,11 @@ p::selection {
 }
 .section_erholung__middle_bottom_content {
   padding: 15px 60px 20px 40px;
+}
+@media (max-width: 1280px) {
+  .section_erholung__middle_bottom_content {
+    padding: 20;
+  }
 }
 .section_erholung__right_wrapper {
   width: 100%;

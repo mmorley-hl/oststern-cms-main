@@ -42,6 +42,9 @@
 
     &__middle_top_content {
         padding: 40px 40px 20px 40px;
+        @media (max-width: $bpL) {
+            padding: 20;
+         }
     }
 
     &__middle_top_content_item {
@@ -66,6 +69,9 @@
 
     &__middle_bottom_content {
         padding: 15px 60px 20px 40px;
+        @media (max-width: $bpL) {
+            padding: 20;
+         }
     }
 
     &__right_wrapper {
