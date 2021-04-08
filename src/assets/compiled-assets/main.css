@@ -3520,7 +3520,7 @@ html.has-scroll-dragging {
 html {
   width: 100%;
   height: 100%;
-  font: normal 400 112.5%/1.7 "Open Sans", sans-serif;
+  font: normal 400 100%/1.4 "Matter regular", Helvetica, Arial, sans-serif;
 }
 @media (max-width: 960px) {
   html {
@@ -3574,11 +3574,13 @@ h6.eyebrow,
 
 h1,
 .h1 {
+  font: normal 400 100%/1.4 "Matter regular", Helvetica, Arial, sans-serif;
   font-size: 4rem;
 }
 
 h2,
 .h2 {
+  font: normal 400 100%/1.4 "Matter regular", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
 }
 
@@ -3802,6 +3804,42 @@ a:hover {
   transform: translate(-50%, 50%);
 }
 
+/*
+ * Including a font with different weights:
+ * @include fontFace('FontName', '../fonts/regular', normal, 400);
+ * @include fontFace('FontName', '../fonts/light', normal, 300);
+ * @include fontFace('FontName', '../fonts/bold', normal, 700);
+ */
+@font-face {
+  font-family: "Matter regular";
+  src: url("../assets/fonts/Matter-Regular.woff2") format("woff2"), url("../assets/fonts/Matter-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+/*
+ * Including a font with different weights:
+ * @include fontFace('FontName', '../fonts/regular', normal, 400);
+ * @include fontFace('FontName', '../fonts/light', normal, 300);
+ * @include fontFace('FontName', '../fonts/bold', normal, 700);
+ */
+@font-face {
+  font-family: "Matter medium";
+  src: url("../assets/fonts/Matter-Medium.woff2") format("woff2"), url("../assets/fonts/Matter-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+/*
+ * Including a font with different weights:
+ * @include fontFace('FontName', '../fonts/regular', normal, 400);
+ * @include fontFace('FontName', '../fonts/light', normal, 300);
+ * @include fontFace('FontName', '../fonts/bold', normal, 700);
+ */
+@font-face {
+  font-family: "Matter semibold";
+  src: url("../assets/fonts/Matter-SemiBold.woff2") format("woff2"), url("../assets/fonts/Matter-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
 .font-opensans {
   font-family: "Open Sans", sans-serif;
 }
