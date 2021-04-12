@@ -6796,6 +6796,23 @@ p::selection {
   padding: 40px 40px 80px 40px;
 }
 
+#slider {
+  background-image: url("https://unsplash.it/800/600");
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 800px;
+  max-width: 95%;
+  margin: 40px auto 0;
+}
+
+.message {
+  width: 800px;
+  max-width: 95%;
+  margin: 20px auto 800px;
+  font-family: Raleway;
+  font-size: 40px;
+}
+
 .section {
   padding: 7.2rem 0 calc(7.2rem - 0.9rem);
   outline: none;
