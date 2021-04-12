@@ -6367,6 +6367,9 @@ p::selection {
 .section_facts_121__content_top .h5 {
   color: #E6B74D;
 }
+.section_facts_121__content_top .h1 {
+  padding-right: 30px;
+}
 .section_facts_121__content_bottom {
   color: black;
   padding: 64px 40px;
