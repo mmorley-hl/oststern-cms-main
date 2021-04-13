@@ -6814,6 +6814,11 @@ p::selection {
 .section_besonderheiten__middle_top_content {
   padding: 40px 40px 20px 40px;
 }
+@media (max-width: 1280px) {
+  .section_besonderheiten__middle_top_content {
+    padding: 40px 40px 20px 40px;
+  }
+}
 .section_besonderheiten__middle_top_content_item {
   flex-shrink: 1;
   font-size: 24px;
@@ -6827,19 +6832,41 @@ p::selection {
   font-size: 24px;
   margin: 0;
 }
+@media (max-width: 1280px) {
+  .section_besonderheiten__middle_top_content_item_last {
+    padding-right: 0px;
+  }
+}
 .section_besonderheiten__middle_top_content_item_middle {
+  width: 70px;
   display: flex;
 }
 .section_besonderheiten__middle_top_content_item_middle svg {
   align-self: center;
 }
+@media (max-width: 1280px) {
+  .section_besonderheiten__middle_top_content_item_middle {
+    width: 50px;
+  }
+}
 .section_besonderheiten__middle_top_content_item_first {
+  width: 120px;
   font: normal 400 100%/1.4 "Matter medium", Helvetica, Arial, sans-serif;
   font-size: 32px;
   margin: 0;
 }
+@media (max-width: 1280px) {
+  .section_besonderheiten__middle_top_content_item_first {
+    width: 100px;
+  }
+}
 .section_besonderheiten__middle_bottom_content {
   padding: 15px 40px 20px 40px;
+}
+@media (max-width: 1280px) {
+  .section_besonderheiten__middle_bottom_content {
+    padding: 20;
+  }
 }
 .section_besonderheiten__right_wrapper {
   width: 100%;
@@ -6956,23 +6983,6 @@ p::selection {
   color: white;
   background-color: #3C83A0;
   padding: 40px 40px 80px 40px;
-}
-
-#slider {
-  background-image: url("https://unsplash.it/800/600");
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 800px;
-  max-width: 95%;
-  margin: 40px auto 0;
-}
-
-.message {
-  width: 800px;
-  max-width: 95%;
-  margin: 20px auto 800px;
-  font-family: Raleway;
-  font-size: 40px;
 }
 
 .section {
