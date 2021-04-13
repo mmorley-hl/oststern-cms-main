@@ -66,7 +66,18 @@ eleventyNavigation:
 </br>
 </br>
 </br>
-{% include "section_lage.njk" %}
+
+{%- from "system/component.njk" import component -%}
+
+{{ component('section_lage', {
+  eyebrow: 'LAGE',
+  headline:  'Ostend Community',
+  subline:  'Subline mit Fokus Lage…',
+  bodytext: 'Das Projekt Oststern liegt mitten im Frankfurter Trendviertel Ostend. Es steht, wie kaum ein anderer Frankfurter Stadtteil, für modernes urbanes Lebensgefühl und steten Wandel. 
+Die Nähe zur City, eine gute Verkehrsanbindung und ein vielfältiges Angebot an Gastronomie und Einzelhandel machen das Ostend zu einem lebendigen Stadtteil mit ganz besonderem Charme.',
+  logo: './assets//images/logo/Oststern_121_lage_logo.svg'
+}) }}
+
 {% include "section_erreichbarkeit.njk" %}
 {% include "section_facts_erreichbarkeit.njk" %}
 {% include "section_urbanitaet.njk" %}
