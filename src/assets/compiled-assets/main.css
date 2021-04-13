@@ -4184,7 +4184,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   height: 60px;
-  width: 340px;
+  width: 320px;
   margin: 0 0 0.9rem;
   padding: 1em 2em;
   line-height: 1em;
@@ -6410,7 +6410,7 @@ p::selection {
 }
 @media (max-width: 960px) {
   .timeline__001_text, .timeline__003_text {
-    width: 150px;
+    width: 120px;
     top: 0;
     left: -145px;
   }
@@ -6424,9 +6424,9 @@ p::selection {
 }
 @media (max-width: 960px) {
   .timeline__002_text, .timeline__004_text {
-    width: 150px;
+    width: 140px;
     top: 0;
-    left: 55px;
+    left: 50px;
   }
 }
 .timeline__001_icon, .timeline__003_icon {
@@ -6828,14 +6828,12 @@ p::selection {
   margin: 0;
 }
 .section_besonderheiten__middle_top_content_item_middle {
-  width: 70px;
   display: flex;
 }
 .section_besonderheiten__middle_top_content_item_middle svg {
   align-self: center;
 }
 .section_besonderheiten__middle_top_content_item_first {
-  width: 120px;
   font: normal 400 100%/1.4 "Matter medium", Helvetica, Arial, sans-serif;
   font-size: 32px;
   margin: 0;
@@ -6893,7 +6891,7 @@ p::selection {
 }
 @media (max-width: 1280px) {
   .section_erholung__middle_top_content {
-    padding: 20;
+    padding: 40px 20px 20px 40px;
   }
 }
 .section_erholung__middle_top_content_item {
@@ -6907,6 +6905,11 @@ p::selection {
   font-size: 24px;
   margin: 0;
 }
+@media (max-width: 1280px) {
+  .section_erholung__middle_top_content_item_last {
+    padding-right: 0px;
+  }
+}
 .section_erholung__middle_top_content_item_middle {
   width: 70px;
   display: flex;
@@ -6914,11 +6917,21 @@ p::selection {
 .section_erholung__middle_top_content_item_middle svg {
   align-self: center;
 }
+@media (max-width: 1280px) {
+  .section_erholung__middle_top_content_item_middle {
+    width: 50px;
+  }
+}
 .section_erholung__middle_top_content_item_first {
   width: 120px;
   font: normal 400 100%/1.4 "Matter medium", Helvetica, Arial, sans-serif;
   font-size: 32px;
   margin: 0;
+}
+@media (max-width: 1280px) {
+  .section_erholung__middle_top_content_item_first {
+    width: 100px;
+  }
 }
 .section_erholung__middle_bottom_content {
   padding: 15px 60px 20px 40px;

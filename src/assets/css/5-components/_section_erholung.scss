@@ -45,7 +45,7 @@
     &__middle_top_content {
         padding: 40px 40px 20px 40px;
         @media (max-width: $bpL) {
-            padding: 20;
+            padding: 40px 20px 20px 40px;
          }
     }
 
@@ -62,6 +62,9 @@
         font-size: 24px;
         margin: 0;
         // background-color: red;
+        @media (max-width: $bpL) {
+            padding-right: 0px;
+        }
     }
 
     &__middle_top_content_item_middle {
@@ -70,6 +73,9 @@
         svg {
             align-self: center;
         }
+        @media (max-width: $bpL) {
+            width: 50px;
+        }
     }
 
     &__middle_top_content_item_first {
@@ -77,6 +83,9 @@
         font: $fontStackMatterMedium;
         font-size: 32px;
         margin: 0;
+        @media (max-width: $bpL) {
+            width: 100px;
+        }
     }
 
     &__middle_bottom_content {
