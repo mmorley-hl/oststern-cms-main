@@ -6308,7 +6308,8 @@ p::selection {
 }
 .section_lage__image_wrapper {
   position: relative;
-  height: 800px;
+  height: 100%;
+  min-height: 800px;
   width: 100%;
   background-image: url("./images/lage_image.jpg");
   background-position: center;
@@ -6523,11 +6524,18 @@ p::selection {
   height: 50%;
 }
 .section_facts_121__image_wrapper {
-  height: 800px;
+  position: relative;
+  min-height: 800px;
+  height: 100%;
   width: 100%;
   background-image: url("./images/facts_oststern_121.jpg");
   background-position: center;
   background-size: cover;
+}
+@media (max-width: 1280px) {
+  .section_facts_121__image_wrapper {
+    min-height: 870px;
+  }
 }
 
 .section_erreichbarkeit {
@@ -6823,7 +6831,6 @@ p::selection {
   flex-shrink: 1;
   font-size: 24px;
   display: flex;
-  justify-content: space-between;
 }
 .section_besonderheiten__middle_top_content_item_last {
   padding-right: 60px;
