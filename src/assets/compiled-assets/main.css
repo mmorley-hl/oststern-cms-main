@@ -6338,6 +6338,11 @@ p::selection {
   width: 100%;
   margin-top: 220px;
 }
+@media (max-width: 960px) {
+  .section_facts_erreichbarkeit {
+    margin-top: 20px;
+  }
+}
 .section_facts_erreichbarkeit .column {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -6365,6 +6370,25 @@ p::selection {
   height: 3px;
   width: 100%;
 }
+@media (max-width: 960px) {
+  .timeline {
+    flex-direction: column;
+    background-color: red;
+    width: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1000px;
+  }
+  .timeline::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 3px;
+  }
+}
 .timeline .h2 {
   font-size: 19px;
   margin-bottom: 0;
@@ -6384,12 +6408,26 @@ p::selection {
   height: 50px;
   width: 150px;
 }
+@media (max-width: 960px) {
+  .timeline__001_text, .timeline__003_text {
+    width: 150px;
+    top: 0;
+    left: -145px;
+  }
+}
 .timeline__002_text, .timeline__004_text {
   position: absolute;
   top: -175px;
   left: -80px;
   height: 50px;
   width: 210px;
+}
+@media (max-width: 960px) {
+  .timeline__002_text, .timeline__004_text {
+    width: 150px;
+    top: 0;
+    left: 55px;
+  }
 }
 .timeline__001_icon, .timeline__003_icon {
   position: absolute;
@@ -6398,12 +6436,26 @@ p::selection {
   height: 50px;
   width: 50px;
 }
+@media (max-width: 960px) {
+  .timeline__001_icon, .timeline__003_icon {
+    width: 100px;
+    top: 0;
+    left: 45px;
+  }
+}
 .timeline__002_icon, .timeline__004_icon {
   position: absolute;
   bottom: -80px;
   left: -12px;
   height: 50px;
   width: 50px;
+}
+@media (max-width: 960px) {
+  .timeline__002_icon, .timeline__004_icon {
+    width: 100px;
+    top: 0;
+    left: -115px;
+  }
 }
 .timeline__001, .timeline__002, .timeline__003, .timeline__004 {
   width: 30px;
@@ -6412,11 +6464,33 @@ p::selection {
   position: relative;
   border-radius: 50%;
 }
+@media (max-width: 960px) {
+  .timeline__001, .timeline__002, .timeline__003, .timeline__004 {
+    margin-left: -12px;
+  }
+}
 .timeline__001 {
   margin-left: 100px;
 }
+@media (max-width: 960px) {
+  .timeline__001 {
+    margin-top: 130px;
+    margin-left: -12px;
+  }
+}
+@media (max-width: 960px) {
+  .timeline__003 {
+    margin-top: 120px;
+  }
+}
 .timeline__004 {
   margin-right: 100px;
+}
+@media (max-width: 960px) {
+  .timeline__004 {
+    margin-right: 0;
+    margin-bottom: 250px;
+  }
 }
 
 .section_facts_121 {
