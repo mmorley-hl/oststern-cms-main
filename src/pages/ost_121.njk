@@ -66,11 +66,12 @@ eleventyNavigation:
 </br>
 </br>
 </br>
-
+{# Main_teaser #}
 {%- from "system/component.njk" import component -%}
-{{ component('section_lage', {
+{{ component('section_teaser_main', {
   eyebrow: 'LAGE',
   headline:  'Ostend Community',
+  animate_headline: true,
   subline:  'Subline mit Fokus Lage…',
   bodytext: '<p>Das Projekt Oststern liegt mitten im Frankfurter Trendviertel Ostend. Es steht, wie kaum ein anderer Frankfurter Stadtteil, für modernes urbanes Lebensgefühl und steten Wandel. 
 Die Nähe zur City, eine gute Verkehrsanbindung und ein vielfältiges Angebot an Gastronomie und Einzelhandel machen das Ostend zu einem lebendigen Stadtteil mit ganz besonderem Charme.</p>',
@@ -109,10 +110,57 @@ Die Nähe zur City, eine gute Verkehrsanbindung und ein vielfältiges Angebot an
 {% include "section_erholung.njk" %}
 {% include "section_architektur.njk" %}
 {% include "section_besonderheiten.njk" %}
-{% include "section_facts_121.njk" %}
+
+{# OSTSTERN 121 #}
+{# {% include "section_facts_121.njk" %} #}
+{{ component('section_teaser_main', {
+  eyebrow: 'OSTSTERN 121',
+  headline:  'Smarte Arbeitswelt statt Auto&shy;industrie',
+  animate_headline: true,
+  subline:  'Hier erwacht das Ostend neu',
+  bodytext: '<p> Das ehemalige „Mercedes-Areal“ im Frankfurter Ostend wird aktuell neu entwickelt und mit einem Nutzungsmix aus Wohn- und Gewerbebauten beplant. Die Innenstadt nahe Lage und gute Verkehrsanbindung sowie die im Quartier vorhandenen Geschäfte machen das Ostend zu einem vielschichtigen und lebendigen Stadtteil mit ganz besonderem Charme.</p>',
+  logo: '',
+  background_image: {
+    src: '../assets/images/facts_oststern_121.jpg',
+    x: '0.1',
+    y: '1'
+  },
+  button: {
+    style: 'button',
+    content: 'Zu den Renderings'
+  }
+}) }}
+
+
 {% include "section_fassade.njk" %}
 {% include "section_slider_001.njk" %}
-{% include "section_keyfacts.njk" %}
+
+ {# keyfacts #}
+{# {% include "section_keyfacts.njk" %} #}
+{{ component('section_teaser_main', {
+  eyebrow: 'KEYFACTS',
+  headline:  'Daten und Fakten',
+  animate_headline: true,
+  subline:  'Alle wichtigen Informationen im Überblick',
+  bodytext: '<p>Im folgenden Abschnitt finden Sie alle relevanten Gebäudefakten zur Ausstattung, Grundrisse und Quadraturen.
+            Eine zusammenfassende Präsentation steht zum Download bereit.</p>',
+  logo: '',
+  background_image: {
+    src: '../assets/images/keyfacts_image.jpg',
+    x: '0.1',
+    y: '1'
+  },
+  button: {
+    icon_button: true,
+    icon: {
+      src: '../assets/images/icons/icons8-pictures_folder.svg'
+    },
+    style: 'button_icon',
+    content: 'Präsentation herunterladen'
+  }
+}) }}
+
+
 {% include "section_ausstattung.njk" %}
 {% include "section_bueroflaechen.njk" %}
 {% include "section_grundrisse.njk" %}

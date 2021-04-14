@@ -7041,6 +7041,101 @@ p::selection {
   padding: 40px 40px 80px 40px;
 }
 
+.section_teaser_main {
+  min-height: 720px;
+  width: 100%;
+}
+.section_teaser_main .column {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.section_teaser_main .h1 {
+  padding-right: 40px;
+}
+@media (max-width: 1280px) {
+  .section_teaser_main {
+    min-height: 1000px;
+  }
+}
+.section_teaser_main__content_wrapper {
+  color: white;
+  height: 100%;
+}
+.section_teaser_main__content_top {
+  padding: 64px 40px;
+  background-color: #101C36;
+  height: 50%;
+}
+@media (max-width: 1024px) {
+  .section_teaser_main__content_top {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.section_teaser_main__content_top .h5 {
+  color: #E6B74D;
+}
+.section_teaser_main__content_bottom {
+  color: black;
+  padding: 64px 40px;
+  background-color: #E0EFF0;
+  height: 50%;
+}
+@media (max-width: 1280px) {
+  .section_teaser_main__content_bottom {
+    padding: 64px 40px 220px 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .section_teaser_main__content_bottom {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.section_teaser_main__image_wrapper {
+  position: relative;
+  min-height: 800px;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 960px) {
+  .section_teaser_main__image_wrapper {
+    min-height: 450px;
+  }
+}
+.section_teaser_main__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 800px;
+  height: 100%;
+  z-index: 444;
+}
+@media (max-width: 960px) {
+  .section_teaser_main__logo {
+    min-height: 450px;
+  }
+}
+.section_teaser_main__logo img {
+  width: 40%;
+}
+.section_teaser_main__logo::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #101C36;
+  opacity: 0.4;
+  z-index: -1;
+}
+.section_teaser_main .simpleParallax {
+  width: 100%;
+  height: 100%;
+}
+
 .section {
   padding: 7.2rem 0 calc(7.2rem - 0.9rem);
   outline: none;
