@@ -7,6 +7,10 @@
         padding-left: 0!important;
         padding-right: 0!important;
     }
+    .h2 {
+        padding-top: 35px;
+    }
+
     .h2, .h4, p {
         @media (max-width: $bpM) {
             padding-left: 30px;
@@ -20,7 +24,7 @@
         position: relative;
         transform: translateX(-10%);
         @media (max-width: $bpM) {
-            width: 70%;
+            width: 75%;
             margin-left: auto;
             margin-right: auto;
             transform: translateX(-8%);

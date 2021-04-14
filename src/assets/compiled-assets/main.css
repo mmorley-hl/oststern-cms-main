@@ -6557,6 +6557,9 @@ p::selection {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+.section_erreichbarkeit .h2 {
+  padding-top: 35px;
+}
 @media (max-width: 1024px) {
   .section_erreichbarkeit .h2, .section_erreichbarkeit .h4, .section_erreichbarkeit p {
     padding-left: 30px;
@@ -6569,7 +6572,7 @@ p::selection {
 }
 @media (max-width: 1024px) {
   .section_erreichbarkeit__image {
-    width: 70%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     transform: translateX(-8%);
