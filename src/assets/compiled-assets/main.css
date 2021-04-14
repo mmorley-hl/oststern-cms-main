@@ -7049,9 +7049,6 @@ p::selection {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-.section_teaser_main .h1 {
-  padding-right: 40px;
-}
 @media (max-width: 1280px) {
   .section_teaser_main {
     min-height: 1000px;
@@ -7071,6 +7068,9 @@ p::selection {
     padding-left: 30px;
     padding-right: 30px;
   }
+}
+.section_teaser_main__content_top .h1 {
+  padding-right: 40px;
 }
 .section_teaser_main__content_top .h5 {
   color: #E6B74D;

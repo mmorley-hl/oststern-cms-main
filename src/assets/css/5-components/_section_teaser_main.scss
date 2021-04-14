@@ -7,10 +7,6 @@
         padding-right: 0!important;
     }
 
-    .h1 {
-        padding-right: 40px;
-    }
-
     @media (max-width: $bpL) {
         min-height: 1000px;
     }
@@ -27,6 +23,10 @@
         @media (max-width: $bpM) {
             padding-left: $gutter_30;
             padding-right: $gutter_30;
+        }
+
+        .h1 {
+            padding-right: 40px;
         }
 
         .h5 {
@@ -49,16 +49,12 @@
     }
 
     &__image_wrapper {
-        // background-color: red;
         position: relative;
         min-height: 800px;
         height: 100%;
         width: 100%;
-        // min-width: 500px;
-        // background-image: url("./images/lage_image.jpg");
         background-position: center;
         background-size: cover;
-        // z-index: 2;
         @media (max-width: $bpS) {
             min-height: 450px;
         }
