@@ -1,7 +1,7 @@
 .section_lage {
     min-height: 720px;
     width: 100%;
-    // background-color: red;
+
     .column {
         padding-left: 0!important;
         padding-right: 0!important;
@@ -21,8 +21,8 @@
         background-color: $primary;
         height: 50%;
         @media (max-width: $bpM) {
-            padding-left: 30px;
-            padding-right: 30px;
+            padding-left: $gutter_30;
+            padding-right: $gutter_30;
         }
 
         .h5 {
@@ -39,8 +39,8 @@
             padding: 64px 40px 220px 40px;
         }
         @media (max-width: $bpM) {
-            padding-left: 30px;
-            padding-right: 30px;
+            padding-left: $gutter_30;
+            padding-right: $gutter_30;
         }
     }
 
@@ -59,8 +59,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        min-height: 800px;
         height: 100%;
         z-index: 444;
+
+        img {
+            width: 40%;
+        }
 
         &::before {
             position: absolute;

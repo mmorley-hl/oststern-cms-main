@@ -1,7 +1,6 @@
 .section_erreichbarkeit {
     min-height: 720px;
     width: 100%;
-    // background-color: red;
    
     .column {
         padding-left: 0!important;
@@ -13,8 +12,8 @@
 
     .h2, .h4, p {
         @media (max-width: $bpM) {
-            padding-left: 30px;
-            padding-right: 30px;
+            padding-left: $gutter_30;
+            padding-right: $gutter_30;
         }
     }
 
@@ -28,10 +27,7 @@
             margin-left: auto;
             margin-right: auto;
             transform: translateX(-8%);
-            // transform: translateY(60px);
             margin-top: 60px;
-            // padding-left: 30px;
-            // padding-right: 30px;
         }
 
         img {

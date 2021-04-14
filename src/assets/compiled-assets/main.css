@@ -6331,8 +6331,12 @@ p::selection {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 800px;
   height: 100%;
   z-index: 444;
+}
+.section_lage__logo img {
+  width: 40%;
 }
 .section_lage__logo::before {
   position: absolute;
