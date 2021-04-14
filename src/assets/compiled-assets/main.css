@@ -3695,6 +3695,9 @@ hr {
 .sameHeight {
   display: flex;
 }
+.sameHeight img {
+  margin-bottom: 0;
+}
 
 a {
   position: relative;
