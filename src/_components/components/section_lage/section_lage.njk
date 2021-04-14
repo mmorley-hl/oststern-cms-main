@@ -11,12 +11,12 @@
           <p>
           {{ params.bodytext }}
           </p>
-          <div class="button">Mehr erfahren</div>
+          <div class="{{ params.button_style }}">{{ params.button_text }}</div>
         </div>
       </div>
     </div>
     <div class="column large-6 sameHeight background-primary">
-      <div class="section_lage__image_wrapper">
+      <div class="section_lage__image_wrapper" style="background-image: url('{{ params.background_src }}'); {% if params.background_src_x is defined and params.background_src_y is defined %}background-position: calc({{ params.background_src_x }} * 100%) calc({{ params.background_src_y }} * 100%){% endif %}">
         <div class="section_lage__logo">
           <img src="{{ params.logo }}" alt="">
         </div>
