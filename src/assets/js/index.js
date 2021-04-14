@@ -11,8 +11,11 @@ import './_scrollAnker.js';
 import './_carousel.js';
 import './_toTopButton.js';
 import './_headroom.js';
+import smoothscroll from 'smoothscroll-polyfill'
 
 import simpleParallax from 'simple-parallax-js';
+
+smoothscroll.polyfill()
 
 var image = document.getElementsByClassName('thumbnail');
 new simpleParallax(image);
