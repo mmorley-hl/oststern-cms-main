@@ -11,7 +11,7 @@
         </div>
         <div class="section_teaser_facts__left_bottom_content">
           <div class="section_teaser_facts__left_bottom_content_image">
-            <img src="{{ params.image_left.src }}" alt="">
+            <img class="thumbnail" src="{{ params.image_left.src }}" alt="">
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@
     </div>
     <div class="column large-5 sameHeight">
       <div class="section_teaser_facts__right_wrapper">
-        <div class="section_teaser_facts__right_image" style="background-image: url('{{ params.image_right.src }}'); {% if params.image_right.x is defined and params.image_right.y is defined %}background-position: calc({{ params.image_right.x }} * 100%) calc({{ params.image_right.y }} * 100%){% endif %}">
+        <div class="section_teaser_facts__right_image thumbnail" style="background-image: url('{{ params.image_right.src }}'); {% if params.image_right.x is defined and params.image_right.y is defined %}background-position: calc({{ params.image_right.x }} * 100%) calc({{ params.image_right.y }} * 100%){% endif %}">
         </div>
         <div class="section_teaser_facts__right_content">
           {{ params.image_bodytext }}

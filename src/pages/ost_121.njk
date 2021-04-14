@@ -131,7 +131,42 @@ Die Nähe zur City, eine gute Verkehrsanbindung und ein vielfältiges Angebot an
 
 
 {% include "section_architektur.njk" %}
-{% include "section_besonderheiten.njk" %}
+
+{# besonderheiten teaser #}
+{# {% include "section_besonderheiten.njk" %} #}
+{{ component('section_teaser_facts', {
+  headline:  'Besonderheiten',
+  animate_headline: true,
+  bodytext: '<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>',
+  button: {
+    style: 'button',
+    content: 'Zur Karte'
+  },
+  image_left: {
+    src: '../assets/images/gebaeude_OSW_1.jpg'
+  },
+  image_right: {
+    src: '../assets/images/OSW_Lobby.jpg',
+    x: '0.1',
+    y: '0'
+  },
+  facts: [
+      {
+        item: '6',
+        result: 'Stockwerke'
+      },
+      {
+        item: 'XXX',
+        result: 'Stockwerke'
+      },
+      {
+        item: 'XX',
+        result: 'Stockwerke'
+      }
+    ],
+    facts_bodytext: '<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>',
+    image_bodytext: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna' 
+}) }}
 
 {# OSTSTERN 121 #}
 {# {% include "section_facts_121.njk" %} #}
