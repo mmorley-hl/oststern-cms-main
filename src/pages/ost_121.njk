@@ -67,6 +67,7 @@ eleventyNavigation:
 </br>
 </br>
 {# Main_teaser #}
+{# {% include "section_lage.njk" %} #}
 {%- from "system/component.njk" import component -%}
 {{ component('section_teaser_main', {
   eyebrow: 'LAGE',
@@ -87,27 +88,48 @@ Die Nähe zur City, eine gute Verkehrsanbindung und ein vielfältiges Angebot an
   }
 }) }}
 
-{# {{ component('section_lage', {
-  eyebrow: 'LAGE',
-  headline:  'Ostend Community',
-  subline:  'Subline mit Fokus Lage…',
-  bodytext: '<p>Das Projekt Oststern liegt mitten im Frankfurter Trendviertel Ostend. Es steht, wie kaum ein anderer Frankfurter Stadtteil, für modernes urbanes Lebensgefühl und steten Wandel. 
-Die Nähe zur City, eine gute Verkehrsanbindung und ein vielfältiges Angebot an Gastronomie und Einzelhandel machen das Ostend zu einem lebendigen Stadtteil mit ganz besonderem Charme.</p>',
-  background_image: {
-    src: '../assets/images/lage_image.jpg',
-    x: '0.1',
-    y: '1'
-  },
-  button: {
-    style: 'button',
-    content: 'Mehr erfahren'
-  }
-}) }} #}
-
 {% include "section_erreichbarkeit.njk" %}
 {% include "section_facts_erreichbarkeit.njk" %}
 {% include "section_urbanitaet.njk" %}
-{% include "section_erholung.njk" %}
+
+{# erholung teaser #}
+{# {% include "section_erholung.njk" %} #}
+{{ component('section_teaser_facts', {
+  headline:  'Erholung',
+  animate_headline: true,
+  bodytext: '<p>Das Freizeitangebot, mit dem 
+300m entfernt liegenden Hafenpark, Sportplätzen sowie diverse Fitnessstudios in unmittelbarer Nähe, ist unschlagbar.</p>',
+  button: {
+    style: 'button',
+    content: 'Zur Karte'
+  },
+  image_left: {
+    src: '../assets/images/Ostpark3_image.jpg'
+  },
+  image_right: {
+    src: '../assets/images/Hafenpark4_image.jpg',
+    x: '0.1',
+    y: '0'
+  },
+  facts: [
+      {
+        item: '300 m',
+        result: 'Hafenpark'
+      },
+      {
+        item: '1,8 km',
+        result: 'Ostpark'
+      },
+      {
+        item: '1,4 km',
+        result: 'Schwedlersee'
+      }
+    ],
+    facts_bodytext: '<p>Stadtwald und Main bieten ideale Joggingstrecken, ob in der Pause oder nach der Arbeit. Wer frische Luft genießen möchte, kann den begrünten Quartiersplatz zwischen den beiden Officegebäuden des Oststerns zur kurzen Erholungspause nutzen oder im nahegelegenen Ostpark oder Hafenpark abschalten. </p>',
+    image_bodytext: 'Für einen schnellen Einkauf oder auch einen Lunchbreak findet sich einer der größten Supermärkte Frankfurts im direkten Umfeld, ebenso Bäcker, Metzger und eine Vielzahl an Restaurants und Cafés.' 
+}) }}
+
+
 {% include "section_architektur.njk" %}
 {% include "section_besonderheiten.njk" %}
 
