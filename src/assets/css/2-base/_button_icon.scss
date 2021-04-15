@@ -3,10 +3,10 @@
   flex-direction: row;
   height: 60px;
   // min-width: 1em;
-  width: 320px;
+  width: 300px;
   // display: block;
   margin: 0 0 $gutter/2;
-  padding: 1em 2em;
+  padding: 1em 1.1em;
   line-height: 1em;
   // text-align: center;
   white-space: nowrap;
@@ -21,6 +21,7 @@
   // vertical-align: middle;
 
   &__text {
+    font-size: 16px;
     align-self: center;
     padding-left: 20px;
   }
