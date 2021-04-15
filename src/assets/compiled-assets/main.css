@@ -7072,6 +7072,9 @@ p::selection {
 .section_teaser_main__content_top .h1 {
   padding-right: 40px;
 }
+.section_teaser_main__content_top p {
+  padding-right: 40px;
+}
 .section_teaser_main__content_top .h5 {
   color: #E6B74D;
 }
