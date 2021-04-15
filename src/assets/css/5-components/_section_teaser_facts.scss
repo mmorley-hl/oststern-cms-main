@@ -37,12 +37,12 @@
     &__middle_top_content {
         padding: 40px 40px 20px 40px;
         @media (max-width: $bpL) {
-            padding: 40px 20px 20px 40px;
+            padding: 40px 20px 20px 30px;
          }
     }
 
     &__middle_top_content_item {
-        flex-shrink: 1;
+        // flex-shrink: 1;
         display: flex;
     }
 
@@ -81,7 +81,7 @@
     &__middle_bottom_content {
         padding: 15px 60px 20px 40px;
         @media (max-width: $bpL) {
-            padding: 20;
+            padding: 30px;
          }
     }
 
