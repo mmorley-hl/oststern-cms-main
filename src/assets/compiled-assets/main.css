@@ -6016,8 +6016,12 @@ p::selection {
     display: flex;
   }
 }
-.mobile_menu_button:focus {
-  outline: 0 !important;
+.mobile_menu_button input,
+.mobile_menu_button textarea,
+.mobile_menu_button button,
+.mobile_menu_button select,
+.mobile_menu_button a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .mobile_menu_button .menu-button {
   display: flex;
@@ -6025,9 +6029,6 @@ p::selection {
   justify-content: center;
   width: 80px;
   padding: 0.5em;
-}
-.mobile_menu_button .menu-button:focus {
-  outline: 0 !important;
 }
 .mobile_menu_button .burger-icon {
   position: relative;
