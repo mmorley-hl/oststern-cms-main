@@ -11,6 +11,7 @@ import './_scrollAnker.js';
 import './_carousel.js';
 import './_toTopButton.js';
 import './_headroom.js';
+import './_mobile_menu_button.js';
 import smoothscroll from 'smoothscroll-polyfill'
 
 import simpleParallax from 'simple-parallax-js';

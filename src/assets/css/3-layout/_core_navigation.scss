@@ -26,9 +26,12 @@
     }
 
 	@media (max-width: $bpM) {
-		height: $headerHeightMobile;
+		// height: $headerHeightMobile;
 	}
-
+	display: block;
+	@media (max-width: $bpL) {
+		display: none;
+	}
 	a {
 		text-decoration: underline;
 
