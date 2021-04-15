@@ -45,6 +45,7 @@
 }
 
 
+
 .mobile_menu_button {
 	// width: 100%;
 	z-index: 655;
@@ -59,13 +60,29 @@
 	box-shadow: 0 8px 10px 0 rgba(0, 0, 0, .1);
 	display: none;
 	@media (max-width: $bpL) {
-		display: block;
+		display: flex;
 	}
 
 	&--hide {
 		// // display: none;
 		// transform: translateY(300px);
 		// transition: transform $duration $timing;
+	}
+
+	.menu-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 80px;
+		padding: .5em;
+	}
+	
+	.burger-icon {
+		@include burger(25px, 3px, 5px, $border-color);
+	}
+	
+	.menu-button.is-active .burger-icon {
+		@include burger-to-cross;
 	}
 }
 

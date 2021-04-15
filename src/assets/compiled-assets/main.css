@@ -6013,9 +6013,54 @@ p::selection {
 }
 @media (max-width: 1280px) {
   .mobile_menu_button {
-    display: block;
+    display: flex;
   }
 }
+.mobile_menu_button .menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  padding: 0.5em;
+}
+.mobile_menu_button .burger-icon {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.mobile_menu_button .burger-icon, .mobile_menu_button .burger-icon::before, .mobile_menu_button .burger-icon::after {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #E6B74D;
+  outline: 1px solid transparent;
+  transition-property: background-color, transform;
+  transition-duration: 0.3s;
+}
+.mobile_menu_button .burger-icon::before, .mobile_menu_button .burger-icon::after {
+  position: absolute;
+  content: "";
+}
+.mobile_menu_button .burger-icon::before {
+  top: -8px;
+}
+.mobile_menu_button .burger-icon::after {
+  top: 8px;
+}
+.mobile_menu_button .menu-button.is-active .burger-icon {
+  background-color: transparent;
+}
+.mobile_menu_button .menu-button.is-active .burger-icon::before {
+  transform: translateY(8px) rotate(45deg);
+}
+.mobile_menu_button .menu-button.is-active .burger-icon::after {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 .footer_121 {
   min-height: 230px;
   width: 100%;
