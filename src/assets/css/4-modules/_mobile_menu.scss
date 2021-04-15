@@ -62,6 +62,9 @@
 	@media (max-width: $bpL) {
 		display: flex;
 	}
+	&:focus {
+		outline: 0 !important;
+	}
 
 	&--hide {
 		// // display: none;
@@ -75,6 +78,10 @@
 		justify-content: center;
 		width: 80px;
 		padding: .5em;
+		&:focus {
+			outline: 0 !important;
+		}
+	
 	}
 	
 	.burger-icon {

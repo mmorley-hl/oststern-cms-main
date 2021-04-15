@@ -6016,12 +6016,18 @@ p::selection {
     display: flex;
   }
 }
+.mobile_menu_button:focus {
+  outline: 0 !important;
+}
 .mobile_menu_button .menu-button {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 80px;
   padding: 0.5em;
+}
+.mobile_menu_button .menu-button:focus {
+  outline: 0 !important;
 }
 .mobile_menu_button .burger-icon {
   position: relative;
