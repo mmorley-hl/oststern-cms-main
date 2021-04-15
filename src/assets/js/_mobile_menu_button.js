@@ -17,13 +17,13 @@ mobileMenuButton.forEach(elem => {
         mobileMenu.forEach(elem => {
             console.log('style', elem.style.top)
             if (elem.style.top == '') {
-                disableBodyScroll(elem);
+                // disableBodyScroll(elem);
                 elem.style.top = "0";
             } else if (elem.style.top == '0px') {
-                enableBodyScroll(elem);
+                // enableBodyScroll(elem);
                 elem.style.top = "-140vh";
             } else {
-                disableBodyScroll(elem);
+                // disableBodyScroll(elem);
                 elem.style.top = "0";
             }
 
