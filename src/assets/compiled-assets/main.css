@@ -6336,8 +6336,14 @@ p::selection {
 }
 
 .section_ausstattung {
-  min-height: 720px;
+  min-height: 320px;
   width: 100%;
+  margin-top: 40px;
+}
+@media (max-width: 960px) {
+  .section_ausstattung {
+    margin-top: 20px;
+  }
 }
 .section_ausstattung .column {
   padding-left: 0 !important;
@@ -6347,6 +6353,92 @@ p::selection {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.section_ausstattung h2 {
+  margin-bottom: 70px;
+}
+
+.timeline_section_ausstattung {
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1500px;
+}
+.timeline_section_ausstattung::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: black;
+  height: 100%;
+  width: 3px;
+}
+.timeline_section_ausstattung .h2 {
+  font-size: 19px;
+  margin-bottom: 0;
+}
+.timeline_section_ausstattung__002_subtext_wrapper p {
+  color: #3C83A0;
+  margin: 0;
+}
+.timeline_section_ausstattung__004_subtext_wrapper p {
+  color: #3C83A0;
+  margin: 0;
+}
+.timeline_section_ausstattung__001_text, .timeline_section_ausstattung__003_text, .timeline_section_ausstattung__005_text, .timeline_section_ausstattung__007_text {
+  position: absolute;
+  height: 50px;
+  width: 120px;
+  top: 0;
+  left: -145px;
+}
+.timeline_section_ausstattung__002_text, .timeline_section_ausstattung__004_text, .timeline_section_ausstattung__006_text, .timeline_section_ausstattung__008_text {
+  position: absolute;
+  height: 50px;
+  width: 140px;
+  top: 0;
+  left: 50px;
+}
+.timeline_section_ausstattung__001_icon, .timeline_section_ausstattung__003_icon, .timeline_section_ausstattung__005_icon, .timeline_section_ausstattung__007_icon {
+  position: absolute;
+  top: -90px;
+  left: -12px;
+  height: 50px;
+  width: 100px;
+  top: 0;
+  left: 45px;
+}
+.timeline_section_ausstattung__002_icon, .timeline_section_ausstattung__004_icon, .timeline_section_ausstattung__006_icon, .timeline_section_ausstattung__008_icon {
+  position: absolute;
+  bottom: -80px;
+  left: -12px;
+  height: 50px;
+  width: 100px;
+  top: 0;
+  left: -115px;
+}
+.timeline_section_ausstattung__001, .timeline_section_ausstattung__002, .timeline_section_ausstattung__003, .timeline_section_ausstattung__004, .timeline_section_ausstattung__005, .timeline_section_ausstattung__006, .timeline_section_ausstattung__007, .timeline_section_ausstattung__008 {
+  width: 30px;
+  height: 30px;
+  background: black;
+  position: relative;
+  border-radius: 50%;
+  margin-left: -12px;
+}
+.timeline_section_ausstattung__001 {
+  margin-left: 100px;
+  margin-top: 70px;
+  margin-left: -12px;
+}
+.timeline_section_ausstattung__008 {
+  margin-right: 100px;
+  margin-right: 0;
+  margin-bottom: 150px;
 }
 
 .section_keyfacts {
