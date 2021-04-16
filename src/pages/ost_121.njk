@@ -70,6 +70,7 @@ eleventyNavigation:
 {# {% include "section_lage.njk" %} #}
 {%- from "system/component.njk" import component -%}
 {{ component('section_teaser_main', {
+  anchor: 'lage',
   eyebrow: 'LAGE',
   headline:  'Ostend Community',
   animate_headline: true,
@@ -195,6 +196,7 @@ Die Nähe zur City, eine gute Verkehrsanbindung und ein vielfältiges Angebot an
  {# keyfacts #}
 {# {% include "section_keyfacts.njk" %} #}
 {{ component('section_teaser_main', {
+  anchor: 'keyfacts',
   eyebrow: 'KEYFACTS',
   headline:  'Daten und Fakten',
   animate_headline: true,
