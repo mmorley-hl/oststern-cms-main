@@ -6499,8 +6499,8 @@ p::selection {
 }
 @media (max-width: 1024px) {
   .section_lage__content_top {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
   }
 }
 .section_lage__content_top .h5 {
@@ -6519,8 +6519,8 @@ p::selection {
 }
 @media (max-width: 1024px) {
   .section_lage__content_bottom {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
   }
 }
 .section_lage__image_wrapper {
@@ -6784,8 +6784,8 @@ p::selection {
 }
 @media (max-width: 1024px) {
   .section_erreichbarkeit .h2, .section_erreichbarkeit .h4, .section_erreichbarkeit p {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
   }
 }
 .section_erreichbarkeit__image {
@@ -7258,8 +7258,8 @@ p::selection {
 }
 @media (max-width: 1024px) {
   .section_teaser_main__content_top {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
   }
 }
 .section_teaser_main__content_top .h1 {
@@ -7281,8 +7281,8 @@ p::selection {
 }
 @media (max-width: 1024px) {
   .section_teaser_main__content_bottom {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
   }
 }
 .section_teaser_main__image_wrapper {
@@ -7428,6 +7428,36 @@ p::selection {
   padding: 40px 40px 80px 40px;
 }
 
+.section_d2d_test {
+  margin-top: 300px;
+}
+.section_d2d_test__box_container {
+  contain: layout inline-size;
+}
+.section_d2d_test__box {
+  display: flex;
+  flex-direction: column;
+  background-color: #101C36;
+  margin-bottom: 1.8rem;
+  color: #eeecec;
+}
+.section_d2d_test img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+.section_d2d_test__box_content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.8rem;
+}
+
+@container (min-width: 500px) {
+  .section_d2d_test__box {
+    background-color: #3C83A0;
+    flex-direction: row;
+  }
+}
 .section {
   padding: 7.2rem 0 calc(7.2rem - 0.9rem);
   outline: none;
