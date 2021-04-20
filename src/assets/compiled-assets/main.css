@@ -5094,6 +5094,28 @@ html {
   transform: translate(-600px, -200px);
 }
 
+.anchor {
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  top: -50;
+}
+@media (max-width: 1024px) {
+  .anchor {
+    top: 58px;
+  }
+}
+
+.inset {
+  height: 80px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .inset {
+    height: 0px;
+  }
+}
+
 .first-letter {
   float: left;
   font-size: 50px;
@@ -7242,6 +7264,7 @@ p::selection {
 .section_teaser_main {
   min-height: 720px;
   width: 100%;
+  position: relative;
 }
 .section_teaser_main .column {
   padding-left: 0 !important;

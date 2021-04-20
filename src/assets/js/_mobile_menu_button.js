@@ -15,7 +15,6 @@ mobileMenuButton.forEach(elem => {
     
     elem.onclick = () => {
         mobileMenu.forEach(elem => {
-            console.log('style', elem.style.top)
             if (elem.style.top == '') {
                 // disableBodyScroll(elem);
                 elem.style.top = "0";
@@ -33,7 +32,7 @@ mobileMenuButton.forEach(elem => {
 });
 
 var menuButton = document.getElementById('menuButton');
-menuButton.addEventListener('click', function (e) {
+menuButton.addEventListener('click',  (e) => {
     menuButton.classList.toggle('is-active');
     e.preventDefault();
 });
