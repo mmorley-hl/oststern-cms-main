@@ -1,6 +1,7 @@
 // Makes Sass faster!
 const Fiber = require('fibers');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const path = require('path');
 const autoprefixer = require('autoprefixer');
 
@@ -56,6 +57,12 @@ module.exports = {
 				},
 			},
 		},
+		minimize: true,
+    minimizer: [
+      // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
+      // `...`,
+      new CssMinimizerPlugin(),
+    ],
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
