@@ -1,0 +1,11 @@
+.section_teaser {
+    background-color: $primary;
+    height: 387px;
+    color: white;
+    &__content_wrapper{
+        width: 486px;
+    }
+    &__eyebrow {
+        color: $secondary;
+    }
+}
