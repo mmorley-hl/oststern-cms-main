@@ -13,6 +13,21 @@ image_src: https://picsum.photos/1000/1800/?random
 {# Main_teaser #}
 {# {% include "section_lage.njk" %} #}
 {%- from "system/component.njk" import component -%}
+{{ component('section_hero', {
+  background_image: {
+    src: '../assets/images/hero/Hero_image_001.jpg',
+    x: '0.1',
+    y: '1'
+  }
+}) }}
+{{ component('section_hero_lage', {
+  background_image: {
+    src: '../assets/images/hero/Secondsection lage.jpg',
+    x: '0.1',
+    y: '1'
+  }
+}) }}
+
 {{ component('section_teaser_main', {
   anchor: 'lage',
   eyebrow: 'LAGE',
