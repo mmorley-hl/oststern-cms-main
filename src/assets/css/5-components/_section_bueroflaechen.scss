@@ -1,14 +1,19 @@
 .section_bueroflaechen {
+    position: relative;
     // min-height: 720px;
     width: 100%;
-    margin-bottom: 60px;
-   
-    
-    .column {
-        padding-left: 0!important;
-        padding-right: 0!important;
-    }
+    // margin-bottom: 60px;
+    background-color: $primary;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.17);
 
+    &__wrapper_background {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        right: 0;
+        background-color: white;
+    }
+   
     &__intro {
         color: $secondary;
         padding-bottom: 40px;
