@@ -2,10 +2,25 @@
     background-color: $primary;
     height: 387px;
     color: white;
+    padding-top: 42px;
+
     &__content_wrapper{
         max-width: 486px;
     }
+
     &__eyebrow {
         color: $secondary;
+        .h5 {
+            margin-bottom: 0;
+        }
+    }
+
+    &__headline {
+        h2 {
+            font-family: $fontStackMatterMedium;
+            line-height: 56px;
+            letter-spacing: -0.58px;
+            font-size: 58px;
+        }
     }
 }
