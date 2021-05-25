@@ -78,16 +78,16 @@
     }
 
     .carousel-cell {
-        width: 314px;
+        width: 80%;
         height: 650px;
         margin-right: 15px;
 
         img {
-            // width: 100%;
+            width: 100%;
         }
 
         @media (max-width: $bpS) {
-            width: 390px;
+            width: 80%;
             height: 750px;
             margin-right: 15px;
         }

@@ -47,9 +47,16 @@
       ul {
         width: 447px;
         margin-bottom: 0;
+
         @media (max-width: $bpS) {
             width: 312px;
-          }
+        }
+
+        @media (max-width: $bpM) {
+            width: 447px;
+        }
+
+  
       }
 
       li {
