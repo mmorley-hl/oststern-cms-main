@@ -1,3 +1,26 @@
 .section_teaser_image {
     background-color: $gray-color-light;
+    &__img {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        img {
+            margin-bottom: 0;
+        }
+    }
+
+    &__content_wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img_wrapper {
+        align-content: flex-end;
+        img {
+            margin-bottom: 0;
+            width: 100%;
+        }
+    }
 }

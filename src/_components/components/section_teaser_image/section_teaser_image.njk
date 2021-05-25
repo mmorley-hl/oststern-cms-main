@@ -8,17 +8,23 @@
                 <div class="section_teaser_image__bodytext">
                   <p>{{ params.bodytext }}</p>
                 </div>
-                <img src="{{ params.image1.src }}" alt="">
-                <p>{{ params.image1.caption }}</p>
+                <div class="section_teaser_image__img_wrapper">
+                    <img src="{{ params.image1.src }}" alt="">
+                    <p>{{ params.image1.caption }}</p>
+                </div>
             </div>
         </div>
         <div class="column large-4">
-            <img src="{{ params.image2.src }}" alt="">
-            <p>{{ params.image2.caption }}</p>
+            <div class="section_teaser_image__img">
+                <img src="{{ params.image2.src }}" alt="">
+                <p>{{ params.image2.caption }}</p>
+            </div>
         </div>
         <div class="column large-4">
-            <img src="{{ params.image3.src }}" alt="">
-            <p>{{ params.image3.caption }}</p>
+            <div class="section_teaser_image__img">
+                <img class="" src="{{ params.image3.src }}" alt="">
+                <p>{{ params.image3.caption }}</p>
+            </div>
         </div>
     </div>
 </section>
