@@ -48,12 +48,8 @@
         width: 447px;
         margin-bottom: 0;
 
-        @media (max-width: $bpS) {
+        @media (max-width: $bpXS) {
             width: 312px;
-        }
-
-        @media (max-width: $bpM) {
-            width: 447px;
         }
 
   
