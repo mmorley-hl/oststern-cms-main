@@ -1,24 +1,20 @@
 .section_ausstattung {
+    position: relative;
     min-height: 320px;
     width: 100%;
-    margin-top: 40px;
+    // margin-top: 40px;
     @media (max-width: $bpS) {
         margin-top: 20px;
     }
-    
-    .column {
-        padding-left: 0!important;
-        padding-right: 0!important;
-    }
-    img {
-        // padding-left: 140px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto
-    }
 
-    h2 {
-        margin-bottom: 70px;
+    // h2 {
+    //     margin-bottom: 70px;
+    // }
+    &__headline {
+        font-size: 38px;
+        position: absolute;
+        // left: -380px;
+        top: 90px;
     }
 }
 
@@ -30,7 +26,7 @@
     justify-content: space-between;
     flex-direction: column;
     width:3px;
-    margin-left: auto;
+    margin-left: 350px;
     margin-right: auto;
     height: 1500px;
 
@@ -63,17 +59,7 @@
         }
     }
 
-    &__001_text, &__003_text, &__005_text, &__007_text {
-        position: absolute;
-        // bottom: -80px;
-        // left: -12px;
-        height: 50px;
-        // width: 150px;
-        width: 120px;
-        top: 0;
-        left: -145px;
-    }
-
+    &__001_text, &__003_text, &__005_text, &__007_text,
     &__002_text, &__004_text, &__006_text, &__008_text {
         position: absolute;
         height: 50px;
@@ -82,16 +68,7 @@
         left: 50px;
     }
 
-    &__001_icon, &__003_icon, &__005_icon, &__007_icon {
-        position: absolute;
-        top: -90px;
-        left: -12px;
-        height: 50px;
-        width: 100px;
-        top: 0;
-        left: 45px;
-    }
-
+    &__001_icon, &__003_icon, &__005_icon, &__007_icon,
     &__002_icon, &__004_icon, &__006_icon, &__008_icon {
         position: absolute;
         bottom: -80px;
@@ -113,7 +90,7 @@
 
     &__001 {
         margin-left: 100px;  
-        margin-top: 70px;
+        margin-top: 212px;
         margin-left: -12px; 
     }
 
