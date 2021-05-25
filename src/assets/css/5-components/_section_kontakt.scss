@@ -6,19 +6,23 @@
     }
 
     &__intro {
-        padding: 80px 40px;
+        // padding: 80px 40px;
         
-        h5 {
-            color: $border-color;
-        }
+        // h5 {
+        //     color: $border-color;
+        // }
     }
 
     &__outro {
-        padding: 80px 40px;
+        // padding: 80px 40px;
     }
 
     &__ansprache {
-        height: 785px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // height: 785px;
+        height: 100%;
     }
 
     &__kontakt_1 {
