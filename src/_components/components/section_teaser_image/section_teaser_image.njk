@@ -3,10 +3,10 @@
         <div class="column large-4">
             <div class="section_teaser_image__content_wrapper">
                 <div class="section_teaser_image__headline">
-                    <h52 class="h2">{{ params.headline }}</h5>
-                </div>
-                <div class="section_teaser_image__bodytext">
-                  <p>{{ params.bodytext }}</p>
+                    <h5 class="h2">{{ params.headline }}</h5>
+                    <div class="section_teaser_image__bodytext">
+                        <p>{{ params.bodytext }}</p>
+                    </div>
                 </div>
                 <div class="section_teaser_image__img_wrapper">
                     <img src="{{ params.image1.src }}" alt="">
@@ -26,5 +26,34 @@
                 <p>{{ params.image3.caption }}</p>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="section section_teaser_image_mobile">
+    <div class="row">
+        <div class="column">
+            <div class="section_teaser_image_mobile__headline">
+                <h5 class="h2">{{ params.headline }}</h5>
+                <div class="section_teaser_image_mobile__bodytext">
+                    <p>{{ params.bodytext }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel"
+    data-flickity='{ "freeScroll": true, "cellAlign": "center" }'>
+    <div class="carousel-cell">
+        <img src="{{ params.image1.src }}" alt="">
+        <p>{{ params.image1.caption }}</p>
+    </div>
+    <div class="carousel-cell">
+        <img src="{{ params.image2.src }}" alt="">
+        <p>{{ params.image2.caption }}</p>
+    </div>
+    <div class="carousel-cell">
+        <img class="" src="{{ params.image3.src }}" alt="">
+        <p>{{ params.image3.caption }}</p>
+    </div>
     </div>
 </section>

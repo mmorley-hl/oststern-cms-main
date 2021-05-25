@@ -1,5 +1,5 @@
 .section {
-  padding: $sectionPadding 0 calc(#{$sectionPadding} - #{$gutter/2});
+  padding: $sectionPadding 0;
   outline: none;
 
   // @media (max-height: 900px) {
