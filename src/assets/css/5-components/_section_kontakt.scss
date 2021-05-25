@@ -1,20 +1,13 @@
 .section_kontakt {
-    margin-bottom: 120px;
-    margin-top: 140px;
-    .column {
-        padding-left: 0!important;
-        padding-right: 0!important;
-    }
-
     height: 100%;
-    // background-color: red;
+    background-color: $gray-color-light;
     @media (max-width: $bpL) {
         // background-color: green;
     }
 
     &__intro {
         padding: 80px 40px;
-        background-color: $gray-color;
+        
         h5 {
             color: $border-color;
         }
