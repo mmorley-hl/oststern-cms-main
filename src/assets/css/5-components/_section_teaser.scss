@@ -3,7 +3,7 @@
     height: 387px;
     color: white;
     &__content_wrapper{
-        width: 486px;
+        max-width: 486px;
     }
     &__eyebrow {
         color: $secondary;
