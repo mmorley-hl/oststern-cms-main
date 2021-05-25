@@ -33,6 +33,9 @@
       padding: 73px 0 104px 64px;
       background-color: $gray-color-light;
       width: 50%;
+      @media (max-width: $bpS) {
+        padding: 73px 0 104px 30px;
+      }
 
       .h3 {
         font-size: 14;
@@ -42,19 +45,40 @@
       }
 
       ul {
-        width: 400px;
+        width: 447px;
         margin-bottom: 0;
+        @media (max-width: $bpS) {
+            width: 312px;
+          }
       }
 
       li {
-          color: $primary;
+          position: relative;
+        list-style: none;
+        color: $primary;
         font-size: 28px;
         font-family: $fontStackMatterMedium;
         padding-top: 30px;
+        @media (max-width: $bpM) {
+            font-size: 24px;
+          }
+        &::before {
+            position: absolute;
+            content: '';
+            height: 30px;
+            width: 30px;
+            background-image: url(../assets/images/icons/icons8-checkmark.svg);
+            background-repeat: no-repeat;
+            left: -40px;
+            top: 48px;
+        }
       }
 
       p {
           padding-left: 41px;
+          @media (max-width: $bpS) {
+            width: 268px;
+          }
       }
       
       @media (max-width: $bpM) {
