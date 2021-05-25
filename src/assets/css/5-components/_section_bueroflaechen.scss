@@ -12,6 +12,9 @@
         width: 50%;
         right: 0;
         background-color: white;
+        @media (max-width: $bpM) {
+            width: 100%;
+          }
     }
    
     &__intro {

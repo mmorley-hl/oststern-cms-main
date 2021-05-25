@@ -1,10 +1,17 @@
 .section_highlights {
   &__wrapper {
       display: flex;
+      @media (max-width: $bpM) {
+        flex-direction: column;
+      }
   }
 
   &__left_box {
       width: 50%;
+      @media (max-width: $bpM) {
+        width: 100%;
+      }
+
       img {
           width: 100%;
           margin-bottom: 0;
@@ -12,7 +19,11 @@
   }
 
   &__right_box {
+      padding: $basicGrid__gutter/2;
       background-color: $gray-color-light;
       width: 50%;
+      @media (max-width: $bpM) {
+        width: 100%;
+      }
   }
 }
