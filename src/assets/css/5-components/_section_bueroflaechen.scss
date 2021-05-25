@@ -24,13 +24,16 @@
     }
 
     &__box {
-        padding: 40px 140px 80px 0;
+        padding: 40px 0 80px 0;
         background-color: $primary;
         color: white;
+        width: 460px;
           @media (max-width: $bpM) {
+            width: 100%;
             padding: 40px 0 20px 0;
          }
           @media (max-width: $bpXS) {
+            width: 100%;
             padding: 40px 0 20px 0;
          }
     }
