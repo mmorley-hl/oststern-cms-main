@@ -55,9 +55,15 @@
         }
 
         a {
+            display: inline;
             color: white;
-            padding-top: 10px;
+            // padding-top: 10px;
         }
+
+    }
+
+    &__link_columns_wrapper_link {
+        padding-top: 10px;
     }
 
     &__link_column_1 {
