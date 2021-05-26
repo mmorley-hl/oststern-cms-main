@@ -1,16 +1,20 @@
 .section_kontakt {
     height: 100%;
+    padding-top: 74px;
+    padding-bottom: 80px;
     background-color: $gray-color-light;
     @media (max-width: $bpL) {
         // background-color: green;
     }
+    @media (max-width: $bpXS) {
+        padding-bottom: 0;
+        padding-top: 38px;
+    }
 
     &__intro {
-        // padding: 80px 40px;
-        
-        // h5 {
-        //     color: $border-color;
-        // }
+        @media (max-width: $bpXS) {
+            padding-bottom: 50px;
+         }
     }
 
     &__outro {
@@ -21,7 +25,8 @@
     }
 
     &__outro_mobile {
-        padding-top: 60px;
+        padding-top: 50px;
+        padding-bottom: 60px;
         display: none;
         @media (max-width: $bpM) {
             display: block;
@@ -61,6 +66,7 @@
         flex-direction: row;
         background-color: $primary;
         padding: 36px;
+        padding-left: $gutter/2;
         height: 170px;
         img {
             margin-bottom: 0;
