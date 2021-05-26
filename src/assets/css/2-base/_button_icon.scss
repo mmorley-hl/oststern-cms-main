@@ -6,7 +6,7 @@
   width: 300px;
   // display: block;
   margin: 0 0 $gutter/2;
-  padding: 1em 1.1em;
+  padding: 1em 2.1em;
   line-height: 1em;
   // text-align: center;
   white-space: nowrap;
@@ -15,48 +15,30 @@
   // transition: background $duration $timing;
   border: 0;
   border-radius: 0;
-  background-color: $secondary-light;
+  background-color: white;
   border-radius: 2em;
-  color: $primary;
+  color: black;
+  border: 1px solid black;
   // vertical-align: middle;
+
+  @media (max-width: $bpXS) {
+    width: 100%;
+  }
+
+  &__icon {
+    margin-top: -5px;
+  }
 
   &__text {
     font-size: 16px;
     align-self: center;
     padding-left: 20px;
+    @media (max-width: $bpXS) {
+      width: 100%;
+      text-align: center;
+    }
+  
   }
-
-  //   cursor: pointer;
-  //   display: inline-block;
-  //   min-height: 1em;
-  //   outline: none;
-  //   border: none;
-  //   vertical-align: baseline;
-  //   background: #E0E1E2 none;
-  //   color: rgba(0, 0, 0, 0.6);
-  //   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  // //   margin: 0em 0.25em 0em 0em;
-  //   padding: 0.78571429em 1.5em 0.78571429em;
-  //   text-transform: none;
-  //   text-shadow: none;
-  //   font-weight: bold;
-  //   line-height: 1em;
-  //   font-style: normal;
-  //   text-align: center;
-  //   text-decoration: none;
-  //   border-radius: 0.28571429rem;
-  //   -webkit-box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
-  //   box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
-  //   -webkit-user-select: none;
-  //   -moz-user-select: none;
-  //   -ms-user-select: none;
-  //   user-select: none;
-  //   -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
-  //   transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
-  //   transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
-  //   transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
-  //   will-change: '';
-  //   -webkit-tap-highlight-color: transparent;
 
   &:active {
     transition: none;
