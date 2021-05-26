@@ -3,8 +3,8 @@
     padding-top: 74px;
     padding-bottom: 80px;
     background-color: $gray-color-light;
-    @media (max-width: $bpL) {
-        // background-color: green;
+    @media (max-width: $bpM) {
+        padding-bottom: 0;
     }
     @media (max-width: $bpXS) {
         padding-bottom: 0;
@@ -12,6 +12,12 @@
     }
 
     &__intro {
+        h5 {
+            font: $fontStackMatterSemiBold;
+            letter-spacing: 2.08px;
+            color: #939393;
+            margin-bottom: 0;
+        }
         @media (max-width: $bpXS) {
             padding-bottom: 50px;
          }
@@ -19,6 +25,7 @@
 
     &__outro {
         display: block;
+        padding-bottom: 100px;
         @media (max-width: $bpM) {
             display: none;
         }
