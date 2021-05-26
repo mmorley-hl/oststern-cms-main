@@ -41,19 +41,35 @@
         </div>
     </div>
 
-    <div class="carousel"
+    <div class="carousel carousel_tablet"
     data-flickity='{ "freeScroll": false, "cellAlign": "center" }'>
-    <div class="carousel-cell">
-        <img src="{{ params.image1.src }}" alt="">
-        <p>{{ params.image1.caption }}</p>
+        <div class="carousel-cell">
+            <img src="{{ params.image1_tablet.src }}" alt="">
+            <p>{{ params.image1_tablet.caption }}</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="{{ params.image2_tablet.src }}" alt="">
+            <p>{{ params.image2_tablet.caption }}</p>
+        </div>
+        <div class="carousel-cell">
+            <img class="" src="{{ params.image3_tablet.src }}" alt="">
+            <p>{{ params.image3_tablet.caption }}</p>
+        </div>
     </div>
-    <div class="carousel-cell">
-        <img src="{{ params.image2.src }}" alt="">
-        <p>{{ params.image2.caption }}</p>
-    </div>
-    <div class="carousel-cell">
-        <img class="" src="{{ params.image3.src }}" alt="">
-        <p>{{ params.image3.caption }}</p>
-    </div>
+
+       <div class="carousel carousel_phone"
+    data-flickity='{ "freeScroll": false, "cellAlign": "center" }'>
+        <div class="carousel-cell">
+            <img src="{{ params.image1_phone.src }}" alt="">
+            <p>{{ params.image1_phone.caption }}</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="{{ params.image2_phone.src }}" alt="">
+            <p>{{ params.image2_phone.caption }}</p>
+        </div>
+        <div class="carousel-cell">
+            <img class="" src="{{ params.image3_phone.src }}" alt="">
+            <p>{{ params.image3_phone.caption }}</p>
+        </div>
     </div>
 </section>

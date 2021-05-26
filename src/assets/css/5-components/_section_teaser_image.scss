@@ -63,6 +63,20 @@
         display: block;
 	}
 
+    .carousel_tablet {
+        display: block;
+        @media (max-width: $bpXS) {
+            display: none;
+        }
+    }
+
+    .carousel_phone {
+        display: none;
+        @media (max-width: $bpXS) {
+            display: block;
+        }
+    }
+
     &__headline {
         h5 {
             letter-spacing: -0.57px;;
@@ -89,7 +103,7 @@
 
         @media (max-width: $bpXS) {
             width: 80%;
-            min-height: 500px;
+            min-height: 650px;
             margin-right: 15px;
         }
       }
