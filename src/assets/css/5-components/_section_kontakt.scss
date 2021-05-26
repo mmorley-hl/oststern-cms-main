@@ -50,6 +50,29 @@
         img {
             width: 100%;
         }
+        @media (max-width: $bpXS) {
+            display: none;
+        }
+    }
+
+    &__kontakt_1_mobile,
+    &__kontakt_2_mobile {
+        display: none;
+        flex-direction: row;
+        background-color: $primary;
+        padding: 36px;
+        height: 170px;
+        img {
+            margin-bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: $bpXS) {
+            display: flex;
+        }
+    }
+
+    &__kontakt_2_mobile {
+        background-color: $secondary;
     }
 
     &__kontakt_2 {
@@ -62,6 +85,33 @@
         color: white;
         padding-top: 30px;
         padding-bottom: 90px;
+        p {
+            font: $fontStackMatterSemiBold;
+            letter-spacing: 0.24px;
+            margin-bottom: 8px;
+        }
+        a {
+            color: white;
+            border-bottom: white 2px solid;
+            padding-bottom: 3px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .special-column {
+        @media (max-width: $bpXS) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    &__kontakt_1_content_mobile,
+    &__kontakt_2_content_mobile{
+        color: white;
+        padding-left: 10px;
+        padding-top: 8px;
         p {
             font: $fontStackMatterSemiBold;
             letter-spacing: 0.24px;
