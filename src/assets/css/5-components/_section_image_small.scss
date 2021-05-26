@@ -1,5 +1,8 @@
 .section_image_small {
     padding-bottom: 130px;
+    @media (max-width: $bpXS) {
+        padding-bottom: 90px;
+    }
     p {
         font-size: 14px;
         padding-top: 15px;

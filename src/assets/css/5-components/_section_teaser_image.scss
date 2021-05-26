@@ -3,6 +3,7 @@
     @media (max-width: $bpM) {
         display: none;
 	}
+
     &__img {
         height: 100%;
         display: flex;
@@ -78,18 +79,26 @@
     }
 
     .carousel-cell {
-        width: 80%;
-        height: 650px;
+        width: 40%;
+        min-height: 600px;
         margin-right: 15px;
 
         img {
             width: 100%;
         }
 
-        @media (max-width: $bpS) {
+        @media (max-width: $bpXS) {
             width: 80%;
-            height: 750px;
+            min-height: 500px;
             margin-right: 15px;
         }
+      }
+
+      .flickity-button {
+          display: none;
+      }
+
+      .flickity-page-dots {
+          display: none;
       }
 }

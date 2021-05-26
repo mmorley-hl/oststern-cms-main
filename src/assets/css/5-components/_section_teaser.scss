@@ -3,6 +3,9 @@
     height: 387px;
     color: white;
     padding-top: 42px;
+    @media (max-width: $bpXS) {
+        height: 303px;
+    }
 
     &__content_wrapper{
         max-width: 486px;
