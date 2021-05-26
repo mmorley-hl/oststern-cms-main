@@ -91,11 +91,21 @@
  
     }
 
+    &__box_right_top {
+        padding-top: 50px;
+    } 
+
     &__box_right_top_item {
         padding-bottom: 20px;
         font-size: 24px;
         p {
+            font-size: 24px;
+            font: $fontStackMatterSemiBold;
             margin: 0;
+        }
+
+        .color-secondary {
+            font: $fontStackMatterRegular;
         }
         @media (max-width: $bpM) {
             padding: 0 0 20px 102px;
