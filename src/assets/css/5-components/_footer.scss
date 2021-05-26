@@ -2,9 +2,10 @@
     // position: fixed;
     // bottom: 0;
     min-height: 230px;
+    position: relative;
     width: 100%;
     background-color: $primary;
-    // z-index: 5;
+    z-index: 540;
     color: white;
     .column.special-column {
         padding-left: 0!important;
