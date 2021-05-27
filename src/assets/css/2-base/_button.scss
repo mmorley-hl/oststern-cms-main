@@ -1,6 +1,7 @@
 .button {
   height: 60px;
-  min-width: 10em;
+  // mi-width: 150px;
+  width: 150px;
   display: inline-block;
   margin: 0 0 $gutter/2;
   padding: 1em 2em;
@@ -12,9 +13,10 @@
   transition: background $duration $timing;
   border: 0;
   border-radius: 0;
-  background-color: $secondary-light;
+  background-color: transparent;
   border-radius: 2em;
-  color: white;
+  color: $secondary;
+  border: 1px solid $secondary;
   // vertical-align: middle;
 
   //   cursor: pointer;
