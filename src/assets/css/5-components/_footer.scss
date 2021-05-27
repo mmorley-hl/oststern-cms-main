@@ -108,9 +108,14 @@
         width: 100%;
         padding-top: 40px;
         padding-left: 20px;
+
+        @media (max-width: $bpXL) {
+            padding-top: 40px;
+            padding-left: 10px;
+        }
         @media (max-width: $bpL) {
             padding-top: 40px;
-            padding-left: 20px;
+            padding-left: 0px;
         }
         @media (max-width: $bpM) {
             height: 100%;
@@ -172,7 +177,7 @@
         margin-top: 0px;
         margin-left: 31px;
         @media (max-width: $bpL) {
-            margin-left: 31px;
+            margin-left: 0px;
         }
         @media (max-width: $bpM) {
             margin-top: 34px;
