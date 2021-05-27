@@ -51,6 +51,11 @@
   //   will-change: '';
   //   -webkit-tap-highlight-color: transparent;
 
+  &--white {
+    color: white;
+    border: 1px solid white;
+  }
+
   &:active {
     transition: none;
   }
