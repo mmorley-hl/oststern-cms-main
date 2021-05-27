@@ -1,7 +1,7 @@
 .button {
   height: 60px;
   // mi-width: 150px;
-  width: 150px;
+  min-width: 150px;
   display: inline-block;
   margin: 0 0 $gutter/2;
   padding: 1em 2em;
