@@ -147,4 +147,9 @@
         }
     }
 
+    &__kontakt_1_image,
+    &__kontakt_2_image {
+        flex-shrink: 0;
+    } 
+
 }
