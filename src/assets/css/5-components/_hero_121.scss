@@ -1,6 +1,10 @@
 .hero_121 {
     margin-top: -$headerHeight;
     position: relative;
+    @media (max-width: $bpM) {
+       display: none;
+    }
+
     img {
         width: 100%;
         margin-bottom: 0;
@@ -26,7 +30,59 @@
             }
         }
     }
+
     &__headline {
         position: relative;
+    }
+}
+
+.hero_121_tablet {
+    display: none;
+    position: relative;
+    @media (max-width: $bpM) {
+        display: block;
+     }
+    @media (max-width: $bpXS) {
+        display: none;
+     }
+     img {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    &__content_wrapper {
+        color: white;
+        position: absolute;
+        top: 306px;
+        left: 40px;
+        width: 468px;
+        .h1 {
+            font-size: 80px;
+            line-height: 70px;
+        }
+    }
+}
+
+.hero_121_phone {
+    display: none;
+    position: relative;
+    @media (max-width: $bpXS) {
+        display: block;
+     }
+     img {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    &__content_wrapper {
+        color: white;
+        position: absolute;
+        top: 281px;
+        left: 30px;
+        width: 314px;
+        .h1 {
+            font-size: 50px;
+            line-height: 46px;
+        }
     }
 }
