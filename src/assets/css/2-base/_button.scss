@@ -17,6 +17,7 @@
   border-radius: 2em;
   color: $secondary;
   border: 1px solid $secondary;
+
   // vertical-align: middle;
 
   //   cursor: pointer;
@@ -54,6 +55,11 @@
   &--white {
     color: white;
     border: 1px solid white;
+    @media (max-width: $bpXS) {
+      height: 50px;
+      padding: .5em .7em;
+      line-height: 1.7em;
+  }
   }
 
   &:active {
