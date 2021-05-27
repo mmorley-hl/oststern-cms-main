@@ -7,11 +7,6 @@
     background-color: $primary;
     z-index: 540;
     color: white;
-    .column.special-column {
-        padding-left: 0!important;
-        padding-right: 0!important;
-    }
-
 
     @media (max-width: $bpXS) {
         // margin-top: 80px;
@@ -131,6 +126,9 @@
             align-items: center;
         }
      
+    }
+
+    .special-column {
         &::before {
             content : "";
             display: block;
