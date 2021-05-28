@@ -39,6 +39,9 @@
 	a {
 		color: black;
 	}
+	.button {
+		color: $secondary;
+	}
 	.core_navigation__logo_small {
 		display: block;
 	}
@@ -49,14 +52,6 @@
 }
 
 .core_navigation {
-	
-	// @include customize(theme) {
-	// 	background-color: getValue(backgroundLight);
-	// 	color: getValue(textDark);
-	// }
-	
-	// background-color: red;
-	// color: black;
 	opacity: 1;
 	width: 100%;
 	height: $headerHeight;
@@ -68,24 +63,15 @@
 		padding-right: 40px;
 	}
 
-
-	@media (max-width: $bpM) {
-		// height: $headerHeightMobile;
-	}
 	display: block;
 	@media (max-width: $bpL) {
 		display: none;
 	}
 	a {
 		text-decoration: underline;
-
-		// @include customize(theme) {
-		// 	color: getValue(textDark);
-		// }
 	}
 
 	&__brand {
-		// background-color: red;
 		width: 500px;
 		display: flex;
 		flex-direction: row;
@@ -97,7 +83,6 @@
 	}
 
 	&__links_container {
-		// background-color: red;
 		height: $headerHeight;
 		display: flex;
 		flex-direction: row;
@@ -112,10 +97,13 @@
 		align-items: center;
 		a {
 			text-decoration: none;
-			padding-left: 30px;
+			padding-left: 41px;
 			&:hover {
 				text-decoration: underline;
 			}
+		}
+		.button {
+			color: $secondary;
 		}
 	}
 
