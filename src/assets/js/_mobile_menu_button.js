@@ -20,7 +20,7 @@ mobileMenuButton.forEach(elem => {
                 elem.style.top = "0";
             } else if (elem.style.top == '0px') {
                 // enableBodyScroll(elem);
-                elem.style.top = "-140vh";
+                elem.style.top = "-340vh";
             } else {
                 // disableBodyScroll(elem);
                 elem.style.top = "0";
