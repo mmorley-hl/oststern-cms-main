@@ -8,7 +8,7 @@ var elems = document.querySelectorAll('.header')
 elems.forEach((elem) => {
     var headroom = new Headroom(elem, {
         "offset": 900,
-        "tolerance": 11
+        "tolerance": 8
       });
     // initialise
     headroom.init();
