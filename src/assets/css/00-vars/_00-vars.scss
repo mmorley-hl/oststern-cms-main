@@ -106,7 +106,6 @@ $sectionPadding: $gutter*2.8;
 $radiusSmall: 4px;
 $radiusBig: 6px;
 $iconSize: 90px;
-$gridMinWidth: 820px;
 
 // Shadows ----------------------------------------------------- //
 //
@@ -185,6 +184,7 @@ $fontStackMatterMedium: normal 400 100%/1.4 'Matter medium', Helvetica, Arial, s
 
 $basicGrid__width: $maxWidth;
 $basicGrid__gutter: $gutter;
+$gridMinWidth: 820px;
 $basicGrid__sizes: (
 	'small': 0,
 	'medium': $bpXS,
