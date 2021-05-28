@@ -27,7 +27,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \************************************/
 /***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
-eval("// import Flickity from 'flickity'\nvar Flickity = __webpack_require__(/*! flickity-fullscreen */ \"./node_modules/flickity-fullscreen/fullscreen.js\");\n\nconst carousel = document.querySelectorAll('.carousel')\n\ncarousel.forEach((elem) => {\n\n\tvar flkty = new Flickity( '.carousel', {\n\t\tfullscreen: true,\n\t});\n\n})\n\n//# sourceURL=webpack://SITE/./src/assets/js/_carousel.js?");
+eval("// import Flickity from 'flickity'\nvar Flickity = __webpack_require__(/*! flickity-fullscreen */ \"./node_modules/flickity-fullscreen/fullscreen.js\");\nvar Flickity_fade = __webpack_require__(/*! flickity-fade */ \"./node_modules/flickity-fade/flickity-fade.js\");\n\nconst carousel = document.querySelectorAll('.carousel')\n\ncarousel.forEach((elem) => {\n\n\tvar flkty = new Flickity( '.carousel', {\n\t\twrapAround: true,\n\t\tfullscreen: true,\n\t});\n\n})\n\nconst carousel_fade = document.querySelectorAll('.carousel_fade')\n\ncarousel_fade.forEach((elem) => {\n\n\tvar flkty = new Flickity_fade( '.carousel_fade', {\n\t\tfade: true,\n\t\tfullscreen: true,\n\t});\n\n})\n\n//# sourceURL=webpack://SITE/./src/assets/js/_carousel.js?");
 
 /***/ }),
 
