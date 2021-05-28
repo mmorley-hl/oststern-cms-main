@@ -61,6 +61,7 @@
     }
 
     .dot {
+        z-index: 610;
         &::before {
             position: absolute;
             top: 50%;  /* position the top  edge of the element at the middle of the parent */
@@ -110,11 +111,59 @@
     position: absolute;
 }
 
-// .flickity-fullscreen-button {
-//     border-radius: 4px;
-//     display: block;
-//     height: 24px;
-//     right: 10px;
-//     top: 10px;
-//     width: 24px;
-// }
+.flickity-button-icon {
+    // display: none;
+    // height: 100%;
+    // position: absolute;
+    // top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    // left: 50%; /* position the left edge of the element at the middle of the parent */
+    // transform: translate(-50%, -50%);
+    // width: 100%;
+    // &::before {
+    //     position: absolute;
+    //     content: '';
+    //     background-image: url('../assets/images/icons/fullscreen-button.svg');
+    //     background-size: 50px 50px;
+    //     height: 50px;
+    //     width: 50px;
+    //     z-index: 650;
+    //     // top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    //     // left: 50%; /* position the left edge of the element at the middle of the parent */
+    //     // transform: translate(-50%, -50%);
+    // }
+}
+
+.flickity-fullscreen-button .flickity-button-icon {
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    color: $primary;
+    // background-color: white;
+    opacity: 1;
+    z-index: 655;
+}
+
+.flickity-fullscreen-button {
+    // position: relative;
+    opacity: .01;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    &:hover {
+        opacity: .7;
+    }
+}
+
+.flickity-enabled.is-fullscreen {
+    background: $gray-color-light;
+    height: 100%;
+    left: 0;
+    padding-bottom: 35px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 600;
+}
