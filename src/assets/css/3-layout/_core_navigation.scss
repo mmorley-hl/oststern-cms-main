@@ -4,6 +4,43 @@
 	left: 0;
 	width: 100%;
 	z-index: 444;
+	background-color: transparent;
+	color: white;
+	svg {
+		fill: white;
+	}
+	a {
+		color: white;
+	}
+	.core_navigation__logo_big {
+		display: block;
+	}
+	.core_navigation__logo_small {
+		display: none;
+	}
+}
+
+.header.headroom--top {
+	background-color: transparent;
+	color: white;
+
+}
+.header.headroom--not-top {
+	background-color: white;
+	color: black;
+	svg {
+		fill: black;
+	}
+	a {
+		color: black;
+	}
+	.core_navigation__logo_small {
+		display: block;
+	}
+	.core_navigation__logo_big {
+		display: none;
+	}
+
 }
 
 .core_navigation {
@@ -12,9 +49,9 @@
 	// 	background-color: getValue(backgroundLight);
 	// 	color: getValue(textDark);
 	// }
-	background-color: white;
+	
 	// background-color: red;
-	color: black;
+	// color: black;
 	opacity: 1;
 	width: 100%;
 	height: $headerHeight;
