@@ -11,7 +11,7 @@
 	display: none;
 	// overflow: hidden;
 	
-	@media (max-width: $bpL) {
+	@media (max-width: $bpM) {
 		display: block;
 	}
 
@@ -74,7 +74,7 @@
 	border-radius: 100%;
 	box-shadow: 0 8px 10px 0 rgba(0, 0, 0, .1);
 	display: none;
-	@media (max-width: $bpL) {
+	@media (max-width: $bpM) {
 		display: flex;
 	}
 

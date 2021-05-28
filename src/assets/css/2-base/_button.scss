@@ -63,11 +63,15 @@
   }
 
   &--nav {
+    flex-shrink: 0;
     height: 40px;
     margin-left: $gutter*3;
     margin-top: $gutter/2;
     // padding: .5em .7em;
     line-height: .3em;
+    @media (max-width: $bpL) {
+      margin-left: $gutter;
+    }
     a {
       color: $secondary;
     }
