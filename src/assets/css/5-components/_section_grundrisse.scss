@@ -1,5 +1,5 @@
 .section_grundrisse {
-    height: 800px;
+    height: 1000px;
     width: 100%;
     background-color: $gray-color-light;
     .column {
@@ -9,12 +9,14 @@
 
 
     .carousel {
+        width: 100%;
+        height: 591px;
         background: $gray-color-light;
     }
     
     .carousel-cell {
         width: 100%;
-        height: 300px;
+        height: 100%;
         margin-right: 0;
         /* center images in cells with flexbox */
         display: flex;
@@ -45,7 +47,7 @@
 
     /* position dots in carousel */
     .flickity-page-dots {
-        bottom: -100px;
+        bottom: -120px;
     }
     /* white circles */
     .flickity-page-dots .dot {
@@ -133,16 +135,54 @@
     // }
 }
 
-.flickity-fullscreen-button .flickity-button-icon {
+.flickity-fullscreen-button + .flickity-button-icon {
     height: 50px;
     position: absolute;
     left: 50%;
     top: 50%;
     width: 50px;
     color: $primary;
-    // background-color: white;
+    background-color: white;
     opacity: 1;
     z-index: 655;
+}
+
+.flickity-button-icon {
+    display: none;
+}
+
+.flickity-fullscreen-button {
+    &::before {
+        position: absolute;
+        content: '';
+        background-image: url('../assets/images/icons/fullscreen-button.svg');
+        background-size: 80px 80px;
+        height: 80px;
+        width: 80px;
+        z-index: 650;
+        top: 50%;  /* position the top  edge of the element at the middle of the parent */
+        left: 50%; /* position the left edge of the element at the middle of the parent */
+        transform: translate(-50%, -50%);
+    }
+    &::after {
+        opacity: 1;
+        position: absolute;
+        content: '';
+        background-image: url('../assets/images/icons/fullscreen-button.svg');
+        background-size: 80px 80px;
+        height: 80px;
+        width: 80px;
+        z-index: 650;
+        top: 50%;  /* position the top  edge of the element at the middle of the parent */
+        left: 50%; /* position the left edge of the element at the middle of the parent */
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+.flickity-button:hover {
+    background: $gray-color-light;
+    cursor: pointer;
 }
 
 .flickity-fullscreen-button {
@@ -152,8 +192,9 @@
     height: 100%;
     width: 100%;
     top: 0;
+    left: 0;
     &:hover {
-        opacity: .7;
+        opacity: .78;
     }
 }
 
