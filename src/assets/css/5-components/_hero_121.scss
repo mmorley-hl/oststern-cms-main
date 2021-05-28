@@ -3,9 +3,21 @@
     position: relative;
     height: 100%;
     width: 100%;
+    overflow: hidden;
     // @media (max-width: $bpM) {
     //    display: none;
     // }
+
+    &__logo_big{
+        display: none;
+        position: absolute;
+        left: 40px;
+        top: 27px;
+        z-index: 5;
+        @media (max-width: $bpM) {
+            display: block;
+        }
+    } 
 
     img {
         width: 100%;
@@ -13,13 +25,42 @@
     }
 
     &__backgroundimage {
+        
         // margin-top: -$headerHeight;
         height: 100vh;
         width: 100%;
         background-image: url('./images/hero/Hero_image_001.jpg');
+        background-position: left;
+        background-repeat: no-repeat;
         background-size: cover;
-        background-position-x: left;
+            @media (max-width: $bpM) {
+                background-position-x: -300px;
+            }
+            @media (max-width: $bpXS) {
+                background-position-x: -400px;
+            }
+        &::before {
+            content : "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 500px;
+            background: radial-gradient(circle, rgba(16,28,54,1) 0%, rgba(16,28,54,0) 70%);
+            // background: radial-gradient(circle, rgba(54,16,37,1) 0%, rgba(54,16,16,0) 90%);
+            width: 100%;
+            height: 100%;
+            opacity: .81;
+            @media (max-width: $bpM) {
+                left: -300px;
+            }
+            @media (max-width: $bpXS) {
+                left: 0px;
+            }
+     
+        }
     }
+
+
 
     &__content_wrapper {
         color: white;
