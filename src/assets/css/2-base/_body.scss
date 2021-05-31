@@ -17,4 +17,5 @@ body {
   *::after {
     box-sizing: border-box;
   }
+  scroll-padding-top: 80px; /* set to the height of your header */
 }

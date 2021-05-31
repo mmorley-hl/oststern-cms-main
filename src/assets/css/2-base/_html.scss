@@ -6,6 +6,7 @@ html {
 
   // Set the font-size in the root element as rem is relative to the document root
   font: $fontStackMatterRegular;
+  scroll-padding-top: 80px; /* set to the height of your header */
 
   @media (max-width: $bpS) {
     // Must have a unit to be usable in calc()
