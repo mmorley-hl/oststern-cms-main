@@ -1,3 +1,4 @@
+{% if title == "OstStern 121" and title == "OstStern 123"%}
 <footer class="footer_121">
  <div class="row">
    <div class="column medium-8 large-8">
@@ -87,3 +88,31 @@
  {% endif %}
  </div>
 </footer>
+{% endif %}
+
+{% if title == "OstStern Impressum / Datenschutz" %}
+<footer class="footer_121_impressum">
+  <div class="row">
+    <div class="column small-12 medium-6 large-6 special-column_123">
+      <div class="footer_121_impressum__link_image">
+        <div class="footer_121_impressum__link_logo">
+          <img src="./assets/images/logo/Oststern_121.svg" alt="">
+        </div>
+        <div class="footer_121_impressum__text_link">
+          <a href="../index.html"class="button button--white">Mehr erfahren</a>     
+        </div>
+      </div>
+    </div>
+    <div class="column small-12 medium-6 large-6 special-column">
+      <div class="footer_121_impressum__link_image">
+        <div class="footer_121_impressum__link_logo">
+          <img src="./assets/images/logo/Oststern_123.svg" alt="">
+        </div>
+        <div class="footer_121_impressum__text_link">
+          <a href="../ost_123.html"class="button button--white">Mehr erfahren</a>     
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+{% endif %}
