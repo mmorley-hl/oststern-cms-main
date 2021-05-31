@@ -1,7 +1,6 @@
 const elems = document.querySelectorAll('.to_top_button_logo')
 
 elems.forEach((elem) => {
-	console.log('logo')
 	elem.onclick = function(e) {
 		window.scrollTo({
 			top: 0,

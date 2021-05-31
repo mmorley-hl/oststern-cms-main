@@ -4,6 +4,8 @@ const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 
 const mobileMenuButton = document.querySelectorAll('.mobile_menu_button')
 const mobileMenu = document.querySelectorAll('.mobile_menu')
+const menuButtonClick = document.querySelectorAll('.menu-button')
+const mobileMenuItem = document.querySelectorAll('.mobile_menu__item')
 console.log('mobile_button', mobileMenuButton)
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -38,3 +40,15 @@ if (menuButton) {
         e.preventDefault();
     });
 }
+
+mobileMenuItem.forEach(elem => {
+    
+    elem.onclick = () => {
+        setTimeout(function(){ 
+            menuButtonClick.forEach(elem => {
+                elem.click();
+            });
+        }, 500);
+        // console.log('mobile_menu__item', elem)
+    }
+});
