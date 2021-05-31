@@ -18,13 +18,13 @@ mobileMenuButton.forEach(elem => {
     elem.onclick = () => {
         mobileMenu.forEach(elem => {
             if (elem.style.top == '') {
-                // disableBodyScroll(elem);
+                disableBodyScroll(elem);
                 elem.style.top = "0";
             } else if (elem.style.top == '0px') {
-                // enableBodyScroll(elem);
+                enableBodyScroll(elem);
                 elem.style.top = "-340vh";
             } else {
-                // disableBodyScroll(elem);
+                disableBodyScroll(elem);
                 elem.style.top = "0";
             }
 

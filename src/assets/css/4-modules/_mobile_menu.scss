@@ -9,7 +9,7 @@
 	top: -640vh;
 	transition: 1s;
 	display: none;
-	// overflow: hidden;
+	overflow: scroll;
 	
 	@media (max-width: $bpM) {
 		display: block;
@@ -35,6 +35,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		padding-bottom: $gutter*4;
 	}
 
 	&__item {
