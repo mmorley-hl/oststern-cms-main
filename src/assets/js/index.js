@@ -15,6 +15,7 @@ import './_carousel.js';
 import './_toTopButton.js';
 import './_headroom.js';
 import './_mobile_menu_button.js';
+import './_mobile_menu_button_impressum.js';
 import './_random_color.js';
 import smoothscroll from 'smoothscroll-polyfill'
 

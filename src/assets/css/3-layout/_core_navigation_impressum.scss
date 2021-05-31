@@ -1,0 +1,105 @@
+.header_impressum {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 444;
+	background-color: rgba(255,255,255,0);
+	color: white;
+	box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.18);
+	transition: all 300ms linear;
+	svg {
+		fill: white;
+	}
+	a {
+		color: white;
+	}
+	.core_navigation_impressum__logo_big {
+		margin-top: $gutter*2;
+		display: block;
+	}
+}
+
+.header.headroom--top {
+	// background-color: transparent;
+	// color: white;
+
+}
+.header.headroom--not-top {
+	background-color: rgba(255,255,255,1);
+	color: black;
+	box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.1);
+	transition: all 300ms linear;
+	svg {
+		fill: black;
+	}
+	a {
+		color: black;
+	}
+	.button {
+		color: $secondary;
+	}
+
+}
+
+.core_navigation_impressum {
+	opacity: 1;
+	width: 100%;
+	height: 130px;
+
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	display: block;
+	@media (max-width: $bpM) {
+		display: none;
+	}
+	a {
+		text-decoration: underline;
+	}
+
+	&__brand {
+		width: 500px;
+		display: flex;
+		flex-direction: row;
+		height: $headerHeight;
+		align-items: center;
+		img {
+			margin: 0;
+		}
+	}
+
+	&__links_container {
+		height: $headerHeight;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	&__sprungmarken {
+		height: $headerHeight;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		a {
+			text-decoration: none;
+			padding-left: 45px;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		.button {
+			color: $secondary;
+		}
+		.button--nav:last-child {
+			margin-left: 20px;
+		}
+	}
+
+
+}

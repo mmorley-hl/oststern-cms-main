@@ -14,4 +14,15 @@ elems.forEach((elem) => {
     headroom.init();
 })
 
+var elemsImpressum = document.querySelectorAll('.header_impressum')
+// var myElement = document.querySelector("header");
+// construct an instance of Headroom, passing the element
+elemsImpressum.forEach((elem) => {
+    var headroom = new Headroom(elem, {
+        "tolerance": 8
+      });
+    // initialise
+    headroom.init();
+})
+
 
