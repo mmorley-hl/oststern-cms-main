@@ -2,7 +2,10 @@
   &__left_wrapper {
     padding-top: 80px;
     padding-right: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
+    @media (max-width: $bpS) {
+      padding-right: 0;
+   }
   }
 
   &__headline {
@@ -17,16 +20,28 @@
     font-size: 28px;
     line-height: 35px;
     letter-spacing: -0.15px;
+    padding-top: 20px;
+    padding-bottom: 80px;
   }
 
   &__subtext {
+    margin-top: 33px;
+    margin-bottom: 0;
+    font: $fontStackMatterSemiBold;
+  }
 
+  &__subtext_2 {
+    font: $fontStackMatterRegular;
   }
   
   img {
-    min-width: 100%;
-    height: 100%;
+    width: 100%;
+    // height: 100%;
     margin-bottom: 0;
+  //   @media (max-width: $bpS) {
+  //     width: 100%;
+  //     height: auto;
+  //  }
   }
 
 }
