@@ -29,6 +29,30 @@
       }
   }
 
+  &__left_box_123 {
+      width: 50%;
+      min-height: 100%;
+      background-image: url('./images/res/OstStern 123_2.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: bottom;
+      @media (max-width: $bpM) {
+        height: 635px;
+        width: 100%;
+      }
+      @media (max-width: $bpS) {
+        height: 429px;
+        width: 100%;
+      }
+
+      img {
+          min-width: 100%;
+        //   height: 100%;
+          margin-bottom: 0;
+      }
+  }
+
   &__right_box {
       padding: 73px 0 104px 64px;
       background-color: $gray-color-light;

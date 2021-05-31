@@ -1,0 +1,110 @@
+.hero_123 {
+    // margin-top: -$headerHeight;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    // @media (max-width: $bpM) {
+    //    display: none;
+    // }
+
+    &__logo_big{
+        display: none;
+        position: absolute;
+        left: 40px;
+        top: 27px;
+        z-index: 5;
+        @media (max-width: $bpM) {
+            display: block;
+        }
+    } 
+
+    img {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    &__backgroundimage {
+        
+        // margin-top: -$headerHeight;
+        height: 100vh;
+        width: 100%;
+        background-image: url('./images/hero/hero_image_123.jpg');
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+            @media (max-width: $bpM) {
+                background-position-x: -300px;
+            }
+            @media (max-width: $bpXS) {
+                background-position-x: -600px;
+            }
+        &::before {
+            content : "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -800px;
+            background: radial-gradient(circle, rgba(16,28,54,1) 0%, rgba(16,28,54,0) 70%);
+            width: 100%;
+            height: 100%;
+            opacity: .81;
+            @media (max-width: $bpM) {
+                left: -300px;
+            }
+            @media (max-width: $bpXS) {
+                left: 0px;
+            }
+     
+        }
+    }
+
+
+
+    &__content_wrapper {
+        color: white;
+        position: absolute;
+        top: 289px;
+        left: 150px;
+        width: 600px;
+        .h1 {
+            font-size: 100px;
+            line-height: 90px;
+        }
+        @media (max-width: $bpL) {
+            top: 200px;
+            right: 100px;
+            width: 430px;
+            .h1 {
+                font-size: 80px;
+                line-height: 70px;
+            }
+        }
+        @media (max-width: $bpM) {
+            color: white;
+            position: absolute;
+            top: 306px;
+            left: 40px;
+            width: 468px;
+            .h1 {
+                font-size: 80px;
+                line-height: 70px;
+            }
+        }
+        @media (max-width: $bpXS) {
+            color: white;
+            position: absolute;
+            top: 281px;
+            left: 30px;
+            width: 314px;
+            .h1 {
+                font-size: 50px;
+                line-height: 46px;
+            }
+        }
+    }
+
+    &__headline {
+        position: relative;
+    }
+}
