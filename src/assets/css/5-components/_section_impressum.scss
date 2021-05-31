@@ -1,0 +1,30 @@
+.section_impressum {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @media (max-width: $bpM) {
+		padding-top: 0;
+	}
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+    &__content {
+        padding-top: 180px;
+        @media (max-width: $bpM) {
+            padding-top: 100px;
+        }
+    }
+}
+.section_datenschutz {
+    padding-top: 100px;
+    @media (max-width: $bpM) {
+		padding-top: 40px;
+	}
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    &__content {
+        padding-top: 100px;
+    }
+}
