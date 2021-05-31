@@ -7,7 +7,7 @@ date: 2017-01-01T00:00:00.000Z
 permalink: /ost_123.html
 description: OstStern 123
 ---
-
+{# Main_teaser #}
 {%- from "system/component.njk" import component -%}
 {{ component('section_hero', {
   background_image: {
@@ -30,6 +30,7 @@ description: OstStern 123
 }) }}
 
 {{ component('section_teaser', {
+  anker: 'lage',
   eyebrow: 'LAGE',
   headline: 'Urbanes Lebensgefühl im Trendviertel Ostend'
 }) }}
@@ -80,6 +81,7 @@ description: OstStern 123
 }) }}
 
 {{ component('section_teaser', {
+  anker: 'projekt',
   eyebrow: 'GEBÄUDE',
   headline: 'Ausdrucksstarke Architektur'
 }) }}
@@ -154,6 +156,7 @@ description: OstStern 123
 }) }}
 
 {{ component('section_teaser', {
+  anker: 'keyfacts',
   eyebrow: 'KEYFACTS',
   headline: 'Planung und Fakten'
 }) }}
