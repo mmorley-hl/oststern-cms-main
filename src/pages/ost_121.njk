@@ -11,7 +11,6 @@ bodytext: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
 image_src: https://picsum.photos/1000/1800/?random
 ---
 {# Main_teaser #}
-{# {% include "section_lage.njk" %} #}
 {%- from "system/component.njk" import component -%}
 {{ component('section_hero', {
   background_image: {
@@ -34,6 +33,7 @@ image_src: https://picsum.photos/1000/1800/?random
 }) }}
 
 {{ component('section_teaser', {
+  anker: 'lage',
   eyebrow: 'LAGE',
   headline: 'Urbanes Lebensgefühl im Trendviertel Ostend'
 }) }}
@@ -84,6 +84,7 @@ image_src: https://picsum.photos/1000/1800/?random
 }) }}
 
 {{ component('section_teaser', {
+  anker: 'projekt',
   eyebrow: 'GEBÄUDE',
   headline: 'Ausdrucksstarke Architektur'
 }) }}
@@ -158,6 +159,7 @@ image_src: https://picsum.photos/1000/1800/?random
 }) }}
 
 {{ component('section_teaser', {
+  anker: 'keyfacts',
   eyebrow: 'KEYFACTS',
   headline: 'Planung und Fakten'
 }) }}

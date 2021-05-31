@@ -8,42 +8,158 @@ permalink: /ost_123.html
 description: OstStern 123
 ---
 
+{%- from "system/component.njk" import component -%}
+{{ component('section_hero', {
+  background_image: {
+    src: '../assets/images/hero/Hero_image_001.jpg'
+  },
+  background_image_tablet: {
+    src: '../assets/images/hero/Hero_image_001_tablet.jpg'
+  },
+  background_image_phone: {
+    src: '../assets/images/hero/Hero_image_001_phone.jpg'
+  }
+}) }}
 
-<div id="map" class="maps"></div>
-<nav id="filter-group" class="filter-group"></nav>
-<div id="test1" class="section test">
-  <div class="row">
-    <div class="column large-6">
-      <div class="test__content">
-        <h1 class="" >Hello world</h1>
-        <h2>hello world 2</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iste veniam rem odit et corrupti eaque, praesentium in ex suscipit ipsam reiciendis velit adipisci magnam? Sit officiis rerum eos aliquam!</p>
-      </div>
-    </div>
-    <div class="column large-3">
-      <img class="" src="https://picsum.photos/1000/1800/?random" alt="">
-    </div>
-    <div class="column large-3">
-      <img class="" src="https://picsum.photos/1000/1700/?random" alt="">
-    </div>
-  </div>
-</div>
+{{ component('section_hero_lage', {
+  background_image: {
+    src: '../assets/images/hero/Secondsection lage.jpg',
+    x: '0.1',
+    y: '1'
+  }
+}) }}
 
-<div id="test2" class="section test2">
-  <div class="row">
-    <div class="column large-2">
-      <img src="https://picsum.photos/1000/1800/?random" alt="">
-    </div>
-    <div class="column large-9">
-      <div class="test2__content">
-        <h1>Hello world</h1>
-        <h2>hello world 2</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iste veniam rem odit et corrupti eaque, praesentium in ex suscipit ipsam reiciendis velit adipisci magnam? Sit officiis rerum eos aliquam!</p>
-        <button class="button">Hello</button>
-      </div>
-    </div>
-    <div class="column large-1">
-      <img src="https://picsum.photos/1000/1700/?random" alt="">
-    </div>
-  </div>
-</div>
+{{ component('section_teaser', {
+  eyebrow: 'LAGE',
+  headline: 'Urbanes Lebensgefühl im Trendviertel Ostend'
+}) }}
+
+{{ component('section_anbindung', {
+
+}) }}
+
+{{ component('section_teaser_image', {
+  headline: 'Freizeit und Lebensqualität',
+  bodytext: 'Zwischen alten Kontorhäusern, Industriedenkmälern, moderner Architektur und attraktiven Parkanlagen hat sich in weniger als einer Dekade eines der angesagtesten Viertel der Stadt entwickelt. Noch nie war das Ostend so attraktiv wie heute.',
+  image1: {
+    src: '../assets/images/hafenpark/Mainufer5.jpg',
+    caption: 'Restaurant Oosten'
+  },
+  image2: {
+    src: '../assets/images/hafenpark/Mainufer3.jpg',
+    caption: 'Mainufer'
+  },
+  image3: {
+    src: '../assets/images/hafenpark/Hafenpark4.jpg',
+    caption: 'Hafenpark'
+  },
+   image1_tablet: {
+    src: '../assets/images/hafenpark/Restaurant Oosten_tablet.jpg',
+    caption: 'Restaurant Oosten'
+  },
+  image2_tablet: {
+    src: '../assets/images/hafenpark/Mainufer_tablet.jpg',
+    caption: 'Mainufer'
+  },
+  image3_tablet: {
+    src: '../assets/images/hafenpark/Hafenpark_tablet.jpg',
+    caption: 'Hafenpark'
+  },
+   image1_phone: {
+    src: '../assets/images/hafenpark/Restaurant Oosten_phone.jpg',
+    caption: 'Restaurant Oosten'
+  },
+  image2_phone: {
+    src: '../assets/images/hafenpark/Mainufer_phone.jpg',
+    caption: 'Mainufer'
+  },
+  image3_phone: {
+    src: '../assets/images/hafenpark/Hafenpark_phone.jpg',
+    caption: 'Hafenpark'
+  }
+}) }}
+
+{{ component('section_teaser', {
+  eyebrow: 'GEBÄUDE',
+  headline: 'Ausdrucksstarke Architektur'
+}) }}
+
+{{ component('section_image_big', {
+  background_image: {
+    src: '../assets/images/res/Gebäude OSW 1_jf.jpg'
+  },
+  bodytext: 'Das Gebäude befindet sich an städtebaulich prominenter Stelle am Übergang der Hanauer Landstraße zu einem öffentlichen Platz. Die plastische Ausbildung der Gebäudeecke und der großzügige Eingangsbereich schaffen eine prägnante Adresse. Die Fassade erhält durch ihre räumliche Tiefe eine ausdrucksstarke Wirkung.'
+}) }}
+
+{{ component('section_highlights', {
+  background_image: {
+    src: '../assets/images/res/Gebäude OSW 2_jf.jpg'
+  },
+  bodytext: 'Das Gebäude befindet sich an städtebaulich prominenter Stelle am Übergang der Hanauer Landstraße zu einem öffentlichen Platz. Die plastische Ausbildung der Gebäudeecke und der großzügige Eingangsbereich schaffen eine prägnante Adresse. Die Fassade erhält durch ihre räumliche Tiefe eine ausdrucksstarke Wirkung.'
+}) }}
+
+{{ component('section_image_small', {
+  background_image: {
+    src: '../assets/images/res/Privater_Garten_im_Innenhof.jpg'
+  },
+  bodytext: 'Privater Garten im Innenhof'
+}) }}
+
+{{ component('section_teaser_image', {
+  headline: 'Moderne Abseitswelten',
+  bodytext: 'Innovative Innenräume, zugeschnitten auf Ihre Bedürfnisse.',
+  image1: {
+    src: '../assets/images/arbeitswelten/Konferzenraum.jpg',
+    caption: 'Konferzenraum'
+  },
+  image2: {
+    src: '../assets/images/arbeitswelten/Foyer.jpg',
+    caption: 'Foyer'
+  },
+  image3: {
+    src: '../assets/images/arbeitswelten/Bürozone.jpg',
+    caption: 'Bürozone'
+  },
+    image1_tablet: {
+    src: '../assets/images/arbeitswelten/Konferzenraum_tablet.jpg',
+    caption: 'Konferzenraum'
+  },
+  image2_tablet: {
+    src: '../assets/images/arbeitswelten/Foyer_tablet.jpg',
+    caption: 'Foyer'
+  },
+  image3_tablet: {
+    src: '../assets/images/arbeitswelten/buerozone_tablet.jpg',
+    caption: 'Bürozone'
+  },
+   image1_phone: {
+    src: '../assets/images/arbeitswelten/Konferzenraum_phone.jpg',
+    caption: 'Konferzenraum'
+  },
+  image2_phone: {
+    src: '../assets/images/arbeitswelten/Lobby_phone.jpg',
+    caption: 'Foyer'
+  },
+  image3_phone: {
+    src: '../assets/images/arbeitswelten/Buerozone_phone.jpg',
+    caption: 'Bürozone'
+  }
+}) }}
+
+{{ component('section_image_small', {
+  background_image: {
+    src: '../assets/images/res/Südfassade.jpg'
+  },
+  bodytext: 'Südfassade'
+}) }}
+
+{{ component('section_teaser', {
+  eyebrow: 'KEYFACTS',
+  headline: 'Planung und Fakten'
+}) }}
+
+{% include "section_grundrisse.njk" %}
+{% include "section_bueroflaechen.njk" %}
+{% include "section_ausstattung.njk" %}
+{% include "section_kontakt.njk" %}
+{# {% include "maps.njk" %} #}

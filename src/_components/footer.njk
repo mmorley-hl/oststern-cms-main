@@ -30,7 +30,7 @@
                 <a href="#keyfacts">Keyfacts</a>
               </div>
               <div class="footer_121__link_columns_wrapper_link">
-                <a href="#downloads">Downloads</a>
+                <a href="#download">Download</a>
               </div>
               <div class="footer_121__link_columns_wrapper_link">
                 <a href="#kontakt">Kontakt</a>
@@ -51,6 +51,7 @@
         </div>
       </div>
    </div>
+   {% if title == "OstStern 121" %}
    <div class="column large-4 medium-4 special-column ">
     <div class="footer_121__link_image">
       <div class="footer_121__link_logo">
@@ -62,9 +63,27 @@
       {% endif %}
       </div>
       <div class="footer_121__text_link">
-        <div class="button button--white">Mehr erfahren</div>
+        <a href="../ost_123.html"class="button button--white">Mehr erfahren</a>     
       </div>
     </div>
   </div>
+  {% endif %}
+  {% if title == "OstStern 123" %}
+  <div class="column large-4 medium-4 special-column ">
+   <div class="footer_121__link_image">
+     <div class="footer_121__link_logo">
+     {% if title == "OstStern 121" %}
+       <img src="./assets/images/logo/Oststern_123.svg" alt="">
+     {% endif %}
+     {% if title == "OstStern 123" %}
+       <img src="./assets/images/logo/Oststern_121.svg" alt="">
+     {% endif %}
+     </div>
+     <div class="footer_121__text_link">
+       <a href="../index.html"class="button button--white">Mehr erfahren</a>     
+     </div>
+   </div>
+ </div>
+ {% endif %}
  </div>
 </footer>
