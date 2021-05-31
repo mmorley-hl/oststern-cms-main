@@ -162,6 +162,30 @@
         }
     }
 
+    .special-column_123 {
+        &::before {
+            content : "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url('./images/footer_link_image_121.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            opacity: .42;
+            z-index: 5;
+            @media (max-width: $bpM) {
+                background-position-x: -350px;
+            }
+            @media (max-width: $bpXS) {
+                background-position-x: 0;
+            }
+        }
+    }
+
     &__colum_last {
         // padding-right: 0!important;
         // @media (max-width: $bpL) {
