@@ -14,9 +14,26 @@
             padding-top: 100px;
         }
     }
+    &__left_wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__scroll_link_datenschutz {
+        font-size: 20px;
+        a {
+            text-decoration: none;
+        }
+        svg {
+            margin-right: 20px;
+            fill: white;
+        }
+    }
 }
 .section_datenschutz {
     padding-top: 100px;
+    padding-bottom: 80px;
     @media (max-width: $bpM) {
 		padding-top: 40px;
 	}
@@ -26,5 +43,20 @@
     }
     &__content {
         padding-top: 100px;
+    }
+    &__left_wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__scroll_link_impressum {
+        font-size: 20px;
+        a {
+            text-decoration: none;
+        }
+        svg {
+            margin-right: 20px;
+        }
     }
 }
