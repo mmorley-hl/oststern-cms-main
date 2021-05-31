@@ -9,7 +9,12 @@
         <div class="row">
             <div class="column small-12">
                 <div class="mobile_menu__logo">
-                    <img src="../assets/images/logo/Oststern_123.svg" alt="">
+                    {% if title == "OstStern 121" %}
+                       <img src="../assets/images/logo/Oststern_121.svg" alt="">
+                    {% endif %}
+                    {% if title == "OstStern 123" %}
+                        <img src="../assets/images/logo/Oststern_123.svg" alt="">
+                    {% endif %}
                 </div>
             </div>
             <div class="column small-12">
@@ -18,13 +23,13 @@
                         <a href="#lage">Lage</a>
                     </div>
                     <div class="mobile_menu__item">
-                        <a href="#entwurf">Objekt</a>
+                        <a href="#objekt">Objekt</a>
                     </div>
                     <div class="mobile_menu__item">
                         <a href="#keyfacts">Keyfacts</a>
                     </div>
                     <div class="mobile_menu__item">
-                        <a href="#downloads">Downloads</a>
+                        <a href="#download">Downloads</a>
                     </div>
                     <div class="mobile_menu__item">
                         <a href="#kontakt">Kontakt</a>
@@ -41,7 +46,12 @@
             <div class="column small-12">
                 <div class="mobile_menu__button_wrapper">
                     <!-- <div class="mobile_menu_buttons"> -->
-                        <div class="button">Zu Oststern 123</div>
+                        {% if title == "OstStern 121" %}
+                             <a href="../ost_123.html" class="button">Zu Oststern 123</a>
+                        {% endif %}
+                        {% if title == "OstStern 123" %}
+                             <a href="../index.html" class="button">Zu Oststern 121</a>
+                        {% endif %}
                     <!-- </div> -->
                 </div>
             </div>
