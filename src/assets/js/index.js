@@ -18,6 +18,7 @@ import './_mobile_menu_button.js';
 import './_mobile_menu_button_impressum.js';
 import './_random_color.js';
 import './_tabs_maps.js';
+import './_tabs_listen.js';
 import smoothscroll from 'smoothscroll-polyfill'
 
 import simpleParallax from 'simple-parallax-js';

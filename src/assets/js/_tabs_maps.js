@@ -60,6 +60,7 @@ function openTab(evt, tabsName) {
         document.getElementById('Listenansicht').style.display = "block";
         document.getElementById('Kartenansicht').style.display = "none";
         evt.currentTarget.className += " active";
+        document.getElementById("defaultOpen").click();
         }
 
   }
