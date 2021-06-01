@@ -1,24 +1,25 @@
-var london = document.querySelectorAll('.london')
-var paris = document.querySelectorAll('.paris')
-london.forEach((elem) => {
+var kartenansicht = document.querySelectorAll('.kartenansicht')
+var listenansicht = document.querySelectorAll('.listenansicht')
+
+kartenansicht.forEach((elem) => {
     elem.onclick = function(e) {
-        var cityName = 'London'
-        openCity(e, cityName)
+        var tabsName = 'Kartenansicht'
+        openTab(e, tabsName)
     }
     
 })
-paris.forEach((elem) => {
+listenansicht.forEach((elem) => {
     elem.onclick = function(e) {
-        var cityName = 'Paris'
-        openCity(e, cityName)
+        var tabsName = 'Listenansicht'
+        openTab(e, tabsName)
     }
     
 })
 
 // document.getElementById("defaultOpen").click();
 
-function openCity(evt, cityName) {
-    if (cityName == 'London') {
+function openTab(evt, tabsName) {
+    if (tabsName == 'Kartenansicht') {
     // Declare all variables
     var i, tabcontent, tablinks;
   
@@ -35,11 +36,11 @@ function openCity(evt, cityName) {
     }
   
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById('London').style.display = "block";
-    document.getElementById('Paris').style.display = "none";
+    document.getElementById('Kartenansicht').style.display = "block";
+    document.getElementById('Listenansicht').style.display = "none";
     evt.currentTarget.className += " active";
     }
-    if (cityName == 'Paris') {
+    if (tabsName == 'Listenansicht') {
         // Declare all variables
         var i, tabcontent, tablinks;
       
@@ -56,8 +57,8 @@ function openCity(evt, cityName) {
         }
       
         // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById('Paris').style.display = "block";
-        document.getElementById('London').style.display = "none";
+        document.getElementById('Listenansicht').style.display = "block";
+        document.getElementById('Kartenansicht').style.display = "none";
         evt.currentTarget.className += " active";
         }
 

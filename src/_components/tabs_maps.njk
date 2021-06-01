@@ -1,19 +1,21 @@
 <!-- Tab links -->
-<section class="tabs_maps">
+<section class="section tabs_maps">
   <div class="row">
+    <div class="column large-3">
+      <h2 class="h2 tabs_maps__headline">Alle Locations auf einen Blick </h2>
+    </div>
     <div class="column large-12">
       <div class="tab">
-        <button class="tablinks london active" id="defaultOpen" >Kartenansicht</button>
-        <button class="tablinks paris" >Listenansicht</button>
+        <button class="tablinks kartenansicht active" id="defaultOpen" >Kartenansicht</button>
+        <button class="tablinks listenansicht" >Listenansicht</button>
       </div>
       
       <!-- Tab content -->
-      <div id="London" class="tabcontent_map">
-        <h3>Maps</h3>
+      <div id="Kartenansicht" class="tabcontent_map">
         {% include "maps.njk" %}
       </div>
       
-      <div id="Paris" class="tabcontent_liste">
+      <div id="Listenansicht" class="tabcontent_liste">
         <h3>Listenansicht</h3>
         <p>Listenansicht</p>
       </div>

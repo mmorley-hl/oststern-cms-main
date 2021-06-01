@@ -10,6 +10,7 @@
 	transition: 1s;
 	display: none;
 	overflow: scroll;
+	overflow-x: hidden;
 	
 	@media (max-width: $bpM) {
 		display: block;
