@@ -823,6 +823,7 @@ var places = {
 			},
 			"geometry":{
 			   "type":"Point",
+			   
 			   "coordinates":[
 				8.707727030979154,
 				50.10780485816412
