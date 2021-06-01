@@ -17,12 +17,36 @@
 
     &__items_left {
         width: 50%;
-        background-color: blue;
+        // background-color: blue;
     }
 
     &__items_right {
         width: 50%;
-        background-color: red;
+        // background-color: red;
+    }
+
+    &__item {
+        font: $fontStackMatterRegular;
+        font-size: 18px;
+        line-height: 32px;
+        // padding-bottom: 18px;
+        a {
+            position: relative;
+            &::before {
+                position: absolute;
+                right: -24px;
+                top: 0;
+                background-image: url('/assets/images/icons/icons8-up.svg');
+                background-repeat: no-repeat;
+                background-size: 17px 17px;
+                margin-top: 4px;
+                height: 17px;
+                width: 17px;
+                display: inline-block;
+                content: ' ';
+                // margin-right: 10px;
+            }
+        }
     }
 
     &__button {
@@ -44,7 +68,6 @@
         border-bottom: 1px solid white;
 
         &:before {
-            fill: $primary;
             background-image: url('/assets/images/icons/map/Tankstelle.svg');
             background-repeat: no-repeat;
             background-size: 17px 17px;
