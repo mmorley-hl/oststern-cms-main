@@ -139,7 +139,7 @@
 }
 
 #poi-Fitness + label:before {
-  background-image: url('/assets/images/icons/map/Fitness.svg');
+  background-image: url('/assets/images/icons/map/Fitness_list.svg');
   background-size: 17px 17px;
   height: 17px;
   width: 17px;
@@ -168,8 +168,18 @@
   margin-right: 10px;
 }
 
-#poi-Kultur-Freizeit + label:before {
-  background-image: url('/assets/images/icons/map/Kultur-Freizeit.svg');
+#poi-Kultur + label:before {
+  background-image: url('/assets/images/icons/map/Kultur_list.svg');
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  content: ' ';
+  margin-right: 10px;
+}
+
+#poi-Parks + label:before {
+  background-image: url('/assets/images/icons/map/Parks_list.svg');
   background-size: 17px 17px;
   height: 17px;
   width: 17px;
