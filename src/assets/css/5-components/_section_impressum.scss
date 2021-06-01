@@ -9,6 +9,21 @@
         color: white;
         text-decoration: underline;
     }
+
+    ol {
+        padding: 0;
+       li {
+            margin: 0 0 26px;
+            font-size: 18px;
+            line-height: 26px;
+            color: white;
+            letter-spacing: 0;
+            list-style-position: inside;
+            padding: 0;
+            // margin: 0;
+       }
+    }
+
     &__content {
         padding-top: 180px;
         @media (max-width: $bpM) {
@@ -38,6 +53,19 @@
     @media (max-width: $bpM) {
 		padding-top: 40px;
 	}
+
+    ol {
+        padding: 0;
+        margin: 0 0 26px;
+        li {
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: 26px;
+            list-style-position: inside;
+            margin: 0 0 26px;
+            padding: 0;
+        }
+    }
     a {
         color: black;
         text-decoration: underline;
