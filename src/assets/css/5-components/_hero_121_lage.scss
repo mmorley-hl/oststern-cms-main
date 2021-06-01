@@ -1,4 +1,18 @@
 .hero_121_lage {
+    display: block;
+    @media (max-width: $bpS) {
+        display: none;
+      }
+    img {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+.hero_121_lage_mobile {
+    display: none;
+    @media (max-width: $bpS) {
+        display: block;
+      }
     img {
         width: 100%;
         margin-bottom: 0;
