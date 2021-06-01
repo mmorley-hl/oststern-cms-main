@@ -16,11 +16,11 @@
 
 //map marker Styling
 .marker {
-    background-image: url('/assets/images/mapbox/mapbox-icon.png');
-    background-size: cover;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    background-image: url('../assets/images/mapbox/ost_icon_big.svg');
+    background-size: contain;
+    width: 45px;
+    height: 60px;
+    // border-radius: 50%;
     cursor: pointer;
 }
 

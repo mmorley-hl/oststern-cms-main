@@ -843,21 +843,36 @@ var places = {
 			   ]
 			}
 		},
-		{
-			'type': 'Feature',
-			'properties': {
-				'description':
-		'<strong>Make it Mount Pleasant</strong><p><a href="http://www.mtpleasantdc.com/makeitmtpleasant" target="_blank" title="Opens in a new window">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>',
-				'icon': 'castle-15'
-			},
-			'geometry': {
-			'type': 'Point',
-			'coordinates': [8.71157213340723, 50.11154494192954]
-			}
-		},
+		// {
+		// 	'type': 'Feature',
+		// 	'properties': {
+		// 		'description':
+		// '<strong>Make it Mount Pleasant</strong><p><a href="http://www.mtpleasantdc.com/makeitmtpleasant" target="_blank" title="Opens in a new window">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>',
+		// 		'icon': 'castle-15'
+		// 	},
+		// 	'geometry': {
+		// 	'type': 'Point',
+		// 	'coordinates': [8.71157213340723, 50.11154494192954]
+		// 	}
+		// },
 	  
 	]
  };
+
+ var geojson = {
+	type: 'FeatureCollection',
+	features: [{
+	  type: 'Feature',
+	  geometry: {
+		type: 'Point',
+		'coordinates': [8.71157213340723, 50.11154494192954]
+	  },
+	  properties: {
+		title: 'Mapbox',
+		description: 'Washington, D.C.'
+	  }
+	}]
+  };
 
  const mapPresent = document.querySelectorAll('.maps')
 
@@ -890,7 +905,23 @@ var places = {
 			attributionControl: true,
 			logoEnabled: false
 		});
+
+
 	};
+
+					// add markers to map
+					geojson.features.forEach(function(marker) {
+
+						// create a HTML element for each feature
+						var el = document.createElement('div');
+						el.className = 'marker';
+						console.log('el', el)
+					
+						// make a marker for each feature and add to the map
+						new mapboxgl.Marker(el)
+						.setLngLat(marker.geometry.coordinates)
+						.addTo(map);
+					});
 	
 	
 	//disable zoom on map
