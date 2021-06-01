@@ -18,8 +18,9 @@
 .marker {
     background-image: url('../assets/images/mapbox/ost_icon_big.svg');
     background-size: contain;
-    width: 45px;
-    height: 60px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 90px;
     // border-radius: 50%;
     cursor: pointer;
 }
