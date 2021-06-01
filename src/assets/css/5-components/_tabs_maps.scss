@@ -1,6 +1,14 @@
 /* Style the tab */
 .tabs_maps {
+    margin-bottom: 60px;
 
+    .special-maps {
+        @media (max-width: $bpM) {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+          }
+    }
     &__headline {
         font: $fontStackMatterSemiBold;
         letter-spacing: -0.15px;
