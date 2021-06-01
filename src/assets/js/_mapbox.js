@@ -567,7 +567,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Fritz-Rémond-Theater</strong><p>Bernhard-Grzimek-Allee 1, 60316 Frankfurt am Main</p>",
-			   "icon":"Kultur-Freizeit"
+			   "icon":"Kultur"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -581,7 +581,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Romanfabrik</strong><p>Hanauer Landstraße 186, 60314 Frankfurt am Main</p>",
-			   "icon":"Kultur-Freizeit"
+			   "icon":"Kultur"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -595,7 +595,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Kunstverein Familie Montez</strong><p>Honsellstraße 7, 60314 Frankfurt am Main</p>",
-			   "icon":"Kultur-Freizeit"
+			   "icon":"Kultur"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -609,7 +609,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Union Halle</strong><p>Hanauer Landstraße 188, 60314 Frankfurt am Main</p>",
-			   "icon":"Kultur-Freizeit"
+			   "icon":"Kultur"
 			},
 			"geometry":{
 			   "type":"Point",
@@ -805,7 +805,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Schwedler See</strong><p>Schwedlerstraße, 60314 Frankfurt am Main</p>",
-			   "icon":"Kultur-Freizeit",
+			   "icon":"Kultur",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -819,7 +819,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Hafenpark</strong><p>Mayfarthstraße, 60314 Frankfurt am Main</p>",
-			   "icon":"Kultur-Freizeit",
+			   "icon":"Parks",
 			},
 			"geometry":{
 			   "type":"Point",
@@ -905,23 +905,21 @@ var places = {
 			attributionControl: true,
 			logoEnabled: false
 		});
-
-
 	};
 
-					// add markers to map
-					geojson.features.forEach(function(marker) {
+	// add markers to map
+	geojson.features.forEach(function(marker) {
 
-						// create a HTML element for each feature
-						var el = document.createElement('div');
-						el.className = 'marker';
-						console.log('el', el)
-					
-						// make a marker for each feature and add to the map
-						new mapboxgl.Marker(el)
-						.setLngLat(marker.geometry.coordinates)
-						.addTo(map);
-					});
+		// create a HTML element for each feature
+		var el = document.createElement('div');
+		el.className = 'marker';
+		console.log('el', el)
+	
+		// make a marker for each feature and add to the map
+		new mapboxgl.Marker(el)
+		.setLngLat(marker.geometry.coordinates)
+		.addTo(map);
+	});
 	
 	
 	//disable zoom on map
