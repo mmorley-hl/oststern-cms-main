@@ -42,17 +42,21 @@
   
   /* style the items (options), including the selected item: */
   .select-items div,.select-selected {
-    color: #ffffff;
+    color: black;
     padding: 18px 65px;
     border: 1px solid transparent;
     border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
     cursor: pointer;
   }
+
+  .select-selected {
+    color: white;
+  }
   
   /* Style items (options): */
   .select-items {
     position: absolute;
-    background-color: $secondary;
+    background-color: $gray-color-light;
     top: 100%;
     left: 0;
     right: 0;
@@ -66,7 +70,7 @@
         position: absolute;
         left: 30px;
         top: 19px;
-        background-image: url('/assets/images/icons/map/Restaurants.svg');
+        background-image: url('/assets/images/icons/map/icons_dark/Restaurant.svg');
         background-repeat: no-repeat;
         height: 20px;
         width: 20px;
@@ -75,52 +79,52 @@
 
   .select-items div:nth-child(1) {
     &:before {
-        background-image: url('/assets/images/icons/map/Restaurants.svg');
+        background-image: url('/assets/images/icons/map/icons_dark/Restaurant.svg');
     }
   }
   .select-items div:nth-child(2) {
     &:before {
-        background-image: url('/assets/images/icons/map/Bar-Café.svg');
+        background-image: url('/assets/images/icons/map/icons_dark/Bar-Café.svg');
     }
   }
   .select-items div:nth-child(3) {
     &:before {
-        background-image: url('/assets/images/icons/map/Hotels.svg');
+        background-image: url('/assets/images/icons/map/icons_dark/Hotels.svg');
     }
   }
   .select-items div:nth-child(4) {
     &:before {
-        background-image: url('/assets/images/icons/map/Fitness_list.svg');
+        background-image: url('/assets/images/icons/map/icons_dark/Fitness_list.svg');
     }
   }
   .select-items div:nth-child(5) {
     &:before {
-        background-image: url('/assets/images/icons/map/Kita.svg');
+        background-image: url('/assets/images/icons/map/icons_dark/Kita.svg');
     }
   }
   .select-items div:nth-child(6) {
     &:before {
-        background-image: url('/assets/images/icons/map/Retail.svg');
+        background-image: url('/assets/images/icons/map/icons_dark/Retail.svg');
     }
   }
   .select-items div:nth-child(7) {
     &:before {
-        background-image: url('/assets/images/icons/map/Banken.svg');
+        background-image: url('/assets/images/icons/map/icons_dark/Banken.svg');
     }
   }
   .select-items div:nth-child(8) {
     &:before {
-        background-image: url('/assets/images/icons/map/Parks_list.svg');
+        background-image: url('/assets/images/icons/map/icons_dark/Parks_list.svg');
     }
   }
   .select-items div:nth-child(9) {
     &:before {
-        background-image: url('/assets/images/icons/map/Kultur_list.svg');
+        background-image: url('/assets/images/icons/map/icons_dark/Kultur_list.svg');
     }
   }
   .select-items div:nth-child(10) {
     &:before {
-        background-image: url('/assets/images/icons/map/Tankstelle.svg');
+        background-image: url('/assets/images/icons/map/icons_dark/Tankstelle.svg');
     }
   }
 
