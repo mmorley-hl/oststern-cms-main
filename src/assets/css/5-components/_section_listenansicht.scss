@@ -73,6 +73,7 @@
         cursor: pointer;
         color: $primary;
         border-bottom: 1px solid white;
+        transition: 0.3s;
 
         &:before {
             background-image: url('/assets/images/icons/map/Tankstelle.svg');
