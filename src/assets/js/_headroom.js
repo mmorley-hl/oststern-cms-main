@@ -7,7 +7,7 @@ var elems = document.querySelectorAll('.header')
 // construct an instance of Headroom, passing the element
 elems.forEach((elem) => {
     var headroom = new Headroom(elem, {
-        "offset": 900,
+        "offset": 750,
         "tolerance": 8
       });
     // initialise
