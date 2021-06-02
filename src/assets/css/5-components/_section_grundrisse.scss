@@ -2,9 +2,20 @@
     height: 1000px;
     width: 100%;
     background-color: $gray-color-light;
-    .column {
-        padding-left: 0!important;
-        padding-right: 0!important;
+    .special-column-grundriss {
+        @media (max-width: $bpS) {
+            padding-left: 0!important;
+            padding-right: 0!important;
+        }
+    }
+
+    .h2 {
+        font: $fontStackMatterSemiBold;
+        font-size: 38px;
+        line-height: 42px;
+        letter-spacing: -.57px;
+        margin-bottom: 0;
+        padding-bottom: 60px;
     }
 
 
