@@ -15,7 +15,7 @@
 		color: white;
 	}
 	.core_navigation__logo_big {
-		margin-top: $gutter*4.5;
+		margin-top: 80px;
 		display: block;
 	}
 	.core_navigation__logo_small {
@@ -96,6 +96,7 @@
 		justify-content: flex-end;
 		align-items: center;
 		a {
+			font: $fontStackMatterSemiBold;
 			text-decoration: none;
 			padding-left: 41px;
 			&:hover {
@@ -103,6 +104,7 @@
 			}
 		}
 		.button {
+			line-height: 4px;
 			color: $secondary;
 		}
 	}
