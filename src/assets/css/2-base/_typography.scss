@@ -73,7 +73,9 @@ label,
 blockquote {
 	margin: 0 0 $gutter/2;
 	font-style: normal;
-	font-size: 1.125rem;
+	font-size: 1rem;
+	line-height: 25px;
+	letter-spacing: 0.24px;
 }
 a {
 	text-decoration: none;

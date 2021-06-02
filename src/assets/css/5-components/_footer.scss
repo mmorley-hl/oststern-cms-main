@@ -63,6 +63,7 @@
 
     &__link_columns_wrapper_link {
         padding-top: 10px;
+        font: $fontStackMatterMedium;
     }
 
     &__link_column_1 {
@@ -80,7 +81,6 @@
         }
     }
     &__link_column_3 {
-        font-size: 14px;
         opacity: .5;
         display: flex;
         flex-direction: column;
@@ -206,8 +206,14 @@
         // align-content: flex-end;
         // height: 35px;
         // margin-top: 0px;
+        font: $fontStackMatterMedium;
+        font-size: 13px;
+        
         margin-right: 11px;
         margin-bottom: 48px;
+        .button--white {
+            line-height: 21px;
+        }
         @media (max-width: $bpL) {
             margin-left: 0px;
             
