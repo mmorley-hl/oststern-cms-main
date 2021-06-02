@@ -1,7 +1,8 @@
-.section_listenansicht {
-    display: flex;
+.section_listenansicht_mobile {
+    // display: flex;
+    display: none;
     @media (max-width: $bpS) {
-        display: none;
+        display: block;
     }
 
 ///////////custom selct ///////////////
