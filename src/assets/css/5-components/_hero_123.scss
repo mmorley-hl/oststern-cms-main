@@ -13,10 +13,14 @@
         display: none;
         position: absolute;
         left: 40px;
-        top: 27px;
+        top: 40px;
         z-index: 5;
         @media (max-width: $bpM) {
             display: block;
+        }
+        @media (max-width: $bpXS) {
+            left: 50%;
+            transform: translate(-50%, 0);
         }
     } 
 
