@@ -5,9 +5,8 @@
         display: block;
     }
 
-///////////custom selct ///////////////
-/* The container must be positioned relative: */
-.custom-select {
+  /* The container must be positioned relative: */
+  .custom-select {
     position: relative;
     width: 100%;
     font: $fontStackMatterMedium;
@@ -27,17 +26,24 @@
     position: absolute;
     content: "";
     top: 24px;
-    right: 10px;
+    right: 30px;
     width: 0;
     height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
+    background-image: url('/assets/images/icons/map/list_icon_down.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
   }
   
   /* Point the arrow upwards when the select box is open (active): */
   .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    top: 18px;
+    top: 22px;
+    background-image: url('/assets/images/icons/map/list_icon_up.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
   }
   
   /* style the items (options), including the selected item: */
