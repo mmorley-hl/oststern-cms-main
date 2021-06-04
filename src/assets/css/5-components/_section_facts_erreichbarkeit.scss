@@ -14,7 +14,7 @@
     width:3px;
     margin-left: auto;
     margin-right: auto;
-    height: 1000px;
+    height: 900px;
 
     &::before {
         position: absolute;
@@ -37,8 +37,13 @@
     }
 
     .h2 {
-        font-size: 19px;
+        font: $fontStackMatterMedium;
+        font-size: 24px;
         margin-bottom: 0;
+    }
+
+    p {
+        font-size: 18px;
     }
 
     &__002_subtext_wrapper {
@@ -62,8 +67,8 @@
         height: 50px;
         width: 150px;
         width: 120px;
-        top: 0;
-        left: -145px;
+        top: -12px;
+        left: -119px;
         
     }
 
@@ -74,20 +79,18 @@
         height: 50px;
         width: 210px;
         width: 140px;
-        top: 0;
-        left: 50px;
+        top: -16px;
+        left: 72px;
         
     }
 
     &__001_icon, &__003_icon {
         position: absolute;
-        top: -90px;
-        left: -12px;
         height: 50px;
         width: 50px;
         width: 100px;
-        top: 0;
-        left: 45px;
+        top: -10px;
+        left: 70px;
         
     }
 
@@ -98,8 +101,8 @@
         height: 50px;
         width: 50px;
         width: 100px;
-        top: 0;
-        left: -115px;
+        top: -11px;
+        left: -74px;
         
     }
 
@@ -115,7 +118,7 @@
 
     &__001 {
         margin-left: 100px;  
-        margin-top: 130px;
+        margin-top: 146px;
         margin-left: -12px; 
         
     }
@@ -133,7 +136,7 @@
         margin-right: 100px;  
         
             margin-right: 0; 
-            margin-bottom: 250px;
+            margin-bottom: 205px;
         
     }
 }
