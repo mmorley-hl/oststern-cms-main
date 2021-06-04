@@ -3,7 +3,7 @@
     width: 100%;
     background-color: $gray-color-light;
     @media (max-width: $bpXS) {
-        height: 763px;
+        height: 760px;
     }
     .special-column-grundriss {
         @media (max-width: $bpS) {
@@ -25,12 +25,39 @@
     .carousel {
         width: 100%;
         height: 591px;
+        background: white;
         @media (max-width: $bpXS) {
             height: 350px;
         }
-        background: white;
+  
     }
+
     
+    
+    .flickity-enabled.is-fullscreen {
+        @media only screen and (orientation:landscape) {
+            background: #fff;
+            height: 100%;
+            left: 0;
+            padding-bottom: 35px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 600;
+        }
+        .flickity-viewport {
+            @media only screen and (orientation:landscape) {
+            width: 72%;
+            }
+        }
+        .carousel-cell { 
+            @media only screen and (orientation:landscape) {
+                width: 80%;
+                }
+        }
+    }
+
+
     .carousel-cell {
         width: 100%;
         height: 100%;
@@ -49,6 +76,7 @@
         display: block;
         max-height: 100%;
     }
+
     .flickity-page-dots .dot {
         position: relative;
         background: #333;
@@ -66,14 +94,31 @@
     .flickity-page-dots {
         bottom: -55px;
         line-height: 0;
+
         @media (max-width: $bpXS) {
             bottom: -110px;
         }
-        
     }
+
+    .carousel.is-fullscreen .flickity-page-dots {
+        @media only screen and (orientation:landscape) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            // right: 0;
+            top: 0;
+            // margin-right: -20%;
+        }
+    }
+
+    .carousel.is-fullscreen .flickity-page-dots .dot {     
+        @media only screen and (orientation:landscape) {
+            width: 20%;
+        }
+    }
+
     /* white circles */
-    .flickity-page-dots .dot {
-        
+    .flickity-page-dots .dot {     
         width: 20%;
         height: 55px;
         opacity: 1;
