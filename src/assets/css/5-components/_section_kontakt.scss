@@ -18,15 +18,32 @@
     }
 
     &__intro {
+        .h1 {
+            font: $fontStackMatterMedium;
+            letter-spacing: -0.58px;
+            font-size: 58px;
+            line-height: 56px;
+            @media (max-width: $bpXS) {
+                letter-spacing: -0.54px;
+                font-size: 36px;
+                line-height: 38px;
+                padding-bottom: 50px;
+             }
+        }
         h5 {
             font: $fontStackMatterSemiBold;
+            font-size: 16px;
+            line-height: 14px;
             letter-spacing: 2.08px;
             color: #939393;
             margin-bottom: 0;
+            @media (max-width: $bpXS) {
+                font-size: 14px;
+                line-height: 14px;
+                letter-spacing: 1.82px;
+             }
         }
-        @media (max-width: $bpXS) {
-            padding-bottom: 50px;
-         }
+  
     }
 
     &__outro {
@@ -174,6 +191,15 @@
     &__kontakt_1_image,
     &__kontakt_2_image {
         flex-shrink: 0;
+    } 
+    &__kontakt_1_image_mobile,
+    &__kontakt_2_image_mobile {
+        flex-shrink: 0;
+        width: 98px;
+        height: 98px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
     } 
 
 }
