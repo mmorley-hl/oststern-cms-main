@@ -5,6 +5,25 @@
     @media (max-width: $bpM) {
 		padding-top: 0;
 	}
+    .section_impressum__semibold {
+        font: $fontStackMatterSemiBold;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.27px;
+    }
+    .section_impressum__semibold_h2 {
+        font: $fontStackMatterSemiBold;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.12px;
+        padding-bottom: 30px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.27px;
+        padding-bottom: 25px;
+    }
     a {
         color: white;
         text-decoration: underline;
@@ -15,7 +34,7 @@
        li {
             margin: 0 0 26px;
             font-size: 18px;
-            line-height: 26px;
+            line-height: 28px;
             color: white;
             letter-spacing: 0;
             list-style-position: inside;
@@ -52,25 +71,48 @@
 .section_datenschutz {
     padding-top: 100px;
     padding-bottom: 80px;
+    color: black;
     @media (max-width: $bpM) {
 		padding-top: 40px;
 	}
 
-    ol {
-        padding: 0;
-        margin: 0 0 26px;
-        li {
-            font-size: 18px;
-            letter-spacing: 0;
-            line-height: 26px;
-            list-style-position: inside;
-            margin: 0 0 26px;
-            padding: 0;
-        }
+    .section_datenschutz__semibold {
+        font: $fontStackMatterSemiBold;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.27px;
+    }
+    .section_datenschutz__semibold_h2 {
+        font: $fontStackMatterSemiBold;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.12px;
+        padding-bottom: 30px;
+    }
+    p {
+        color: black;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.27px;
+        padding-bottom: 25px;
     }
     a {
         color: black;
         text-decoration: underline;
+    }
+
+    ol {
+        padding: 0;
+       li {
+            margin: 0 0 26px;
+            font-size: 18px;
+            line-height: 28px;
+            color: black;
+            letter-spacing: 0;
+            list-style-position: inside;
+            padding: 0;
+            // margin: 0;
+       }
     }
     &__content {
         padding-top: 100px;
