@@ -15,6 +15,9 @@
     margin-left: auto;
     margin-right: auto;
     height: 820px;
+    @media (max-width: $bpM) {
+        transform: scale(0.8);
+    }
 
     &::before {
         position: absolute;
