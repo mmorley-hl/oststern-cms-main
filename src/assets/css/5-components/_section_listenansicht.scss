@@ -1,9 +1,9 @@
 .section_listenansicht {
     display: flex;
-    @media (max-width: $bpS) {
+    @media (max-width: $bpXS) {
         display: none;
     }
-    
+
     &__buttons {
         display: flex;
         flex-direction: column;

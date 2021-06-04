@@ -32,16 +32,22 @@
         // background-color: inherit;
         // float: left;
         background-color: white;
-        color: $secondary-light;
+        color: #88B3C4;
         border: 1px solid $gray-color-light;
         outline: none;
         cursor: pointer;
-        padding: 20px 30px;
+        padding: 16px 30px;
         transition: 0.3s;
         text-transform: uppercase;
-        @media (max-width: $bpS) {
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 1.4px;
+        @media (max-width: $bpXS) {
+          font-size: 11px;
+          line-height: 20px;
+          letter-spacing: 1.1px;
             width: 50%;
-            padding: 20px 0;
+            padding: 9px 0;
           }
         
       }
