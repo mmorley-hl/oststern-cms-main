@@ -69,12 +69,31 @@
     &__content_wrapper {
         color: white;
         position: absolute;
-        top: 289px;
-        left: 150px;
+        top: 200px;
+        left: 100px;
         width: 600px;
         .h1 {
-            font-size: 100px;
-            line-height: 90px;
+            font-size: 80px;
+            line-height: 70px;
+        }
+        @media (max-width: $bpXXL) {
+            // background-color: red;
+            top: 290px;
+            left: 150px;
+            width: 600px;
+            .h1 {
+                font-size: 100px;
+                line-height: 90px;
+            }
+        }
+        @media (max-width: $bpXL) {
+            top: 200px;
+            left: 100px;
+            width: 430px;
+            .h1 {
+                font-size: 80px;
+                line-height: 70px;
+            }
         }
         @media (max-width: $bpL) {
             top: 200px;
