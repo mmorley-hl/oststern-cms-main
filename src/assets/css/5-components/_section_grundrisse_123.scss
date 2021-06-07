@@ -162,10 +162,15 @@
         z-index: 380;
         border: 1px solid $gray-color-light;
         &::before {
+            // padding-top: 60px;
             position: absolute;
             top: 50%;  /* position the top  edge of the element at the middle of the parent */
             left: 50%; /* position the left edge of the element at the middle of the parent */
             transform: translate(-50%, -50%);
+            @media (max-width: $bpXS) {
+                width: 100%;
+            }
+
         }
     }
 
