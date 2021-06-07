@@ -11,7 +11,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         @media (max-width: $bpM) {
-            background-color: yellow;
+            // background-color: yellow;
         }
     }
 
@@ -36,7 +36,7 @@
         right: -10%;
         transform: translate(0, -50%);
         // animation: fadeOutheadline 0.5s ease-out;
-        animation: fadeOutheadline 2s cubic-bezier(0.075, 0.82, 0.165, 1) 4s 1 normal forwards;
+        animation: fadeOutheadline 2s ease-in-out 4s 1 normal forwards;
     }
 
     &__content_logowrapper {
@@ -65,7 +65,7 @@
         top: 60%;
         left: 47%;
         transform: translate(-50%, -50%);
-        animation: offices 2s cubic-bezier(0.075, 0.82, 0.165, 1) 4s 1 normal forwards;
+        animation: offices 2s ease-in-out 4s 1 normal forwards;
     }
 
     &__logo_text_121_123 {
@@ -73,7 +73,7 @@
         top: 60%;
         left:-800px;
         transform: translate(-50%, -50%);
-        animation: ost-121-123 2s cubic-bezier(0.075, 0.82, 0.165, 1) 4s 1 normal forwards;
+        animation: ost-121-123 2s ease-in-out 4s 1 normal forwards;
         
     }
 
@@ -82,7 +82,7 @@
         // background-color: blue;
         width: 100%;
         height: 40px;
-        animation: fadeOutheadline 2s cubic-bezier(0.075, 0.82, 0.165, 1) 4s 1 normal forwards;
+        animation: fadeOutheadline 2s ease-in-out 4s 1 normal forwards;
         
     }
 
@@ -98,7 +98,7 @@
         display: flex;
         justify-content: space-between;
         opacity: 0;
-        animation: fadeInbuttons 2s cubic-bezier(0.075, 0.82, 0.165, 1) 4s 1 normal forwards;
+        animation: fadeInbuttons 2s ease-in-out 4s 1 normal forwards;
         .button {
             color: black;
             background-color: white;
