@@ -26,9 +26,14 @@
 
 	&__logo {
 		padding-top: $gutter;
+		padding-bottom: $gutter*2;
 		display: flex;
 		justify-content: center;
-		transform: scale(0.7);
+		
+		@media (max-width: $bpXS) {
+			padding-bottom: $gutter/2;
+			transform: scale(0.7);
+		}	
 	}
 
 	&__button_wrapper {
@@ -41,7 +46,7 @@
 			font: $fontStackMatterMedium;
 			color: #63A5BF;
 			font-size: 13px;
-			line-height: 7px;
+			line-height: 9px;
 			padding-bottom: 0;
 			margin: 0;
 			height: 40px;
@@ -57,7 +62,7 @@
 			font: $fontStackMatterMedium;
 			color: white;
 			font-size: 32px;
-			@media (max-width: $bpS) {
+			@media (max-width: $bpXS) {
 				font-size: 24px;
 			}	
 		}
@@ -82,7 +87,7 @@
 			opacity: .5;
 			color: white;
 			font-size: 32px;
-			@media (max-width: $bpS) {
+			@media (max-width: $bpXS) {
 				font-size: 24px;
 			}	
 		}
