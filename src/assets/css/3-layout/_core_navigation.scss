@@ -103,8 +103,10 @@
 				text-decoration: underline;
 			}
 		}
-		.button {
-			line-height: 4px;
+		.button--nav {
+			font: $fontStackMatterMedium;
+			font-size: 13px;
+			line-height: 8px;
 			color: $secondary;
 		}
 	}
