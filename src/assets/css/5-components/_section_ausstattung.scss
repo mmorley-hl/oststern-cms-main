@@ -57,8 +57,18 @@
     }
 
     .h2 {
-        font-size: 19px;
+        font-size: 24px;
         margin-bottom: 0;
+        @media (max-width: $bpS) {
+            font-size: 20px;
+        }
+    }
+    p {
+        font-size: 18px;
+        @media (max-width: $bpS) {
+            font-size: 16px;
+        }
+        
     }
 
     &__002_subtext_wrapper {
@@ -79,20 +89,32 @@
     &__002_text, &__004_text, &__006_text, &__008_text {
         position: absolute;
         height: 50px;
-        width: 140px;
-        top: 0;
-        left: 50px;
+        width: 500px;
+        top: -14px;
+        left: 70px;
+        // @media (max-width: $bpS) {
+        //     width: 250px;
+        //     left: 50px;
+        // }
+        @media (max-width: $bpXS) {
+            width: 140px;
+            left: 50px;
+        }
+    }
+
+    &__002_text {
+        top: -2px;
     }
 
     &__001_icon, &__003_icon, &__005_icon, &__007_icon,
     &__002_icon, &__004_icon, &__006_icon, &__008_icon {
         position: absolute;
         bottom: -80px;
-        left: -12px;
         height: 50px;
         width: 100px;
-        top: 0;
-        left: -115px;
+        top: -10px;
+        left: -95px;
+
     }
 
     &__001, &__002, &__003, &__004, &__005, &__006, &__007, &__008 {
