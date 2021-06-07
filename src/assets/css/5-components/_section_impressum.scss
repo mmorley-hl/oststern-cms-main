@@ -1,9 +1,11 @@
 .section_impressum {
+    background-color: $primary;
     margin-top: 80px;
     padding-top: 80px;
     padding-bottom: 80px;
     @media (max-width: $bpM) {
 		padding-top: 0;
+        margin-top: 40px;
 	}
     .section_impressum__semibold {
         font: $fontStackMatterSemiBold;
