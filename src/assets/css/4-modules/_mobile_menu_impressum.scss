@@ -126,7 +126,7 @@
 	}
 	
 	.burger-icon {
-		@include burger(25px, 3px, 5px, $secondary);
+		@include burger(25px, 3px, 5px, #63A5BF);
 	}
 	
 	.menu-button_impressum.is-active .burger-icon {
