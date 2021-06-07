@@ -14,10 +14,7 @@
     width:3px;
     margin-left: auto;
     margin-right: auto;
-    height: 820px;
-    @media (max-width: $bpM) {
-        transform: scale(0.8);
-    }
+    height: 870px;
 
     &::before {
         position: absolute;
@@ -49,20 +46,6 @@
         font-size: 18px;
     }
 
-    &__002_subtext_wrapper {
-        p {
-            color: $secondary;
-            margin: 0;
-        }
-    }
-
-    &__004_subtext_wrapper {
-        p {
-            color: $secondary;
-            margin: 0;
-        }
-    }
-
     &__001_text, &__003_text {
         position: absolute;
         bottom: -80px;
@@ -72,6 +55,9 @@
         width: 120px;
         top: -12px;
         left: -119px;
+        @media (max-width: $bpS) {
+            transform: scale(0.70);
+        }
         
     }
 
@@ -84,6 +70,9 @@
         width: 140px;
         top: -16px;
         left: 72px;
+        @media (max-width: $bpS) {
+            transform: scale(0.70);
+        }
         
     }
 
@@ -94,6 +83,9 @@
         width: 100px;
         top: -10px;
         left: 70px;
+        @media (max-width: $bpS) {
+            transform: scale(0.70);
+        }
         
     }
 
@@ -106,6 +98,9 @@
         width: 100px;
         top: -11px;
         left: -74px;
+        @media (max-width: $bpS) {
+            transform: scale(0.70);
+        }
         
     }
 
