@@ -1,7 +1,11 @@
 /* Style the tab */
 .tabs_maps {
     margin-bottom: 60px;
-
+  padding-left: 25px;
+  @media (max-width: $bpXS) {
+      padding-left: 5px;
+      padding-right: 5px;
+  }
 
     .special-maps {
         @media (max-width: $bpM) {
@@ -16,12 +20,9 @@
         font-size: 38px;
         line-height: 42px;
         margin-bottom: 60px;
-        padding-left: 25px;
+        // padding-left: 25px;
         padding-right: 0px;  
-        @media (max-width: $bpXS) {
-            padding-left: 5px;
-            padding-right: 5px;
-        }
+
     
     }
 
@@ -32,12 +33,6 @@
         // overflow: hidden;
         // border: 1px solid #ccc;
         // background-color: #f1f1f1;
-        padding-left: 25px;
-        padding-right: 25px;  
-        @media (max-width: $bpXS) {
-            padding-left: 5px;
-            padding-right: 5px;
-        }
       }
       
       /* Style the buttons that are used to open the tab content */
@@ -81,9 +76,7 @@
         display: block;
         // padding: 6px 12px;
         // border: 1px solid #ccc;
-        border-top: none;
-        padding-left: 25px;
-        padding-right: 25px;  
+        border-top: none; 
         @media (max-width: $bpM) {
             padding-left: 0;
             padding-right: 0;
