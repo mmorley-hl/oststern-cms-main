@@ -1,0 +1,326 @@
+.section_grundrisse_123 {
+    height: 1000px;
+    width: 100%;
+    background-color: $gray-color-light;
+    @media (max-width: $bpXS) {
+        height: 760px;
+    }
+    .special-column-grundriss {
+        @media (max-width: $bpS) {
+            padding-left: 0!important;
+            padding-right: 0!important;
+        }
+    }
+
+    .h2 {
+        font: $fontStackMatterSemiBold;
+        font-size: 38px;
+        line-height: 42px;
+        letter-spacing: -.57px;
+        margin-bottom: 0;
+        padding-bottom: 60px;
+    }
+
+
+    .carousel {
+        width: 100%;
+        height: 591px;
+        background: white;
+        @media (max-width: $bpXS) {
+            height: 350px;
+        }
+  
+    }
+
+    
+    
+    .flickity-enabled.is-fullscreen {
+        @media only screen and (orientation:landscape) and (max-width: $bpS) {
+            background: #fff;
+            height: 100%;
+            left: 0;
+            padding-bottom: 35px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 600;
+        }
+        .flickity-viewport {
+            @media only screen and (orientation:landscape) and (max-width: $bpS) {
+            width: 72%;
+            }
+        }
+        .carousel-cell { 
+            @media only screen and (orientation:landscape) and (max-width: $bpS) {
+                width: 80%;
+                }
+        }
+    }
+    
+
+    .carousel-cell {
+        width: 100%;
+        height: 100%;
+        margin-right: 0;
+        /* center images in cells with flexbox */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .carousel.is-fullscreen .carousel-cell {
+        height: 100%;
+    }
+    
+    .carousel-cell-image {
+        display: block;
+        max-height: 100%;
+    }
+
+    .flickity-page-dots .dot {
+        position: relative;
+        background: #333;
+        border-radius: 0;
+        cursor: pointer;
+        display: inline-block;
+        height: 10px;
+        margin: 0 0;
+        opacity: .25;
+        width: 10px;
+    }
+
+
+    /* position dots in carousel */
+    .flickity-page-dots {
+        bottom: -55px;
+        line-height: 0;
+
+        @media (max-width: $bpXS) {
+            bottom: -110px;
+        }
+    }
+
+    .carousel.is-fullscreen .flickity-page-dots {
+        @media only screen and (orientation:landscape) and (max-width: $bpS) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            // right: 0;
+            top: 0;
+            // margin-right: -20%;
+        }
+    }
+
+    .carousel.is-fullscreen .flickity-page-dots .dot {     
+        @media only screen and (orientation:landscape) and (max-width: $bpS) {
+            width: 20%;
+        }
+    }
+
+    /* white circles */
+    .flickity-page-dots .dot {     
+        width: 20%;
+        height: 55px;
+        opacity: 1;
+        background: white;
+    }
+
+    .flickity-page-dots .dot:nth-child(1) {
+        border-left: 0px;
+    }
+
+    .flickity-page-dots .dot:nth-child(5) {
+        border-right: 0px;
+    }
+
+    .flickity-page-dots .dot:nth-child(1),
+    .flickity-page-dots .dot:nth-child(3) {
+        @media (max-width: $bpS) {
+            width: 34%;
+        }
+    }
+
+    .flickity-page-dots .dot:nth-child(2) {
+        @media (max-width: $bpS) {
+            width: 32%;
+        }
+    }
+
+    .flickity-page-dots .dot:nth-child(4),
+    .flickity-page-dots .dot:nth-child(5) {
+        @media (max-width: $bpS) {
+            width: 50%;
+        }
+    }
+    /* fill-in selected dot */
+    .flickity-page-dots .dot.is-selected {
+        background: $primary;
+        color: white;
+    }
+
+    .dot {
+        z-index: 380;
+        border: 1px solid $gray-color-light;
+        &::before {
+            position: absolute;
+            top: 50%;  /* position the top  edge of the element at the middle of the parent */
+            left: 50%; /* position the left edge of the element at the middle of the parent */
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .dot:nth-child(1) {
+        &::before {
+            content: 'EG';
+        }
+    }
+    .dot:nth-child(2) {
+        &::before {
+            content: '1. OG V1';
+        }
+    }
+    .dot:nth-child(3) {
+        &::before {
+            content: '1. OG V2';
+        }
+    }
+    .dot:nth-child(4) {
+        &::before {
+            content: 'Schnitt A';
+        }
+    }
+    .dot:nth-child(5) {
+        &::before {
+            content: 'Schnitt B';
+        }
+    }
+
+
+
+   
+}
+.flickity-prev-next-button {
+    display: none;
+}
+
+//  .flickity-button+.flickity-fullscreen-button {
+//     background: hsla(0,0%,100%,.75);
+//     border: none;
+//     color: #333;
+//     position: absolute;
+// }
+
+.flickity-button-icon {
+    // display: none;
+    // height: 100%;
+    // position: absolute;
+    // top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    // left: 50%; /* position the left edge of the element at the middle of the parent */
+    // transform: translate(-50%, -50%);
+    // width: 100%;
+    // &::before {
+    //     position: absolute;
+    //     content: '';
+    //     background-image: url('../assets/images/icons/fullscreen-button.svg');
+    //     background-size: 50px 50px;
+    //     height: 50px;
+    //     width: 50px;
+    //     z-index: 650;
+    //     // top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    //     // left: 50%; /* position the left edge of the element at the middle of the parent */
+    //     // transform: translate(-50%, -50%);
+    // }
+}
+.flickity-fullscreen-button {
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    color: white;
+    background-color: $primary;
+    opacity: 1;
+    // z-index: 655;
+    &:hover {
+        background-color: $primary;
+        opacity: .6;
+    }
+}
+
+.flickity-fullscreen-button .flickity-button-icon {
+    // height: 150px;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    // width: 150px;
+    // color: white;
+    // background-color: $primary;
+    // opacity: 1;
+    // z-index: 655;
+}
+
+.flickity-fullscreen-button .flickity-button-icon {
+    width: 30px;
+    height: 30px;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+}
+
+// .flickity-fullscreen-button {
+//     &::before {
+//         position: absolute;
+//         content: '';
+//         background-image: url('../assets/images/icons/fullscreen-button.svg');
+//         background-size: 80px 80px;
+//         height: 80px;
+//         width: 80px;
+//         z-index: 650;
+//         top: 50%;  /* position the top  edge of the element at the middle of the parent */
+//         left: 50%; /* position the left edge of the element at the middle of the parent */
+//         transform: translate(-50%, -50%);
+//     }
+//     &::after {
+//         opacity: 1;
+//         position: absolute;
+//         content: '';
+//         background-image: url('../assets/images/icons/fullscreen-button.svg');
+//         background-size: 80px 80px;
+//         height: 80px;
+//         width: 80px;
+//         z-index: 650;
+//         top: 50%;  /* position the top  edge of the element at the middle of the parent */
+//         left: 50%; /* position the left edge of the element at the middle of the parent */
+//         transform: translate(-50%, -50%);
+//     }
+// }
+
+
+// .flickity-button:hover {
+//     background: $gray-color-light;
+//     cursor: pointer;
+// }
+
+// .flickity-fullscreen-button {
+//     // position: relative;
+//     opacity: 1;
+//     border-radius: 4px;
+//     height: 50px;
+//     width: 50px;
+//     top: 0;
+//     right: 0;
+//     &:hover {
+//         opacity: .78;
+//     }
+// }
+
+.flickity-enabled.is-fullscreen {
+    background: white;
+    height: 100%;
+    left: 0;
+    padding-bottom: 35px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 600;
+}
