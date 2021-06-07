@@ -37,11 +37,30 @@
 		justify-content: center;
 		align-items: center;
 		padding-bottom: $gutter*4;
+		.button {
+			font: $fontStackMatterMedium;
+			color: #63A5BF;
+			font-size: 13px;
+			line-height: 7px;
+			padding-bottom: 0;
+			margin: 0;
+			height: 40px;
+		}
 	}
 
 	&__item {
 		text-align: center;
 		padding-bottom: $gutter/2;
+		a {
+			text-align: center;
+			// background-color: grey;
+			font: $fontStackMatterMedium;
+			color: white;
+			font-size: 32px;
+			@media (max-width: $bpS) {
+				font-size: 24px;
+			}	
+		}
 	}
 
 	&__item_wrapper {
@@ -52,13 +71,22 @@
 		flex-direction: column;
 		justify-content: space-between;
 		padding-bottom: $gutter;
+	}
+
+	&__item:nth-child(6),
+	&__item:nth-child(7) {
 		a {
 			text-align: center;
 			// background-color: grey;
+			font: $fontStackMatterRegular;
+			opacity: .5;
 			color: white;
-			font-size: 24px;
+			font-size: 32px;
+			@media (max-width: $bpS) {
+				font-size: 24px;
+			}	
 		}
-	}
+	} 
 }
 
 
@@ -105,7 +133,7 @@
 	}
 	
 	.burger-icon {
-		@include burger(25px, 3px, 5px, $secondary);
+		@include burger(25px, 3px, 5px, #63A5BF);
 	}
 	
 	.menu-button.is-active .burger-icon {
