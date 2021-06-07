@@ -79,7 +79,12 @@ tankstellen.forEach((elem) => {
     }
 })
 
-document.getElementById("defaultOpen").click();
+var defaultopen = document.querySelectorAll('#defaultOpen')
+
+defaultopen.forEach((elem) => {
+    elem.click();
+})
+// document.getElementById("defaultOpen").click();
 
 function openTabList(evt, tabsName) {
     // Declare all variables

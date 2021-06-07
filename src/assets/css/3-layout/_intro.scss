@@ -1,0 +1,21 @@
+.intro {
+    &__background-image {
+        height: 100vh;
+        width: 100%;
+        background-image: url('./images/intro/Oststern_Areal_Header_LP.jpg');
+        background-position: left;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__content_wrapper {
+        position: absolute;
+        top: 0;
+    }
+
+    &__content {
+        width: 100%;
+        position: relative;
+    }
+}

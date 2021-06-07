@@ -90,21 +90,25 @@ document.addEventListener("click", closeAllSelect);
 //////////////////////////////
 
 function openTabListMobile(evt, tabsName) {
-  console.log("tabsname",tabsName )
-    // Declare all variables
-    var i, tabcontent_mobile, tablinks;
-  
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent_mobile = document.getElementsByClassName("section_listenansicht_mobile__content");
-    for (i = 0; i < tabcontent_mobile.length; i++) {
-      tabcontent_mobile[i].style.display = "none";
-    }
-  
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(tabsName).style.display = "flex";
-    // evt.currentTarget.className += " active";
+  // Declare all variables
+  var i, tabcontent_mobile, tablinks;
 
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent_mobile = document.getElementsByClassName("section_listenansicht_mobile__content");
+  for (i = 0; i < tabcontent_mobile.length; i++) {
+    tabcontent_mobile[i].style.display = "none";
   }
-var intialMobileClick = document.querySelector(".select-items").childNodes
 
-intialMobileClick[0].click()
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabsName).style.display = "flex";
+  // evt.currentTarget.className += " active";
+
+}
+
+var intialMobileClickCheck = document.querySelectorAll('.select-items')
+
+intialMobileClickCheck.forEach((elem) => {
+    var intialMobileClick = document.querySelector(".select-items").childNodes
+    intialMobileClick[0].click()
+})
+
