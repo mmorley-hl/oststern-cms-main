@@ -184,6 +184,7 @@ $fontStackMatterMedium: normal 400 100%/1.4 'MatterSQ medium', Helvetica, Arial,
 
 $basicGrid__width: $maxWidth;
 $basicGrid__gutter: $gutter;
+// $basicGrid__outer: 44px;
 $gridMinWidth: 820px;
 $basicGrid__sizes: (
 	'small': 0,

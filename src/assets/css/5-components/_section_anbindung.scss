@@ -1,4 +1,10 @@
 .section_anbindung {
+    padding-left: 25px;
+    padding-right: 25px;  
+    @media (max-width: $bpXS) {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     &__wrapper_left {
         padding-top: 80px;
         p {

@@ -57,8 +57,11 @@
       padding: 73px 0 104px 64px;
       background-color: $gray-color-light;
       width: 50%;
+      @media (max-width: $bpM) {
+        padding: 73px 0 104px 40px;
+      }
       @media (max-width: $bpXS) {
-        padding: 73px 0 104px 30px;
+        padding: 73px 0 104px 20px;
       }
 
       .h3 {

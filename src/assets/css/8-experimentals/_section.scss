@@ -1,5 +1,6 @@
 .section {
-  padding: $sectionPadding 0;
+  padding-bottom: $sectionPadding;
+  padding-top: $sectionPadding;
   outline: none;
 
   // @media (max-height: 900px) {

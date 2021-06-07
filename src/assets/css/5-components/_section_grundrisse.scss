@@ -1,15 +1,22 @@
 .section_grundrisse {
+
     height: 1000px;
     width: 100%;
     background-color: $gray-color-light;
+    padding-left: 25px;
+    padding-right: 25px;  
+    @media (max-width: $bpXS) {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     @media (max-width: $bpXS) {
         height: 760px;
     }
     .special-column-grundriss {
-        @media (max-width: $bpS) {
-            padding-left: 0!important;
-            padding-right: 0!important;
-        }
+        // @media (max-width: $bpS) {
+        //     padding-left: 0!important;
+        //     padding-right: 0!important;
+        // }
     }
 
     .h2 {

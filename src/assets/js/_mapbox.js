@@ -866,7 +866,7 @@ var places = {
  mapPresent.forEach((elem) => {
 	
 	var filterGroup = document.getElementById('filter-group');
-	mapboxgl.accessToken = 'pk.eyJ1IjoibW1vcmxleWhsIiwiYSI6ImNrbHV5c25kZjBuZm0yd28zYncwdGlnOWcifQ.0ii1h91pTh7MM9NLoIXuEA';
+	mapboxgl.accessToken = 'pk.eyJ1IjoiamZyaWVzZW5obCIsImEiOiJja3BtdHRvc3YwNWExMnBwNG11MnJibmV5In0.i84KJRxAWlCeaS900SAC7g';
 	
 	var mq = window.matchMedia( "(min-width: 820px)" );
 	
@@ -885,7 +885,7 @@ var places = {
 	} else {
 		var map = new mapboxgl.Map({
 			container: 'map', // container ID
-			style: 'mapbox://styles/mmorleyhl/cklwedd4f59wp17l9wfr2jwx5', // style ID
+			style: 'mapbox://styles/jfriesenhl/ckpmlu0pa04pw18qnjxgnb5mh', // style ID
 			center: [8.71157213340723, 50.11154494192954], // starting position [lng, lat]
 			// starting zoom
 			zoom: 15,
