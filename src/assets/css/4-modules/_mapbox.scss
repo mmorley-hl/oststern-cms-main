@@ -72,7 +72,9 @@
   width: 20%;
   margin-bottom: 0;
   text-align: center;
-  font-size: 14px;
+  font: $fontStackMatterSemiBold;
+  font-size: 18px;
+  letter-spacing: 0.18px;
   @media (max-width: $bpS) {
     width: 50%;
   }
