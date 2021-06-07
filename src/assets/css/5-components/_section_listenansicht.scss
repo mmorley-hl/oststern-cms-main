@@ -1,11 +1,6 @@
 .section_listenansicht {
     display: flex;
-    padding-left: 25px;
-    padding-right: 25px;  
-    @media (max-width: $bpXS) {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+
     @media (max-width: $bpXS) {
         display: none;
     }
