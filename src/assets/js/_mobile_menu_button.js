@@ -13,23 +13,21 @@ let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-mobileMenuButton.forEach(elem => {
-    
+mobileMenuButton.forEach(elem => {  
     elem.onclick = () => {
         mobileMenu.forEach(elem => {
             if (elem.style.top == '') {
-                disableBodyScroll(elem);
+                // disableBodyScroll(elem);
                 elem.style.top = "0";
             } else if (elem.style.top == '0px') {
-                enableBodyScroll(elem);
+                // enableBodyScroll(elem);
                 elem.style.top = "-340vh";
             } else {
-                disableBodyScroll(elem);
+                // disableBodyScroll(elem);
                 elem.style.top = "0";
             }
 
         })
-        console.log('mobile_button', elem)
     }
 });
 
@@ -49,6 +47,5 @@ mobileMenuItem.forEach(elem => {
                 elem.click();
             });
         }, 500);
-        // console.log('mobile_menu__item', elem)
     }
 });
