@@ -1,4 +1,7 @@
 .intro {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
     &__background-image {
         height: 100vh;
         width: 100%;
@@ -7,11 +10,14 @@
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
+        @media (max-width: $bpM) {
+            background-color: yellow;
+        }
     }
 
     &__content_wrapper {
-        background-color: red;
-        width: 850px;
+        // background-color: red;
+        width: 800px;
         height: 500px;
         position: absolute;
         top: 50%;
@@ -27,13 +33,15 @@
     &__content_headline {
         position: absolute;
         top: 50%;
-        right: 0;
+        right: -10%;
         transform: translate(0, -50%);
+        // animation: fadeOutheadline 0.5s ease-out;
+        animation: fadeOutheadline 2s cubic-bezier(0.075, 0.82, 0.165, 1) 4s 1 normal forwards;
     }
 
     &__content_logowrapper {
         position: relative;
-        background-color: blue;
+        // background-color: blue;
         width: 100%;
         height: 380px;
     }
@@ -57,20 +65,25 @@
         top: 60%;
         left: 47%;
         transform: translate(-50%, -50%);
+        animation: offices 2s cubic-bezier(0.075, 0.82, 0.165, 1) 4s 1 normal forwards;
     }
 
     &__logo_text_121_123 {
         position: absolute;
         top: 60%;
-        left: 50%;
+        left:-800px;
         transform: translate(-50%, -50%);
+        animation: ost-121-123 2s cubic-bezier(0.075, 0.82, 0.165, 1) 4s 1 normal forwards;
+        
     }
 
     &__langcie_wrapper {
         position: relative;
-        background-color: blue;
+        // background-color: blue;
         width: 100%;
         height: 40px;
+        animation: fadeOutheadline 2s cubic-bezier(0.075, 0.82, 0.165, 1) 4s 1 normal forwards;
+        
     }
 
     &__langcie_text {
@@ -79,4 +92,59 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    &__content_button_wrapper {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        opacity: 0;
+        animation: fadeInbuttons 2s cubic-bezier(0.075, 0.82, 0.165, 1) 4s 1 normal forwards;
+        .button {
+            color: black;
+            background-color: white;
+            text-transform: uppercase;
+            border: none;
+            height: 50px;
+            font: $fontStackMatterSemiBold;
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+
+    @keyframes ost-121-123 {
+        from {
+            left:-800px;
+        }
+    
+        to {
+            left: 50%;
+        }
+      }
+    @keyframes offices {
+        from {
+            left: 47%;
+        }
+    
+        to {
+            left:1500px;
+        }
+      }
+    @keyframes fadeOutheadline {
+        from {
+            opacity: 1;
+        }
+    
+        to {
+            opacity: 0;
+        }
+      }
+    @keyframes fadeInbuttons {
+        from {
+            opacity: 0;
+        }
+    
+        to {
+            opacity: 1;
+        }
+      }
 }
