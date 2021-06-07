@@ -86,7 +86,7 @@
 
     &__logo_text_offices {
         position: absolute;
-        top: 60%;
+        top: 64%;
         left: 47%;
         transform: translate(-50%, -50%);
         animation: offices 2s ease-in-out 4s 1 normal forwards;
@@ -98,7 +98,7 @@
 
     &__logo_text_121_123 {
         position: absolute;
-        top: 60%;
+        top: 64%;
         left:-800px;
         transform: translate(-50%, -50%);
         animation: ost-121-123 2s ease-in-out 4s 1 normal forwards;
@@ -128,11 +128,27 @@
     }
 
     &__content_button_wrapper {
-        padding-top: 30px;
+
+        position: absolute;
+        width: 800px;
+        bottom: -60%;
+    //    background-color: red;
+       opacity: 0;
+       animation: fadeInbuttons 2s ease-in-out 4s 1 normal forwards;
+       left: 50%;
+       transform: translate(-50%, 0);
+       @media (max-width: $bpS) {
+           width: 300px;
+       }
+    }
+
+    &__content_button {
+        width: 100%;
+        padding-top: 70px;
         display: flex;
         justify-content: space-between;
-        opacity: 0;
-        animation: fadeInbuttons 2s ease-in-out 4s 1 normal forwards;
+        opacity: 1;
+        
         .button {
             color: black;
             background-color: white;
@@ -145,13 +161,14 @@
             letter-spacing: 1.4px;
 
             @media (max-width: $bpS) {
-            margin-bottom: 35px;
+            margin-top: 35px;
             }
         }
 
         @media (max-width: $bpS) {
             width: 100%;
             flex-direction: column;
+            justify-content: flex-end;
             align-items: center;
         }
     }
@@ -194,10 +211,12 @@
       }
     @keyframes fadeInbuttons {
         from {
+            bottom: -1800px;
             opacity: 0;
         }
     
         to {
+            bottom: -60%;
             opacity: 1;
         }
       }
