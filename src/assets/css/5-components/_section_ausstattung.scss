@@ -55,11 +55,11 @@
     &::before {
         position: absolute;
         top: 0;
-        left: 0;
+        left: 1px;
         content: "";
         background-color: black;
         height: 100%;
-        width: 3px;
+        width: 4px;
     }
 
     .h2 {
