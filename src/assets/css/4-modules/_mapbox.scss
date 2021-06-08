@@ -29,12 +29,15 @@
 
 .mapboxgl-popup-content {
   color: black;
-  text-align: center;
+  text-align: left;
   font: $fontStackMatterRegular;
   font-size: 14px;
   p {
     font: $fontStackMatterRegular;
     font-size: 14px; 
+  }
+  strong {
+    font: $fontStackMatterSemiBold;
   }
   a {
     font: $fontStackMatterSemiBold;
