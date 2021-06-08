@@ -38,9 +38,13 @@
     }
 
     &__box {
-        padding: 40px  80px 80px  25px;
+        padding: 40px  80px 80px  0px;
         background-color: $primary;
         color: white;
+          @media (max-width: $bpL) {
+            padding-left: 25px;
+            padding-right: 25px;
+         }
           @media (max-width: $bpM) {
             padding-left: 25px;
             padding-right: 25px;
