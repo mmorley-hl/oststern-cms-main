@@ -875,7 +875,7 @@ var places = {
 	if (mq.matches){
 		var map = new mapboxgl.Map({
 			container: 'map', // container ID
-			style: 'mapbox://styles/mmorleyhl/cklwedd4f59wp17l9wfr2jwx5', // style ID
+			style: 'mapbox://styles/jfriesenhl/ckpmlu0pa04pw18qnjxgnb5mh', // style ID
 			center: [8.71157213340723, 50.11154494192954], // starting position [lng, lat]
 			// starting zoom
 			zoom: 16,
