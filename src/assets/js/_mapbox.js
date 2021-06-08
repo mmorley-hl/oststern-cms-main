@@ -20,7 +20,7 @@ var places = {
 	   	{
 		"type":"Feature",
 		"properties":{
-		   "description":"<strong>'Das Leben ist Schön</strong><p><a href=\"http://www.daslebenistschoen.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 198,</br> 60314 Frankfurt am Main</p>",
+		   "description":"<strong>'Das Leben ist Schön</strong><p>Hanauer Landstraße 198,</br> 60314 Frankfurt am Main</p><p><a href=\"http://www.daslebenistschoen.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 		   "icon":"Restaurants"
 		},
 		"geometry":{
@@ -34,7 +34,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>'Soul Food Factory East</strong><p><a href=\"http://www.soul-food-factory.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 124,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>'Soul Food Factory East</strong><p>Hanauer Landstraße 124,</br> 60314 Frankfurt am Main</p><p><a href=\"http://www.soul-food-factory.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -48,7 +48,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Saravini</strong><p><a href=\"http://www.saravini-frankfurt.de/mittagskarte/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 119,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Saravini</strong><p>Hanauer Landstraße 119,</br> 60314 Frankfurt am Main</p><p><a href=\"http://www.saravini-frankfurt.de/mittagskarte/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -76,7 +76,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Stones</strong><p><a href=\"https://www.stonesfood.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 125,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Stones</strong><p>Hanauer Landstraße 125,</br> 60314 Frankfurt am Main</p><p><a href=\"https://www.stonesfood.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -104,7 +104,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Cocothai</strong><p><a href=\"https://www.cocothaifrankfurtammain.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 151,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Cocothai</strong><p>Hanauer Landstraße 151,</br> 60314 Frankfurt am Main</p><p><a href=\"https://www.cocothaifrankfurtammain.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -118,7 +118,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Urfa</strong><p><a href=\"https://www.urfa-grill-pizzeria.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 133,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Urfa</strong><p>Hanauer Landstraße 133,</br> 60314 Frankfurt am Main</p><p><a href=\"https://www.urfa-grill-pizzeria.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -132,7 +132,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Aroydee</strong><p><a href=\"https://www.aroydee.de/Frankfurt\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 72,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Aroydee</strong><p>Hanauer Landstraße 72,</br> 60314 Frankfurt am Main</p><p><a href=\"https://www.aroydee.de/Frankfurt\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -146,7 +146,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Goldman</strong><p><a href=\"http://www.goldman-restaurant.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 127,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Goldman</strong><p>Hanauer Landstraße 127,</br> 60314 Frankfurt am Main</p><p><a href=\"http://www.goldman-restaurant.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -160,7 +160,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Oosten</strong><p><a href=\"https://oosten-frankfurt.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Mayfarthstraße 4,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Oosten</strong><p>Mayfarthstraße 4,</br> 60314 Frankfurt am Main</p><p><a href=\"https://oosten-frankfurt.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -174,7 +174,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Gref-Völsings</strong><p><a href=\"https://www.gref-voelsings.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 132,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Gref-Völsings</strong><p>Hanauer Landstraße 132,</br> 60314 Frankfurt am Main</p><p><a href=\"https://www.gref-voelsings.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -188,7 +188,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Best-Worscht In Town</strong><p><a href=\"https://www.bestworschtintown.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 270,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Best-Worscht In Town</strong><p>Hanauer Landstraße 270,</br> 60314 Frankfurt am Main</p><p><a href=\"https://www.bestworschtintown.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -202,7 +202,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Bei Frau Nanna</strong><p><a href=\"https://order.beifraunanna.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Ernst-Achilles-Platz 3,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Bei Frau Nanna</strong><p>Ernst-Achilles-Platz 3,</br> 60314 Frankfurt am Main</p><p><a href=\"https://order.beifraunanna.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -216,7 +216,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>LEUCHTENDROTER</strong><p><a href=\"http://leuchtendroter.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Lindleystraße 17,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>LEUCHTENDROTER</strong><p>Lindleystraße 17,</br> 60314 Frankfurt am Main</p><p><a href=\"http://leuchtendroter.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -230,7 +230,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Kahuna Poké Bros.</strong><p><a href=\"https://kahunapokebros.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 160A,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Kahuna Poké Bros.</strong><p>Hanauer Landstraße 160A,</br> 60314 Frankfurt am Main</p><p><a href=\"https://kahunapokebros.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -244,7 +244,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Ben's Burger</strong><p><a href=\"https://bens-burger.business.site/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 134,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Ben's Burger</strong><p>Hanauer Landstraße 134,</br> 60314 Frankfurt am Main</p><p><a href=\"https://bens-burger.business.site/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -258,7 +258,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Jesse James</strong><p><a href=\"http://www.jessejames.eu/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 83,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Jesse James</strong><p>Hanauer Landstraße 83,</br> 60314 Frankfurt am Main</p><p><a href=\"http://www.jessejames.eu/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -272,7 +272,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>COMAI East - modern viet kitchen</strong><p><a href=\"https://www.comai.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 130,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>COMAI East - modern viet kitchen</strong><p>Hanauer Landstraße 130,</br> 60314 Frankfurt am Main</p><p><a href=\"https://www.comai.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -286,7 +286,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Pizzeria Mille Lire</strong><p><a href=\"http://www.pizzeria-mille-lire.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Sonnemannstraße 71,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Pizzeria Mille Lire</strong><p>Sonnemannstraße 71,</br> 60314 Frankfurt am Main</p><p><a href=\"http://www.pizzeria-mille-lire.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Restaurants"
 			},
 			"geometry":{
@@ -300,7 +300,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Coffee Fellows</strong><p><a href=\"http://www.coffee-fellows-ostend.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 115,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Coffee Fellows</strong><p>Hanauer Landstraße 115,</br> 60314 Frankfurt am Main</p><p><a href=\"http://www.coffee-fellows-ostend.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Bar-Café"
 			},
 			"geometry":{
@@ -314,7 +314,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Wiener Feinbäckerei</strong><p><a href=\"https://heberer.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 108,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Wiener Feinbäckerei</strong><p>Hanauer Landstraße 108,</br> 60314 Frankfurt am Main</p><p><a href=\"https://heberer.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Bar-Café"
 			},
 			"geometry":{
@@ -328,7 +328,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Aniis</strong><p><a href=\"http://www.aniis.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 82,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Aniis</strong><p>Hanauer Landstraße 82,</br> 60314 Frankfurt am Main</p><p><a href=\"http://www.aniis.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Bar-Café"
 			},
 			"geometry":{
@@ -342,7 +342,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Stock Avenue 81</strong><p><a href=\"http://www.melia.com/de/lodgings/deutschland/frankfurt/innside-frankfurt-ostend/restaurants.html\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 81,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Stock Avenue 81</strong><p>Hanauer Landstraße 81,</br> 60314 Frankfurt am Main</p><p><a href=\"http://www.melia.com/de/lodgings/deutschland/frankfurt/innside-frankfurt-ostend/restaurants.html\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Bar-Café"
 			},
 			"geometry":{
@@ -356,7 +356,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Bäckerei und Konditorei Huck</strong><p><a href=\"https://www.baeckerei-huck.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Sonnemannstraße 81,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Bäckerei und Konditorei Huck</strong><p>Sonnemannstraße 81,</br> 60314 Frankfurt am Main</p><p><a href=\"https://www.baeckerei-huck.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Bar-Café"
 			},
 			"geometry":{
@@ -370,7 +370,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Frankfurt Pub</strong><p><a href=\"http://www.frankfurt-pub.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Hanauer Landstraße 99,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Frankfurt Pub</strong><p>Hanauer Landstraße 99,</br> 60314 Frankfurt am Main</p><p><a href=\"http://www.frankfurt-pub.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Bar-Café"
 			},
 			"geometry":{
@@ -398,7 +398,7 @@ var places = {
 		{
 			"type":"Feature",
 			"properties":{
-			   "description":"<strong>Marmion Bar</strong><p><a href=\"https://www.marmion-bar.de\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p><p>Lindleystraße 17,</br> 60314 Frankfurt am Main</p>",
+			   "description":"<strong>Marmion Bar</strong><p>Lindleystraße 17,</br> 60314 Frankfurt am Main</p><p><a href=\"https://www.marmion-bar.de\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
 			   "icon":"Bar-Café"
 			},
 			"geometry":{

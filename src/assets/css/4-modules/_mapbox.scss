@@ -24,14 +24,16 @@
 
 //Pop up Styling
 .mapboxgl-popup {
-  max-width: 244px;
+  width: 244px;
 }
 
 .mapboxgl-popup-content {
+  padding: 15px 11px;
   color: black;
   text-align: left;
   font: $fontStackMatterRegular;
   font-size: 14px;
+  border-radius: 12px!important;
   p {
     font: $fontStackMatterRegular;
     font-size: 14px; 
@@ -45,6 +47,8 @@
     color: $secondary;
   }
 }
+
+
 
 // Filter Styling
 .filter-group {
