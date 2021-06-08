@@ -207,3 +207,17 @@ $basicGrid__sizes: (
     background-color: yellow;
  }
 }
+.controlllller_2 {
+  position: absolute;
+  right:0;
+  top: 0;
+  width: 40px;
+  height: 40000px;
+  background-color: red;
+  z-index: 700;
+  opacity: .5;
+  @media (max-width: $bpXS) {
+    width: 20px;
+    background-color: yellow;
+ }
+}
