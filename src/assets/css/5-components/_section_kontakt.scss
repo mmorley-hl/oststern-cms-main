@@ -175,7 +175,13 @@
         }
     }
     .special-column-desktop_kontakt1 {
-        padding-left: 0;
+        // padding-left: 0;
+        @media (min-width: 1331px) {
+            padding-left: 0;
+          }
+        @media (max-width: 1330px) {
+            padding-left: 18px;
+          }
         @media (max-width: $bpM) {
             padding-left: 15px;
           }
