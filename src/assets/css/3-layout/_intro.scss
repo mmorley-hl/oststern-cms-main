@@ -65,6 +65,7 @@
             display: block;
         }
         @media (max-width: $bpS) {
+            transform: translateX(0);
             display: block;
         }
     }
@@ -164,6 +165,7 @@
            width: 300px;
        }
        @media (max-width: $bpS) {
+        transform: translate(-50%, -10%);
            width: 300px;
        }
     }
