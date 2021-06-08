@@ -10,9 +10,6 @@
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
-        @media (max-width: $bpM) {
-            // background-color: yellow;
-        }
     }
 
     &__content_wrapper {
@@ -23,6 +20,10 @@
         top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @media (max-width: $bpM) {
+            top: 50%;
+            width: 300px;
+        }
         @media (max-width: $bpS) {
             width: 300px;
         }
@@ -40,6 +41,9 @@
         transform: translate(0, -50%);
         // animation: fadeOutheadline 0.5s ease-out;
         animation: leftFadeHeadline 2s ease-in-out 2s 1 normal forwards;
+        @media (max-width: $bpM) {
+            display: none;
+        }
         @media (max-width: $bpS) {
             display: none;
         }
@@ -55,6 +59,11 @@
         bottom: 100px;
         // animation: fadeOutheadline 0.5s ease-out;
         animation: fadeOutheadline_left 2s ease-in-out 2s 1 normal forwards;
+        @media (max-width: $bpM) {
+            left: 20px;
+            transform: translateX(20%);
+            display: block;
+        }
         @media (max-width: $bpS) {
             display: block;
         }
@@ -65,6 +74,9 @@
         // background-color: blue;
         width: 100%;
         height: 280px;
+        @media (max-width: $bpM) {
+            transform: scale(0.9);
+        }
         @media (max-width: $bpS) {
             transform: scale(0.7);
         }
@@ -90,6 +102,10 @@
         left: 47%;
         transform: translate(-50%, -50%);
         animation: offices 2s ease-in-out 2s 1 normal forwards;
+        @media (max-width: $bpM) {
+            top: 65%;
+            left: 41%;
+        }
         @media (max-width: $bpS) {
             top: 65%;
             left: 41%;
@@ -102,6 +118,9 @@
         left:-800px;
         transform: translate(-50%, -50%);
         animation: ost-121-123 2s ease-in-out 2s 1 normal forwards;
+        @media (max-width: $bpM) {
+            top: 65%;
+        }
         @media (max-width: $bpS) {
             top: 65%;
         }
@@ -122,6 +141,9 @@
         top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @media (max-width: $bpM) {
+            top: 50%;
+        }
         @media (max-width: $bpS) {
             top: 10%;
         }
@@ -137,6 +159,10 @@
        animation: fadeInbuttons 4s ease-in-out 2s 1 normal forwards;
        left: 50%;
        transform: translate(-50%, 0);
+       @media (max-width: $bpM) {
+        transform: translate(-50%, 40%);
+           width: 300px;
+       }
        @media (max-width: $bpS) {
            width: 300px;
        }
@@ -160,11 +186,20 @@
             line-height: 19px;
             letter-spacing: 1.4px;
 
+            @media (max-width: $bpM) {
+            margin-top: 35px;
+            }
             @media (max-width: $bpS) {
             margin-top: 15px;
             }
         }
 
+        @media (max-width: $bpM) {
+            width: 100%;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
         @media (max-width: $bpS) {
             width: 100%;
             flex-direction: column;
