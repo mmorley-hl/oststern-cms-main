@@ -20,7 +20,7 @@
         width: 800px;
         height: 500px;
         position: absolute;
-        top: 45%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         @media (max-width: $bpS) {
@@ -131,7 +131,7 @@
 
         position: absolute;
         width: 800px;
-        bottom: -60%;
+        bottom: -50%;
     //    background-color: red;
        opacity: 0;
        animation: fadeInbuttons 4s ease-in-out 2s 1 normal forwards;
@@ -144,7 +144,7 @@
 
     &__content_button {
         width: 100%;
-        padding-top: 70px;
+        padding-top: 50px;
         display: flex;
         justify-content: space-between;
         opacity: 1;
@@ -227,7 +227,7 @@
         }
     
         to {
-            bottom: -60%;
+            bottom: -50%;
             opacity: 1;
         }
       }
