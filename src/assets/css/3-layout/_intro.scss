@@ -20,7 +20,7 @@
         width: 800px;
         height: 500px;
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
         @media (max-width: $bpS) {
@@ -35,7 +35,7 @@
 
     &__content_headline {
         position: absolute;
-        top: 50%;
+        top: 60%;
         right: -10%;
         transform: translate(0, -50%);
         // animation: fadeOutheadline 0.5s ease-out;
@@ -112,8 +112,8 @@
         position: relative;
         // background-color: blue;
         width: 100%;
-        height: 60px;
-        animation: fadeOutheadline 2s ease-in-out 2s 1 normal forwards;
+        height: 80px;
+        // animation: fadeOutheadline 2s ease-in-out 2s 1 normal forwards;
         
     }
 
