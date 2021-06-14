@@ -187,6 +187,11 @@
             font-size: 14px;
             line-height: 19px;
             letter-spacing: 1.4px;
+            &:hover {
+				text-decoration: none;
+				color: black;
+				background: $secondary-light;
+			}
 
             @media (max-width: $bpM) {
             margin-top: 35px;
