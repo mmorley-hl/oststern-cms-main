@@ -40,7 +40,7 @@
 		padding-bottom: $gutter*4;
 		.button {
 			font: $fontStackMatterMedium;
-			color: #63A5BF;
+			color: $secondary-light;
 			font-size: 13px;
 			line-height: 9px;
 			padding-bottom: 0;
@@ -131,7 +131,7 @@
 	}
 	
 	.burger-icon {
-		@include burger(25px, 3px, 5px, #63A5BF);
+		@include burger(25px, 3px, 5px, $secondary-light);
 	}
 	
 	.menu-button_impressum.is-active .burger-icon {
