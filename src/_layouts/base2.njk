@@ -7,30 +7,21 @@
 			<title>{{ title }}</title>
 			<meta name='viewport' content='width=device-width, initial-scale=1'>
 			<link rel='stylesheet' type='text/css' media='screen' href='/assets/main.css'>
-			<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
 			<script src='/assets/main.js'></script>
 
 		</head>
 		<body class="background-primary">
-				{# <div class="controlllller">
-			
-		</div>
-		<div class="controlllller_2">
-			
-		</div> #}
-			{# {% include "toTopButton.njk" %} #}
 			{% include "mobile_menu_impressum.njk" %}
 			
-			<div class="theme-wrapper theme-dark color-scheme-default background-primary">
-				<header class="header_impressum">
-					{% include "nav_impressum.njk" %}
-				</header>
-				{# <div class="inset"></div> #}
-				<main class="main_content">
-					{{ content | safe }}
-				</main>
-				{% include "footer.njk" %}			
-			</div>
+			<header class="header_impressum">
+				{% include "nav_impressum.njk" %}
+			</header>
+			
+			<main class="main_content">
+				{{ content | safe }}
+			</main>
+			{% include "footer.njk" %}			
+			
 			<script src='/assets/vendor.js'></script>
 		</body>
 
