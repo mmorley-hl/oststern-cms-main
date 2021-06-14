@@ -182,6 +182,14 @@
 
     .button_icon {
         margin-top: 30px;
+        &:hover {
+            text-decoration: none;
+            color: white;
+             background: $primary;
+             svg {
+                 fill: white;
+             }
+        }
         @media (max-width: $bpM) {
             margin-left: 0;
         }
