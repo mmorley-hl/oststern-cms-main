@@ -805,7 +805,7 @@ var places = {
 			"type":"Feature",
 			"properties":{
 			   "description":"<strong>Schwedler See</strong><p>Schwedlerstraße,</br> 60314 Frankfurt am Main</p>",
-			   "icon":"Kultur",
+			   "icon":"Parks",
 			},
 			"geometry":{
 			   "type":"Point",
