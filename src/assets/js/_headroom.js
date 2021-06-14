@@ -3,7 +3,6 @@ import Headroom from "headroom.js";
 
 // grab an element
 var elems = document.querySelectorAll('.header')
-// var myElement = document.querySelector("header");
 // construct an instance of Headroom, passing the element
 elems.forEach((elem) => {
     var headroom = new Headroom(elem, {
@@ -15,7 +14,6 @@ elems.forEach((elem) => {
 })
 
 var elemsImpressum = document.querySelectorAll('.header_impressum')
-// var myElement = document.querySelector("header");
 // construct an instance of Headroom, passing the element
 elemsImpressum.forEach((elem) => {
     var headroom = new Headroom(elem, {

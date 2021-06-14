@@ -870,7 +870,7 @@ var places = {
 	
 	var mq = window.matchMedia( "(min-width: 820px)" );
 	
-	console.log('mq', mq)
+	// console.log('mq', mq)
 	
 	if (mq.matches){
 		var map = new mapboxgl.Map({
@@ -900,7 +900,7 @@ var places = {
 		// create a HTML element for each feature
 		var el = document.createElement('div');
 		el.className = 'marker';
-		console.log('el', el)
+		// console.log('el', el)
 	
 		// make a marker for each feature and add to the map
 		new mapboxgl.Marker(el)
@@ -947,9 +947,9 @@ var places = {
 		 
 		places.features.forEach(function (feature) {
 			var symbol = feature.properties['icon'];
-			console.log('symbol', symbol)
+			// console.log('symbol', symbol)
 			var layerID = 'poi-' + symbol;
-			console.log('layerID', layerID)
+			// console.log('layerID', layerID)
 		
 			
 	

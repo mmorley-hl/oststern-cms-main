@@ -16,8 +16,6 @@ listenansicht.forEach((elem) => {
     
 })
 
-// document.getElementById("defaultOpen").click();
-
 function openTab(evt, tabsName) {
     if (tabsName == 'Kartenansicht') {
     // Declare all variables
