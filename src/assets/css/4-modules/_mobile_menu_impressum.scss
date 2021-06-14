@@ -47,6 +47,11 @@
 			margin: 0;
 			height: 40px;
 			margin-top: 40px;
+			&:hover {
+				text-decoration: none;
+				color: white;
+			  background: $secondary;
+			}
 		}
 	}
 

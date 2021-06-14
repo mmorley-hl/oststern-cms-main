@@ -17,6 +17,7 @@
   border-radius: 2em;
   color: $secondary;
   border: 1px solid $secondary;
+  color: $secondary;
 
   // vertical-align: middle;
 
@@ -78,6 +79,10 @@
     }
     a {
       color: $secondary;
+      &:hover {
+        color: white;
+        background: $secondary;
+      }
     }
   }
 

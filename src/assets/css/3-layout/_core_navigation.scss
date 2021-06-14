@@ -111,6 +111,11 @@
 			font-size: 13px;
 			line-height: 8px;
 			color: #63A5BF;
+			&:hover {
+				text-decoration: none;
+				color: white;
+			  background: $secondary;
+			}
 		}
 	}
 
