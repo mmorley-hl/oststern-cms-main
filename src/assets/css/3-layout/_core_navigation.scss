@@ -41,6 +41,12 @@
 	}
 	.button {
 		color: $secondary;
+		&:hover {
+			text-decoration: none;
+			color: white;
+		  background: $secondary;
+		}
+
 	}
 	.core_navigation__logo_small {
 		display: block;
