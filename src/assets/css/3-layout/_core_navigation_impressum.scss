@@ -95,6 +95,11 @@
 		}
 		.button {
 			color: $secondary;
+			&:hover {
+				text-decoration: none;
+				color: white;
+			  background: $secondary;
+			}
 		}
 		a:nth-child(3) {
 			margin-left: 40px;
