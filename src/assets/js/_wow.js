@@ -6,7 +6,7 @@ const wow = new WOW(
 	  offset:       100,
 	  mobile:       true,
 	  callback:     function(box) {
-		console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+		// console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
 	  }
 	}
   );
