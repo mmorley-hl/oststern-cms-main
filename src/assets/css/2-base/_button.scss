@@ -64,6 +64,11 @@
       padding: .5em .7em;
       line-height: 1.3em;
     }
+    &:hover {
+      text-decoration: none!important;
+      color: black!important;
+      background-color: white!important;
+    }
   }
 
   &--nav {
