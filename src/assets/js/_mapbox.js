@@ -894,15 +894,27 @@ var places = {
 		});
 	};
 
+
+
+	// var marker = new mapboxgl.Marker(container, {
+    //     offset: [-width / 2, -height]
+    // })
+    // .setLngLat([
+    //     datacenters[country][city].coordinates.lng,
+    //     datacenters[country][city].coordinates.lat
+    // ])
+    // .addTo(map);
 	// add markers to map
 	geojson.features.forEach(function(marker) {
 
 		// create a HTML element for each feature
 		var el = document.createElement('div');
 		el.className = 'marker';
+		// var container = document.querySelector('.marker')
 		// console.log('el', el)
 	
 		// make a marker for each feature and add to the map
+		// new mapboxgl.Marker(el)
 		new mapboxgl.Marker(el)
 		.setLngLat(marker.geometry.coordinates)
 		.addTo(map);
@@ -965,8 +977,8 @@ var places = {
 					'icon-allow-overlap': true,
 					// "icon-offset": [
 					// 	"case",
-					// 	["==", ["get", "icon"], "cafe-15"],
-					// 	["literal", [5, -19]],
+					// 	["==", ["get", "icon"], symbol],
+					// 	["literal", [0, 55]],
 					// 	["literal", [0, 0]]
 					//   ]
 					},
