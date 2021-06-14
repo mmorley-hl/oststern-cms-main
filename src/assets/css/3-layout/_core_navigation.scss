@@ -40,11 +40,11 @@
 		color: black;
 	}
 	.button {
-		color: $secondary;
+		color: $secondary-light;
 		&:hover {
 			text-decoration: none;
 			color: white;
-		  background: $secondary;
+		  background: $secondary-light;
 		}
 
 	}
@@ -120,7 +120,7 @@
 			&:hover {
 				text-decoration: none;
 				color: white;
-			  background: $secondary;
+			  background: $secondary-light;
 			}
 		}
 	}
