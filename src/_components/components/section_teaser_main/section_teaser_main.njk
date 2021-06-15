@@ -21,7 +21,7 @@
           {% if params.button.icon_button == true %}
           <div class="{{ params.button.style }}">
             <div class="button_icon__icon">
-              <img src=" {{ params.button.icon.src }}" alt="image">
+              <img loading="lazy" src=" {{ params.button.icon.src }}" alt="image">
             </div>
             <div class="button_icon__text">
               {{ params.button.content }}
@@ -38,7 +38,7 @@
       <div class="section_teaser_main__image_wrapper {% if not params.logo %}thumbnail{% endif %}" style="background-image: url('{{ params.background_image.src }}'); {% if params.background_image.x is defined and params.background_image.y is defined %}background-position: calc({{ params.background_image.x }} * 100%) calc({{ params.background_image.y }} * 100%){% endif %}">
         {% if params.logo %}
         <div class="section_teaser_main__logo thumbnail">
-          <img class="" src="{{ params.logo }}" alt="image">
+          <img loading="lazy" class="" src="{{ params.logo }}" alt="image">
         </div>
         {% endif %}
       </div>
