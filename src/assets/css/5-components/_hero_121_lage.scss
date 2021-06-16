@@ -1,36 +1,36 @@
 .hero_121_lage {
-    display: block;
-    @media (max-width: $bpM) {
-        display: none;
-      }
-    @media (max-width: $bpXS) {
-        display: none;
-      }
-    img {
-        width: 100%;
-        margin-bottom: 0;
-    }
+  display: block;
+  @media (max-width: $bpM) {
+    display: none;
+  }
+  @media (max-width: $bpXS) {
+    display: none;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 .hero_121_lage_tablet {
+  display: none;
+  @media (max-width: $bpM) {
+    display: block;
+  }
+  @media (max-width: $bpXS) {
     display: none;
-    @media (max-width: $bpM) {
-        display: block;
-      }
-      @media (max-width: $bpXS) {
-        display: none;
-      }
-    img {
-        width: 100%;
-        margin-bottom: 0;
-    }
+  }
+  img {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 .hero_121_lage_mobile {
-    display: none;
-    @media (max-width: $bpXS) {
-        display: block;
-      }
-    img {
-        width: 100%;
-        margin-bottom: 0;
-    }
+  display: none;
+  @media (max-width: $bpXS) {
+    display: block;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }

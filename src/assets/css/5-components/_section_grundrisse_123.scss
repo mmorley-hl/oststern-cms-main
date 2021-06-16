@@ -3,7 +3,7 @@
     width: 100%;
     background-color: $gray-color-light;
     padding-left: 25px;
-    padding-right: 25px;  
+    padding-right: 25px;
     @media (max-width: $bpXS) {
         padding-left: 5px;
         padding-right: 5px;
@@ -13,10 +13,10 @@
     }
     .special-column-grundriss {
         @media (max-width: $bpXS) {
-            padding-left: 0!important;
-            padding-right: 0!important;
-            margin-right: -5px!important;
-            margin-left: -5px!important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-right: -5px !important;
+            margin-left: -5px !important;
             width: 110%;
         }
     }
@@ -25,11 +25,10 @@
         font: $fontStackMatterSemiBold;
         font-size: 38px;
         line-height: 42px;
-        letter-spacing: -.57px;
+        letter-spacing: -0.57px;
         margin-bottom: 0;
         padding-bottom: 60px;
     }
-
 
     .carousel {
         width: 100%;
@@ -38,13 +37,10 @@
         @media (max-width: $bpXS) {
             height: 350px;
         }
-  
     }
 
-    
-    
     .flickity-enabled.is-fullscreen {
-        @media only screen and (orientation:landscape) and (max-width: $bpS) {
+        @media only screen and (orientation: landscape) and (max-width: $bpS) {
             background: #fff;
             height: 100%;
             left: 0;
@@ -55,17 +51,16 @@
             z-index: 600;
         }
         .flickity-viewport {
-            @media only screen and (orientation:landscape) and (max-width: $bpS) {
-            width: 72%;
+            @media only screen and (orientation: landscape) and (max-width: $bpS) {
+                width: 72%;
             }
         }
-        .carousel-cell { 
-            @media only screen and (orientation:landscape) and (max-width: $bpS) {
+        .carousel-cell {
+            @media only screen and (orientation: landscape) and (max-width: $bpS) {
                 width: 80%;
-                }
+            }
         }
     }
-    
 
     .carousel-cell {
         width: 100%;
@@ -76,11 +71,11 @@
         align-items: center;
         justify-content: center;
     }
-    
+
     .carousel.is-fullscreen .carousel-cell {
         height: 100%;
     }
-    
+
     .carousel-cell-image {
         display: block;
         max-height: 100%;
@@ -94,10 +89,9 @@
         display: inline-block;
         height: 10px;
         margin: 0 0;
-        opacity: .25;
+        opacity: 0.25;
         width: 10px;
     }
-
 
     /* position dots in carousel */
     .flickity-page-dots {
@@ -110,7 +104,7 @@
     }
 
     .carousel.is-fullscreen .flickity-page-dots {
-        @media only screen and (orientation:landscape) and (max-width: $bpS) {
+        @media only screen and (orientation: landscape) and (max-width: $bpS) {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
@@ -120,14 +114,14 @@
         }
     }
 
-    .carousel.is-fullscreen .flickity-page-dots .dot {     
-        @media only screen and (orientation:landscape) and (max-width: $bpS) {
+    .carousel.is-fullscreen .flickity-page-dots .dot {
+        @media only screen and (orientation: landscape) and (max-width: $bpS) {
             width: 20%;
         }
     }
 
     /* white circles */
-    .flickity-page-dots .dot {     
+    .flickity-page-dots .dot {
         width: 20%;
         height: 55px;
         opacity: 1;
@@ -173,45 +167,40 @@
         &::before {
             // padding-top: 60px;
             position: absolute;
-            top: 50%;  /* position the top  edge of the element at the middle of the parent */
+            top: 50%; /* position the top  edge of the element at the middle of the parent */
             left: 50%; /* position the left edge of the element at the middle of the parent */
             transform: translate(-50%, -50%);
             @media (max-width: $bpXS) {
                 width: 100%;
             }
-
         }
     }
 
     .dot:nth-child(1) {
         &::before {
-            content: 'EG';
+            content: "EG";
         }
     }
     .dot:nth-child(2) {
         &::before {
-            content: '1. OG V1';
+            content: "1. OG V1";
         }
     }
     .dot:nth-child(3) {
         &::before {
-            content: '1. OG V2';
+            content: "1. OG V2";
         }
     }
     .dot:nth-child(4) {
         &::before {
-            content: 'Schnitt A';
+            content: "Schnitt A";
         }
     }
     .dot:nth-child(5) {
         &::before {
-            content: 'Schnitt B';
+            content: "Schnitt B";
         }
     }
-
-
-
-   
 }
 .flickity-prev-next-button {
     display: none;
@@ -257,7 +246,7 @@
     // z-index: 655;
     &:hover {
         background-color: $primary;
-        opacity: .6;
+        opacity: 0.6;
     }
 }
 
@@ -276,7 +265,7 @@
 .flickity-fullscreen-button .flickity-button-icon {
     width: 30px;
     height: 30px;
-    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    top: 50%; /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
     transform: translate(-50%, -50%);
 }
@@ -308,7 +297,6 @@
 //         transform: translate(-50%, -50%);
 //     }
 // }
-
 
 // .flickity-button:hover {
 //     background: $gray-color-light;

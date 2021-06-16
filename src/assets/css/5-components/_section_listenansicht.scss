@@ -8,18 +8,18 @@
     &__buttons {
         display: flex;
         flex-direction: column;
-    } 
+    }
 
     &__content {
-        display:none;
+        display: none;
         padding: 60px;
         background-color: white;
         width: 100%;
         box-shadow: 0px 0px 30px #00000029;
-        
+
         @media (max-width: $bpM) {
-           flex-direction: column;
-          }
+            flex-direction: column;
+        }
     }
 
     &__items_left {
@@ -27,7 +27,7 @@
 
         @media (max-width: $bpM) {
             width: 100%;
-          }
+        }
     }
 
     &__items_right {
@@ -35,7 +35,7 @@
 
         @media (max-width: $bpM) {
             width: 100%;
-          }
+        }
     }
 
     &__item {
@@ -50,14 +50,14 @@
                 position: absolute;
                 right: -24px;
                 top: 0;
-                background-image: url('/assets/images/icons/icons8-up.svg');
+                background-image: url("/assets/images/icons/icons8-up.svg");
                 background-repeat: no-repeat;
                 background-size: 17px 17px;
                 margin-top: 4px;
                 height: 17px;
                 width: 17px;
                 display: inline-block;
-                content: ' ';
+                content: " ";
             }
         }
     }
@@ -71,7 +71,7 @@
         font: $fontStackMatterMedium;
         font-size: 18px;
         line-height: 32px;
-        padding: .77em 2em;
+        padding: 0.77em 2em;
         background-color: $gray-color-light;
         outline: none;
         cursor: pointer;
@@ -80,14 +80,14 @@
         transition: 0.3s;
 
         &:before {
-            background-image: url('/assets/images/icons/map/Tankstelle.svg');
+            background-image: url("/assets/images/icons/map/Tankstelle.svg");
             background-repeat: no-repeat;
             background-size: 17px 17px;
             margin-top: 6px;
             height: 17px;
             width: 17px;
             display: inline-block;
-            content: ' ';
+            content: " ";
             margin-right: 10px;
         }
 
@@ -96,201 +96,189 @@
             color: white;
         }
 
-        &.active{
+        &.active {
             background-color: $primary;
             color: white;
         }
     }
 
     &__button:nth-child(1) {
-
         &:before {
-            background-image: url('/assets/images/icons/map/icons_dark/Restaurant.svg');
+            background-image: url("/assets/images/icons/map/icons_dark/Restaurant.svg");
         }
-        
-        &.active{
+
+        &.active {
             &:before {
-                background-image: url('/assets/images/icons/map/Restaurants.svg');
+                background-image: url("/assets/images/icons/map/Restaurants.svg");
             }
         }
 
         &:hover {
             &:before {
-                background-image: url('/assets/images/icons/map/Restaurants.svg');
+                background-image: url("/assets/images/icons/map/Restaurants.svg");
             }
         }
     }
 
     &__button:nth-child(2) {
-
         &:before {
-            background-image: url('/assets/images/icons/map/icons_dark/Bar-Café.svg');
+            background-image: url("/assets/images/icons/map/icons_dark/Bar-Café.svg");
         }
-        
-        &.active{
+
+        &.active {
             &:before {
-                background-image: url('/assets/images/icons/map/Bar-Café.svg');
+                background-image: url("/assets/images/icons/map/Bar-Café.svg");
             }
         }
 
         &:hover {
             &:before {
-                background-image: url('/assets/images/icons/map/Bar-Café.svg');
+                background-image: url("/assets/images/icons/map/Bar-Café.svg");
             }
         }
     }
 
     &__button:nth-child(3) {
-
         &:before {
-            background-image: url('/assets/images/icons/map/icons_dark/Hotels.svg');
+            background-image: url("/assets/images/icons/map/icons_dark/Hotels.svg");
         }
-        
-        &.active{
+
+        &.active {
             &:before {
-                background-image: url('/assets/images/icons/map/Hotels.svg');
+                background-image: url("/assets/images/icons/map/Hotels.svg");
             }
         }
 
         &:hover {
             &:before {
-                background-image: url('/assets/images/icons/map/Hotels.svg');
+                background-image: url("/assets/images/icons/map/Hotels.svg");
             }
         }
     }
 
     &__button:nth-child(4) {
-
         &:before {
-            background-image: url('/assets/images/icons/map/icons_dark/Fitness_list.svg');
+            background-image: url("/assets/images/icons/map/icons_dark/Fitness_list.svg");
         }
-        
-        &.active{
+
+        &.active {
             &:before {
-                background-image: url('/assets/images/icons/map/Fitness_list.svg');
+                background-image: url("/assets/images/icons/map/Fitness_list.svg");
             }
         }
 
         &:hover {
             &:before {
-                background-image: url('/assets/images/icons/map/Fitness_list.svg');
+                background-image: url("/assets/images/icons/map/Fitness_list.svg");
             }
         }
     }
 
     &__button:nth-child(5) {
-
         &:before {
-            background-image: url('/assets/images/icons/map/icons_dark/Kita.svg');
+            background-image: url("/assets/images/icons/map/icons_dark/Kita.svg");
         }
-        
-        &.active{
+
+        &.active {
             &:before {
-                background-image: url('/assets/images/icons/map/Kita.svg');
+                background-image: url("/assets/images/icons/map/Kita.svg");
             }
         }
 
         &:hover {
             &:before {
-                background-image: url('/assets/images/icons/map/Kita.svg');
+                background-image: url("/assets/images/icons/map/Kita.svg");
             }
         }
     }
 
     &__button:nth-child(6) {
-
         &:before {
-            background-image: url('/assets/images/icons/map/icons_dark/Retail.svg');
+            background-image: url("/assets/images/icons/map/icons_dark/Retail.svg");
         }
-        
-        &.active{
+
+        &.active {
             &:before {
-                background-image: url('/assets/images/icons/map/Retail.svg');
+                background-image: url("/assets/images/icons/map/Retail.svg");
             }
         }
 
         &:hover {
             &:before {
-                background-image: url('/assets/images/icons/map/Retail.svg');
+                background-image: url("/assets/images/icons/map/Retail.svg");
             }
         }
     }
 
     &__button:nth-child(7) {
-
         &:before {
-            background-image: url('/assets/images/icons/map/icons_dark/Banken.svg');
+            background-image: url("/assets/images/icons/map/icons_dark/Banken.svg");
         }
-        
-        &.active{
+
+        &.active {
             &:before {
-                background-image: url('/assets/images/icons/map/Banken.svg');
+                background-image: url("/assets/images/icons/map/Banken.svg");
             }
         }
 
         &:hover {
             &:before {
-                background-image: url('/assets/images/icons/map/Banken.svg');
+                background-image: url("/assets/images/icons/map/Banken.svg");
             }
         }
     }
 
     &__button:nth-child(8) {
-
         &:before {
-            background-image: url('/assets/images/icons/map/icons_dark/Parks_list.svg');
+            background-image: url("/assets/images/icons/map/icons_dark/Parks_list.svg");
         }
-        
-        &.active{
+
+        &.active {
             &:before {
-                background-image: url('/assets/images/icons/map/Parks_list.svg');
+                background-image: url("/assets/images/icons/map/Parks_list.svg");
             }
         }
 
         &:hover {
             &:before {
-                background-image: url('/assets/images/icons/map/Parks_list.svg');
+                background-image: url("/assets/images/icons/map/Parks_list.svg");
             }
         }
     }
 
     &__button:nth-child(9) {
-
         &:before {
-            background-image: url('/assets/images/icons/map/icons_dark/Kultur_list.svg');
+            background-image: url("/assets/images/icons/map/icons_dark/Kultur_list.svg");
         }
-        
-        &.active{
+
+        &.active {
             &:before {
-                background-image: url('/assets/images/icons/map/Kultur_list.svg');
+                background-image: url("/assets/images/icons/map/Kultur_list.svg");
             }
         }
-        
+
         &:hover {
             &:before {
-                background-image: url('/assets/images/icons/map/Kultur_list.svg');
+                background-image: url("/assets/images/icons/map/Kultur_list.svg");
             }
         }
     }
 
     &__button:nth-child(10) {
-
         &:before {
-            background-image: url('/assets/images/icons/map/icons_dark/Tankstelle.svg');
+            background-image: url("/assets/images/icons/map/icons_dark/Tankstelle.svg");
         }
-        
-        &.active{
+
+        &.active {
             &:before {
-                background-image: url('/assets/images/icons/map/Tankstelle.svg');
+                background-image: url("/assets/images/icons/map/Tankstelle.svg");
             }
         }
 
         &:hover {
             &:before {
-                background-image: url('/assets/images/icons/map/Tankstelle.svg');
+                background-image: url("/assets/images/icons/map/Tankstelle.svg");
             }
         }
     }
 }
-
-

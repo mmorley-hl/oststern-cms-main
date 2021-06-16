@@ -1,12 +1,11 @@
+.headroom {
+	transform: translateY(0%);
+}
 
-	.headroom {
-		// will-change: transform;
-		// transition: transform 300ms linear;
-        transform: translateY(0%);
-	}
-	.headroom--pinned {
-		transform: translateY(0%);
-	}
-	.headroom--not-top.headroom--unpinned  {
-		transform: translateY(-140%);
-	}
+.headroom--pinned {
+	transform: translateY(0%);
+}
+
+.headroom--not-top.headroom--unpinned {
+	transform: translateY(-140%);
+}

@@ -2,8 +2,7 @@
     position: relative;
     width: 100%;
     background-color: $primary;
-    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.17);
-
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.17);
 
     &__wrapper_background {
         position: absolute;
@@ -14,9 +13,9 @@
 
         @media (max-width: $bpM) {
             width: 100%;
-          }
+        }
     }
-   
+
     &__intro {
         font: $fontStackMatterSemiBold;
         font-size: 38px;
@@ -26,34 +25,34 @@
         padding-top: 90px;
         padding-bottom: 40px;
         margin: 0;
-        
+
         @media (max-width: $bpXS) {
             font-size: 36px;
             line-height: 38px;
             letter-spacing: -0.54px;
             padding-top: 30px;
             padding-bottom: 27px;
-         }
+        }
     }
 
     &__box {
-        padding: 40px  80px 80px  0px;
+        padding: 40px 80px 80px 0px;
         background-color: $primary;
         color: white;
-    
+
         @media (max-width: $bpL) {
-        padding-left: 25px;
-        padding-right: 25px;
+            padding-left: 25px;
+            padding-right: 25px;
         }
 
         @media (max-width: $bpM) {
-        padding-left: 25px;
-        padding-right: 25px;
+            padding-left: 25px;
+            padding-right: 25px;
         }
 
         @media (max-width: $bpXS) {
-        padding-left: 5px;
-        padding-right: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
         }
     }
 
@@ -70,7 +69,7 @@
 
         @media (max-width: $bpXS) {
             padding-right: 0;
-         }
+        }
     }
 
     &__box_left_item {
@@ -84,7 +83,7 @@
 
         @media (max-width: $bpXS) {
             font-size: 28px;
-         }
+        }
     }
 
     &__box_left_item:nth-last-child(1) {
@@ -123,7 +122,7 @@
             padding-top: 90px;
             padding-bottom: 40px;
             margin: 0;
-            
+
             @media (max-width: $bpS) {
                 padding-left: 0;
             }
@@ -134,9 +133,8 @@
                 letter-spacing: -0.54px;
                 padding-top: 30px;
                 padding-bottom: 27px;
-             }
+            }
         }
- 
     }
 
     &__box_right_top {
@@ -146,8 +144,8 @@
         @media (max-width: $bpXS) {
             width: 100%;
             padding-right: 0;
-         }
-    } 
+        }
+    }
 
     &__box_right_top_item {
         padding-bottom: 20px;
@@ -165,11 +163,11 @@
 
         @media (max-width: $bpM) {
             padding: 0 0 20px 0px;
-         }
+        }
 
         @media (max-width: $bpXS) {
             padding: 0 0 20px 0;
-         }
+        }
     }
 
     .button_icon {
@@ -178,11 +176,11 @@
         &:hover {
             text-decoration: none;
             color: white;
-             background: $primary;
-             
-             svg {
-                 fill: white;
-             }
+            background: $primary;
+
+            svg {
+                fill: white;
+            }
         }
 
         @media (max-width: $bpM) {

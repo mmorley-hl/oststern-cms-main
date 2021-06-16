@@ -3,8 +3,8 @@
     min-height: 320px;
     width: 100%;
     padding-left: 25px;
-    padding-right: 25px;  
-    
+    padding-right: 25px;
+
     @media (max-width: $bpXS) {
         padding-left: 5px;
         padding-right: 5px;
@@ -22,15 +22,13 @@
         @media (max-width: $bpXS) {
             position: relative;
             top: 0;
-
         }
     }
 }
 
-
 .timeline_section_ausstattung {
     position: relative;
-	list-style: none;
+    list-style: none;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -42,7 +40,6 @@
     @media (max-width: $bpM) {
         margin-left: 320px;
         margin-right: auto;
-
     }
 
     @media (max-width: $bpXS) {
@@ -76,11 +73,9 @@
         @media (max-width: $bpS) {
             font-size: 16px;
         }
-        
     }
 
     &__002_subtext_wrapper {
-
         p {
             color: $secondary;
             margin: 0;
@@ -88,15 +83,20 @@
     }
 
     &__004_subtext_wrapper {
-
         p {
             color: $secondary;
             margin: 0;
         }
     }
 
-    &__001_text, &__003_text, &__005_text, &__007_text,
-    &__002_text, &__004_text, &__006_text, &__008_text {
+    &__001_text,
+    &__003_text,
+    &__005_text,
+    &__007_text,
+    &__002_text,
+    &__004_text,
+    &__006_text,
+    &__008_text {
         position: absolute;
         height: 50px;
         width: 500px;
@@ -118,30 +118,42 @@
         top: -2px;
     }
 
-    &__001_icon, &__003_icon, &__005_icon, &__007_icon,
-    &__002_icon, &__004_icon, &__006_icon, &__008_icon {
+    &__001_icon,
+    &__003_icon,
+    &__005_icon,
+    &__007_icon,
+    &__002_icon,
+    &__004_icon,
+    &__006_icon,
+    &__008_icon {
         position: absolute;
         bottom: -80px;
         height: 50px;
         width: 100px;
         top: -10px;
         left: -95px;
-
     }
 
-    &__001, &__002, &__003, &__004, &__005, &__006, &__007, &__008 {
+    &__001,
+    &__002,
+    &__003,
+    &__004,
+    &__005,
+    &__006,
+    &__007,
+    &__008 {
         width: 30px;
         height: 30px;
         background: black;
         position: relative;
         border-radius: 50%;
-        margin-left: -12px; 
+        margin-left: -12px;
     }
 
     &__001 {
-        margin-left: 100px;  
+        margin-left: 100px;
         margin-top: 212px;
-        margin-left: -12px; 
+        margin-left: -12px;
 
         @media (max-width: $bpXS) {
             margin-top: 112px;
@@ -149,8 +161,8 @@
     }
 
     &__008 {
-        margin-right: 100px;  
-        margin-right: 0; 
+        margin-right: 100px;
+        margin-right: 0;
         margin-bottom: 150px;
     }
 }

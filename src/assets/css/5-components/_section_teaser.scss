@@ -4,7 +4,7 @@
     color: white;
     padding-top: 42px;
     padding-left: 25px;
-    padding-right: 25px;  
+    padding-right: 25px;
 
     @media (max-width: $bpXS) {
         padding-left: 5px;
@@ -15,7 +15,7 @@
         height: 303px;
     }
 
-    &__content_wrapper{
+    &__content_wrapper {
         max-width: 486px;
     }
 
@@ -32,13 +32,11 @@
                 font-size: 14px;
                 line-height: 14px;
                 letter-spacing: 1.82px;
-             
             }
         }
     }
 
     &__headline {
-        
         h2 {
             font: $fontStackMatterMedium;
             line-height: 56px;

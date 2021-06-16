@@ -5,7 +5,7 @@
     overflow: hidden;
     background-color: $primary;
 
-    &__logo_big{
+    &__logo_big {
         display: none;
         position: absolute;
         left: 40px;
@@ -20,7 +20,7 @@
             left: 50%;
             transform: translate(-50%, 0);
         }
-    } 
+    }
 
     img {
         width: 100%;
@@ -28,24 +28,23 @@
     }
 
     &__backgroundimage {
-        
         height: 100vh;
         width: 100%;
-        background-image: url('./images/hero/Hero_image_001.jpg');
+        background-image: url("./images/hero/Hero_image_001.jpg");
         background-position: left;
         background-repeat: no-repeat;
         background-size: cover;
 
-            @media (max-width: $bpM) {
-                background-position-x: -300px;
-            }
+        @media (max-width: $bpM) {
+            background-position-x: -300px;
+        }
 
-            @media (max-width: $bpXS) {
-                background-position-x: -400px;
-            }
+        @media (max-width: $bpXS) {
+            background-position-x: -400px;
+        }
 
         &::before {
-            content : "";
+            content: "";
             display: block;
             position: absolute;
             top: 0;
@@ -53,16 +52,13 @@
             background-color: $primary;
             width: 100%;
             height: 100%;
-            opacity: .21;
+            opacity: 0.21;
 
             @media (max-width: $bpXS) {
                 left: 0px;
             }
-     
         }
     }
-
-
 
     &__content_wrapper {
         color: white;
@@ -128,7 +124,7 @@
             top: 281px;
             left: 30px;
             width: 314px;
-            
+
             .h1 {
                 font-size: 50px;
                 line-height: 46px;
