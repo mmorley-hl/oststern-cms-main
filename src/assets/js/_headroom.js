@@ -1,4 +1,3 @@
-// if you're using a bundler, first import:
 import Headroom from "headroom.js";
 
 // grab an element

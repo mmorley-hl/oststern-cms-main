@@ -1,4 +1,3 @@
-// import Flickity from 'flickity'
 var Flickity = require('flickity-fullscreen');
 var Flickity_fade = require('flickity-fade');
 

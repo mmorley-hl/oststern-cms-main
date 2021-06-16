@@ -894,17 +894,6 @@ var places = {
 		});
 	};
 
-
-
-	// var marker = new mapboxgl.Marker(container, {
-    //     offset: [-width / 2, -height]
-    // })
-    // .setLngLat([
-    //     datacenters[country][city].coordinates.lng,
-    //     datacenters[country][city].coordinates.lat
-    // ])
-    // .addTo(map);
-	// add markers to map
 	geojson.features.forEach(function(marker) {
 
 		// create a HTML element for each feature

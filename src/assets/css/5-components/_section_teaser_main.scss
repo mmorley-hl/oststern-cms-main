@@ -68,7 +68,7 @@
         min-height: 800px;
         height: 100%;
         z-index: 444;
-        
+
         @media (max-width: $bpS) {
             min-height: 450px;
         }
@@ -87,11 +87,5 @@
             opacity: .4;
             z-index: -1;
         }
-    }
-   
-    .simpleParallax {
-        width: 100%;
-        height: 100%;
-    }
-   
+    } 
 }

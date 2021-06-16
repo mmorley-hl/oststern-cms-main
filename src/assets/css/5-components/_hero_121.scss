@@ -1,13 +1,9 @@
 .hero_121 {
-    // margin-top: -$headerHeight;
     position: relative;
     height: 100%;
     width: 100%;
     overflow: hidden;
     background-color: $primary;
-    // @media (max-width: $bpM) {
-    //    display: none;
-    // }
 
     &__logo_big{
         display: none;
@@ -15,9 +11,11 @@
         left: 40px;
         top: 40px;
         z-index: 5;
+
         @media (max-width: $bpM) {
             display: block;
         }
+
         @media (max-width: $bpXS) {
             left: 50%;
             transform: translate(-50%, 0);
@@ -31,34 +29,32 @@
 
     &__backgroundimage {
         
-        // margin-top: -$headerHeight;
         height: 100vh;
         width: 100%;
         background-image: url('./images/hero/Hero_image_001.jpg');
         background-position: left;
         background-repeat: no-repeat;
         background-size: cover;
+
             @media (max-width: $bpM) {
                 background-position-x: -300px;
             }
+
             @media (max-width: $bpXS) {
                 background-position-x: -400px;
             }
+
         &::before {
             content : "";
             display: block;
             position: absolute;
             top: 0;
             left: 0;
-            // background: radial-gradient(circle, rgba(16,28,54,1) 0%, rgba(16,28,54,0) 70%);
-            // background: radial-gradient(circle, rgba(54,16,37,1) 0%, rgba(54,16,16,0) 90%);
             background-color: $primary;
             width: 100%;
             height: 100%;
             opacity: .21;
-            @media (max-width: $bpM) {
-                // left: -300px;
-            }
+
             @media (max-width: $bpXS) {
                 left: 0px;
             }
@@ -74,55 +70,65 @@
         top: 200px;
         right: 100px;
         width: 430px;
+
         .h1 {
             font-size: 80px;
             line-height: 70px;
         }
+
         @media (max-width: $bpXXL) {
-            // background-color: red;
             top: 290px;
             right: 150px;
             width: 600px;
+
             .h1 {
                 font-size: 100px;
                 line-height: 90px;
             }
         }
+
         @media (max-width: $bpXL) {
             top: 200px;
             right: 100px;
             width: 430px;
+
             .h1 {
                 font-size: 80px;
                 line-height: 70px;
             }
         }
+
         @media (max-width: $bpL) {
             top: 200px;
             right: 100px;
             width: 430px;
+
             .h1 {
                 font-size: 80px;
                 line-height: 70px;
             }
         }
+
         @media (max-width: $bpM) {
             color: white;
             position: absolute;
             top: 306px;
             left: 40px;
             width: 468px;
+
             .h1 {
                 font-size: 80px;
                 line-height: 70px;
             }
         }
+
         @media (max-width: $bpXS) {
             color: white;
             position: absolute;
             top: 281px;
             left: 30px;
             width: 314px;
+            
             .h1 {
                 font-size: 50px;
                 line-height: 46px;

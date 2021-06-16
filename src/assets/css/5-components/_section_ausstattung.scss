@@ -2,25 +2,23 @@
     position: relative;
     min-height: 320px;
     width: 100%;
-    // margin-top: 40px;
     padding-left: 25px;
     padding-right: 25px;  
+    
     @media (max-width: $bpXS) {
         padding-left: 5px;
         padding-right: 5px;
     }
+
     @media (max-width: $bpXS) {
         margin-top: 80px;
     }
 
-    // h2 {
-    //     margin-bottom: 70px;
-    // }
     &__headline {
         font-size: 38px;
         position: absolute;
-        // left: -380px;
         top: 90px;
+
         @media (max-width: $bpXS) {
             position: relative;
             top: 0;
@@ -40,6 +38,7 @@
     margin-left: 350px;
     margin-right: auto;
     height: 1300px;
+
     @media (max-width: $bpM) {
         margin-left: 320px;
         margin-right: auto;
@@ -65,12 +64,15 @@
     .h2 {
         font-size: 24px;
         margin-bottom: 0;
+
         @media (max-width: $bpS) {
             font-size: 20px;
         }
     }
+
     p {
         font-size: 18px;
+
         @media (max-width: $bpS) {
             font-size: 16px;
         }
@@ -78,6 +80,7 @@
     }
 
     &__002_subtext_wrapper {
+
         p {
             color: $secondary;
             margin: 0;
@@ -85,6 +88,7 @@
     }
 
     &__004_subtext_wrapper {
+
         p {
             color: $secondary;
             margin: 0;
@@ -98,10 +102,12 @@
         width: 500px;
         top: -14px;
         left: 70px;
+
         @media (max-width: $bpS) {
             width: 250px;
             left: 50px;
         }
+
         @media (max-width: $bpXS) {
             width: 140px;
             left: 50px;
@@ -136,42 +142,10 @@
         margin-left: 100px;  
         margin-top: 212px;
         margin-left: -12px; 
+
         @media (max-width: $bpXS) {
             margin-top: 112px;
         }
-    }
-
-    &__002 {
-        // margin-left: 220px;  
-    }
-
-    &__003 {
-        // margin-left: 220px;  
-        // margin-top: 120px;
-    }
-
-    &__004 {
-        // margin-right: 100px;  
-        // margin-right: 0; 
-        // margin-bottom: 250px;
-    }
-
-    &__005 {
-        // margin-right: 100px;  
-        // margin-right: 0; 
-        // margin-bottom: 250px;
-    }
-
-    &__006 {
-        // margin-right: 100px;  
-        // margin-right: 0; 
-        // margin-bottom: 250px;
-    }
-
-    &__007 {
-        // margin-right: 100px;  
-        // margin-right: 0; 
-        // margin-bottom: 250px;
     }
 
     &__008 {

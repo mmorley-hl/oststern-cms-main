@@ -1,23 +1,28 @@
 .section_anbindung {
     padding-left: 25px;
     padding-right: 25px;  
+
     @media (max-width: $bpXS) {
         padding-left: 5px;
         padding-right: 5px;
     }
+
     &__wrapper_left {
         padding-top: 80px;
+        
         p {
             margin-top: 27px;
             margin-bottom: 0;
             max-width: 384px;
         }
+
         .h2 {
             font-size: 38px;
             line-height: 42px;
             letter-spacing: -0.57px;
             margin-bottom: 0;
         }
+
         img {
             margin-left: 90px;
             @media (max-width: $bpM) {
