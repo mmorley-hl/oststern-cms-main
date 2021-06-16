@@ -5,7 +5,7 @@
     &__background-image {
         height: 100vh;
         width: 100%;
-        background-image: url('./images/intro/Oststern_Areal_Header_LP.jpg');
+        background-image: url("./images/intro/Oststern_Areal_Header_LP.jpg");
         background-position: left;
         background-position: top;
         background-repeat: no-repeat;
@@ -13,13 +13,13 @@
     }
 
     &__content_wrapper {
-        // background-color: red;
         width: 800px;
         height: 500px;
         position: absolute;
         top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
+
         @media (max-width: $bpM) {
             top: 50%;
             width: 300px;
@@ -39,8 +39,8 @@
         top: 60%;
         right: -10%;
         transform: translate(0, -50%);
-        // animation: fadeOutheadline 0.5s ease-out;
         animation: leftFadeHeadline 2s ease-in-out 2s 1 normal forwards;
+
         @media (max-width: $bpM) {
             display: none;
         }
@@ -52,13 +52,10 @@
     &__content_headline_mobile {
         display: none;
         position: absolute;
-        // top: 50%;
-        // right: -10%;
-        // transform: translate(0, -50%);
         left: 20px;
         bottom: 100px;
-        // animation: fadeOutheadline 0.5s ease-out;
         animation: fadeOutheadline_left 2s ease-in-out 2s 1 normal forwards;
+
         @media (max-width: $bpM) {
             left: 20px;
             transform: translateX(20%);
@@ -72,9 +69,9 @@
 
     &__content_logowrapper {
         position: relative;
-        // background-color: blue;
         width: 100%;
         height: 280px;
+
         @media (max-width: $bpM) {
             transform: scale(0.9);
         }
@@ -116,7 +113,7 @@
     &__logo_text_121_123 {
         position: absolute;
         top: 64%;
-        left:-800px;
+        left: -800px;
         transform: translate(-50%, -50%);
         animation: ost-121-123 2s ease-in-out 2s 1 normal forwards;
         @media (max-width: $bpM) {
@@ -125,16 +122,12 @@
         @media (max-width: $bpS) {
             top: 65%;
         }
-        
     }
 
     &__langcie_wrapper {
         position: relative;
-        // background-color: blue;
         width: 100%;
         height: 80px;
-        // animation: fadeOutheadline 2s ease-in-out 2s 1 normal forwards;
-        
     }
 
     &__langcie_text {
@@ -151,23 +144,21 @@
     }
 
     &__content_button_wrapper {
-
         position: absolute;
         width: 800px;
         bottom: -50%;
-    //    background-color: red;
-       opacity: 0;
-       animation: fadeInbuttons 4s ease-in-out 2s 1 normal forwards;
-       left: 50%;
-       transform: translate(-50%, 0);
-       @media (max-width: $bpM) {
-        transform: translate(-50%, 40%);
-           width: 300px;
-       }
-       @media (max-width: $bpS) {
-        transform: translate(-50%, -10%);
-           width: 300px;
-       }
+        opacity: 0;
+        animation: fadeInbuttons 4s ease-in-out 2s 1 normal forwards;
+        left: 50%;
+        transform: translate(-50%, 0);
+        @media (max-width: $bpM) {
+            transform: translate(-50%, 40%);
+            width: 300px;
+        }
+        @media (max-width: $bpS) {
+            transform: translate(-50%, -10%);
+            width: 300px;
+        }
     }
 
     &__content_button {
@@ -176,7 +167,7 @@
         display: flex;
         justify-content: space-between;
         opacity: 1;
-        
+
         .button {
             color: black;
             background-color: white;
@@ -188,16 +179,16 @@
             line-height: 19px;
             letter-spacing: 1.4px;
             &:hover {
-				text-decoration: none;
-				color: black;
-				background: $secondary-light;
-			}
+                text-decoration: none;
+                color: black;
+                background: $secondary-light;
+            }
 
             @media (max-width: $bpM) {
-            margin-top: 35px;
+                margin-top: 35px;
             }
             @media (max-width: $bpS) {
-            margin-top: 15px;
+                margin-top: 15px;
             }
         }
 
@@ -217,60 +208,60 @@
 
     @keyframes ost-121-123 {
         from {
-            left:-800px;
+            left: -800px;
         }
-    
+
         to {
             left: 50%;
         }
-      }
+    }
     @keyframes offices {
         from {
             left: 47%;
         }
-    
+
         to {
-            left:1500px;
+            left: 1500px;
         }
-      }
+    }
     @keyframes leftFadeHeadline {
         from {
             right: -10%;
         }
-    
+
         to {
-            right:-1500px;
+            right: -1500px;
         }
-      }
+    }
     @keyframes fadeOutheadline {
         from {
             opacity: 1;
         }
-    
+
         to {
             opacity: 0;
         }
-      }
+    }
     @keyframes fadeOutheadline_left {
         from {
             left: 20px;
             opacity: 1;
         }
-    
+
         to {
             left: 2000px;
             opacity: 0;
         }
-      }
+    }
     @keyframes fadeInbuttons {
         from {
             bottom: -1800px;
             opacity: 0;
         }
-    
+
         to {
             bottom: -50%;
             opacity: 1;
         }
-      }
+    }
 }

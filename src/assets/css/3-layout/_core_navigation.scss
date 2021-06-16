@@ -4,9 +4,9 @@
 	left: 0;
 	width: 100%;
 	z-index: 444;
-	background-color: rgba(255,255,255,0);
+	background-color: rgba(255, 255, 255, 0);
 	color: white;
-	box-shadow: 0px 20px 20px 0px rgba(0,0,0,0);
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0);
 	transition: all 300ms linear;
 	svg {
 		fill: white;
@@ -23,15 +23,10 @@
 	}
 }
 
-.header.headroom--top {
-	// background-color: transparent;
-	// color: white;
-
-}
 .header.headroom--not-top {
-	background-color: rgba(255,255,255,1);
+	background-color: rgba(255, 255, 255, 1);
 	color: black;
-	box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
 	transition: all 300ms linear;
 	svg {
 		fill: black;
@@ -44,9 +39,8 @@
 		&:hover {
 			text-decoration: none;
 			color: white;
-		  background: $secondary-light;
+			background: $secondary-light;
 		}
-
 	}
 	.core_navigation__logo_small {
 		display: block;
@@ -54,7 +48,6 @@
 	.core_navigation__logo_big {
 		display: none;
 	}
-
 }
 
 .core_navigation {
@@ -120,10 +113,8 @@
 			&:hover {
 				text-decoration: none;
 				color: white;
-			  background: $secondary-light;
+				background: $secondary-light;
 			}
 		}
 	}
-
-
 }
