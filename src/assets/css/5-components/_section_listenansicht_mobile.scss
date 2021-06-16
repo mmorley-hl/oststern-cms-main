@@ -1,9 +1,9 @@
 .section_listenansicht_mobile {
-    // display: flex;
-    display: none;
-    @media (max-width: $bpXS) {
-        display: block;
-    }
+  display: none;
+
+  @media (max-width: $bpXS) {
+      display: block;
+  }
 
   /* The container must be positioned relative: */
   .custom-select {
@@ -12,11 +12,11 @@
     font: $fontStackMatterMedium;
     font-size: 16px;
   }
-  
+
   .custom-select select {
     display: none; /*hide original SELECT element: */
   }
-  
+
   .select-selected {
     background-color: $primary;
   }
@@ -35,7 +35,7 @@
     height: 20px;
     width: 20px;
   }
-  
+
   /* Point the arrow upwards when the select box is open (active): */
   .select-selected.select-arrow-active:after {
     top: 22px;
@@ -45,7 +45,7 @@
     height: 20px;
     width: 20px;
   }
-  
+
   /* style the items (options), including the selected item: */
   .select-items div,.select-selected {
     color: black;
@@ -58,7 +58,7 @@
   .select-selected {
     color: white;
   }
-  
+
   /* Style items (options): */
   .select-items {
     position: absolute;
@@ -70,7 +70,8 @@
   }
 
   .select-items div {
-      position: relative;
+    position: relative;
+
     &:before {
         content: '';
         position: absolute;
@@ -89,46 +90,55 @@
         background-image: url('/assets/images/icons/map/icons_dark/Restaurant.svg');
     }
   }
+
   .select-items div:nth-child(2) {
     &:before {
         background-image: url('/assets/images/icons/map/icons_dark/Bar-Café.svg');
     }
   }
+
   .select-items div:nth-child(3) {
     &:before {
         background-image: url('/assets/images/icons/map/icons_dark/Hotels.svg');
     }
   }
+
   .select-items div:nth-child(4) {
     &:before {
         background-image: url('/assets/images/icons/map/icons_dark/Fitness_list.svg');
     }
   }
+
   .select-items div:nth-child(5) {
     &:before {
         background-image: url('/assets/images/icons/map/icons_dark/Kita.svg');
     }
   }
+
   .select-items div:nth-child(6) {
     &:before {
         background-image: url('/assets/images/icons/map/icons_dark/Retail.svg');
     }
   }
+
   .select-items div:nth-child(7) {
     &:before {
         background-image: url('/assets/images/icons/map/icons_dark/Banken.svg');
     }
   }
+
   .select-items div:nth-child(8) {
     &:before {
         background-image: url('/assets/images/icons/map/icons_dark/Parks_list.svg');
     }
   }
+
   .select-items div:nth-child(9) {
     &:before {
         background-image: url('/assets/images/icons/map/icons_dark/Kultur_list.svg');
     }
   }
+
   .select-items div:nth-child(10) {
     &:before {
         background-image: url('/assets/images/icons/map/icons_dark/Tankstelle.svg');
@@ -136,6 +146,7 @@
   }
 
   .select-selected {
+
     &:before {
         content: '';
         position: absolute;
@@ -150,60 +161,70 @@
   }
 
   .select-selected.Restaurants {
+
     &:before {
       background-image: url('/assets/images/icons/map/Restaurants.svg');
     }
   }
 
   .select-selected.Bar\/Cafe {
+
     &:before {
         background-image: url('/assets/images/icons/map/Bar-Café.svg');
     }
   }
 
   .select-selected.Hotels {
+
     &:before {
         background-image: url('/assets/images/icons/map/Hotels.svg');
     }
   }
 
   .select-selected.Fitness {
+
     &:before {
         background-image: url('/assets/images/icons/map/Fitness_list.svg');
     }
   }
 
   .select-selected.Kita {
+
     &:before {
         background-image: url('/assets/images/icons/map/Kita.svg');
     }
   }
 
   .select-selected.Retail {
+
     &:before {
         background-image: url('/assets/images/icons/map/Retail.svg');
     }
   }
 
   .select-selected.Banken {
+
     &:before {
         background-image: url('/assets/images/icons/map/Banken.svg');
     }
   }
 
   .select-selected.Parks {
+
     &:before {
         background-image: url('/assets/images/icons/map/Parks_list.svg');
     }
   }
 
   .select-selected.Kultur {
+
     &:before {
         background-image: url('/assets/images/icons/map/Kultur_list.svg');
     }
   }
 
   .select-selected.Tankstelle {
+
     &:before {
         background-image: url('/assets/images/icons/map/Tankstelle.svg');
     }
@@ -219,59 +240,62 @@
   }
 
     ////////////////////
-    &__content {
-        display:none;
-        padding-top: 41px;
-        padding-left: 30px;
-        padding-bottom: 40px;
-        // display: flex;
-        background-color: white;
-        width: 100%;
-        box-shadow: 0px 0px 30px #00000029;
-        @media (max-width: $bpM) {
-           flex-direction: column;
-          }
-    }
 
-    &__items_left {
-        width: 50%;
-        @media (max-width: $bpM) {
-            width: 100%;
-          }
-    }
 
-    &__items_right {
-        width: 50%;
-        @media (max-width: $bpM) {
-            width: 100%;
-          }
-    }
+  &__content {
+    display:none;
+    padding-top: 41px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 0px 30px #00000029;
 
-    &__item {
-        font: $fontStackMatterRegular;
-        font-size: 16px;
-        line-height: 30px;
-        letter-spacing: 0.24px;
-        a {
-            position: relative;
-            &::before {
-                position: absolute;
-                right: -24px;
-                top: 0;
-                background-image: url('/assets/images/icons/icons8-up.svg');
-                background-repeat: no-repeat;
-                background-size: 17px 17px;
-                margin-top: 4px;
-                height: 17px;
-                width: 17px;
-                display: inline-block;
-                content: ' ';
-                // margin-right: 10px;
-            }
-        }
+    @media (max-width: $bpM) {
+      flex-direction: column;
     }
+  }
 
-  
+  &__items_left {
+    width: 50%;
+
+    @media (max-width: $bpM) {
+      width: 100%;
+    }
+  }
+
+  &__items_right {
+    width: 50%;
+
+    @media (max-width: $bpM) {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    font: $fontStackMatterRegular;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.24px;
+
+    a {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        right: -24px;
+        top: 0;
+        background-image: url('/assets/images/icons/icons8-up.svg');
+        background-repeat: no-repeat;
+        background-size: 17px 17px;
+        margin-top: 4px;
+        height: 17px;
+        width: 17px;
+        display: inline-block;
+        content: ' ';
+      }
+    }
+  }
 }
 
 

@@ -13,10 +13,10 @@
     &__content {
         display:none;
         padding: 60px;
-        // display: flex;
         background-color: white;
         width: 100%;
         box-shadow: 0px 0px 30px #00000029;
+        
         @media (max-width: $bpM) {
            flex-direction: column;
           }
@@ -24,6 +24,7 @@
 
     &__items_left {
         width: 50%;
+
         @media (max-width: $bpM) {
             width: 100%;
           }
@@ -31,6 +32,7 @@
 
     &__items_right {
         width: 50%;
+
         @media (max-width: $bpM) {
             width: 100%;
           }
@@ -41,7 +43,7 @@
         font-size: 18px;
         line-height: 32px;
         letter-spacing: 0.18px;
-        // padding-bottom: 18px;
+
         a {
             position: relative;
             &::before {
@@ -56,19 +58,16 @@
                 width: 17px;
                 display: inline-block;
                 content: ' ';
-                // margin-right: 10px;
             }
         }
     }
 
     &__button {
-        // box-shadow: inset -3em 0 3em -3em black;
         display: inline-flex;
         justify-content: center;
         vertical-align: middle;
         all: unset;
         width: 240px;
-        // height: 65px;
         font: $fontStackMatterMedium;
         font-size: 18px;
         line-height: 32px;
@@ -104,6 +103,7 @@
     }
 
     &__button:nth-child(1) {
+
         &:before {
             background-image: url('/assets/images/icons/map/icons_dark/Restaurant.svg');
         }
@@ -113,6 +113,7 @@
                 background-image: url('/assets/images/icons/map/Restaurants.svg');
             }
         }
+
         &:hover {
             &:before {
                 background-image: url('/assets/images/icons/map/Restaurants.svg');
@@ -121,6 +122,7 @@
     }
 
     &__button:nth-child(2) {
+
         &:before {
             background-image: url('/assets/images/icons/map/icons_dark/Bar-Café.svg');
         }
@@ -130,6 +132,7 @@
                 background-image: url('/assets/images/icons/map/Bar-Café.svg');
             }
         }
+
         &:hover {
             &:before {
                 background-image: url('/assets/images/icons/map/Bar-Café.svg');
@@ -138,6 +141,7 @@
     }
 
     &__button:nth-child(3) {
+
         &:before {
             background-image: url('/assets/images/icons/map/icons_dark/Hotels.svg');
         }
@@ -147,6 +151,7 @@
                 background-image: url('/assets/images/icons/map/Hotels.svg');
             }
         }
+
         &:hover {
             &:before {
                 background-image: url('/assets/images/icons/map/Hotels.svg');
@@ -155,6 +160,7 @@
     }
 
     &__button:nth-child(4) {
+
         &:before {
             background-image: url('/assets/images/icons/map/icons_dark/Fitness_list.svg');
         }
@@ -164,6 +170,7 @@
                 background-image: url('/assets/images/icons/map/Fitness_list.svg');
             }
         }
+
         &:hover {
             &:before {
                 background-image: url('/assets/images/icons/map/Fitness_list.svg');
@@ -172,7 +179,6 @@
     }
 
     &__button:nth-child(5) {
-
 
         &:before {
             background-image: url('/assets/images/icons/map/icons_dark/Kita.svg');
@@ -183,6 +189,7 @@
                 background-image: url('/assets/images/icons/map/Kita.svg');
             }
         }
+
         &:hover {
             &:before {
                 background-image: url('/assets/images/icons/map/Kita.svg');
@@ -201,6 +208,7 @@
                 background-image: url('/assets/images/icons/map/Retail.svg');
             }
         }
+
         &:hover {
             &:before {
                 background-image: url('/assets/images/icons/map/Retail.svg');
@@ -209,7 +217,6 @@
     }
 
     &__button:nth-child(7) {
-
 
         &:before {
             background-image: url('/assets/images/icons/map/icons_dark/Banken.svg');
@@ -220,6 +227,7 @@
                 background-image: url('/assets/images/icons/map/Banken.svg');
             }
         }
+
         &:hover {
             &:before {
                 background-image: url('/assets/images/icons/map/Banken.svg');
@@ -238,6 +246,7 @@
                 background-image: url('/assets/images/icons/map/Parks_list.svg');
             }
         }
+
         &:hover {
             &:before {
                 background-image: url('/assets/images/icons/map/Parks_list.svg');
@@ -256,6 +265,7 @@
                 background-image: url('/assets/images/icons/map/Kultur_list.svg');
             }
         }
+        
         &:hover {
             &:before {
                 background-image: url('/assets/images/icons/map/Kultur_list.svg');
@@ -274,6 +284,7 @@
                 background-image: url('/assets/images/icons/map/Tankstelle.svg');
             }
         }
+
         &:hover {
             &:before {
                 background-image: url('/assets/images/icons/map/Tankstelle.svg');

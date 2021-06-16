@@ -2,10 +2,12 @@
     background-color: $gray-color-light;
     padding-left: 25px;
     padding-right: 25px;  
+
     @media (max-width: $bpXS) {
         padding-left: 5px;
         padding-right: 5px;
     }
+
     @media (max-width: $bpM) {
         display: none;
 	}
@@ -21,6 +23,7 @@
             margin-bottom: 0;
             width: 100%;
         }
+
         p {
             padding-top: 10px;
             font-size: 14px;
@@ -28,6 +31,7 @@
     }
 
     &__headline {
+
         .h2 {
             letter-spacing: -0.57px;;
             font: $fontStackMatterSemiBold;
@@ -71,6 +75,7 @@
 
     .carousel_tablet {
         display: block;
+        
         @media (max-width: $bpXS) {
             display: none;
         }
@@ -78,6 +83,7 @@
 
     .carousel_phone {
         display: none;
+
         @media (max-width: $bpXS) {
             display: block;
         }
@@ -86,11 +92,13 @@
     &__headline {
         padding-left: 25px;
         padding-right: 25px;  
+
         @media (max-width: $bpXS) {
             padding-left: 5px;
             padding-right: 5px;
         }
-        h5 {
+
+        .h2 {
             letter-spacing: -0.57px;;
             font: $fontStackMatterSemiBold;
             font-size: 38px;
@@ -125,6 +133,7 @@
             min-height: 650px;
             margin-right: 15px;
         }
+        
         @media (max-width: $bpXXS) {
             width: 80%;
             min-height: 440px;
