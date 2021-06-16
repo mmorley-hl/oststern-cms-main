@@ -188,25 +188,14 @@
         }
     }
 
-    &__colum_last {
-        // padding-right: 0!important;
-        // @media (max-width: $bpL) {
-        //     padding-left: 0!important;
-        // }
-    }
-
     &__link_logo {
         flex-shrink: 0;
         z-index: 6;
     }
 
     &__text_link {
-        // flex-shrink: 0;
         z-index: 6;
         align-self: flex-end;
-        // align-content: flex-end;
-        // height: 35px;
-        // margin-top: 0px;
         font: $fontStackMatterMedium;
         font-size: 13px;
         padding-right: 25px;
@@ -221,7 +210,6 @@
             
         }
         @media (max-width: $bpM) {
-            // margin-top: 34px;
             margin-left: 0;
             margin-right: 0;
             margin-bottom: 48px;
@@ -230,7 +218,6 @@
             align-self: center;
         }
         @media (max-width: $bpXS) {
-            // margin-top: 40px;
             margin-right: 10px;
             margin-bottom: -60px;
         }
