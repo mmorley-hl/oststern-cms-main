@@ -2,7 +2,7 @@
 import '../css/index.scss';
 
 // javscript imports
-import './_mapbox.js';
+// import './_mapbox.js';
 import './_wow.js';
 import './_scrollAnker.js';
 import './_toTopButton';
