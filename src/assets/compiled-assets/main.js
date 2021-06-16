@@ -1,145 +1,1680 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 var SITE;SITE =
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/assets/css/index.scss":
-/*!***********************************!*\
-  !*** ./src/assets/css/index.scss ***!
-  \***********************************/
+/***/ 686:
+/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
+
+var Flickity = __webpack_require__(275);
+var Flickity_fade = __webpack_require__(31);
+
+const carousel = document.querySelectorAll('.carousel')
+
+carousel.forEach((elem) => {
+
+	var flkty = new Flickity( '.carousel', {
+		wrapAround: true,
+		fullscreen: true,
+	});
+
+})
+
+const carousel_fade = document.querySelectorAll('.carousel_fade')
+
+carousel_fade.forEach((elem) => {
+
+	var flkty = new Flickity_fade( '.carousel_fade', {
+		fade: true,
+		fullscreen: true,
+	});
+
+})
+
+/***/ }),
+
+/***/ 129:
+/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
+
+const mapboxgl = __webpack_require__(158);
+
+var places = {
+	"type":"FeatureCollection",
+	"features":[
+	   	{
+		  "type":"Feature",
+		  "properties":{
+			 "description":"<strong>Frankfurter Küche</strong><p>Hanauer Landstraße 86,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"http://www.restaurant-frankfurter-kueche.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			 "icon":"Restaurants"
+		  },
+		  "geometry":{
+			 "type":"Point",
+			 "coordinates":[
+				8.704224783467328,
+				50.111681170124484
+			 ]
+		  }
+	   	},
+	   	{
+		"type":"Feature",
+		"properties":{
+		   "description":"<strong>'Das Leben ist Schön</strong><p>Hanauer Landstraße 198,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"http://www.daslebenistschoen.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+		   "icon":"Restaurants"
+		},
+		"geometry":{
+		   "type":"Point",
+		   "coordinates":[
+			 8.723497812302732,
+			 50.11535621512961
+		   ]
+		}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>'Soul Food Factory East</strong><p>Hanauer Landstraße 124,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"http://www.soul-food-factory.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.711172127644243,
+				50.11132723047215
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Saravini</strong><p>Hanauer Landstraße 119,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"http://www.saravini-frankfurt.de/mittagskarte/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				 8.710194527644237,
+				 50.11172910920639
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>'The Tasty Toast</strong><p>Osthafenplatz 4, 60314 Frankfurt am Main</p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.71285928352579,
+				50.11090767357005
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Stones</strong><p>Hanauer Landstraße 125,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"https://www.stonesfood.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.712307297113504,
+				50.11246691431603
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Tawaraya</strong><p>Hanauer Landstraße 131, 60314 Frankfurt am Main</p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.71320475654297,
+				50.11222598741672
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Cocothai</strong><p>Hanauer Landstraße 151,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"https://www.cocothaifrankfurtammain.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.71526672770677,
+				50.112919324067384
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Urfa</strong><p>Hanauer Landstraße 133,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"https://www.urfa-grill-pizzeria.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.713368798870526,
+				50.11229886602847
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Aroydee</strong><p>Hanauer Landstraße 72,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"https://www.aroydee.de/Frankfurt\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.703535627706737,
+				50.11280334433856
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Goldman</strong><p>Hanauer Landstraße 127,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"http://www.goldman-restaurant.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.712951143051455,
+				50.11208490623492
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Oosten</strong><p>Mayfarthstraße 4,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"https://oosten-frankfurt.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.702709870034257,
+				50.10785792533555
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Gref-Völsings</strong><p>Hanauer Landstraße 132,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"https://www.gref-voelsings.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.7124484565429,
+				50.1116097900726
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Best-Worscht In Town</strong><p>Hanauer Landstraße 270,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"https://www.bestworschtintown.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.72698031236205,
+				50.1165047893076 
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Bei Frau Nanna</strong><p>Ernst-Achilles-Platz 3,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"https://order.beifraunanna.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.70476983642246,
+				50.1128814042537
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>LEUCHTENDROTER</strong><p>Lindleystraße 17,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"http://leuchtendroter.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.718510583561219,
+				50.11257783263066
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Kahuna Poké Bros.</strong><p>Hanauer Landstraße 160A,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"https://kahunapokebros.com/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.717488819399943,
+				50.11311594184854
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Ben's Burger</strong><p>Hanauer Landstraße 134,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"https://bens-burger.business.site/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.712697437075015,
+				50.11151811854781
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Jesse James</strong><p>Hanauer Landstraße 83,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"http://www.jessejames.eu/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.705296327706698,
+				50.11207194717568
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>COMAI East - modern viet kitchen</strong><p>Hanauer Landstraße 130,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"https://www.comai.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.7123598408274,
+				50.11133081012636
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Pizzeria Mille Lire</strong><p>Sonnemannstraße 71,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"http://www.pizzeria-mille-lire.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Restaurants"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.70313924526421,
+				50.111192054739604
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Coffee Fellows</strong><p>Hanauer Landstraße 115,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"http://www.coffee-fellows-ostend.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Bar-Café"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.709015614425825,
+				50.11224196267669
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Wiener Feinbäckerei</strong><p>Hanauer Landstraße 108,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"https://heberer.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Bar-Café"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.70924599781994,
+				50.111330420991095
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Aniis</strong><p>Hanauer Landstraße 82,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"http://www.aniis.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Bar-Café"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.704047841198193,
+				50.11191788713086
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Stock Avenue 81</strong><p>Hanauer Landstraße 81,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"http://www.melia.com/de/lodgings/deutschland/frankfurt/innside-frankfurt-ostend/restaurants.html\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Bar-Café"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.704830970034363,
+				50.112325267256004
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Bäckerei und Konditorei Huck</strong><p>Sonnemannstraße 81,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"https://www.baeckerei-huck.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Bar-Café"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.70409040574631,
+				50.111376848593906
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Frankfurt Pub</strong><p>Hanauer Landstraße 99,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"http://www.frankfurt-pub.de/\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Bar-Café"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.708437927706713,
+				50.111746607401514
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Eiscafé Café a Roma</strong><p>Sonnemannstraße 51,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Bar-Café"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.700960888265074,
+				50.11085074470636
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Marmion Bar</strong><p>Lindleystraße 17,</br> 60314 Frankfurt am Main</p><p><a rel=\"noopener\" href=\"https://www.marmion-bar.de\" target=\"_blank\" title=\"Opens in a new window\">Hier gehts zur webseite</a></p>",
+			   "icon":"Bar-Café"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.718510583561219,
+				50.11257783263066
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Alnatura Super Natur Markt</strong><p>Hanauer Landstraße 110,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Retail"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.709294277580927,
+				50.11124097596751
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Edeka</strong><p>Ferdinand-Happ-Straße 59,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Retail"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.715864727706792,
+				50.11446867774984
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Lidl</strong><p>Hanauer Landstraße 219,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Retail"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.721729185379182,
+				50.115486293551406
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Rewe</strong><p>Louis-Appia-Passage 7 7,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Retail"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.705509785379135,
+				50.112873643153115
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Aldi Süd</strong><p>Hanauer Landstraße 285,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Retail"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.724419070034426,
+				50.11658945000033
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Me.Ta</strong><p>Hanauer Landstraße 208 -216,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Retail"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.726406085457684,
+				50.11562919293627
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>dm</strong><p>Louis-Appia-Passage 6,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Retail"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.705571970034336,
+				50.11244186549421
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Fitness First</strong><p>Hanauer Landstraße 148,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Fitness"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.71600512770675,
+				50.11236760526015
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Fitseveneleven east blck</strong><p>Hanauer Landstraße 120,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Fitness"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.710570127706724,
+				50.11133183045381
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Fitseveneleven east pink</strong><p>Hanauer Landstraße 147,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Fitness"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.714824341198113,
+				50.11278522362572
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Kieser Training</strong><p>Hanauer Landstraße 291A,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Fitness"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.716392498870569,
+				50.113392181835025
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Fritz-Rémond-Theater</strong><p>Bernhard-Grzimek-Allee 1,</br> 60316 Frankfurt am Main</p>",
+			   "icon":"Kultur"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.699309256543005,
+				50.11610529237147
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Romanfabrik</strong><p>Hanauer Landstraße 186,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Kultur"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.722945141198247,
+				50.114824976214166
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Kunstverein Familie Montez</strong><p>Honsellstraße 7,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Kultur"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.709860525853374,
+				50.1089605822416
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Union Halle</strong><p>Hanauer Landstraße 188,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Kultur"
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.72292931217596,
+				50.11426644210688
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>25hours</strong><p>Hanauer Landstraße 127,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Hotels",
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.712797538150072,
+				50.11210810538992
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>INNSIDE</strong><p>Hanauer Landstraße 81,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Hotels",
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.704878827706677,
+				50.112383305205896, 
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>B&B Hotel Frankfurt City-Ost</strong><p>Hanauer Landstraße 117,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Hotels",
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.709716241586767,
+				50.11160000635536
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>MotelOne</strong><p>Hanauer Landstraße 142,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Hotels",
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.713694256542883,
+				50.11203960791258
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Moxy</strong><p>Hanauer Landstraße 162,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Hotels",
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.71785704495354,
+				50.11326424062049
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Hampton by Hilton Frankfurt City Centre East</strong><p>Grusonstraße 4,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Hotels",
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.70798850585079,
+				50.112528227125246
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>LINDLEY LINDENBERG</strong><p>Lindleystraße 17,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Hotels",
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.718837104529054,
+				50.11282985876722
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Die Knoppschachtel</strong><p>Ferdinand-Happ-Straße 57,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Kita",
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.715007013560411,
+				50.11448051790032
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>EZB Kita</strong><p>Ferdinand-Happ-Straße 57,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Kita",
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.715007013560411,
+				50.11448051790032
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Kindergarten d. Evangelisch-Luth.</strong><p>Röderbergweg 66,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Kita",
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.707768964236756,
+				50.115814262790835
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>FRÖBEL-Kindergarten</strong><p>Honsellstraße 18,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Kita",
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.709864689196351,
+				50.110742092904175
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Frankfurter Sparkasse</strong><p>Grusonstraße 3-5,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Banken",
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.70621865115999,
+				50.11208644119723, 
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Europäische Zentralbank (EZB)</strong><p>Sonnemannstraße 20,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Banken",
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.70185343846062,
+				50.10999246042122
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Schwedler See</strong><p>Schwedlerstraße,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Parks",
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.72247076419106,
+				50.1126669871857
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Hafenpark</strong><p>Mayfarthstraße,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Parks",
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.707727030979154,
+				50.10780485816412
+			   ]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+			   "description":"<strong>Tankstelle Esso</strong><p>Hanauer Landstraße 178,</br> 60314 Frankfurt am Main</p>",
+			   "icon":"Tankstelle",
+			},
+			"geometry":{
+			   "type":"Point",
+			   "coordinates":[
+				8.71785704495354,
+				50.11326424062049
+			   ]
+			}
+		},
+	]
+ };
+
+ var geojson = {
+	type: 'FeatureCollection',
+	features: [{
+	  type: 'Feature',
+	  geometry: {
+		type: 'Point',
+		'coordinates': [8.71157213340723, 50.11154494192954]
+	  },
+	  properties: {
+		title: 'Mapbox',
+		description: 'Oststern Offices'
+	  }
+	}]
+  };
+
+ const mapPresent = document.querySelectorAll('.maps')
+
+ mapPresent.forEach((elem) => {
+	
+	var filterGroup = document.getElementById('filter-group');
+	mapboxgl.accessToken = 'pk.eyJ1IjoiamZyaWVzZW5obCIsImEiOiJja3BtdHRvc3YwNWExMnBwNG11MnJibmV5In0.i84KJRxAWlCeaS900SAC7g';
+	
+	var mq = window.matchMedia( "(min-width: 820px)" );
+	
+	// console.log('mq', mq)
+	
+	if (mq.matches){
+		var map = new mapboxgl.Map({
+			container: 'map', // container ID
+			style: 'mapbox://styles/jfriesenhl/ckpmlu0pa04pw18qnjxgnb5mh', // style ID
+			center: [8.71157213340723, 50.11154494192954], // starting position [lng, lat]
+			// starting zoom
+			zoom: 16,
+			attributionControl: true,
+			logoEnabled: false
+		});
+	} else {
+		var map = new mapboxgl.Map({
+			container: 'map', // container ID
+			style: 'mapbox://styles/jfriesenhl/ckpmlu0pa04pw18qnjxgnb5mh', // style ID
+			center: [8.71157213340723, 50.11154494192954], // starting position [lng, lat]
+			// starting zoom
+			zoom: 15,
+			attributionControl: true,
+			logoEnabled: false
+		});
+	};
+
+	geojson.features.forEach(function(marker) {
+
+		// create a HTML element for each feature
+		var el = document.createElement('div');
+		el.className = 'marker';
+		// var container = document.querySelector('.marker')
+		// console.log('el', el)
+	
+		// make a marker for each feature and add to the map
+		// new mapboxgl.Marker(el)
+		new mapboxgl.Marker(el)
+		.setLngLat(marker.geometry.coordinates)
+		.addTo(map);
+	});
+	
+	
+	//disable zoom on map
+	map.scrollZoom.disable();
+	
+	//disable Mobile desktop behavoir
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+		map.dragPan.disable();
+		// map.scrollZoom.enable();
+		const isTouchEvent = e => e.originalEvent && "touches" in e.originalEvent;
+		const isTwoFingerTouch = e => e.originalEvent.touches.length >= 2;
+	  
+		map.on("dragstart", event => {
+		  if (isTouchEvent(event) && !isTwoFingerTouch(event)) {
+			 map.dragPan.disable();
+		  }
+		});
+	  
+		// Drag events not emited after dragPan disabled, so I use touch event here
+		map.on("touchstart", event => {
+			if (isTouchEvent(event) && isTwoFingerTouch(event)) {
+			 map.dragPan.enable();
+		  }
+		});
+	}
+	// Add zoom and rotation controls to the map.
+	map.addControl(new mapboxgl.NavigationControl({
+		// Hide rotation control.
+		showCompass: false
+	}), 'bottom-left');
+	
+	map.on('load', function () {
+		// Add a GeoJSON source containing place coordinates and information.
+		map.addSource('places', {
+			'type': 'geojson',
+			'data': places,
+		});
+		 
+		places.features.forEach(function (feature) {
+			var symbol = feature.properties['icon'];
+			// console.log('symbol', symbol)
+			var layerID = 'poi-' + symbol;
+			// console.log('layerID', layerID)
+		
+			
+	
+		// Add a layer for this symbol type if it hasn't been added already.
+			if (!map.getLayer(layerID)) {
+				map.addLayer({
+					'id': layerID,
+					'type': 'symbol',
+					'source': 'places',
+					
+					'layout': {
+					'icon-image': symbol,
+					'icon-allow-overlap': true,
+					// "icon-offset": [
+					// 	"case",
+					// 	["==", ["get", "icon"], symbol],
+					// 	["literal", [0, 55]],
+					// 	["literal", [0, 0]]
+					//   ]
+					},
+					'filter': ['==', 'icon', symbol]
+				});
+	
+				// Change icon size on zoom
+				// map.on('zoom', () => {
+				//     const scalePercent = 1 + (map.getZoom() - 8)  * 0.4;
+				//     const svgElement = symbol.getElement().children[0];
+				//     svgElement.style.transform = `scale(${scalePercent})`;
+				//     svgElement.style.transformOrigin = 'bottom';
+				// });
+				
+				// Add checkbox and label elements for the layer.
+				var input = document.createElement('input');
+				input.type = 'checkbox';
+				input.id = layerID;
+				input.checked = true;
+				filterGroup.appendChild(input);
+			
+				var label = document.createElement('label');
+				label.setAttribute('for', layerID);
+				label.textContent = symbol;
+				filterGroup.appendChild(label);
+			
+			// When the checkbox changes, update the visibility of the layer.
+				input.addEventListener('change', function (e) {
+					map.setLayoutProperty(
+						layerID,
+						'visibility',
+						e.target.checked ? 'visible' : 'none'
+					);
+				});
+	
+				map.on('click', layerID, function (e) {
+					var coordinates = e.features[0].geometry.coordinates.slice();
+					var description = e.features[0].properties.description;
+					 
+					// Ensure that if the map is zoomed out such that multiple
+					// copies of the feature are visible, the popup appears
+					// over the copy being pointed to.
+					while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+					coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+					}
+					 
+					new mapboxgl.Popup()
+					.setLngLat(coordinates)
+					.setHTML(description)
+					.addTo(map);
+				});
+					 
+					// Change the cursor to a pointer when the mouse is over the places layer.
+				map.on('mouseenter', layerID, function () {
+					map.getCanvas().style.cursor = 'pointer';
+				});
+					 
+					// Change it back to a pointer when it leaves.
+				map.on('mouseleave', layerID, function () {
+					map.getCanvas().style.cursor = '';
+				});
+			}
+		});
+	
+	
+	});
+	
+	map.on('click', 'places', function (e) {
+		var coordinates = e.features[0].geometry.coordinates.slice();
+		var description = e.features[0].properties.description;
+		 
+		// Ensure that if the map is zoomed out such that multiple
+		// copies of the feature are visible, the popup appears
+		// over the copy being pointed to.
+		while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+			coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+		}
+		 
+		new mapboxgl.Popup()
+		.setLngLat(coordinates)
+		.setHTML(description)
+		.addTo(map);
+	});
+		 
+	// Change the cursor to a pointer when the mouse is over the places layer.
+	map.on('mouseenter', 'places', function () {
+		map.getCanvas().style.cursor = 'pointer';
+	});
+		
+	// Change it back to a pointer when it leaves.
+	map.on('mouseleave', 'places', function () {
+		map.getCanvas().style.cursor = '';
+	});
+ })
+ 
+
+/***/ }),
+
+/***/ 473:
+/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
+
+const bodyScrollLock = __webpack_require__(509);
+const disableBodyScroll = bodyScrollLock.disableBodyScroll;
+const enableBodyScroll = bodyScrollLock.enableBodyScroll;
+
+const mobileMenuButton = document.querySelectorAll('.mobile_menu_button')
+const mobileMenu = document.querySelectorAll('.mobile_menu')
+const menuButtonClick = document.querySelectorAll('.menu-button')
+const mobileMenuItem = document.querySelectorAll('.mobile_menu__item')
+// console.log('mobile_button', mobileMenuButton)
+
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+mobileMenuButton.forEach(elem => {  
+    elem.onclick = () => {
+        mobileMenu.forEach(elem => {
+            if (elem.style.top == '') {
+                // disableBodyScroll(elem);
+                elem.style.top = "0";
+            } else if (elem.style.top == '0px') {
+                // enableBodyScroll(elem);
+                elem.style.top = "-340vh";
+            } else {
+                // disableBodyScroll(elem);
+                elem.style.top = "0";
+            }
+
+        })
+    }
+});
+
+var menuButton = document.getElementById('menuButton');
+if (menuButton) {
+    menuButton.addEventListener('click',  (e) => {
+        menuButton.classList.toggle('is-active');
+        e.preventDefault();
+    });
+}
+
+mobileMenuItem.forEach(elem => {
+    
+    elem.onclick = () => {
+        setTimeout(function(){ 
+            menuButtonClick.forEach(elem => {
+                elem.click();
+            });
+        }, 500);
+    }
+});
+
+/***/ }),
+
+/***/ 484:
+/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
+
+const bodyScrollLock = __webpack_require__(509);
+const disableBodyScroll = bodyScrollLock.disableBodyScroll;
+const enableBodyScroll = bodyScrollLock.enableBodyScroll;
+
+const mobileMenuButtonImpressum = document.querySelectorAll('.mobile_menu_button_impressum')
+const mobileMenuImpressum = document.querySelectorAll('.mobile_menu_impressum')
+const menuButtonClickImpressum = document.querySelectorAll('.menu-button_impressum')
+const mobileMenuItemImpressum = document.querySelectorAll('.mobile_menu_impressum__item')
+
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+mobileMenuButtonImpressum.forEach(elem => {
+    
+    elem.onclick = () => {
+        mobileMenuImpressum.forEach(elem => {
+            if (elem.style.top == '') {
+                // disableBodyScroll(elem);
+                elem.style.top = "0";
+            } else if (elem.style.top == '0px') {
+                // enableBodyScroll(elem);
+                elem.style.top = "-340vh";
+            } else {
+                // disableBodyScroll(elem);
+                elem.style.top = "0";
+            }
+
+        })
+        console.log('mobile_button', elem)
+    }
+});
+
+var menuButton_impressum = document.getElementById('menuButton_impressum');
+if (menuButton_impressum) {
+    menuButton_impressum.addEventListener('click',  (e) => {
+        menuButton_impressum.classList.toggle('is-active');
+        e.preventDefault();
+    });
+}
+
+mobileMenuItemImpressum.forEach(elem => {
+    
+    elem.onclick = () => {
+        setTimeout(function(){ 
+            menuButtonClickImpressum.forEach(elem => {
+                elem.click();
+            });
+        }, 500);
+    }
+});
+
+/***/ }),
+
+/***/ 377:
+/***/ (function() {
+
+const mobileMenuButton = document.querySelectorAll('.mobile_menu_button')
+const mobileMenu = document.querySelectorAll('.mobile_menu')
+var menuButton = document.getElementById('menuButton');
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+        });
+        
+        if (mobileMenuButton){  
+            mobileMenuButton.forEach(elem => {
+                if (window.getComputedStyle(elem, null).display == 'block') {             
+                    setTimeout(() => { 
+                        menuButton.click()
+                    }, 1000);     
+                } 
+            })
+        }
+    });
+});
+
+/***/ }),
+
+/***/ 843:
+/***/ (function() {
+
+var restaurants = document.querySelectorAll('.section_listenansicht__restaurants')
+var bars = document.querySelectorAll('.section_listenansicht__bars')
+var hotels = document.querySelectorAll('.section_listenansicht__hotels')
+var fitness = document.querySelectorAll('.section_listenansicht__fitness')
+var kitas = document.querySelectorAll('.section_listenansicht__kitas')
+var retails = document.querySelectorAll('.section_listenansicht__retails')
+var banken = document.querySelectorAll('.section_listenansicht__banken')
+var parks = document.querySelectorAll('.section_listenansicht__parks')
+var kultur = document.querySelectorAll('.section_listenansicht__kultur')
+var tankstellen = document.querySelectorAll('.section_listenansicht__tankstellen')
+
+restaurants.forEach((elem) => {
+    elem.onclick = function(e) {
+        var tabsName = 'Restaurantsansicht'
+        openTabList(e, tabsName)
+    }
+})
+
+bars.forEach((elem) => {
+    elem.onclick = function(e) {
+        var tabsName = 'Barsansicht'
+        openTabList(e, tabsName)
+    }
+})
+
+hotels.forEach((elem) => {
+    elem.onclick = function(e) {
+        var tabsName = 'Hotelsansicht'
+        openTabList(e, tabsName)
+    }
+})
+
+fitness.forEach((elem) => {
+    elem.onclick = function(e) {
+        var tabsName = 'Fitnessansicht'
+        openTabList(e, tabsName)
+    }
+})
+
+kitas.forEach((elem) => {
+    elem.onclick = function(e) {
+        var tabsName = 'Kitasansicht'
+        openTabList(e, tabsName)
+    }
+})
+
+retails.forEach((elem) => {
+    elem.onclick = function(e) {
+        var tabsName = 'Retailsansicht'
+        openTabList(e, tabsName)
+    }
+})
+
+banken.forEach((elem) => {
+    elem.onclick = function(e) {
+        var tabsName = 'Bankenansicht'
+        openTabList(e, tabsName)
+    }
+})
+
+parks.forEach((elem) => {
+    elem.onclick = function(e) {
+        var tabsName = 'Parksansicht'
+        openTabList(e, tabsName)
+    }
+})
+
+kultur.forEach((elem) => {
+    elem.onclick = function(e) {
+        var tabsName = 'Kulturansicht'
+        openTabList(e, tabsName)
+    }
+})
+
+tankstellen.forEach((elem) => {
+    elem.onclick = function(e) {
+        var tabsName = 'Tankstellenansicht'
+        openTabList(e, tabsName)
+    }
+})
+
+var defaultopen = document.querySelectorAll('#defaultOpen')
+
+defaultopen.forEach((elem) => {
+    elem.click();
+})
+
+function openTabList(evt, tabsName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("section_listenansicht__content");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("section_listenansicht__button");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabsName).style.display = "flex";
+    evt.currentTarget.className += " active";
+
+  }
+
+
+
+/***/ }),
+
+/***/ 179:
+/***/ (function() {
+
+var x, i, j, l, ll, selElmnt, a, b, c;
+/* Look for any elements with the class "custom-select": */
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  
+  ll = selElmnt.length;
+  /* For each element, create a new DIV that will act as the selected item: */
+  a = document.createElement("DIV");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  a.setAttribute("class", `select-selected`);
+  // a.classList.add(a.innerHTML)
+  x[i].appendChild(a);
+  /* For each element, create a new DIV that will contain the option list: */
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /* For each option in the original select element,
+    create a new DIV that will act as an option item: */
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.classList.add(c.innerHTML)
+    
+    
+    c.addEventListener("click", function(e) {
+        /* When an item is clicked, update the original select box,
+        and the selected item: */
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            a.setAttribute("class", `select-selected ${this.innerHTML}`);
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+    
+  }
+  x[i].appendChild(b);
+ 
+  a.addEventListener("click", function(e) {
+    /* When the select box is clicked, close any other select boxes,
+    and open/close the current select box: */
+    openTabListMobile(e, a.innerHTML)
+    e.stopPropagation();
+    closeAllSelect(this);
+    this.nextSibling.classList.toggle("select-hide");
+    this.classList.toggle("select-arrow-active");
+  });
+}
+
+function closeAllSelect(elmnt) {
+  /* A function that will close all select boxes in the document,
+  except the current select box: */
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/* If the user clicks anywhere outside the select box,
+then close all select boxes: */
+document.addEventListener("click", closeAllSelect);
+
+//////////////////////////////
+
+function openTabListMobile(evt, tabsName) {
+  // Declare all variables
+  var i, tabcontent_mobile, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent_mobile = document.getElementsByClassName("section_listenansicht_mobile__content");
+  for (i = 0; i < tabcontent_mobile.length; i++) {
+    tabcontent_mobile[i].style.display = "none";
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabsName).style.display = "flex";
+  // evt.currentTarget.className += " active";
+
+}
+
+var intialMobileClickCheck = document.querySelectorAll('.select-items')
+
+intialMobileClickCheck.forEach((elem) => {
+    var intialMobileClick = document.querySelector(".select-items").childNodes
+    intialMobileClick[0].click()
+})
+
+
+
+/***/ }),
+
+/***/ 823:
+/***/ (function() {
+
+var kartenansicht = document.querySelectorAll('.kartenansicht')
+var listenansicht = document.querySelectorAll('.listenansicht')
+
+kartenansicht.forEach((elem) => {
+    elem.onclick = function(e) {
+        var tabsName = 'Kartenansicht'
+        openTab(e, tabsName)
+    }
+    
+})
+listenansicht.forEach((elem) => {
+    elem.onclick = function(e) {
+        var tabsName = 'Listenansicht'
+        openTab(e, tabsName)
+    }
+    
+})
+
+function openTab(evt, tabsName) {
+    if (tabsName == 'Kartenansicht') {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById('Kartenansicht').style.display = "block";
+    document.getElementById('Listenansicht').style.display = "none";
+    evt.currentTarget.className += " active";
+    }
+    if (tabsName == 'Listenansicht') {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+      
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+      
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+      
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById('Listenansicht').style.display = "block";
+        document.getElementById('Kartenansicht').style.display = "none";
+        evt.currentTarget.className += " active";
+        document.getElementById("defaultOpen").click();
+        }
+
+  }
+
+
+
+/***/ }),
+
+/***/ 836:
+/***/ (function() {
+
+const elems = document.querySelectorAll('.to_top_button_logo')
+
+elems.forEach((elem) => {
+	elem.onclick = function(e) {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		})
+	}
+})
+
+/***/ }),
+
+/***/ 783:
+/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
+
+const WOW = __webpack_require__(630);
+
+const wow = new WOW(
+	{
+	  animateClass: 'animated',
+	  offset:       100,
+	  mobile:       true,
+	  callback:     function(box) {
+		// console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+	  }
+	}
+  );
+  wow.init();
+
+/***/ }),
+
+/***/ 893:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://SITE/./src/assets/css/index.scss?");
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
 
-/***/ }),
+// EXTERNAL MODULE: ./src/assets/js/_mapbox.js
+var _mapbox = __webpack_require__(129);
+// EXTERNAL MODULE: ./src/assets/js/_wow.js
+var _wow = __webpack_require__(783);
+// EXTERNAL MODULE: ./src/assets/js/_scrollAnker.js
+var _scrollAnker = __webpack_require__(377);
+// EXTERNAL MODULE: ./src/assets/js/_toTopButton.js
+var _toTopButton = __webpack_require__(836);
+// EXTERNAL MODULE: ./src/assets/js/_carousel.js
+var _carousel = __webpack_require__(686);
+// EXTERNAL MODULE: ./node_modules/headroom.js/dist/headroom.js
+var dist_headroom = __webpack_require__(631);
+var headroom_default = /*#__PURE__*/__webpack_require__.n(dist_headroom);
+;// CONCATENATED MODULE: ./src/assets/js/_headroom.js
 
-/***/ "./src/assets/js/_carousel.js":
-/*!************************************!*\
-  !*** ./src/assets/js/_carousel.js ***!
-  \************************************/
-/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var Flickity = __webpack_require__(/*! flickity-fullscreen */ \"./node_modules/flickity-fullscreen/fullscreen.js\");\nvar Flickity_fade = __webpack_require__(/*! flickity-fade */ \"./node_modules/flickity-fade/flickity-fade.js\");\n\nconst carousel = document.querySelectorAll('.carousel')\n\ncarousel.forEach((elem) => {\n\n\tvar flkty = new Flickity( '.carousel', {\n\t\twrapAround: true,\n\t\tfullscreen: true,\n\t});\n\n})\n\nconst carousel_fade = document.querySelectorAll('.carousel_fade')\n\ncarousel_fade.forEach((elem) => {\n\n\tvar flkty = new Flickity_fade( '.carousel_fade', {\n\t\tfade: true,\n\t\tfullscreen: true,\n\t});\n\n})\n\n//# sourceURL=webpack://SITE/./src/assets/js/_carousel.js?");
+// grab an element
+var elems = document.querySelectorAll('.header')
+// construct an instance of Headroom, passing the element
+elems.forEach((elem) => {
+    var headroom = new (headroom_default())(elem, {
+        "offset": 750,
+        "tolerance": 8
+      });
+    // initialise
+    headroom.init();
+})
 
-/***/ }),
+var elemsImpressum = document.querySelectorAll('.header_impressum')
+// construct an instance of Headroom, passing the element
+elemsImpressum.forEach((elem) => {
+    var headroom = new (headroom_default())(elem, {
+        "tolerance": 8
+      });
+    // initialise
+    headroom.init();
+})
 
-/***/ "./src/assets/js/_headroom.js":
-/*!************************************!*\
-  !*** ./src/assets/js/_headroom.js ***!
-  \************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var headroom_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! headroom.js */ \"./node_modules/headroom.js/dist/headroom.js\");\n/* harmony import */ var headroom_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(headroom_js__WEBPACK_IMPORTED_MODULE_0__);\n\n\n// grab an element\nvar elems = document.querySelectorAll('.header')\n// construct an instance of Headroom, passing the element\nelems.forEach((elem) => {\n    var headroom = new (headroom_js__WEBPACK_IMPORTED_MODULE_0___default())(elem, {\n        \"offset\": 750,\n        \"tolerance\": 8\n      });\n    // initialise\n    headroom.init();\n})\n\nvar elemsImpressum = document.querySelectorAll('.header_impressum')\n// construct an instance of Headroom, passing the element\nelemsImpressum.forEach((elem) => {\n    var headroom = new (headroom_js__WEBPACK_IMPORTED_MODULE_0___default())(elem, {\n        \"tolerance\": 8\n      });\n    // initialise\n    headroom.init();\n})\n\n\n\n\n//# sourceURL=webpack://SITE/./src/assets/js/_headroom.js?");
 
-/***/ }),
+// EXTERNAL MODULE: ./src/assets/js/_mobile_menu_button.js
+var _mobile_menu_button = __webpack_require__(473);
+// EXTERNAL MODULE: ./src/assets/js/_mobile_menu_button_impressum.js
+var _mobile_menu_button_impressum = __webpack_require__(484);
+// EXTERNAL MODULE: ./src/assets/js/_tabs_maps.js
+var _tabs_maps = __webpack_require__(823);
+// EXTERNAL MODULE: ./src/assets/js/_tabs_listen.js
+var _tabs_listen = __webpack_require__(843);
+// EXTERNAL MODULE: ./src/assets/js/_tabs_listen_mobile.js
+var _tabs_listen_mobile = __webpack_require__(179);
+// EXTERNAL MODULE: ./node_modules/smoothscroll-polyfill/dist/smoothscroll.js
+var smoothscroll = __webpack_require__(523);
+var smoothscroll_default = /*#__PURE__*/__webpack_require__.n(smoothscroll);
+;// CONCATENATED MODULE: ./src/assets/js/index.js
+// import css for webpack
 
-/***/ "./src/assets/js/_mapbox.js":
-/*!**********************************!*\
-  !*** ./src/assets/js/_mapbox.js ***!
-  \**********************************/
-/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
-eval("const mapboxgl = __webpack_require__(/*! mapbox-gl */ \"./node_modules/mapbox-gl/dist/mapbox-gl.js\");\n\nvar places = {\n\t\"type\":\"FeatureCollection\",\n\t\"features\":[\n\t   \t{\n\t\t  \"type\":\"Feature\",\n\t\t  \"properties\":{\n\t\t\t \"description\":\"<strong>Frankfurter Küche</strong><p>Hanauer Landstraße 86,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"http://www.restaurant-frankfurter-kueche.de/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t \"icon\":\"Restaurants\"\n\t\t  },\n\t\t  \"geometry\":{\n\t\t\t \"type\":\"Point\",\n\t\t\t \"coordinates\":[\n\t\t\t\t8.704224783467328,\n\t\t\t\t50.111681170124484\n\t\t\t ]\n\t\t  }\n\t   \t},\n\t   \t{\n\t\t\"type\":\"Feature\",\n\t\t\"properties\":{\n\t\t   \"description\":\"<strong>'Das Leben ist Schön</strong><p>Hanauer Landstraße 198,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"http://www.daslebenistschoen.de/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t   \"icon\":\"Restaurants\"\n\t\t},\n\t\t\"geometry\":{\n\t\t   \"type\":\"Point\",\n\t\t   \"coordinates\":[\n\t\t\t 8.723497812302732,\n\t\t\t 50.11535621512961\n\t\t   ]\n\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>'Soul Food Factory East</strong><p>Hanauer Landstraße 124,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"http://www.soul-food-factory.com/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.711172127644243,\n\t\t\t\t50.11132723047215\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Saravini</strong><p>Hanauer Landstraße 119,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"http://www.saravini-frankfurt.de/mittagskarte/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t 8.710194527644237,\n\t\t\t\t 50.11172910920639\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>'The Tasty Toast</strong><p>Osthafenplatz 4, 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.71285928352579,\n\t\t\t\t50.11090767357005\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Stones</strong><p>Hanauer Landstraße 125,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"https://www.stonesfood.com/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.712307297113504,\n\t\t\t\t50.11246691431603\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Tawaraya</strong><p>Hanauer Landstraße 131, 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.71320475654297,\n\t\t\t\t50.11222598741672\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Cocothai</strong><p>Hanauer Landstraße 151,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"https://www.cocothaifrankfurtammain.de/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.71526672770677,\n\t\t\t\t50.112919324067384\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Urfa</strong><p>Hanauer Landstraße 133,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"https://www.urfa-grill-pizzeria.de/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.713368798870526,\n\t\t\t\t50.11229886602847\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Aroydee</strong><p>Hanauer Landstraße 72,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"https://www.aroydee.de/Frankfurt\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.703535627706737,\n\t\t\t\t50.11280334433856\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Goldman</strong><p>Hanauer Landstraße 127,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"http://www.goldman-restaurant.com/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.712951143051455,\n\t\t\t\t50.11208490623492\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Oosten</strong><p>Mayfarthstraße 4,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"https://oosten-frankfurt.com/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.702709870034257,\n\t\t\t\t50.10785792533555\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Gref-Völsings</strong><p>Hanauer Landstraße 132,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"https://www.gref-voelsings.de/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.7124484565429,\n\t\t\t\t50.1116097900726\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Best-Worscht In Town</strong><p>Hanauer Landstraße 270,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"https://www.bestworschtintown.de/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.72698031236205,\n\t\t\t\t50.1165047893076 \n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Bei Frau Nanna</strong><p>Ernst-Achilles-Platz 3,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"https://order.beifraunanna.de/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.70476983642246,\n\t\t\t\t50.1128814042537\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>LEUCHTENDROTER</strong><p>Lindleystraße 17,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"http://leuchtendroter.com/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.718510583561219,\n\t\t\t\t50.11257783263066\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Kahuna Poké Bros.</strong><p>Hanauer Landstraße 160A,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"https://kahunapokebros.com/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.717488819399943,\n\t\t\t\t50.11311594184854\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Ben's Burger</strong><p>Hanauer Landstraße 134,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"https://bens-burger.business.site/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.712697437075015,\n\t\t\t\t50.11151811854781\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Jesse James</strong><p>Hanauer Landstraße 83,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"http://www.jessejames.eu/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.705296327706698,\n\t\t\t\t50.11207194717568\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>COMAI East - modern viet kitchen</strong><p>Hanauer Landstraße 130,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"https://www.comai.de/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.7123598408274,\n\t\t\t\t50.11133081012636\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Pizzeria Mille Lire</strong><p>Sonnemannstraße 71,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"http://www.pizzeria-mille-lire.de/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Restaurants\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.70313924526421,\n\t\t\t\t50.111192054739604\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Coffee Fellows</strong><p>Hanauer Landstraße 115,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"http://www.coffee-fellows-ostend.de/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Bar-Café\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.709015614425825,\n\t\t\t\t50.11224196267669\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Wiener Feinbäckerei</strong><p>Hanauer Landstraße 108,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"https://heberer.de/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Bar-Café\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.70924599781994,\n\t\t\t\t50.111330420991095\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Aniis</strong><p>Hanauer Landstraße 82,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"http://www.aniis.de/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Bar-Café\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.704047841198193,\n\t\t\t\t50.11191788713086\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Stock Avenue 81</strong><p>Hanauer Landstraße 81,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"http://www.melia.com/de/lodgings/deutschland/frankfurt/innside-frankfurt-ostend/restaurants.html\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Bar-Café\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.704830970034363,\n\t\t\t\t50.112325267256004\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Bäckerei und Konditorei Huck</strong><p>Sonnemannstraße 81,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"https://www.baeckerei-huck.de/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Bar-Café\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.70409040574631,\n\t\t\t\t50.111376848593906\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Frankfurt Pub</strong><p>Hanauer Landstraße 99,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"http://www.frankfurt-pub.de/\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Bar-Café\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.708437927706713,\n\t\t\t\t50.111746607401514\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Eiscafé Café a Roma</strong><p>Sonnemannstraße 51,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Bar-Café\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.700960888265074,\n\t\t\t\t50.11085074470636\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Marmion Bar</strong><p>Lindleystraße 17,</br> 60314 Frankfurt am Main</p><p><a rel=\\\"noopener\\\" href=\\\"https://www.marmion-bar.de\\\" target=\\\"_blank\\\" title=\\\"Opens in a new window\\\">Hier gehts zur webseite</a></p>\",\n\t\t\t   \"icon\":\"Bar-Café\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.718510583561219,\n\t\t\t\t50.11257783263066\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Alnatura Super Natur Markt</strong><p>Hanauer Landstraße 110,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Retail\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.709294277580927,\n\t\t\t\t50.11124097596751\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Edeka</strong><p>Ferdinand-Happ-Straße 59,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Retail\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.715864727706792,\n\t\t\t\t50.11446867774984\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Lidl</strong><p>Hanauer Landstraße 219,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Retail\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.721729185379182,\n\t\t\t\t50.115486293551406\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Rewe</strong><p>Louis-Appia-Passage 7 7,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Retail\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.705509785379135,\n\t\t\t\t50.112873643153115\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Aldi Süd</strong><p>Hanauer Landstraße 285,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Retail\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.724419070034426,\n\t\t\t\t50.11658945000033\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Me.Ta</strong><p>Hanauer Landstraße 208 -216,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Retail\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.726406085457684,\n\t\t\t\t50.11562919293627\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>dm</strong><p>Louis-Appia-Passage 6,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Retail\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.705571970034336,\n\t\t\t\t50.11244186549421\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Fitness First</strong><p>Hanauer Landstraße 148,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Fitness\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.71600512770675,\n\t\t\t\t50.11236760526015\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Fitseveneleven east blck</strong><p>Hanauer Landstraße 120,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Fitness\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.710570127706724,\n\t\t\t\t50.11133183045381\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Fitseveneleven east pink</strong><p>Hanauer Landstraße 147,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Fitness\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.714824341198113,\n\t\t\t\t50.11278522362572\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Kieser Training</strong><p>Hanauer Landstraße 291A,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Fitness\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.716392498870569,\n\t\t\t\t50.113392181835025\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Fritz-Rémond-Theater</strong><p>Bernhard-Grzimek-Allee 1,</br> 60316 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Kultur\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.699309256543005,\n\t\t\t\t50.11610529237147\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Romanfabrik</strong><p>Hanauer Landstraße 186,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Kultur\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.722945141198247,\n\t\t\t\t50.114824976214166\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Kunstverein Familie Montez</strong><p>Honsellstraße 7,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Kultur\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.709860525853374,\n\t\t\t\t50.1089605822416\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Union Halle</strong><p>Hanauer Landstraße 188,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Kultur\"\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.72292931217596,\n\t\t\t\t50.11426644210688\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>25hours</strong><p>Hanauer Landstraße 127,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Hotels\",\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.712797538150072,\n\t\t\t\t50.11210810538992\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>INNSIDE</strong><p>Hanauer Landstraße 81,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Hotels\",\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.704878827706677,\n\t\t\t\t50.112383305205896, \n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>B&B Hotel Frankfurt City-Ost</strong><p>Hanauer Landstraße 117,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Hotels\",\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.709716241586767,\n\t\t\t\t50.11160000635536\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>MotelOne</strong><p>Hanauer Landstraße 142,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Hotels\",\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.713694256542883,\n\t\t\t\t50.11203960791258\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Moxy</strong><p>Hanauer Landstraße 162,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Hotels\",\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.71785704495354,\n\t\t\t\t50.11326424062049\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Hampton by Hilton Frankfurt City Centre East</strong><p>Grusonstraße 4,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Hotels\",\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.70798850585079,\n\t\t\t\t50.112528227125246\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>LINDLEY LINDENBERG</strong><p>Lindleystraße 17,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Hotels\",\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.718837104529054,\n\t\t\t\t50.11282985876722\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Die Knoppschachtel</strong><p>Ferdinand-Happ-Straße 57,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Kita\",\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.715007013560411,\n\t\t\t\t50.11448051790032\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>EZB Kita</strong><p>Ferdinand-Happ-Straße 57,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Kita\",\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.715007013560411,\n\t\t\t\t50.11448051790032\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Kindergarten d. Evangelisch-Luth.</strong><p>Röderbergweg 66,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Kita\",\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.707768964236756,\n\t\t\t\t50.115814262790835\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>FRÖBEL-Kindergarten</strong><p>Honsellstraße 18,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Kita\",\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.709864689196351,\n\t\t\t\t50.110742092904175\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Frankfurter Sparkasse</strong><p>Grusonstraße 3-5,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Banken\",\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.70621865115999,\n\t\t\t\t50.11208644119723, \n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Europäische Zentralbank (EZB)</strong><p>Sonnemannstraße 20,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Banken\",\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.70185343846062,\n\t\t\t\t50.10999246042122\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Schwedler See</strong><p>Schwedlerstraße,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Parks\",\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.72247076419106,\n\t\t\t\t50.1126669871857\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Hafenpark</strong><p>Mayfarthstraße,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Parks\",\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.707727030979154,\n\t\t\t\t50.10780485816412\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"type\":\"Feature\",\n\t\t\t\"properties\":{\n\t\t\t   \"description\":\"<strong>Tankstelle Esso</strong><p>Hanauer Landstraße 178,</br> 60314 Frankfurt am Main</p>\",\n\t\t\t   \"icon\":\"Tankstelle\",\n\t\t\t},\n\t\t\t\"geometry\":{\n\t\t\t   \"type\":\"Point\",\n\t\t\t   \"coordinates\":[\n\t\t\t\t8.71785704495354,\n\t\t\t\t50.11326424062049\n\t\t\t   ]\n\t\t\t}\n\t\t},\n\t]\n };\n\n var geojson = {\n\ttype: 'FeatureCollection',\n\tfeatures: [{\n\t  type: 'Feature',\n\t  geometry: {\n\t\ttype: 'Point',\n\t\t'coordinates': [8.71157213340723, 50.11154494192954]\n\t  },\n\t  properties: {\n\t\ttitle: 'Mapbox',\n\t\tdescription: 'Oststern Offices'\n\t  }\n\t}]\n  };\n\n const mapPresent = document.querySelectorAll('.maps')\n\n mapPresent.forEach((elem) => {\n\t\n\tvar filterGroup = document.getElementById('filter-group');\n\tmapboxgl.accessToken = 'pk.eyJ1IjoiamZyaWVzZW5obCIsImEiOiJja3BtdHRvc3YwNWExMnBwNG11MnJibmV5In0.i84KJRxAWlCeaS900SAC7g';\n\t\n\tvar mq = window.matchMedia( \"(min-width: 820px)\" );\n\t\n\t// console.log('mq', mq)\n\t\n\tif (mq.matches){\n\t\tvar map = new mapboxgl.Map({\n\t\t\tcontainer: 'map', // container ID\n\t\t\tstyle: 'mapbox://styles/jfriesenhl/ckpmlu0pa04pw18qnjxgnb5mh', // style ID\n\t\t\tcenter: [8.71157213340723, 50.11154494192954], // starting position [lng, lat]\n\t\t\t// starting zoom\n\t\t\tzoom: 16,\n\t\t\tattributionControl: true,\n\t\t\tlogoEnabled: false\n\t\t});\n\t} else {\n\t\tvar map = new mapboxgl.Map({\n\t\t\tcontainer: 'map', // container ID\n\t\t\tstyle: 'mapbox://styles/jfriesenhl/ckpmlu0pa04pw18qnjxgnb5mh', // style ID\n\t\t\tcenter: [8.71157213340723, 50.11154494192954], // starting position [lng, lat]\n\t\t\t// starting zoom\n\t\t\tzoom: 15,\n\t\t\tattributionControl: true,\n\t\t\tlogoEnabled: false\n\t\t});\n\t};\n\n\tgeojson.features.forEach(function(marker) {\n\n\t\t// create a HTML element for each feature\n\t\tvar el = document.createElement('div');\n\t\tel.className = 'marker';\n\t\t// var container = document.querySelector('.marker')\n\t\t// console.log('el', el)\n\t\n\t\t// make a marker for each feature and add to the map\n\t\t// new mapboxgl.Marker(el)\n\t\tnew mapboxgl.Marker(el)\n\t\t.setLngLat(marker.geometry.coordinates)\n\t\t.addTo(map);\n\t});\n\t\n\t\n\t//disable zoom on map\n\tmap.scrollZoom.disable();\n\t\n\t//disable Mobile desktop behavoir\n\tif (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {\n\t\tmap.dragPan.disable();\n\t\t// map.scrollZoom.enable();\n\t\tconst isTouchEvent = e => e.originalEvent && \"touches\" in e.originalEvent;\n\t\tconst isTwoFingerTouch = e => e.originalEvent.touches.length >= 2;\n\t  \n\t\tmap.on(\"dragstart\", event => {\n\t\t  if (isTouchEvent(event) && !isTwoFingerTouch(event)) {\n\t\t\t map.dragPan.disable();\n\t\t  }\n\t\t});\n\t  \n\t\t// Drag events not emited after dragPan disabled, so I use touch event here\n\t\tmap.on(\"touchstart\", event => {\n\t\t\tif (isTouchEvent(event) && isTwoFingerTouch(event)) {\n\t\t\t map.dragPan.enable();\n\t\t  }\n\t\t});\n\t}\n\t// Add zoom and rotation controls to the map.\n\tmap.addControl(new mapboxgl.NavigationControl({\n\t\t// Hide rotation control.\n\t\tshowCompass: false\n\t}), 'bottom-left');\n\t\n\tmap.on('load', function () {\n\t\t// Add a GeoJSON source containing place coordinates and information.\n\t\tmap.addSource('places', {\n\t\t\t'type': 'geojson',\n\t\t\t'data': places,\n\t\t});\n\t\t \n\t\tplaces.features.forEach(function (feature) {\n\t\t\tvar symbol = feature.properties['icon'];\n\t\t\t// console.log('symbol', symbol)\n\t\t\tvar layerID = 'poi-' + symbol;\n\t\t\t// console.log('layerID', layerID)\n\t\t\n\t\t\t\n\t\n\t\t// Add a layer for this symbol type if it hasn't been added already.\n\t\t\tif (!map.getLayer(layerID)) {\n\t\t\t\tmap.addLayer({\n\t\t\t\t\t'id': layerID,\n\t\t\t\t\t'type': 'symbol',\n\t\t\t\t\t'source': 'places',\n\t\t\t\t\t\n\t\t\t\t\t'layout': {\n\t\t\t\t\t'icon-image': symbol,\n\t\t\t\t\t'icon-allow-overlap': true,\n\t\t\t\t\t// \"icon-offset\": [\n\t\t\t\t\t// \t\"case\",\n\t\t\t\t\t// \t[\"==\", [\"get\", \"icon\"], symbol],\n\t\t\t\t\t// \t[\"literal\", [0, 55]],\n\t\t\t\t\t// \t[\"literal\", [0, 0]]\n\t\t\t\t\t//   ]\n\t\t\t\t\t},\n\t\t\t\t\t'filter': ['==', 'icon', symbol]\n\t\t\t\t});\n\t\n\t\t\t\t// Change icon size on zoom\n\t\t\t\t// map.on('zoom', () => {\n\t\t\t\t//     const scalePercent = 1 + (map.getZoom() - 8)  * 0.4;\n\t\t\t\t//     const svgElement = symbol.getElement().children[0];\n\t\t\t\t//     svgElement.style.transform = `scale(${scalePercent})`;\n\t\t\t\t//     svgElement.style.transformOrigin = 'bottom';\n\t\t\t\t// });\n\t\t\t\t\n\t\t\t\t// Add checkbox and label elements for the layer.\n\t\t\t\tvar input = document.createElement('input');\n\t\t\t\tinput.type = 'checkbox';\n\t\t\t\tinput.id = layerID;\n\t\t\t\tinput.checked = true;\n\t\t\t\tfilterGroup.appendChild(input);\n\t\t\t\n\t\t\t\tvar label = document.createElement('label');\n\t\t\t\tlabel.setAttribute('for', layerID);\n\t\t\t\tlabel.textContent = symbol;\n\t\t\t\tfilterGroup.appendChild(label);\n\t\t\t\n\t\t\t// When the checkbox changes, update the visibility of the layer.\n\t\t\t\tinput.addEventListener('change', function (e) {\n\t\t\t\t\tmap.setLayoutProperty(\n\t\t\t\t\t\tlayerID,\n\t\t\t\t\t\t'visibility',\n\t\t\t\t\t\te.target.checked ? 'visible' : 'none'\n\t\t\t\t\t);\n\t\t\t\t});\n\t\n\t\t\t\tmap.on('click', layerID, function (e) {\n\t\t\t\t\tvar coordinates = e.features[0].geometry.coordinates.slice();\n\t\t\t\t\tvar description = e.features[0].properties.description;\n\t\t\t\t\t \n\t\t\t\t\t// Ensure that if the map is zoomed out such that multiple\n\t\t\t\t\t// copies of the feature are visible, the popup appears\n\t\t\t\t\t// over the copy being pointed to.\n\t\t\t\t\twhile (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {\n\t\t\t\t\tcoordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;\n\t\t\t\t\t}\n\t\t\t\t\t \n\t\t\t\t\tnew mapboxgl.Popup()\n\t\t\t\t\t.setLngLat(coordinates)\n\t\t\t\t\t.setHTML(description)\n\t\t\t\t\t.addTo(map);\n\t\t\t\t});\n\t\t\t\t\t \n\t\t\t\t\t// Change the cursor to a pointer when the mouse is over the places layer.\n\t\t\t\tmap.on('mouseenter', layerID, function () {\n\t\t\t\t\tmap.getCanvas().style.cursor = 'pointer';\n\t\t\t\t});\n\t\t\t\t\t \n\t\t\t\t\t// Change it back to a pointer when it leaves.\n\t\t\t\tmap.on('mouseleave', layerID, function () {\n\t\t\t\t\tmap.getCanvas().style.cursor = '';\n\t\t\t\t});\n\t\t\t}\n\t\t});\n\t\n\t\n\t});\n\t\n\tmap.on('click', 'places', function (e) {\n\t\tvar coordinates = e.features[0].geometry.coordinates.slice();\n\t\tvar description = e.features[0].properties.description;\n\t\t \n\t\t// Ensure that if the map is zoomed out such that multiple\n\t\t// copies of the feature are visible, the popup appears\n\t\t// over the copy being pointed to.\n\t\twhile (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {\n\t\t\tcoordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;\n\t\t}\n\t\t \n\t\tnew mapboxgl.Popup()\n\t\t.setLngLat(coordinates)\n\t\t.setHTML(description)\n\t\t.addTo(map);\n\t});\n\t\t \n\t// Change the cursor to a pointer when the mouse is over the places layer.\n\tmap.on('mouseenter', 'places', function () {\n\t\tmap.getCanvas().style.cursor = 'pointer';\n\t});\n\t\t\n\t// Change it back to a pointer when it leaves.\n\tmap.on('mouseleave', 'places', function () {\n\t\tmap.getCanvas().style.cursor = '';\n\t});\n })\n \n\n//# sourceURL=webpack://SITE/./src/assets/js/_mapbox.js?");
+// javscript imports
 
-/***/ }),
 
-/***/ "./src/assets/js/_mobile_menu_button.js":
-/*!**********************************************!*\
-  !*** ./src/assets/js/_mobile_menu_button.js ***!
-  \**********************************************/
-/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
-eval("const bodyScrollLock = __webpack_require__(/*! body-scroll-lock */ \"./node_modules/body-scroll-lock/lib/bodyScrollLock.esm.js\");\nconst disableBodyScroll = bodyScrollLock.disableBodyScroll;\nconst enableBodyScroll = bodyScrollLock.enableBodyScroll;\n\nconst mobileMenuButton = document.querySelectorAll('.mobile_menu_button')\nconst mobileMenu = document.querySelectorAll('.mobile_menu')\nconst menuButtonClick = document.querySelectorAll('.menu-button')\nconst mobileMenuItem = document.querySelectorAll('.mobile_menu__item')\n// console.log('mobile_button', mobileMenuButton)\n\n// First we get the viewport height and we multiple it by 1% to get a value for a vh unit\nlet vh = window.innerHeight * 0.01;\n// Then we set the value in the --vh custom property to the root of the document\ndocument.documentElement.style.setProperty('--vh', `${vh}px`);\n\nmobileMenuButton.forEach(elem => {  \n    elem.onclick = () => {\n        mobileMenu.forEach(elem => {\n            if (elem.style.top == '') {\n                // disableBodyScroll(elem);\n                elem.style.top = \"0\";\n            } else if (elem.style.top == '0px') {\n                // enableBodyScroll(elem);\n                elem.style.top = \"-340vh\";\n            } else {\n                // disableBodyScroll(elem);\n                elem.style.top = \"0\";\n            }\n\n        })\n    }\n});\n\nvar menuButton = document.getElementById('menuButton');\nif (menuButton) {\n    menuButton.addEventListener('click',  (e) => {\n        menuButton.classList.toggle('is-active');\n        e.preventDefault();\n    });\n}\n\nmobileMenuItem.forEach(elem => {\n    \n    elem.onclick = () => {\n        setTimeout(function(){ \n            menuButtonClick.forEach(elem => {\n                elem.click();\n            });\n        }, 500);\n    }\n});\n\n//# sourceURL=webpack://SITE/./src/assets/js/_mobile_menu_button.js?");
 
-/***/ }),
 
-/***/ "./src/assets/js/_mobile_menu_button_impressum.js":
-/*!********************************************************!*\
-  !*** ./src/assets/js/_mobile_menu_button_impressum.js ***!
-  \********************************************************/
-/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
-eval("const bodyScrollLock = __webpack_require__(/*! body-scroll-lock */ \"./node_modules/body-scroll-lock/lib/bodyScrollLock.esm.js\");\nconst disableBodyScroll = bodyScrollLock.disableBodyScroll;\nconst enableBodyScroll = bodyScrollLock.enableBodyScroll;\n\nconst mobileMenuButtonImpressum = document.querySelectorAll('.mobile_menu_button_impressum')\nconst mobileMenuImpressum = document.querySelectorAll('.mobile_menu_impressum')\nconst menuButtonClickImpressum = document.querySelectorAll('.menu-button_impressum')\nconst mobileMenuItemImpressum = document.querySelectorAll('.mobile_menu_impressum__item')\n\n// First we get the viewport height and we multiple it by 1% to get a value for a vh unit\nlet vh = window.innerHeight * 0.01;\n// Then we set the value in the --vh custom property to the root of the document\ndocument.documentElement.style.setProperty('--vh', `${vh}px`);\n\nmobileMenuButtonImpressum.forEach(elem => {\n    \n    elem.onclick = () => {\n        mobileMenuImpressum.forEach(elem => {\n            if (elem.style.top == '') {\n                // disableBodyScroll(elem);\n                elem.style.top = \"0\";\n            } else if (elem.style.top == '0px') {\n                // enableBodyScroll(elem);\n                elem.style.top = \"-340vh\";\n            } else {\n                // disableBodyScroll(elem);\n                elem.style.top = \"0\";\n            }\n\n        })\n        console.log('mobile_button', elem)\n    }\n});\n\nvar menuButton_impressum = document.getElementById('menuButton_impressum');\nif (menuButton_impressum) {\n    menuButton_impressum.addEventListener('click',  (e) => {\n        menuButton_impressum.classList.toggle('is-active');\n        e.preventDefault();\n    });\n}\n\nmobileMenuItemImpressum.forEach(elem => {\n    \n    elem.onclick = () => {\n        setTimeout(function(){ \n            menuButtonClickImpressum.forEach(elem => {\n                elem.click();\n            });\n        }, 500);\n    }\n});\n\n//# sourceURL=webpack://SITE/./src/assets/js/_mobile_menu_button_impressum.js?");
 
-/***/ }),
 
-/***/ "./src/assets/js/_scrollAnker.js":
-/*!***************************************!*\
-  !*** ./src/assets/js/_scrollAnker.js ***!
-  \***************************************/
-/***/ (function() {
 
-eval("const mobileMenuButton = document.querySelectorAll('.mobile_menu_button')\nconst mobileMenu = document.querySelectorAll('.mobile_menu')\nvar menuButton = document.getElementById('menuButton');\n\ndocument.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {\n    anchor.addEventListener('click', function (e) {\n        e.preventDefault();\n\n        document.querySelector(this.getAttribute('href')).scrollIntoView({\n            behavior: 'smooth',\n        });\n        \n        if (mobileMenuButton){  \n            mobileMenuButton.forEach(elem => {\n                if (window.getComputedStyle(elem, null).display == 'block') {             \n                    setTimeout(() => { \n                        menuButton.click()\n                    }, 1000);     \n                } \n            })\n        }\n    });\n});\n\n//# sourceURL=webpack://SITE/./src/assets/js/_scrollAnker.js?");
 
-/***/ }),
 
-/***/ "./src/assets/js/_tabs_listen.js":
-/*!***************************************!*\
-  !*** ./src/assets/js/_tabs_listen.js ***!
-  \***************************************/
-/***/ (function() {
 
-eval("var restaurants = document.querySelectorAll('.section_listenansicht__restaurants')\nvar bars = document.querySelectorAll('.section_listenansicht__bars')\nvar hotels = document.querySelectorAll('.section_listenansicht__hotels')\nvar fitness = document.querySelectorAll('.section_listenansicht__fitness')\nvar kitas = document.querySelectorAll('.section_listenansicht__kitas')\nvar retails = document.querySelectorAll('.section_listenansicht__retails')\nvar banken = document.querySelectorAll('.section_listenansicht__banken')\nvar parks = document.querySelectorAll('.section_listenansicht__parks')\nvar kultur = document.querySelectorAll('.section_listenansicht__kultur')\nvar tankstellen = document.querySelectorAll('.section_listenansicht__tankstellen')\n\nrestaurants.forEach((elem) => {\n    elem.onclick = function(e) {\n        var tabsName = 'Restaurantsansicht'\n        openTabList(e, tabsName)\n    }\n})\n\nbars.forEach((elem) => {\n    elem.onclick = function(e) {\n        var tabsName = 'Barsansicht'\n        openTabList(e, tabsName)\n    }\n})\n\nhotels.forEach((elem) => {\n    elem.onclick = function(e) {\n        var tabsName = 'Hotelsansicht'\n        openTabList(e, tabsName)\n    }\n})\n\nfitness.forEach((elem) => {\n    elem.onclick = function(e) {\n        var tabsName = 'Fitnessansicht'\n        openTabList(e, tabsName)\n    }\n})\n\nkitas.forEach((elem) => {\n    elem.onclick = function(e) {\n        var tabsName = 'Kitasansicht'\n        openTabList(e, tabsName)\n    }\n})\n\nretails.forEach((elem) => {\n    elem.onclick = function(e) {\n        var tabsName = 'Retailsansicht'\n        openTabList(e, tabsName)\n    }\n})\n\nbanken.forEach((elem) => {\n    elem.onclick = function(e) {\n        var tabsName = 'Bankenansicht'\n        openTabList(e, tabsName)\n    }\n})\n\nparks.forEach((elem) => {\n    elem.onclick = function(e) {\n        var tabsName = 'Parksansicht'\n        openTabList(e, tabsName)\n    }\n})\n\nkultur.forEach((elem) => {\n    elem.onclick = function(e) {\n        var tabsName = 'Kulturansicht'\n        openTabList(e, tabsName)\n    }\n})\n\ntankstellen.forEach((elem) => {\n    elem.onclick = function(e) {\n        var tabsName = 'Tankstellenansicht'\n        openTabList(e, tabsName)\n    }\n})\n\nvar defaultopen = document.querySelectorAll('#defaultOpen')\n\ndefaultopen.forEach((elem) => {\n    elem.click();\n})\n\nfunction openTabList(evt, tabsName) {\n    // Declare all variables\n    var i, tabcontent, tablinks;\n  \n    // Get all elements with class=\"tabcontent\" and hide them\n    tabcontent = document.getElementsByClassName(\"section_listenansicht__content\");\n    for (i = 0; i < tabcontent.length; i++) {\n      tabcontent[i].style.display = \"none\";\n    }\n  \n    // Get all elements with class=\"tablinks\" and remove the class \"active\"\n    tablinks = document.getElementsByClassName(\"section_listenansicht__button\");\n    for (i = 0; i < tablinks.length; i++) {\n      tablinks[i].className = tablinks[i].className.replace(\" active\", \"\");\n    }\n  \n    // Show the current tab, and add an \"active\" class to the button that opened the tab\n    document.getElementById(tabsName).style.display = \"flex\";\n    evt.currentTarget.className += \" active\";\n\n  }\n\n\n\n//# sourceURL=webpack://SITE/./src/assets/js/_tabs_listen.js?");
 
-/***/ }),
 
-/***/ "./src/assets/js/_tabs_listen_mobile.js":
-/*!**********************************************!*\
-  !*** ./src/assets/js/_tabs_listen_mobile.js ***!
-  \**********************************************/
-/***/ (function() {
+smoothscroll_default().polyfill()
 
-eval("var x, i, j, l, ll, selElmnt, a, b, c;\n/* Look for any elements with the class \"custom-select\": */\nx = document.getElementsByClassName(\"custom-select\");\nl = x.length;\n\nfor (i = 0; i < l; i++) {\n  selElmnt = x[i].getElementsByTagName(\"select\")[0];\n  \n  ll = selElmnt.length;\n  /* For each element, create a new DIV that will act as the selected item: */\n  a = document.createElement(\"DIV\");\n  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;\n  a.setAttribute(\"class\", `select-selected`);\n  // a.classList.add(a.innerHTML)\n  x[i].appendChild(a);\n  /* For each element, create a new DIV that will contain the option list: */\n  b = document.createElement(\"DIV\");\n  b.setAttribute(\"class\", \"select-items select-hide\");\n  for (j = 1; j < ll; j++) {\n    /* For each option in the original select element,\n    create a new DIV that will act as an option item: */\n    c = document.createElement(\"DIV\");\n    c.innerHTML = selElmnt.options[j].innerHTML;\n    c.classList.add(c.innerHTML)\n    \n    \n    c.addEventListener(\"click\", function(e) {\n        /* When an item is clicked, update the original select box,\n        and the selected item: */\n        var y, i, k, s, h, sl, yl;\n        s = this.parentNode.parentNode.getElementsByTagName(\"select\")[0];\n        sl = s.length;\n        h = this.parentNode.previousSibling;\n        for (i = 0; i < sl; i++) {\n          if (s.options[i].innerHTML == this.innerHTML) {\n            s.selectedIndex = i;\n            h.innerHTML = this.innerHTML;\n            a.setAttribute(\"class\", `select-selected ${this.innerHTML}`);\n            y = this.parentNode.getElementsByClassName(\"same-as-selected\");\n            yl = y.length;\n            for (k = 0; k < yl; k++) {\n              y[k].removeAttribute(\"class\");\n            }\n            this.setAttribute(\"class\", \"same-as-selected\");\n            break;\n          }\n        }\n        h.click();\n    });\n    b.appendChild(c);\n    \n  }\n  x[i].appendChild(b);\n \n  a.addEventListener(\"click\", function(e) {\n    /* When the select box is clicked, close any other select boxes,\n    and open/close the current select box: */\n    openTabListMobile(e, a.innerHTML)\n    e.stopPropagation();\n    closeAllSelect(this);\n    this.nextSibling.classList.toggle(\"select-hide\");\n    this.classList.toggle(\"select-arrow-active\");\n  });\n}\n\nfunction closeAllSelect(elmnt) {\n  /* A function that will close all select boxes in the document,\n  except the current select box: */\n  var x, y, i, xl, yl, arrNo = [];\n  x = document.getElementsByClassName(\"select-items\");\n  y = document.getElementsByClassName(\"select-selected\");\n  xl = x.length;\n  yl = y.length;\n  for (i = 0; i < yl; i++) {\n    if (elmnt == y[i]) {\n      arrNo.push(i)\n    } else {\n      y[i].classList.remove(\"select-arrow-active\");\n    }\n  }\n  for (i = 0; i < xl; i++) {\n    if (arrNo.indexOf(i)) {\n      x[i].classList.add(\"select-hide\");\n    }\n  }\n}\n/* If the user clicks anywhere outside the select box,\nthen close all select boxes: */\ndocument.addEventListener(\"click\", closeAllSelect);\n\n//////////////////////////////\n\nfunction openTabListMobile(evt, tabsName) {\n  // Declare all variables\n  var i, tabcontent_mobile, tablinks;\n\n  // Get all elements with class=\"tabcontent\" and hide them\n  tabcontent_mobile = document.getElementsByClassName(\"section_listenansicht_mobile__content\");\n  for (i = 0; i < tabcontent_mobile.length; i++) {\n    tabcontent_mobile[i].style.display = \"none\";\n  }\n\n  // Show the current tab, and add an \"active\" class to the button that opened the tab\n  document.getElementById(tabsName).style.display = \"flex\";\n  // evt.currentTarget.className += \" active\";\n\n}\n\nvar intialMobileClickCheck = document.querySelectorAll('.select-items')\n\nintialMobileClickCheck.forEach((elem) => {\n    var intialMobileClick = document.querySelector(\".select-items\").childNodes\n    intialMobileClick[0].click()\n})\n\n\n\n//# sourceURL=webpack://SITE/./src/assets/js/_tabs_listen_mobile.js?");
 
-/***/ }),
 
-/***/ "./src/assets/js/_tabs_maps.js":
-/*!*************************************!*\
-  !*** ./src/assets/js/_tabs_maps.js ***!
-  \*************************************/
-/***/ (function() {
-
-eval("var kartenansicht = document.querySelectorAll('.kartenansicht')\nvar listenansicht = document.querySelectorAll('.listenansicht')\n\nkartenansicht.forEach((elem) => {\n    elem.onclick = function(e) {\n        var tabsName = 'Kartenansicht'\n        openTab(e, tabsName)\n    }\n    \n})\nlistenansicht.forEach((elem) => {\n    elem.onclick = function(e) {\n        var tabsName = 'Listenansicht'\n        openTab(e, tabsName)\n    }\n    \n})\n\nfunction openTab(evt, tabsName) {\n    if (tabsName == 'Kartenansicht') {\n    // Declare all variables\n    var i, tabcontent, tablinks;\n  \n    // Get all elements with class=\"tabcontent\" and hide them\n    tabcontent = document.getElementsByClassName(\"tabcontent\");\n    for (i = 0; i < tabcontent.length; i++) {\n      tabcontent[i].style.display = \"none\";\n    }\n  \n    // Get all elements with class=\"tablinks\" and remove the class \"active\"\n    tablinks = document.getElementsByClassName(\"tablinks\");\n    for (i = 0; i < tablinks.length; i++) {\n      tablinks[i].className = tablinks[i].className.replace(\" active\", \"\");\n    }\n  \n    // Show the current tab, and add an \"active\" class to the button that opened the tab\n    document.getElementById('Kartenansicht').style.display = \"block\";\n    document.getElementById('Listenansicht').style.display = \"none\";\n    evt.currentTarget.className += \" active\";\n    }\n    if (tabsName == 'Listenansicht') {\n        // Declare all variables\n        var i, tabcontent, tablinks;\n      \n        // Get all elements with class=\"tabcontent\" and hide them\n        tabcontent = document.getElementsByClassName(\"tabcontent\");\n        for (i = 0; i < tabcontent.length; i++) {\n          tabcontent[i].style.display = \"none\";\n        }\n      \n        // Get all elements with class=\"tablinks\" and remove the class \"active\"\n        tablinks = document.getElementsByClassName(\"tablinks\");\n        for (i = 0; i < tablinks.length; i++) {\n          tablinks[i].className = tablinks[i].className.replace(\" active\", \"\");\n        }\n      \n        // Show the current tab, and add an \"active\" class to the button that opened the tab\n        document.getElementById('Listenansicht').style.display = \"block\";\n        document.getElementById('Kartenansicht').style.display = \"none\";\n        evt.currentTarget.className += \" active\";\n        document.getElementById(\"defaultOpen\").click();\n        }\n\n  }\n\n\n\n//# sourceURL=webpack://SITE/./src/assets/js/_tabs_maps.js?");
-
-/***/ }),
-
-/***/ "./src/assets/js/_toTopButton.js":
-/*!***************************************!*\
-  !*** ./src/assets/js/_toTopButton.js ***!
-  \***************************************/
-/***/ (function() {
-
-eval("const elems = document.querySelectorAll('.to_top_button_logo')\n\nelems.forEach((elem) => {\n\telem.onclick = function(e) {\n\t\twindow.scrollTo({\n\t\t\ttop: 0,\n\t\t\tbehavior: 'smooth'\n\t\t})\n\t}\n})\n\n//# sourceURL=webpack://SITE/./src/assets/js/_toTopButton.js?");
-
-/***/ }),
-
-/***/ "./src/assets/js/_wow.js":
-/*!*******************************!*\
-  !*** ./src/assets/js/_wow.js ***!
-  \*******************************/
-/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
-
-eval("const WOW = __webpack_require__(/*! wow.js */ \"./node_modules/wow.js/dist/wow.js\");\n\nconst wow = new WOW(\n\t{\n\t  animateClass: 'animated',\n\t  offset:       100,\n\t  mobile:       true,\n\t  callback:     function(box) {\n\t\t// console.log(\"WOW: animating <\" + box.tagName.toLowerCase() + \">\")\n\t  }\n\t}\n  );\n  wow.init();\n\n//# sourceURL=webpack://SITE/./src/assets/js/_wow.js?");
-
-/***/ }),
-
-/***/ "./src/assets/js/index.js":
-/*!********************************!*\
-  !*** ./src/assets/js/index.js ***!
-  \********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/index.scss */ \"./src/assets/css/index.scss\");\n/* harmony import */ var _mapbox_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_mapbox.js */ \"./src/assets/js/_mapbox.js\");\n/* harmony import */ var _mapbox_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_mapbox_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _wow_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_wow.js */ \"./src/assets/js/_wow.js\");\n/* harmony import */ var _wow_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wow_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _scrollAnker_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./_scrollAnker.js */ \"./src/assets/js/_scrollAnker.js\");\n/* harmony import */ var _scrollAnker_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scrollAnker_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _toTopButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./_toTopButton */ \"./src/assets/js/_toTopButton.js\");\n/* harmony import */ var _toTopButton__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_toTopButton__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _carousel_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./_carousel.js */ \"./src/assets/js/_carousel.js\");\n/* harmony import */ var _carousel_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_carousel_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _headroom_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./_headroom.js */ \"./src/assets/js/_headroom.js\");\n/* harmony import */ var _mobile_menu_button_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./_mobile_menu_button.js */ \"./src/assets/js/_mobile_menu_button.js\");\n/* harmony import */ var _mobile_menu_button_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_mobile_menu_button_js__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _mobile_menu_button_impressum_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./_mobile_menu_button_impressum.js */ \"./src/assets/js/_mobile_menu_button_impressum.js\");\n/* harmony import */ var _mobile_menu_button_impressum_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_mobile_menu_button_impressum_js__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _tabs_maps_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./_tabs_maps.js */ \"./src/assets/js/_tabs_maps.js\");\n/* harmony import */ var _tabs_maps_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_tabs_maps_js__WEBPACK_IMPORTED_MODULE_9__);\n/* harmony import */ var _tabs_listen_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./_tabs_listen.js */ \"./src/assets/js/_tabs_listen.js\");\n/* harmony import */ var _tabs_listen_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_tabs_listen_js__WEBPACK_IMPORTED_MODULE_10__);\n/* harmony import */ var _tabs_listen_mobile_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./_tabs_listen_mobile.js */ \"./src/assets/js/_tabs_listen_mobile.js\");\n/* harmony import */ var _tabs_listen_mobile_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_tabs_listen_mobile_js__WEBPACK_IMPORTED_MODULE_11__);\n/* harmony import */ var smoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! smoothscroll-polyfill */ \"./node_modules/smoothscroll-polyfill/dist/smoothscroll.js\");\n/* harmony import */ var smoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(smoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_12__);\n// import css for webpack\n\n\n// javscript imports\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsmoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_12___default().polyfill()\n\n\n\n\n//# sourceURL=webpack://SITE/./src/assets/js/index.js?");
 
 /***/ })
 
@@ -223,11 +1758,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// Promise = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"main": 0
+/******/ 			179: 0
 /******/ 		};
 /******/ 		
 /******/ 		var deferredModules = [
-/******/ 			["./src/assets/js/index.js","vendor"]
+/******/ 			[893,736]
 /******/ 		];
 /******/ 		// no chunk on demand loading
 /******/ 		
