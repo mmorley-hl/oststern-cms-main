@@ -879,7 +879,7 @@ var places = {
 			center: [8.71157213340723, 50.11154494192954], // starting position [lng, lat]
 			// starting zoom
 			zoom: 16,
-			attributionControl: true,
+			attributionControl: false,
 			logoEnabled: false
 		});
 	} else {
@@ -889,7 +889,7 @@ var places = {
 			center: [8.71157213340723, 50.11154494192954], // starting position [lng, lat]
 			// starting zoom
 			zoom: 15,
-			attributionControl: true,
+			attributionControl: false,
 			logoEnabled: false
 		});
 	};
