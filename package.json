@@ -34,6 +34,7 @@
     "cssnano-webpack-plugin": "^1.0.3",
     "fibers": "^5.0.0",
     "flickity": "^2.2.2",
+    "flickity-fade": "^1.0.0",
     "flickity-fullscreen": "^1.1.1",
     "gsap": "^3.6.0",
     "headroom.js": "^0.12.0",
@@ -72,11 +73,5 @@
     "not baidu >= 7.12",
     "not and_qq >= 1.2",
     "not op_mini all"
-  ],
-  "dependencies": {
-    "@barba/core": "^2.9.7",
-    "@swup/scripts-plugin": "^1.1.0",
-    "flickity-fade": "^1.0.0",
-    "swup": "^2.0.14"
-  }
+  ]
 }

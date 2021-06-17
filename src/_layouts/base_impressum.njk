@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-	<html lang="de">
+<html lang="de">
 
-		<head>
-			<meta charset='utf-8'>
-			<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-			<title>{{ title }}</title>
-			<meta name='viewport' content='width=device-width, initial-scale=1'>
-			<meta name="description" content="{{ description }}">
-			<link rel='stylesheet' type='text/css' media='screen' href='/assets/main.css'>
-			<script src='/assets/main.js'></script>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<title>{{ title }}</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<meta name="description" content="{{ description }}">
+		<link rel="preload" href="/assets/fonts/MatterSQ-Medium.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="/assets/fonts/MatterSQ-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="/assets/fonts/MatterSQ-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel='stylesheet' type='text/css' media='screen' href='/assets/main.css'>
+		<script src='/assets/main.js'></script>
 
-		</head>
-		<body class="background-primary">
-			{% include "mobile_menu_impressum.njk" %}
-			
-			<header class="header_impressum">
-				{% include "nav_impressum.njk" %}
-			</header>
-			
-			<main class="main_content">
-				{{ content | safe }}
-			</main>
-			{% include "footer.njk" %}			
-			
-			<script src='/assets/vendor.js'></script>
-		</body>
+	</head>
+	<body class="background-primary">
+		{% include "mobile_menu_impressum.njk" %}
 
-	</html>
+		<header class="header_impressum">
+			{% include "nav_impressum.njk" %}
+		</header>
+
+		<main class="main_content">
+			{{ content | safe }}
+		</main>
+		{% include "footer.njk" %}
+
+		<script src='/assets/vendor.js'></script>
+	</body>
+
+</html>
