@@ -82,7 +82,11 @@ description: OstStern 123
   }
 }) }}
 
-{% include "tabs_maps.njk" %}
+{{ component('tabs_maps', {
+  headline: 'Alle Locations auf einen Blick',
+  button1_text: 'Kartenansicht',
+  button2_text: 'Listenansicht'
+}) }}
 
 {{ component('section_teaser', {
   anker: 'gebaeude',

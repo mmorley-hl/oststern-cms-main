@@ -2,27 +2,26 @@
 <section class="tabs_maps">
   <div class="row">
     <div class="column large-4">
-      <h2 class="h2 tabs_maps__headline">Alle Locations auf einen Blick </h2>
+      <h2 class="h2 tabs_maps__headline">{{ params.headline}} </h2>
     </div>
     <div class="column">
       <div class="tab">
-        <button class="tablinks kartenansicht active" >Kartenansicht</button>
-        <button class="tablinks listenansicht" >Listenansicht</button>
+        <button class="tablinks kartenansicht active" >{{ params.button1_text }}</button>
+        <button class="tablinks listenansicht" >{{ params.button2_text }}</button>
       </div>
     </div>
   </div>
 </section>
-<div class="tabcont">
 
+<div class="tabcont">
   <div class="row">
     <div class="column large-12 special-maps">
 
-      <!-- Tab content -->
-      <div id="Kartenansicht" class="tabcontent_map">
+      <div id="Kartenansicht" class="tabcont__map">
         {% include "maps.njk" %}
       </div>
 
-      <div id="Listenansicht" class="tabcontent_liste">
+      <div id="Listenansicht" class="tabcont__liste">
         {% include "section_listenansicht.njk" %}
         {% include "section_listenansicht_mobile.njk" %}
       </div>

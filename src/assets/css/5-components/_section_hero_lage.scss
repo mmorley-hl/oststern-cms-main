@@ -1,4 +1,4 @@
-.hero_121_lage {
+.section_hero_lage {
   display: block;
   @media (max-width: $bpM) {
     display: none;
@@ -11,7 +11,8 @@
     margin-bottom: 0;
   }
 }
-.hero_121_lage_tablet {
+
+.section_hero_lage_tablet {
   display: none;
   @media (max-width: $bpM) {
     display: block;
@@ -24,7 +25,8 @@
     margin-bottom: 0;
   }
 }
-.hero_121_lage_mobile {
+
+.section_hero_lage_mobile {
   display: none;
   @media (max-width: $bpXS) {
     display: block;
