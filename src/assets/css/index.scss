@@ -7,8 +7,8 @@
 @import '../../../node_modules/sass-burger/burger';
 
 // grid -------------------------------------------------------------- //
+@import "libarys/mapbox";
 @import "00-vars/00-vars";
-@import "001-styleguide/001-styleguide";
 @import 'grid/main';
 @import '1-helpers/0-mixins/0-mixins';
 @import "1-helpers/functions";
