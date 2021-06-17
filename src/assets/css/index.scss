@@ -6,7 +6,7 @@
 @import '../../../node_modules/flickity/dist/flickity.css';
 @import '../../../node_modules/sass-burger/burger';
 
-// grid -------------------------------------------------------------- //
+// core -------------------------------------------------------------- //
 @import "libarys/mapbox";
 @import "00-vars/00-vars";
 @import 'grid/main';
@@ -14,9 +14,6 @@
 @import "1-helpers/functions";
 @import "1-helpers/background";
 @import "1-helpers/color";
-
-// Boiler Plate ------------------------------------------------------ //
-@import "2-base/placeholders";
 
 // // Base Styling  ------------------------------------------------------ //
 @import "2-base/2-base";
