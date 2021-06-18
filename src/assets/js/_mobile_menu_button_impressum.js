@@ -1,7 +1,3 @@
-const bodyScrollLock = require('body-scroll-lock');
-const disableBodyScroll = bodyScrollLock.disableBodyScroll;
-const enableBodyScroll = bodyScrollLock.enableBodyScroll;
-
 const mobileMenuButtonImpressum = document.querySelectorAll('.mobile_menu_button_impressum')
 const mobileMenuImpressum = document.querySelectorAll('.mobile_menu_impressum')
 const menuButtonClickImpressum = document.querySelectorAll('.menu-button_impressum')
@@ -17,13 +13,10 @@ mobileMenuButtonImpressum.forEach(elem => {
     elem.onclick = () => {
         mobileMenuImpressum.forEach(elem => {
             if (elem.style.top == '') {
-                // disableBodyScroll(elem);
                 elem.style.top = "0";
             } else if (elem.style.top == '0px') {
-                // enableBodyScroll(elem);
                 elem.style.top = "-340vh";
             } else {
-                // disableBodyScroll(elem);
                 elem.style.top = "0";
             }
 

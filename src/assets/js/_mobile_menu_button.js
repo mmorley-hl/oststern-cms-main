@@ -1,7 +1,3 @@
-const bodyScrollLock = require('body-scroll-lock');
-const disableBodyScroll = bodyScrollLock.disableBodyScroll;
-const enableBodyScroll = bodyScrollLock.enableBodyScroll;
-
 const mobileMenuButton = document.querySelectorAll('.mobile_menu_button')
 const mobileMenu = document.querySelectorAll('.mobile_menu')
 const menuButtonClick = document.querySelectorAll('.menu-button')
@@ -17,13 +13,10 @@ mobileMenuButton.forEach(elem => {
     elem.onclick = () => {
         mobileMenu.forEach(elem => {
             if (elem.style.top == '') {
-                // disableBodyScroll(elem);
                 elem.style.top = "0";
             } else if (elem.style.top == '0px') {
-                // enableBodyScroll(elem);
                 elem.style.top = "-340vh";
             } else {
-                // disableBodyScroll(elem);
                 elem.style.top = "0";
             }
 
