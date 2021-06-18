@@ -63,6 +63,11 @@
 		flex-direction: row;
 		height: $headerHeight;
 		align-items: center;
+		a {
+			line-height: 0;
+			font-size: 0;
+			color: transparent;
+		}
 		img {
 			margin: 0;
 		}

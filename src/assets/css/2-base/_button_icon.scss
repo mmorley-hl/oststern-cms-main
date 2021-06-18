@@ -2,24 +2,18 @@
   display: flex;
   flex-direction: row;
   height: 60px;
-  // min-width: 1em;
   width: 300px;
-  // display: block;
   margin: 0 0 $gutter/2;
   padding: 1em 2.1em;
   line-height: 1em;
-  // text-align: center;
   white-space: nowrap;
   cursor: pointer;
   user-select: none;
-  // transition: background $duration $timing;
-  border: 0;
   border-radius: 0;
   background-color: white;
   border-radius: 2em;
   color: black;
   border: 1px solid black;
-  // vertical-align: middle;
 
   @media (max-width: $bpXS) {
     width: 100%;

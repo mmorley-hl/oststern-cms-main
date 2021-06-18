@@ -7,8 +7,12 @@ description: OstStern 123
 ---
 {# Main_teaser #}
 {%- from "system/component.njk" import component -%}
-{{ component('section_hero_123', {
 
+{{ component('section_hero_123', {
+ background_image: {
+    src: '../assets/images/hero/OstStern 123_1.jpg'
+  },
+  headline: 'Modernes Arbeiten im Oststern'
 }) }}
 
 {{ component('section_hero_lage', {
