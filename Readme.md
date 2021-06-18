@@ -12,8 +12,10 @@ A barebone [eleventy](https://www.11ty.dev/) and [webpack](https://webpack.js.or
 Live demo https://oststern.netlify.app
 
 ## Usage
+First Make sure you use the correct node.js version
+[Node-js](https://nodejs.org/en/)
 
-First install the dependencies:
+Second install the dependencies:
 
 ```sh
 npm install
@@ -26,7 +28,7 @@ Then you can:
 | **`npm run dev`**     | Run your website on http://localhost:8080     |
 | **`npm run prod`**    | Build your production website inside `/_site` |            |
 
-Make sure you use the correct node.js version:
+
 
 
 ## Webpack
