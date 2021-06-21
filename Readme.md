@@ -34,3 +34,7 @@ Then you can:
 ## Webpack
 
 A very simple `webpack.config.js` is included. Feel free to change it.
+
+## DEPLOY
+
+the folder_site contains all assets and html files to deploy the projekt
